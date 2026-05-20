@@ -16,8 +16,9 @@
   --INTERNAL-MAIN-TITLES-H3-font: Sovngarde, 'Roboto Flex';
   --VARIABLE-LINK-color: #BF7DAB;
   --VARIABLE-LINK-HOVER-color: #D5AAC8;
+  --mgo-btn-inline: #c9843699;
   --mgo-gold-dark: #c98436;
-  --mgo-gold: #F8D07B;
+  --mgo-gold: #D8A65F;
   --mgo-gold-trans: #F8D07B33;
   --mgo-red: #A23860;
   --mgo-bg: #202020;
@@ -240,6 +241,9 @@ input.readonly {
       width: 16px;
       height: 16px;
     }
+    a {
+      color: var(--mgo-gold);
+    }
   }
   &.nexus {
     background-color: #f7e4d433;
@@ -278,7 +282,8 @@ input.readonly {
 
 .btn-inline {
   display: inline-block;
-  background-color: #0076ff33;
+  background-color: var(--mgo-btn-inline);
+  text-shadow: 1px 1px 1px #000000;
   padding: 0 6px;
   border-radius: 10px;
   font-family: var(--INTERNAL-CODE-font);

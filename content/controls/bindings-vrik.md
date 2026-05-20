@@ -7,7 +7,7 @@ These are the controller bindings defined in the modlist entry {{< btn-inline >}
 
 It is also the default control scheme for {{< nexus 171182 >}}Open Composite Unleashed{{< /nexus >}}, which is enabled in MGO by default.
 
-![VRIK bindings for Meta Quest](/images/quest-vrik.webp)
+![VRIK bindings for Meta Quest](/images/quest-vrik-lighting.webp)
 
 ### Gameplay
 
