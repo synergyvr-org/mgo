@@ -104,21 +104,18 @@ These controller binding options will not work with OC Unleashed enabled because
   <i class="fa fa-folder"></i> ▸▸ STEP 4 - Select Performance Options
 </div>
 <div class="separator subsub blue5">
-  <i class="fa fa-folder"></i> ▸▸▸ Community Shaders - 10% Exterior FPS Cost
+  <i class="fa fa-folder"></i> ▸▸▸ Grass Density
 </div>
 <div class="separator subsub blue6">
-  <i class="fa fa-folder"></i> ▸▸▸ Grass Density - 15% Exterior FPS Cost
+  <i class="fa fa-folder"></i> ▸▸▸ Community Shaders
 </div>
 
 **STEP 4** includes a variety of performance-related presets.
 
-There are _Performance_ and _Quality_ presets for **Community Shaders** and **Grass Density**. Switching to the _Quality_ presets will have a fairly significant impact to your outdoor framerate. Whether that's worth it is up to you, but you'll need a pretty serious PC to maintain a comfortable framerate if you set both to _Quality_.
+There are _Performance_ and _Quality_ presets for **Grass Density** and **Community Shaders**. Switching to the _Quality_ presets will have a fairly significant impact to your outdoor framerate. Whether that's worth it is up to you, but you'll need a pretty serious PC to maintain a comfortable framerate if you set both to _Quality_.
 
 <div class="separator subsub blue5">
-  <i class="fa fa-folder"></i> ▸▸▸ VR Performance Kit - Not Compatible with OC
-</div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly" checked> VR FPS Stabilizer Preset - TAA Tweaks
+  <i class="fa fa-folder"></i> ▸▸▸ VR Performance Kit - (Not Compatible with O.C.)
 </div>
 <div class="mod subsub">
   <input type="checkbox" class="readonly"> VR Performance Kit - CAS Sharpening
@@ -130,8 +127,18 @@ There are _Performance_ and _Quality_ presets for **Community Shaders** and **Gr
 MGO includes presets for {{< github "fholger/vrperfkit" >}} VR Performance Toolkit{{< /github >}} and {{< nexus 31392 >}} VR FPS Stabilizer{{< /nexus >}}. These can help you reach a nice balance between performance and image quality.
 
 {{< aside type="alert" title="Open Composite compatibility" >}}
-VR Performance Toolkit and VR FPS Stabilizer auto-config are not compatible with _either_ version of Open Composite, OC Unleashed includes similar performance options through its desktop app.
+VR Performance Toolkit is not compatible with _either_ version of Open Composite, but OC Unleashed includes similar performance options through its desktop configuration app.
 {{< /aside >}}
+
+<div class="separator subsub blue6">
+  <i class="fa fa-folder"></i> ▸▸▸ VR FPS Stabalizer
+</div>
+<div class="mod subsub">
+  <input type="checkbox" class="readonly"> VR FPS Stabilizer - Open Composite
+</div>
+<div class="mod subsub">
+  <input type="checkbox" class="readonly" checked> VR FPS Stabilizer - Steam VR
+</div>
 
 ---
 ## Optional Mods
