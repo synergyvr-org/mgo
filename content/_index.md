@@ -3,7 +3,7 @@ title = "Mad God's Overhaul"
 type = "home"
 +++
 
-<h1><a href="/images/mgo-wide@2x.webp"><img src="/images/mgo-wide.webp" srcset="/mgo-tutorial/images/mgo-wide@2x.webp 2x" alt="Mad God's Overhaul for Skyrim VR"></a></h1>
+<h1><a href="/images/tes5-mgo-wide@2x.webp"><img src="/images/tes5-mgo-wide.webp" srcset="/mgo-tutorial/images/tes5-mgo-wide@2x.webp 2x" alt="Mad God's Overhaul for Skyrim VR"></a></h1>
 
 When you think of going on an adventure, what comes to mind? Constantly pausing the action and digging through menus? Lots and lots of menus? So you can replace your floating, disembodied hand with a sword? (I mean, do you want a hand, or do you want a sword? Pick one. Don’t get greedy.)
 

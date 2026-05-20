@@ -14,12 +14,12 @@
   --INTERNAL-MAIN-TITLES-H1-font: Sovngarde, 'Roboto Flex';
   --INTERNAL-MAIN-TITLES-H2-font: Sovngarde, 'Roboto Flex';
   --INTERNAL-MAIN-TITLES-H3-font: Sovngarde, 'Roboto Flex';
-  --VARIABLE-LINK-color: #66adff;
+  --VARIABLE-LINK-color: #BF7DAB;
+  --VARIABLE-LINK-HOVER-color: #D5AAC8;
   --mgo-gold-dark: #c98436;
   --mgo-gold: #F8D07B;
   --mgo-gold-trans: #F8D07B33;
   --mgo-red: #A23860;
-  --mgo-blue: #2f81eb;
   --mgo-bg: #202020;
   --mgo-logo-bg1: #2A2A22;
   --mgo-logo-bg2: #282820;
@@ -29,9 +29,10 @@
   --mgo-gradient1: #642F69;
   --mgo-gradient2: #4E1A26;
   --mgo-gradient3: #F1CD84;
-  // --mgo-gradient1: rgba(194, 42, 21, 0.45);
-  // --mgo-gradient2: rgba(185, 137, 41, 0.45);
-  // --mgo-gradient3: rgba(185, 137, 41, 0.45);
+  --mgo-btw1: #7E2F3466;
+  --mgo-btw2: #B14C78cc;
+  // --mgo-btw1: rgba(43, 89, 195, 0.45);
+  // --mgo-btw2: #77c8be66;
 }
 
 body {
@@ -407,7 +408,8 @@ div.img {
   }
 }
 .aside.aside-btw {
-  background-image: linear-gradient(24deg, rgba(43, 89, 195, 0.45) 0%, #77c8be66 100%);
+  background-image: linear-gradient(24deg, var(--mgo-btw1) 0%, var(--mgo-btw2) 100%);
+  
   h4 {
     background: rgba(50, 50, 50, 0.3);
   }
