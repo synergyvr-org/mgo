@@ -131,7 +131,7 @@ VR Performance Toolkit is not compatible with _either_ version of Open Composite
 {{< /aside >}}
 
 <div class="separator subsub blue6">
-  <i class="fa fa-folder"></i> ▸▸▸ VR FPS Stabalizer
+  <i class="fa fa-folder"></i> ▸▸▸ VR FPS Stabilizer
 </div>
 <div class="mod subsub">
   <input type="checkbox" class="readonly"> VR FPS Stabilizer - Open Composite
