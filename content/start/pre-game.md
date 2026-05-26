@@ -62,13 +62,13 @@ If you open the **START HERE** folder, you'll see subfolders labeled **STEP 1**,
 ---
 ## Open Composite (Unleashed)
 <div class="separator sub blue2">
-  <i class="fa fa-folder"></i> ▸▸ STEP 2 - Enable to Use Open Composite (Replaces Steam VR)
+  <i class="fa fa-folder"></i> ▸▸ STEP 2 - Open Composite (Replaces Steam VR) - (Not Compatible with VR Perf Kit)
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly"> Open Composite XR - (Incompatible with VR Performance Kit)
+  <input type="checkbox" class="readonly" checked> OC Unleashed (Not Compatible with Bindings, Upscalers, or VR Perf Kit)
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly" checked> OC Unleashed - (Incompatible with Controller Bindings & Upscalers)
+  <input type="checkbox" class="readonly"> Open Composite - Original (Do Not Enable if Using OCU)
 </div>
 
 **STEP 2** includes two mods to choose from if you want to use **Open Composite**. Choose one or the other—not both—or disable both mods in this section to use the Steam VR runtime.
@@ -80,16 +80,16 @@ If you have a headset that doesn't use Steam base stations (aka lighthouse track
 ---
 ## Controller Bindings
 <div class="separator sub blue3">
-  <i class="fa fa-folder"></i> ▸▸ STEP 3 - Select One Controller Bindings
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> VRIK Rift-Index-WMR Controller Bindings - Grip to Interact
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> Alternative VRIK Controller Bindings - Easy Shout
+  <i class="fa fa-folder"></i> ▸▸ STEP 3 - Controller Bindings - Select One (Not Compatible with OC)
 </div>
 <div class="mod sub">
   <input type="checkbox" class="readonly"> Controller Bindings - Kvite
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly"> VRIK Controller Bindings - Standard
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly"> Alternative VRIK Controller Bindings - Easy Shout
 </div>
 
 **STEP 3** provides three alternate control schemes. Skyrim VR's default controls are, frankly, kind of bad—especially with the mods included in Mad God's Overhaul. MGO comes with three optional control schemes to choose from. Choose only one of these. If they're all disabled (and you're not using OC Unleashed), Skyrim VR's default controls will apply.
@@ -134,10 +134,10 @@ VR Performance Toolkit is not compatible with _either_ version of Open Composite
   <i class="fa fa-folder"></i> ▸▸▸ VR FPS Stabilizer
 </div>
 <div class="mod subsub">
-  <input type="checkbox" class="readonly"> VR FPS Stabilizer - Open Composite
+  <input type="checkbox" class="readonly" checked> VR FPS Stabilizer - Open Composite
 </div>
 <div class="mod subsub">
-  <input type="checkbox" class="readonly" checked> VR FPS Stabilizer - Steam VR
+  <input type="checkbox" class="readonly"> VR FPS Stabilizer - Steam VR
 </div>
 
 ---
@@ -156,22 +156,25 @@ MGO includes a number of optional mods in several categories. They're all tested
   <i class="fa fa-folder"></i> ▸▸▸ AI and Speech - Read Nexus Article
 </div>
 <div class="mod subsub">
+  <input type="checkbox" class="readonly"> SkyrimNet
+</div>
+<div class="mod subsub">
+  <input type="checkbox" class="readonly"> IntelEngine
+</div>
+<div class="mod subsub">
+  <input type="checkbox" class="readonly"> OStimNet
+</div>
+<div class="mod subsub">
+  <input type="checkbox" class="readonly"> SeverActions
+</div>
+<div class="mod subsub">
   <input type="checkbox" class="readonly"> Dragonborn Speaks Naturally
 </div>
 <div class="mod subsub">
   <input type="checkbox" class="readonly"> No NPC Greetings (Special Edition)
 </div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly"> Mantella - Bring NPCs to Life with AI
-</div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly"> Mantella - Expanded Piper Models List
-</div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly"> SSE Creation Kit Fonixdata Lip Sync Fix
-</div>
 
-This section includes mods for incorporating AI NPCs into the game, as well as the option to use your own voice in conversations (even without enabling the AI features).
+This section includes mods for incorporating AI NPCs into the game via SkyrimNet and its add-ons, as well as the option to use your own voice in conversations (even without enabling the AI features).
 
 Be sure to check out the {{< ext "https://www.nexusmods.com/skyrimspecialedition/articles/7032" >}}Nexus article{{< /ext >}} for setup instructions.
 
@@ -179,51 +182,34 @@ Be sure to check out the {{< ext "https://www.nexusmods.com/skyrimspecialedition
 
 ---
 <div class="separator subsub blue5">
-  <i class="fa fa-folder"></i> ▸▸▸ Audio - New Music
-</div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly"> LORKHAN - Soundtrack Replacer
-</div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly"> Chapter II - Jeremy Soule Inspired Music
-</div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly"> Unique Battle Music
-</div>
-
-MGO includes several options for supplementing or replacing Jeremy Soule's original music for Skyrim.
-
-{{< nexus 115096 >}}LORKHAN - Soundtrack Replacer{{< /nexus >}} by {{< youtube youngscrolls >}}young scrolls{{< /youtube >}} contains around 3 hours of original music, completely replacing Jeremy Soule's OST (with one late-game exception). The style is an intentional departure from Soule's but is very high quality and lore-friendly.
-
-{{< nexus 37792 >}}Chapter II - Jeremy Soule Inspired Music{{< /nexus >}} by Dutch composer {{< youtube "channel/UC4eMkoptENROhVqc2Te-7aw" >}}Scott Rozemeijer{{< /youtube >}} supplements Soule's OST with around 3 hours of additional ambient music that attempts to match Soule's style and instrumentation.
-
-{{< nexus 91231 >}}Unique Battle Music{{< /nexus >}}, curated by Clofas, adds {{< ext "https://elements.envato.com/collections/UKWZYRNFX3" >}}54 licensed tracks{{< /ext >}} by various artists, replacing the eight Jeremy Soule compositions used in battles in the OST.
-
----
-<div class="separator subsub blue8">
   <i class="fa fa-folder"></i> ▸▸▸ Convenience
 </div>
 <div class="mod subsub">
   <input type="checkbox" class="readonly"> VR Menu Mouse Fix
 </div>
 <div class="mod subsub">
-  <input type="checkbox" class="readonly"> Stable Hands - VR Mouse Stabilization mod
-</div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly"> Undress Spell
-</div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly"> Spell Auto-Aim VR
-</div>
-<div class="mod subsub">
   <input type="checkbox" class="readonly"> Better Sleep Wait Menu
+</div>
+<div class="mod subsub">
+  <input type="checkbox" class="readonly"> Unread Books Glow Redone
 </div>
 <div class="mod subsub">
   <input type="checkbox" class="readonly"> Stop Trigger Unsheathing For VR
 </div>
 <div class="mod subsub">
+  <input type="checkbox" class="readonly" checked> Discovered Map Marker All
+</div>
+<div class="mod subsub">
   <input type="checkbox" class="readonly" checked> Infinite Stamina Out of Combat
 </div>
+
+The mods in the _Convenience_ section are mostly  self-explanatory, but I want to call attention to a couple of them.
+
+{{< nexus 33414 >}}VR Menu Mouse Fix{{< /nexus >}} lets you navigate game menus using a laser pointer, rather than exclusively using thumbsticks. Some features of SkyUI and other mods _do not work_ without this, including inventory filtering. For that reason, I recommend giving this a try. In MGO, it has been combined in a single entry with {{< nexus 118579 >}}Stable Hands{{< /nexus >}}, which makes it far easier to point accurately.
+
+{{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}} does just what it says. I play on a Meta Quest 3, and without this mod, I'd be unsheathing my weapon every time I take a screenshot. (I take a lot of screenshots.)
+
+---
 
 <div class="next">
   <a href="/mgo-tutorial/first-launch">First Launch <i class="fa fa-circle-right"></i></a>
