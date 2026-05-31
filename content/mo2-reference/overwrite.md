@@ -13,7 +13,7 @@ _Overwrite_ appears at the bottom of the list on the left side of Mod Organizer 
 
 ## What and why?
 
-MO2 uses a virtual file system (VFS) to keep your Skyrim VR installation folder pristine. Every program you run using the {{< btn-inline play >}}Run{{< /btn-inline >}} button in MO2, whether it's the game itself or one of the other included tools, will run from this VFS. These programs sometimes need to write new files to disk, and when they do, they get written to the VFS. When the program finishes running, and the VFS is unmounted, those files would be lost if not for the {{< file folder-open>}}Overwrite{{< /file >}} folder.
+MO2 uses a Virtual File System (VFS) to keep your Skyrim VR installation folder pristine. Every program you run using the {{< btn-inline play >}}Run{{< /btn-inline >}} button in MO2, whether it's the game itself or one of the other included tools, will run from this VFS. These programs sometimes need to write new files to disk, and when they do, they get written to the VFS. When the program finishes running, and the VFS is unmounted, those files would be lost if not for the {{< file folder-open>}}Overwrite{{< /file >}} folder.
 
 {{< aside type="btw" title="BTW" >}}
 When MGO writes to _existing_ files, they remain in their original location. This applies to files in {{< btn-inline folder-open >}}Documents\My Games\Skyrim VR{{< /btn-inline >}}, for example.
