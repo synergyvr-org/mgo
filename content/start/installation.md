@@ -69,7 +69,7 @@ If installation fails, there's a decent chance that you can just try again. Doin
 
 If there’s an error about a missing master file, that means there’s something wrong with your Skyrim VR installation, like the wrong version, or a file that’s missing or altered in some way. If you changed some files on purpose, you can always copy them somewhere before repairing your installation, but you will need the original, unaltered game files from Steam to use MGO. No, you cannot use a pirated copy.
 
-To repair the game files, find Skyrim VR in Steam, click the <i class="fa fa-gear"></i> cog icon, and choose {{< btn-inline >}}Properties...{{< /btn-inline >}}. Choose {{< btn-inline >}}Installed Files{{< /btn-inline >}} from the left, and click {{< btn-inline >}}Verify integrity of game files{{< /btn-inline >}}. That ought to get your installation back in shape. Once you’re finished, you can retry installation from Wabbajack.
+To repair the game files, find Skyrim VR in Steam, click the <i class="fa fa-gear"></i> cog icon, and choose {{< btn-inline >}}Properties...{{< /btn-inline >}}. Choose {{< btn-inline >}}Installed Files{{< /btn-inline >}} from the left, and click {{< btn-inline >}}Verify integrity of game files{{< /btn-inline >}}. That ensures that the original game files are present and correct. It does _not_, however, remove any _extra_ files that you have've added. Extra files may or may not cause problems, depending on what they are. But if all else fails, you can uninstall the game completely, and reinstall it from Steam. Once you’re finished, you can retry installation from Wabbajack.
 
 {{< aside type="alert" title="If you're still having trouble..." >}}
 
