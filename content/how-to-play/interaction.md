@@ -16,13 +16,13 @@ The mods included in Mad God's Overhaul enhance Skyrim's interactivity to a fran
 
 In 2020, Valve released Half-Life: Alyx and introduced the best system for interacting with objects that anyone had seen in a game that wasn't focused entirely on the novelty of interacting with objects. They also came up with a fantastic system for picking up items that are just out of reach: The Gravity Gloves (the inventor of which desperately wants you to call them R.U.S.S.E.L.L.S). This made the "point and press <kbd>A</kbd>" mechanics in Skyrim VR seem terribly dated. A few months later, FlyingParticle released {{< nexus 43930 >}}HIGGS{{< /nexus >}}, and all was right in Tamriel.
 
-With HIGGS, your hands are no longer merely decorations. Uou can pick objects up, throw them, juggle them&mdash;whatever you like. To add the item in your hand to your inventory, reach above your shoulder until you get a haptic buzz, and then release <kbd>Grip</kbd>. Not sure what exactly an item is, or what its stats are? Just look at the back of your hand while you're holding the item. You can even put consumables directly into your mouth without adding them to your inventory first. That even works on books, including spell tomes.
+With HIGGS, your hands are no longer merely decorations. Uou can pick objects up, throw them, juggle them&mdash;whatever you like. To add the item in your hand to your inventory, reach above your shoulder until you get a haptic buzz, and then release {{< control name="grip" >}}. Not sure what exactly an item is, or what its stats are? Just look at the back of your hand while you're holding the item. You can even put consumables directly into your mouth without adding them to your inventory first. That even works on books, including spell tomes.
 
 {{< video name="higgs-reading" type="mp4" border="border">}}
 Who doesn't like to devour a good book now and again?
 {{< /video >}}
 
-And if an object is a little bit out of reach, reach towards the item, squeeze the <kbd>Grip</kbd>, pull back your hand, and then release and press <kbd>Grip</kbd> to catch the item out of the air.
+And if an object is a little bit out of reach, reach towards the item, squeeze the {{< control name="grip" >}}, pull back your hand, and then release and press {{< control name="grip" >}} to catch the item out of the air.
 
 {{< video name="higgs-salt-pile" type="mp4" border="border">}}
 Grab a salt pile off the shelf with the gravity gloves, check out its stats on the back of your hand, and drop it over your shoulder to add it to your inventory.
@@ -44,4 +44,4 @@ Because it works in conjunction with HIGGS, you can even use the gravity gloves 
 
 Although you can still add items to your inventory the boring, vanilla way, Interactive Activators actually replaces the original objects, and now you _must_ use physics to operate them. You actually  _can't_ activate a pullchain by pointing at it and pressing <kbd>A</kbd> anymore.
 
-[^1]: The appropriate dragon claw even appears in your non-dominant hand so you can easily check the order of the totems, and then place and rotate the claw in the center of the door. (You need to hold <kbd>Grip</kbd> while doing this, and then rotate the claw to the right and to left.)
+[^1]: The appropriate dragon claw even appears in your non-dominant hand so you can easily check the order of the totems, and then place and rotate the claw in the center of the door. (You need to hold {{< control name="grip" >}} while doing this, and then rotate the claw to the right and to left.)

@@ -1,0 +1,6 @@
+<span class="controller">
+<img
+  class="controller-{{ .Get "name" }}"
+  src="/mgo-tutorial/images/controller-{{ .Get "name" }}.{{.Get "type" | default "png" }}"
+  srcset="/mgo-tutorial/images/controller-{{ .Get "name" }}@2x.{{.Get "type" | default "png" }} 2x"
+> {{ .Get "name" | humanize }}</span>

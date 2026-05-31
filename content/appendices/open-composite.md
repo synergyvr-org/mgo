@@ -14,7 +14,7 @@ Using the console in VR with Open Composite Unleashed
 
 **An in-game, onscreen keyboard.** This is OC Unleashed's signature feature and is what motivated Wondernutts to start the project. Steam VR has its own keyboard, but Open Composite doesn't, and even hardware keyboards don't work in-game. So to name your character and the items that you forge/enchant/brew, you'll need Open Composite Unleashed. It also saves you from needing to switch to the desktop view to use the console.
 
-The keyboard will open automatically when it's time to name your character or an item. You can open it manually using an assigned button or button combo, configured in the OC Unleashed desktop app. By default, it's set to {{< btn-inline >}}Double-Click Left Stick{{< /btn-inline >}}. You can close the keyboard by squeezing {{< btn-inline >}}Grip{{< /btn-inline >}} on either controller.
+The keyboard will open automatically when it's time to name your character or an item. You can open it manually using an assigned button or button combo, configured in the OC Unleashed desktop app. By default, it's set to {{< btn-inline >}}Double-Click Left Stick{{< /btn-inline >}}. You can close the keyboard by squeezing {{< control name="grip" >}} on either controller.
 
 ---
 {{< caption name="ocu-bindings" type="webp" >}}

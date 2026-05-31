@@ -21,6 +21,8 @@
   --mgo-gold: #D8A65F;
   --mgo-gold-trans: #F8D07B33;
   --mgo-red: #A23860;
+  --mgo-blue: #44375e;
+  --mgo-blue2: #664d87;
   --mgo-bg: #202020;
   --mgo-logo-bg1: #2A2A22;
   --mgo-logo-bg2: #282820;
@@ -253,10 +255,11 @@ input.readonly {
     background-color: #66666633;
   }
   &.steam {
-    background-color: #4c5967;
+    background: #184150;
+    background: radial-gradient(circle,rgba(24, 65, 80, 1) 0%, rgba(26, 51, 68, 1) 100%);
     text-shadow: none;
     a {
-      color: #1b2838;
+      color: #c5c3c1;
     }
   }
 }
@@ -288,6 +291,21 @@ input.readonly {
   }
 }
 
+#R-body {
+  .controller {
+    display: inline-block;
+    background-color: var(--mgo-blue);
+    background: radial-gradient(circle,var(--mgo-blue2) 40%, var(--mgo-blue) 100%);
+    text-shadow: 1px 1px 1px #000000;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-family: var(--INTERNAL-CODE-font);
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
 .btn-inline {
   display: inline-block;
   background-color: var(--mgo-btn-inline);

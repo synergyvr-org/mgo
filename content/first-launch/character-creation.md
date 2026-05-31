@@ -25,7 +25,7 @@ Some RaceMenu features (like the _Camera_ and _Sculpt_ tabs in the upper-right) 
 So many sliders! Character creation with RaceMenu in MGO.
 {{< /caption >}}
 
-There are a couple of ways to adjust the values of each slider. You can point directly at the marker with your motion controller, hold down the <kbd>A</kbd> button, and move your controller left and right to adjust each slider. You have to initially point pretty precisely, but once you begin holding down the <kbd>A</kbd> button, you can rest assured that you'll be adjusting that same slider until you release the button. That initial selection is easier if you can move closer to where the RaceMenu UI appears. (You aren't able to use the thumbsticks to move while the RaceMenu is active, so you'll have to move in your physical space.)
+There are a couple of ways to adjust the values of each slider. You can point directly at the marker with your motion controller, hold down the {{< control name="a" >}} button, and move your controller left and right to adjust each slider. You have to initially point pretty precisely, but once you begin holding down the {{< control name="a" >}} button, you can rest assured that you'll be adjusting that same slider until you release the button. That initial selection is easier if you can move closer to where the RaceMenu UI appears. (You aren't able to use the thumbsticks to move while the RaceMenu is active, so you'll have to move in your physical space.)
 
 {{< video name="racemenu-sliders" border="border" >}}
 Method 1: Moving the value marker directly.
@@ -37,9 +37,9 @@ The other approach is to point just above the slider and use the thumbstick to m
 Method 2: Pointing above the slider and using the thumbstick.
 {{< /video >}}
 
-RaceMenu will start on the "ALL" tab, showing every available slider, but there are tabs for various categories (BODY, FACE, etc.), so you don't have to do it all on a single page. Switch tabs by using the pointer and the <kbd>A</kbd> button.
+RaceMenu will start on the "ALL" tab, showing every available slider, but there are tabs for various categories (BODY, FACE, etc.), so you don't have to do it all on a single page. Switch tabs by using the pointer and the {{< control name="a" >}} button.
 
-Some tabs still have an awful lot of sliders, so you'll need to scroll (which, again, requires some high-precision pointing) to see all of the options. Point precisely at the scroll marker (ignoring the fact that the sliders appear to extend far to the right of the scrollbar), hold down <kbd>A</kbd>, and use your motion controller to move the scroll marker's position.
+Some tabs still have an awful lot of sliders, so you'll need to scroll (which, again, requires some high-precision pointing) to see all of the options. Point precisely at the scroll marker (ignoring the fact that the sliders appear to extend far to the right of the scrollbar), hold down {{< control name="a" >}}, and use your motion controller to move the scroll marker's position.
 
 {{< aside type="btw" title="A note to the NSFW crowd..." >}}
 If you're playing the NSFW list, you may be disappointed to find your character fully clothed, in spite of how... _extensive_ the customization options are.
@@ -59,7 +59,7 @@ With the mods in MGO, it's still hard to set yourself up for long-term failure b
 
 ## Wrapping up
 
-When your character looks perfect (or perfectly abhorrent, as the case may be), you can finish by squeezing the <kbd>Grip</kbd> on one of your controllers, or you can point to {{< btn-inline >}}Done{{< /btn-inline >}} in the extreme lower-left of the RaceMenu UI and press <kbd>A</kbd> on your controller.
+When your character looks perfect (or perfectly abhorrent, as the case may be), you can finish by squeezing the {{< control name="grip" >}} on one of your controllers, or you can point to {{< btn-inline >}}Done{{< /btn-inline >}} in the extreme lower-left of the RaceMenu UI and press {{< control name="a" >}} on your controller.
 
 {{< caption name="racemenu-done" type="webp" >}}
 Point to "Done" and press the <kbd>A</kbd> button.
