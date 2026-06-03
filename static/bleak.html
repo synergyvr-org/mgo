@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bleak Falls Barrow</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 300vh;
+      overflow-x: hidden;
+    }
+
+    .parallax-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .parallax-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      will-change: transform;
+    }
+
+    .layer-sky {
+      background-image: url('images/01-bleak-falls-sky.png');
+    }
+
+    .layer-mountains {
+      background-image: url('images/02-bleak-falls-mountains.png');
+    }
+
+    .layer-ruins {
+      background-image: url('images/03-bleak-falls-ruins.png');
+      transform: translateY(25vh);
+    }
+
+    .layer-foreground {
+      background-image: url('images/04-bleak-falls-foreground.png');
+      transform: translateY(50vh);
+    }
+  </style>
+</head>
+<body>
+  <div class="parallax-container">
+    <div class="parallax-layer layer-sky" data-speed="0.05"></div>
+    <div class="parallax-layer layer-mountains" data-speed="0.15"></div>
+    <div class="parallax-layer layer-ruins" data-speed="0.3" data-offset="25"></div>
+    <div class="parallax-layer layer-foreground" data-speed="0.5" data-offset="50"></div>
+  </div>
+
+  <script>
+    const layers = document.querySelectorAll('.parallax-layer');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      layers.forEach(layer => {
+        const speed = parseFloat(layer.dataset.speed);
+        const offset = layer.dataset.offset ? parseFloat(layer.dataset.offset) / 100 * window.innerHeight : 0;
+        layer.style.transform = `translateY(${offset + scrollY * -speed}px)`;
+      });
+    });
+  </script>
+</body>
+</html>
