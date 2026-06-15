@@ -159,7 +159,7 @@ li {
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 16px;
-  border: 1px solid transparent;
+  border: 1px solid #666;
   background: #00000044;
   color: white;
   &:hover {
@@ -168,10 +168,12 @@ li {
     background: #66666633;
     border-color: var(--mgo-blue2);
   }
+  .read-more {
+    text-align: right;
+  }
   .gif {
     min-width: 260px;
     min-height: 208px;
-    
   }
 }
 
