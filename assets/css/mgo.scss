@@ -7,7 +7,26 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Futura';
+  src: url('/mgo-tutorial/images/Futura-Medium-01.woff2')
+       format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('/mgo-tutorial/images/Futura-MediumItalic-02.woff2')
+       format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
+  // --INTERNAL-MAIN-font: Futura, 'Roboto Flex';
   --INTERNAL-MENU-SECTIONS-BG-color: #191919;
   --INTERNAL-MENU-HEADER-BG-color: #191919;
   --INTERNAL-CODE-INLINE-color: #eeeeee;
@@ -15,9 +34,9 @@
   --INTERNAL-MENU-HEADER-BORDER-color: #191919;
   --LOGO-font: Sovngarde, 'Roboto Flex';
   --LOGO-font-size: 0.8rem;
-  --INTERNAL-MAIN-TITLES-H1-font: Sovngarde, 'Roboto Flex';
-  --INTERNAL-MAIN-TITLES-H2-font: Sovngarde, 'Roboto Flex';
-  --INTERNAL-MAIN-TITLES-H3-font: Sovngarde, 'Roboto Flex';
+  --INTERNAL-MAIN-TITLES-H1-font: Futura, 'Roboto Flex';
+  --INTERNAL-MAIN-TITLES-H2-font: Futura, 'Roboto Flex';
+  --INTERNAL-MAIN-TITLES-H3-font: Futura, 'Roboto Flex';
   --VARIABLE-LINK-color: #BF7DAB;
   --VARIABLE-LINK-HOVER-color: #D5AAC8;
   --mgo-btn-inline: #c9843699;
@@ -46,6 +65,16 @@ body {
   font-size: 1.2rem;
   background: url(/mgo-tutorial/images/background-tile.png);
   background-attachment: fixed;
+}
+
+#R-sidebar li a {
+  font-family: var(--INTERNAL-MAIN-TITLES-H3-font);
+}
+#R-sidebar li > a {
+  text-transform: uppercase;
+}
+#R-sidebar li li > a {
+  text-transform: none;
 }
 
 #R-sidebar li.active > a {
