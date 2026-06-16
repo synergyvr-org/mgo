@@ -26,13 +26,14 @@
 }
 
 :root {
-  // --INTERNAL-MAIN-font: Futura, 'Roboto Flex';
+  --INTERNAL-MENU-L-width: 260px;
   --INTERNAL-MENU-SECTIONS-BG-color: #191919;
   --INTERNAL-MENU-HEADER-BG-color: #191919;
   --INTERNAL-CODE-INLINE-color: #eeeeee;
   --INTERNAL-TOPBAR-BG-color: #191919;
   --INTERNAL-MENU-HEADER-BORDER-color: #191919;
-  --LOGO-font: Sovngarde, 'Roboto Flex';
+  --INTERNAL-MAIN-TITLES-H2-font-weight: normal;
+  --LOGO-font: Futura, 'Roboto Flex';
   --LOGO-font-size: 0.8rem;
   --INTERNAL-MAIN-TITLES-H1-font: Futura, 'Roboto Flex';
   --INTERNAL-MAIN-TITLES-H2-font: Futura, 'Roboto Flex';
@@ -139,7 +140,7 @@ body {
   padding: 2rem 0;
   h1 {
     text-shadow: rgba(0,0,0,0.8) 1px 0 8px;
-    line-height: 0.8em;
+    line-height: 1em;
     overflow-wrap: normal;
     hyphens: manual;
   }
@@ -167,7 +168,7 @@ body {
 }
 
 h2 {
-  line-height: 1em;
+  line-height: 1.3em;
   .anchor {
     margin-top: 0;
   }
