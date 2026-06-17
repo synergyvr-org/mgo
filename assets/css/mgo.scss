@@ -62,6 +62,10 @@
   // --mgo-btw2: #77c8be66;
 }
 
+#R-topbar > .topbar-wrapper {
+  --VARIABLE-LINK-HOVER-color: #D5AAC8;
+}
+
 body {
   font-size: 1.2rem;
   background: url(/mgo-tutorial/images/background-tile.png);
@@ -126,6 +130,11 @@ body {
       font-size: 0.8em;
     }
   }
+}
+
+a:hover, a:active, a:focus {
+  color:  var(--VARIABLE-LINK-HOVER-color);
+  transition: all 0.35s ease;
 }
 
 .breadcrumbs li {
