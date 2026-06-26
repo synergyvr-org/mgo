@@ -267,15 +267,15 @@ input.readonly {
     color: black;
   }
   &.blue3 {
-    background-color: #9d8151;
+    background-color: #c2a267;
     color: black;
   }
   &.blue4 {
-    background-color: #af905d;
+    background-color: #b2935d;
     color: black;
   }
   &.blue5 {
-    background-color: #7c613d;
+    background-color: #a38554;
     color: black;
   }
   &.blue6 {
@@ -285,6 +285,18 @@ input.readonly {
   &.blue7 {
     background-color: #c0dbf5;
     color: black;
+  }
+  &.purple1 {
+    background-color: #a903ff;
+    color: white;
+  }
+  &.purple2 {
+    background-color: #8501c8;
+    color: white;
+  }
+  &.purple3 {
+    background-color: #610091;
+    color: white;
   }
 }
 
