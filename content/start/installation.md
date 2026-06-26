@@ -52,7 +52,11 @@ This is just the Wabbajack list that you’re downloading, without any of the ac
 
 Once we’ve unzipped the list, we can return to Wabbajack. On the screen where you can browse the available lists, click {{< btn-inline download >}}Install From Disk{{< /btn-inline >}} instead. Find the uncompressed {{< file >}}.wabbajack{{< /file>}} file, and open it.
 
-Before beginning the installation process, you may want to set the installation folder and the downloads folder for MGO. By default, the downloads folder is inside the installation folder. You may prefer to have it elsewhere for a couple of reasons. First, the downloads folder takes up a lot of additional space, so you can free up space on your primary SSD by moving it to another disk. Second, if you install other modlists for Skyrim VR, you can reuse the downloads folder, and if the other list includes the same versions of some of the same mods, you won’t have to download them a second time.
+Before beginning the installation process, you may want to set the **installation folder** and the **downloads folder** for MGO. By default, the downloads folder is inside the installation folder. You may prefer to have it elsewhere for a few reasons.
+
+* The downloads folder takes up a lot of additional space, so you can free up space on your primary SSD by setting it to a location on another disk.
+* If you've previously installed other modlists for Skyrim VR (including other versions of MGO), you can reuse the downloads folder from those installations. If the other list includes the same versions of some of the same mods, you won’t have to download them a second time.
+* If you install other modlists for Skyrim VR _later_ (including other variants of MGO), you can reuse the downloads folder for the same benefits.
 
 {{< aside type="btw" title="By the way..." >}}
 You don’t strictly _need_ to keep the downloads once the game is installed. It’s nice to have them in case you mess up your list and need to reinstall it, or if you want to install another version of the list later. Not every mod will require an update, so you can avoid having to redownload some of them.
@@ -65,9 +69,9 @@ With your folders set, it’s time to install.
 Installation will take a long time, even with a premium Nexus account (and even if you have all of the mods already downloaded). Just installing them from disk takes quite a while.
 
 ## If installation fails...
-If installation fails, there's a decent chance that you can just try again. Doing so will not redownload anything that you’ve already downloaded.
+If installation fails, the first step is to simply **try again**. Doing so will not redownload anything that you’ve already downloaded, and many errors are fleeting. If a mod simply failed to download, there's a decent chance it will work if you retry.
 
-If there’s an error about a missing master file, that means there’s something wrong with your Skyrim VR installation, like the wrong version, or a file that’s missing or altered in some way. If you changed some files on purpose, you can always copy them somewhere before repairing your installation, but you will need the original, unaltered game files from Steam to use MGO. No, you cannot use a pirated copy.
+If there’s an error about a missing master file, that means there’s something wrong with your Skyrim VR installation, like the wrong version, or a file that’s missing or altered in some way. If you changed some files on purpose, you can always copy them somewhere before repairing your installation, but you will need the original, unaltered game files from Steam to use MGO. **No, you cannot use a pirated copy.**
 
 To repair the game files, find Skyrim VR in Steam, click the <i class="fa fa-gear"></i> cog icon, and choose {{< btn-inline >}}Properties...{{< /btn-inline >}}. Choose {{< btn-inline >}}Installed Files{{< /btn-inline >}} from the left, and click {{< btn-inline >}}Verify integrity of game files{{< /btn-inline >}}. That ensures that the original game files are present and correct. It does _not_, however, remove any _extra_ files that you have've added. Extra files may or may not cause problems, depending on what they are. But if all else fails, you can uninstall the game completely, and reinstall it from Steam. Once you’re finished, you can retry installation from Wabbajack.
 
