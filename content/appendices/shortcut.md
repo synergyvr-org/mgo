@@ -12,10 +12,10 @@ The MGO desktop shortcut that Wabbajack creates can't be pinned to the start men
 5. To choose a different icon, right-click the {{< file >}}ModOrganizer{{< /file>}} shortcut in the new File Explorer window, and choose {{< btn-inline >}}<i class="fa fa-wrench"></i> Properties{{< /btn-inline>}}.
 6. Assign a more interesting icon&mdash;like this one!
 
-<a href="/mgo-tutorial/images/favicon.ico"><img
+<a href="/mgo/images/favicon.ico"><img
   class="icon-preview"
-  src="/mgo-tutorial/images/icon-thick-256.png"
-  srcset="/mgo-tutorial/images/icon-thick-256@2x.png 2x"></a>
+  src="/mgo/images/icon-thick-256.png"
+  srcset="/mgo/images/icon-thick-256@2x.png 2x"></a>
 
 7. Rename the shortcut to something catchy, like _Mad God's Overhaul_.
 8. Open the {{< btn-inline >}}<i class="fa-brands fa-windows"></i> Start{{< /btn-inline>}} menu and behold your pinned shortcut in all its glory!

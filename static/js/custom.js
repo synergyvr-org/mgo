@@ -1,31 +1,31 @@
 const bannerImages = [
-  '/mgo-tutorial/images/ss-dragonsreach.webp',
-  '/mgo-tutorial/images/ss-college-courtyard-ground.webp',
-  '/mgo-tutorial/images/ss-college-hall.webp',
-  '/mgo-tutorial/images/ss-falkreath-sunset.webp',
-  '/mgo-tutorial/images/ss-college-courtyard-ground.webp',
-  '/mgo-tutorial/images/ss-windhelm-west-bridge.webp',
-  '/mgo-tutorial/images/ss-windhelm-west.webp',
-  '/mgo-tutorial/images/ss-archmage-alchemy-wide.webp',
-  '/mgo-tutorial/images/ss-archmage-enchanter.webp',
-  '/mgo-tutorial/images/ss-archmage-potions.webp',
-  '/mgo-tutorial/images/ss-archmage-staff.webp',
-  '/mgo-tutorial/images/ss-archmage.webp',
-  '/mgo-tutorial/images/ss-barrow-akaviri.webp',
-  '/mgo-tutorial/images/ss-rorikstead.webp',
-  '/mgo-tutorial/images/ss-archaeology.webp'
+  '/mgo/images/ss-dragonsreach.webp',
+  '/mgo/images/ss-college-courtyard-ground.webp',
+  '/mgo/images/ss-college-hall.webp',
+  '/mgo/images/ss-falkreath-sunset.webp',
+  '/mgo/images/ss-college-courtyard-ground.webp',
+  '/mgo/images/ss-windhelm-west-bridge.webp',
+  '/mgo/images/ss-windhelm-west.webp',
+  '/mgo/images/ss-archmage-alchemy-wide.webp',
+  '/mgo/images/ss-archmage-enchanter.webp',
+  '/mgo/images/ss-archmage-potions.webp',
+  '/mgo/images/ss-archmage-staff.webp',
+  '/mgo/images/ss-archmage.webp',
+  '/mgo/images/ss-barrow-akaviri.webp',
+  '/mgo/images/ss-rorikstead.webp',
+  '/mgo/images/ss-archaeology.webp'
 ];
 
 const backgroundImages = [
-  '/mgo-tutorial/images/bg-amulet-of-mara.webp',
-  '/mgo-tutorial/images/bg-clavicus-vile.webp',
-  '/mgo-tutorial/images/bg-dragon-claw.webp',
-  '/mgo-tutorial/images/bg-miraak.webp',
-  '/mgo-tutorial/images/bg-molag-bal.webp',
-  '/mgo-tutorial/images/bg-krosis.webp',
-  '/mgo-tutorial/images/bg-daedric-helmet.webp',
-  '/mgo-tutorial/images/bg-dwarven-helmet.webp',
-  '/mgo-tutorial/images/bg-karstaags-skull.webp'
+  '/mgo/images/bg-amulet-of-mara.webp',
+  '/mgo/images/bg-clavicus-vile.webp',
+  '/mgo/images/bg-dragon-claw.webp',
+  '/mgo/images/bg-miraak.webp',
+  '/mgo/images/bg-molag-bal.webp',
+  '/mgo/images/bg-krosis.webp',
+  '/mgo/images/bg-daedric-helmet.webp',
+  '/mgo/images/bg-dwarven-helmet.webp',
+  '/mgo/images/bg-karstaags-skull.webp'
 ];
 window.onload = function() {
   const cover = document.querySelector('.cover');

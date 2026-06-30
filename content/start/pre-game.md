@@ -294,5 +294,5 @@ The mods in the _Convenience_ section are mostly  self-explanatory, but I want t
 ---
 
 <div class="next">
-  <a href="/mgo-tutorial/first-launch">First Launch <i class="fa fa-circle-right"></i></a>
+  <a href="/mgo/first-launch">First Launch <i class="fa fa-circle-right"></i></a>
 </div>

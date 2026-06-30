@@ -1,11 +1,11 @@
 <style>
   {{ if .Get "img" }}
   .chapter-heading .gif.{{ .Get "img" | default "" }} {
-    background-image: url(/mgo-tutorial/images/{{ .Get "img" | default "" }}.webp);
+    background-image: url(/mgo/images/{{ .Get "img" | default "" }}.webp);
     background-size: 260px 208px;
   }
   .chapter-heading:hover .gif.{{ .Get "img" | default "" }} {
-    background-image: url(/mgo-tutorial/images/anim-{{ .Get "img" | default "" }}.gif);
+    background-image: url(/mgo/images/anim-{{ .Get "img" | default "" }}.gif);
   }
   @media
   only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -15,7 +15,7 @@
   only screen and (                min-resolution: 192dpi),
   only screen and (                min-resolution: 2dppx) { 
     .chapter-heading .gif.{{ .Get "img" | default "" }} {
-      background-image: url(/mgo-tutorial/images/{{ .Get "img" | default "" }}@2x.webp);
+      background-image: url(/mgo/images/{{ .Get "img" | default "" }}@2x.webp);
     }
   }
   {{ end }}

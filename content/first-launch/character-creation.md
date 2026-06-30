@@ -46,7 +46,7 @@ If you're playing the NSFW list, you may be disappointed to find your character 
 
 Fear not! There's a slider near the bottom of the BODY tab (and the ALL tab) to toggle between a dressed and undressed state.
 
-<a href="/images/racemenu-undress@2x.webp"><img src="/images/racemenu-undress.webp" srcset="/mgo-tutorial/images/racemenu-undress@2x.webp 2x"></a>
+<a href="/images/racemenu-undress@2x.webp"><img src="/images/racemenu-undress.webp" srcset="/mgo/images/racemenu-undress@2x.webp 2x"></a>
 {{< /aside >}}
 
 ## Build options

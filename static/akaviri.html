@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synergy Team - Mod Lists for Skyrim VR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+ <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="akaviri.css">
+</head>
+<body>
+  <div class="parallax-container">
+    <div class="parallax-layer layer-background" data-speed="0.05"></div>
+    <div class="parallax-layer layer-mound" data-speed="0.10" data-offset="25"></div>
+    <div class="parallax-layer layer-grass-right" data-speed="0.15" data-offset="40"></div>
+    <div class="parallax-layer layer-grass-left" data-speed="0.25" data-offset="60"></div>
+  </div>
+  <!-- <div class="logo"><img src="/mgo/images/synergy-900.png"></div> -->
+  <div id="title">
+    Synergy Team
+  </div>
+  <div id="teaser">
+    <h2>A group of passionate developers and members of the Skyrim VR community.</h2>
+    <p>
+      <em>Synergy VR</em>, a new mod list for Skyrim VR is now in development, and we've recent taken over devlopment of <em>Mad God's Overhaul</em>.
+    </p>
+    <p id="discord">
+      <a href="https://discord.com/invite/WjSUaSPaQZ">Join the Discord &raquo;</a>
+    </p>
+  </div>
+  <div id="more">
+    <svg id="arrow-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g><path d="M71.709,48.277L53,70.418V21c0-1.657-1.343-3-3-3s-3,1.343-3,3v48.806L29.316,48.308c-1.052-1.279-2.943-1.465-4.223-0.41   c-1.279,1.052-1.463,2.942-0.41,4.223l23.184,28.185c0.565,0.687,1.406,1.088,2.297,1.094c0.006,0,0.013,0,0.02,0   c0.883,0,1.722-0.389,2.291-1.063L76.291,52.15c1.07-1.266,0.911-3.158-0.354-4.228C74.669,46.852,72.776,47.013,71.709,48.277z"/></g></svg>
+    <svg id="arrow-fg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g><path d="M71.709,48.277L53,70.418V21c0-1.657-1.343-3-3-3s-3,1.343-3,3v48.806L29.316,48.308c-1.052-1.279-2.943-1.465-4.223-0.41   c-1.279,1.052-1.463,2.942-0.41,4.223l23.184,28.185c0.565,0.687,1.406,1.088,2.297,1.094c0.006,0,0.013,0,0.02,0   c0.883,0,1.722-0.389,2.291-1.063L76.291,52.15c1.07-1.266,0.911-3.158-0.354-4.228C74.669,46.852,72.776,47.013,71.709,48.277z"/></g></svg>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const layers = document.querySelectorAll('[data-speed]');
+      const vh = window.innerHeight;
+
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        layers.forEach(layer => {
+          const speed = parseFloat(layer.dataset.speed);
+          const offset = layer.dataset.offset ? parseFloat(layer.dataset.offset) / 100 * vh : 0;
+          layer.style.transform = `translateY(${offset + scrollY * -speed}px)`;
+        });
+      });
+    });
+  </script>
+  <main>
+    <div class="content">
+      <div class="post">
+        <img src="/images/tes5-mgo-wide.webp" srcset="/mgo/images/tes5-mgo-wide@2x.webp 2x" alt="Mad God's Overhaul for Skyrim VR">
+        
+        <div class="post-body">
+          <h2>MGO 4.0: The next generation of Skyrim VR is here!</h2>
+          <p>
+            The Synergy Team and Snippy Stockins have been cooking to rebuild core pillars of this legendary list to deliver next-gen AI, deep structural overhauls, and massive optimizations to save your performance.
+          </p>
+          <h3><a href="/mgo">Read the docs! Requirements, installation, setup, tutorials, etc. &raquo;</a></h3>
+
+          <div class="flex">
+            <div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/iXFiwXkTHGM?si=0NL7-OX9thgOJzTj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <ul>
+              <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/107333">Get the <strong>NSFW</strong> list</a></li>
+              <li><a href="https://www.nexusmods.com/skyrimspecialedition/mods/107780">Get the <strong>SFW</strong> list</a></li>
+              <li><a href="https://docs.google.com/spreadsheets/d/1maNAPTpDF0dwT5sCGWLPRfDrfNkbeYKi2laU6yyx3mg/edit?usp=sharing">See what's included</a></li>
+            </ul>
+          </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

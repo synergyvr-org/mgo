@@ -1,6 +1,6 @@
 <div class="video {{ .Get "border" | default "" }}">
   <video controls>
-    <source src="/mgo-tutorial/images/{{ .Get "name" }}.{{.Get "type" | default "mp4" }}" type="video/{{.Get "type" | default "mp4" }}">
+    <source src="/mgo/images/{{ .Get "name" }}.{{.Get "type" | default "mp4" }}" type="video/{{.Get "type" | default "mp4" }}">
     Your browser does not support this video.
   </video>
   <div class="caption">{{ .Inner | .Page.RenderString }}</div>

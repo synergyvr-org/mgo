@@ -1,11 +1,11 @@
 <div class="img {{ .Get "border" | default "" }}">
-  <a href="/mgo-tutorial/images/{{ .Get "name" }}@2x.{{.Get "type" | default "png" }}">
-    <img id="img-{{ .Get "name" }}" src="/mgo-tutorial/images/{{ .Get "name" }}.{{.Get "type" | default "png" }}" srcset="/mgo-tutorial/images/{{ .Get "name" }}@2x.{{.Get "type" | default "png" }} 2x">
+  <a href="/mgo/images/{{ .Get "name" }}@2x.{{.Get "type" | default "png" }}">
+    <img id="img-{{ .Get "name" }}" src="/mgo/images/{{ .Get "name" }}.{{.Get "type" | default "png" }}" srcset="/mgo/images/{{ .Get "name" }}@2x.{{.Get "type" | default "png" }} 2x">
   </a>
   {{ if len .Params | le 4 }}
   <div class="caption flex">
     <div>
-      <img src="/mgo-tutorial/images/{{ .Get "icon" }}.{{.Get "type" | default "png" }}" srcset="/mgo-tutorial/images/{{ .Get "icon" }}@2x.{{.Get "type" | default "png" }} 2x">
+      <img src="/mgo/images/{{ .Get "icon" }}.{{.Get "type" | default "png" }}" srcset="/mgo/images/{{ .Get "icon" }}@2x.{{.Get "type" | default "png" }} 2x">
     </div>
     <div class="grow">
       {{ .Inner | .Page.RenderString }}
