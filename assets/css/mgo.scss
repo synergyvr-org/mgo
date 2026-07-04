@@ -314,12 +314,12 @@ input.readonly {
       width: 16px;
       height: 16px;
     }
-    a {
-      color: var(--mgo-gold);
-    }
   }
   &.nexus {
     background-color: #f7e4d433;
+    a {
+      color: var(--mgo-gold);
+    }
   }
   &.github {
     background-color: #66666633;
@@ -336,6 +336,16 @@ input.readonly {
 
 #R-footer a {
   text-decoration: underline;
+}
+
+ul.horizontal-nav {
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+
+  li {
+  padding: 0 1rem;
+}
 }
 
 .next {
