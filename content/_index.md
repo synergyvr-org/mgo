@@ -20,13 +20,19 @@ type = "home"
 </li>
 </ul>
 
-Mad God's Overhaul is a painstakingly remastered Skyrim VR experience with a focus on immersion.
+When {{< steam "611670" >}}Skyrim VR{{< /steam >}} hit Steam in April 2018, it was unlike anything else. The state of the art for VR experiences has evolved considerably since that time, but Skyrim VR hasn't received an official update since later that same month.
 
-For MGO 4.0, Snippy Stockins and [The Synergy Team](https://synergyvr.org/) have been hard at work rebuilding the list with the best mods available as of July 2026, working with mod authors to maximize compatibility and optimize settings, creating custom patches, and manually adjusting the load order to make MGO the best it can be.
+As luck would have it, people develop mods for Skyrim. A LOT of mods.
+
+**Mad God's Overhaul** combines the best work from the modding community with the team's own custom patches to painstakingly remaster Skyrim VR to create an immersive experience with no equal.
+
+For MGO 4.0, Snippy Stockins and [The Synergy Team](https://synergyvr.org/) have been hard at work rebuilding the list with the best mods available as of July 2026[^1], working with mod authors to maximize compatibility and optimize settings, creating custom patches, and manually adjusting the load order to make MGO the best it can be.
+
+[^1]: The modding community has been _busy_ lately!
 
 Here's what Snippy highlights:
 
-{{< aside type="btw" title="What's New In 4.0" >}}
+{{< aside type="note" title="What's New In 4.0" >}}
 ### Visual Facelift
 
 **The New Horizon:** Stripped out NAT3 for [Azurite Weathers](https://www.nexusmods.com/skyrimspecialedition/mods/42731) by default, bringing rich, vibrant colors while retaining the 3.5 lighting and shadows you loved.

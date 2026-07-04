@@ -58,8 +58,8 @@
   --mgo-gradient3: #F1CD84;
   --mgo-btw1: #7E2F3466;
   --mgo-btw2: #B14C78cc;
-  // --mgo-btw1: rgba(43, 89, 195, 0.45);
-  // --mgo-btw2: #77c8be66;
+  --mgo-note1: #7E2F3433;
+  --mgo-note2: #B14C7866;
 }
 
 #R-topbar > .topbar-wrapper {
@@ -533,6 +533,15 @@ div.img {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+}
+.aside.aside-note {
+  background-image: linear-gradient(24deg, var(--mgo-note1) 0%, var(--mgo-note2) 100%);
+  border: 1px solid #ccc;
+
+  h4 {
+    background: rgba(30, 30, 30, 0.3);
+    margin-top: 0;
   }
 }
 
