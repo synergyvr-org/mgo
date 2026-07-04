@@ -20,13 +20,13 @@ type = "home"
 </li>
 </ul>
 
-When {{< steam "611670" >}}Skyrim VR{{< /steam >}} hit Steam in April 2018, it was unlike anything else. The state of the art for VR experiences has evolved considerably since that time, but Skyrim VR hasn't received an official update since later that same month.
+When {{< steam "611670" >}}Skyrim VR{{< /steam >}} hit Steam in April 2018, it was unlike anything else. The state of the art for VR experiences has evolved considerably since that time, but Skyrim VR hasn't received an official update since later the same month that it launched.
 
-As luck would have it, people develop mods for Skyrim. A LOT of mods.
+As luck would have it, people develop mods for Skyrim. A _lot_ of mods.
 
 **Mad God's Overhaul** combines the best work from the modding community with the team's own custom patches to painstakingly remaster Skyrim VR to create an immersive experience with no equal.
 
-For MGO 4.0, Snippy Stockins and [The Synergy Team](https://synergyvr.org/) have been hard at work rebuilding the list with the best mods available as of July 2026[^1], working with mod authors to maximize compatibility and optimize settings, creating custom patches, and manually adjusting the load order to make MGO the best it can be.
+For MGO 4.0, Snippy Stockins and [The Synergy Team](https://synergyvr.org/) have been hard at work rebuilding the list with the best mods available as of July 2026[^1], working with mod authors to maximize compatibility and optimize settings, creating custom patches, manually adjusting the load order, and smoothing out the onboarding experience to make MGO the best it can be.
 
 [^1]: The modding community has been _busy_ lately!
 
@@ -64,9 +64,11 @@ Here's what Snippy highlights:
 **Optimized & Smooth:** Enjoy major performance gains thanks to [OpenComposite Unleashed](https://www.nexusmods.com/skyrimspecialedition/mods/171182). It integrates a brand new, highly natural-looking <abbr title="Asynchronous SpaceWarp">ASW</abbr> frame generation technique. Please note this feature is currently experimental and actively being worked on. While exact frame rates will always depend on your hardware, this update makes the list feel significantly smoother across the board.
 {{< /aside >}}
 
+Although Snippy's announcement didn't specifically call it out, Troned has made significant improvements to {{< nexus 166950 >}}his unofficial fork of Community Shaders{{< /nexus >}}, adding new features, a better configuration experience, and a host of options for improved performance.
+
 This guide will walk you through setting up MGO, from download and installation to configuration, and how the mod list changes some of Skyrim VR's gameplay systems.
 
-MGO includes somewhere in the neighborhood of 1,600 mods. You don’t need to be familiar with all of them to enjoy yourself, and most of the old, less-immersive ways of doing things are still there, so you don’t have to memorize all the new stuff at once (or ever). But if you don’t even know what’s possible, you won’t know how to make the gameplay more immersive and, dare I say, more fun.
+MGO includes somewhere in the neighborhood of 1,600 mods. You don’t need to be familiar with all of them to enjoy yourself, and many of the old, less-immersive ways of doing things still work, so you don’t have to memorize all the new stuff at once (or ever). But if you don’t even know what’s possible, you won’t know how to make the gameplay more immersive and, dare I say, more fun.
 
 <div class="next">
   <a href="/start">Let's go.  <i class="fa fa-circle-right"></i></a>
