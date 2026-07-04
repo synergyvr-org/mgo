@@ -16,7 +16,7 @@ Hold both arms behind you for a moment to activate the mod, and then just swing 
 The mod also supports gestures for swimming and horse riding.
 
 {{< aside type="btw" title="NatLo" >}}
-If you're using the SteamVR runtime, there's a ~$10 app called {{< steam "798810" >}}Natural Locomotion{{< /steam >}} (a.k.a. NatLo) that's been around a long time and has some overlapping features. It has some other interesting options, including movement options for walking in place and even playing seated, but it is a paid app, and it requires that you play the game through SteamVR.
+If you're using the SteamVR runtime, there's a ~$10 app called {{< steam "798810" >}}Natural Locomotion{{< /steam >}} (a.k.a. NatLo) that's been around a long time and has some overlapping features. It has some other interesting options, including movement options for walking in place and even playing seated, but it is a paid app, and it requires that you play the game through SteamVR (_not_ OpenComposite Unleashed).
 {{< /aside >}}
 
 
