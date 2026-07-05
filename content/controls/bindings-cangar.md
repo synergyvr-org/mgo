@@ -17,51 +17,51 @@ For Valve Index controllers, the actions are assigned to the buttons that are in
 
 | Action | Oculus Left | Oculus Right |
 |---|---|---|
-| Move | Left Stick | — |
-| Turn | — | ← Right Stick → |
-| Jump | — | Right Stick ↑ |
-| Sneak | — | Right Stick ↓ |
-| Power Attack | Trigger (hold + swing) | Trigger (hold + swing) |
-| Interact (Activate) | — | A |
-| Sprint | Left Stick (press) | — |
-| Cast Magic | Trigger | Trigger |
+| Move | {{< control name="left-stick" >}} | — |
+| Turn | — | {{< control name="right-stick" >}} |
+| Jump | — | {{< control name="right-stick" >}} ↑ |
+| Sneak | — | {{< control name="right-stick" >}} ↓ |
+| Cast Magic | {{< control name="left-trigger" >}} | {{< control name="right-trigger" >}} |
+| Draw/Nock Arrow | — | {{< control name="right-trigger" >}} |
+| Power Attack | {{< control name="left-trigger" >}} (hold + swing) | {{< control name="right-trigger" >}} (hold + swing) |
+| Interact (Activate) | — | {{< control name="a" >}} |
+| Sprint | {{< control name="left-stick" >}} (press) | — |
 | Shout | — | — |
-| Tween Menu | X | — |
-| Ready Weapon | X (hold) | Right Grip |
-| Journal Menu | — | Right Stick (press) |
-| Wait | — | Right Stick (hold) |
+| Tween Menu | {{< control name="x" >}} | — |
+| Ready Weapon | {{< control name="x" >}} (hold) | {{< control name="right-grip" >}} |
+| Journal Menu | — | {{< control name="right-stick" >}} (press) |
+| Wait | — | {{< control name="right-stick" >}} (hold) |
 
 ### Mods
 
 | Actions | Oculus Left | Oculus Right |
 |---|---|---|
-| HIGGS Grab | Left Grip (hold) | Right Grip (hold) |
-| VRIK Gestures | Y / Left Grip | B |
-| VRIK Holsters | Left Grip | Right Grip |
-| Spell Wheel | Grip + Trigger | Grip + Trigger |
-| Weapon Throw | Grip (hold + swing) | Grip (hold + swing) |
+| HIGGS Grab | {{< control name="left-grip" >}} (hold) | {{< control name="right-grip" >}} (hold) |
+| VRIK Gestures | {{< control name="y" >}} / Left Grip | {{< control name="b" >}} |
+| VRIK Holsters | {{< control name="left-grip" >}} | {{< control name="right-grip" >}} |
+| Spell Wheel | {{< control name="left-grip" >}} + {{< control name="left-trigger" >}} | {{< control name="right-grip" >}} + {{< control name="right-trigger" >}} |
+| Weapon Throw | {{< control name="left-grip" >}} (hold + swing) | {{< control name="right-grip" >}} (hold + swing) |
 
 ### Menus
 
 | Action | Oculus Left | Oculus Right |
 |---|---|---|
-| Accept | Trigger | A / Trigger |
-| Cancel | Left Grip | Right Grip |
-| Previous Menu (Journal) | Y | — |
-| Next Menu (Journal) | — | B |
-| Equip Right | — | Trigger |
-| Equip Left | Trigger | — |
-| Use Item | Trigger | Trigger |
-| Favorite Item | — | B |
-| Exit | Grip | Grip |
-| Item Zoom | — | Right Stick (press) |
-| Filter (SkyUI) | Left Stick (press) | — |
-| Drop Item | X | — |
-| Y Button | Y | - |
+| Accept | {{< control name="left-trigger" >}} | {{< control name="a" >}} / {{< control name="right-trigger" >}} |
+| Back / Cancel / Exit | {{< control name="left-grip" >}} | {{< control name="right-grip" >}} |
+| Previous Menu (Journal) | {{< control name="y" >}} | — |
+| Next Menu (Journal) | — | {{< control name="b" >}} |
+| Equip Right | — | {{< control name="right-trigger" >}} |
+| Equip Left | {{< control name="left-trigger" >}} | — |
+| Select / Use Item | {{< control name="left-trigger" >}} | {{< control name="right-trigger" >}} |
+| Favorite Item | — | {{< control name="b" >}} |
+| Item Zoom | — | {{< control name="right-stick" >}} (press) |
+| Filter (SkyUI) | {{< control name="left-stick" >}} (press) | — |
+| Drop Item | {{< control name="x" >}} | — |
+| {{< control name="y" >}} Button | {{< control name="y" >}} | - |
 
 ### Loot Menu
 
 | Action | Oculus Left | Oculus Right |
 |---|---|---|
-| Take Item | — | A |
-| Take All Items | X / Y | — |
+| Take Item | — | {{< control name="a" >}} |
+| Take All Items | {{< control name="x" >}} / {{< control name="y" >}} |— |

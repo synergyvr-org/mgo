@@ -3,7 +3,7 @@ title = 'VRIK Bindings'
 weight = 1
 +++
 
-These are the controller bindings defined in the modlist entry {{< btn-inline >}}VRIK Rift-Index-WMR...{{< /btn-inline >}}, which is an optional download for the legendary {{< nexus 23416 >}} VRIK Player Avatar{{< /nexus >}} mod. It is also the default control scheme for {{< nexus 171182 >}}Open Composite Unleashed{{< /nexus >}}, which is enabled by default.
+These are the controller bindings defined in the OpenComposite Unleashed preset {{< btn-inline >}}VRIK V2.1.0{{< /btn-inline >}}, which is the default preset. They original from an optional download for the legendary {{< nexus 23416 >}} VRIK Player Avatar{{< /nexus >}} mod and are also among the binding options included for SteamVR users.
 
 Compared to vanilla bindings, VRIK moves 
 
@@ -17,38 +17,39 @@ For Valve Index controllers, the actions are assigned to the buttons that are in
 
 | Action | Oculus Left | Oculus Right |
 |---|---|---|
-| Move | Left Stick | — |
-| Turn | — | ← Right Stick → |
-| Jump | — | Right Stick ↑ |
-| Sneak | — | Right Stick ↓ |
-| Power Attack | Trigger | Trigger |
-| Interact (Activate) | — | Right Grip |
-| Sprint | Left Grip | — |
-| Shout | — | A |
-| Tween / Ready Weapon | X | — |
-| Journal / Wait | Y | — |
+| Move | {{< control name="left-stick" >}} | — |
+| Turn | — | {{< control name="right-stick" >}} |
+| Jump | — | {{< control name="right-stick" >}} ↑ |
+| Sneak | — | {{< control name="right-stick" >}} ↓ |
+| Cast Magic | {{< control name="left-trigger" >}} | {{< control name="right-trigger" >}} |
+| Draw/Nock Arrow | — | {{< control name="right-trigger" >}} |
+| Power Attack | {{< control name="left-trigger" >}} (hold + swing) | {{< control name="right-trigger" >}} (hold + swing) |
+| Interact (Activate) | — | {{< control name="right-grip" >}} |
+| Sprint | {{< control name="left-grip" >}} | — |
+| Shout | — | {{< control name="a" >}} |
+| Tween / Ready Weapon | {{< control name="x" >}} | — |
+| Journal / Wait | {{< control name="y" >}} | — |
 
 ### Menus
 
 | Action | Oculus Left | Oculus Right |
 |---|---|---|
-| Accept | Trigger | A / Trigger |
-| Cancel | Left Grip | Right Grip |
-| Previous Menu (Journal) | Y | — |
-| Next Menu (Journal) | — | B |
-| Equip Right | — | Trigger |
-| Equip Left | Trigger | — |
-| Use Item | Trigger | Trigger |
-| Favorite Item | — | B |
-| Exit | Grip | Grip |
-| Item Zoom | — | Grip (in item menus) |
-| Filter (SkyUI) | Left Stick (press) | — |
-| Drop Item | X | — |
-| Y Button | Y | - |
+| Accept | {{< control name="left-trigger" >}} | {{< control name="a" >}} / {{< control name="right-trigger" >}} |
+| Back / Cancel / Exit | {{< control name="left-grip" >}} | {{< control name="right-grip" >}} |
+| Previous Menu (Journal) | {{< control name="y" >}} | — |
+| Next Menu (Journal) | — | {{< control name="b" >}} |
+| Equip Right | — | {{< control name="right-trigger" >}} |
+| Equip Left | {{< control name="left-trigger" >}} | — |
+| Select / Use Item | {{< control name="left-trigger" >}} | {{< control name="right-trigger" >}} |
+| Favorite Item | — | {{< control name="b" >}} |
+| Item Zoom | — | {{< control name="right-grip" >}} (in item menus) |
+| Filter (SkyUI) | {{< control name="left-stick" >}} (press) | — |
+| Drop Item | {{< control name="x" >}} | — |
+| {{< control name="y" >}} Button | {{< control name="y" >}} | - |
 
 ### Loot Menu
 
 | Action | Oculus Left | Oculus Right |
 |---|---|---|
-| Take Item | — | A |
-| Take All Items | X / Y | — |
+| Take Item | — | {{< control name="a" >}} |
+| Take All Items | {{< control name="x" >}} / {{< control name="y" >}} |— |
