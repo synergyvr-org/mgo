@@ -6,8 +6,8 @@ weight = 10
 These are the controller bindings defined in the OpenComposite Unleashed preset {{< btn-inline >}}VR Safe{{< /btn-inline >}}.
 
 The biggest differences from the vanilla controls:
-- **Shout** is assigned to _Right Stick (press)_.
-- **Sprint** is assigned to _Left Stick (press)_.
+- **Sprint** is assigned to {{< control name="left-stick" >}} _(press)_.
+- **Shout** is assigned to {{< control name="right-stick" >}} _(press)_.
 
 ![VR Safe bindings for Meta Quest](/images/quest-vrsafe-lighting.webp)
 
