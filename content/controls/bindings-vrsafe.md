@@ -11,7 +11,7 @@ The biggest differences from the vanilla controls:
 
 ![VR Safe bindings for Meta Quest](/images/quest-vrsafe-lighting.webp)
 
-For Valve Index controllers, the actions are assigned to the buttons that are in the same positions as the ones shown below, though they have different labels on the Index controllers.
+For Valve Index controllers, the actions are assigned to the buttons that are in the same positions as the ones shown above, though they have different labels on the Index controllers.
 
 ### Gameplay
 

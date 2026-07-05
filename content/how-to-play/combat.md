@@ -38,7 +38,7 @@ With PLANCK, hit detection is calculated completely differently, in a manner tha
 
 PLANCK also fixes several VR-specific bugs from vanilla. Shield bashing now has a stamina cost, just as it does in Flatrim (no more infinite staggering), and each power attack no longer registers twice. Animation events are triggered much more like they are in Flatrim, which has implications for enemy behavior and also happens to improve compatibility with some non-VR mods.
 
-Thanks to HIGGS, you can grab enemies with your hands using the {{< control name="grip" >}} button. PLANCK builds upon this feature, allowing you to activate an ememy's ragdoll by pulling them by the foot or ankle, or by grabbing and yanking their body in any direction and letting go[^4], at the cost of some stamina. Even if you don't yoink them to the point of ragdolling, you can still grab them with one hand and attack them with the other. Why kill your foes quickly when you can humiliate them first?
+Thanks to HIGGS, you can grab enemies with your hands using either {{< control name="grip" >}} button. PLANCK builds upon this feature, allowing you to activate an ememy's ragdoll by pulling them by the foot or ankle, or by grabbing and yanking their body in any direction and letting go[^4], at the cost of some stamina. Even if you don't yoink them to the point of ragdolling, you can still grab them with one hand and attack them with the other. Why kill your foes quickly when you can humiliate them first?
 
 You should check out the Nexus page for {{< nexus 66025 >}}PLANCK{{< /nexus >}}. It's pretty feature-packed, and you can configure certain aspects by editing `activeragdoll.ini`. We'll be looking more closely at HIGGS in the [Interaction](interaction) section.
 

@@ -13,7 +13,7 @@ It also lets both grip buttons do double-duty as modifier keys (like _shift_ or 
 
 ![Vanilla + Oculus Touch bindings](/images/quest-touch-lighting.webp)
 
-For Valve Index controllers, the actions are assigned to the buttons that are in the same positions as the ones shown below, though they have different labels on the Index controllers.
+For Valve Index controllers, the actions are assigned to the buttons that are in the same positions as the ones shown above, though they have different labels on the Index controllers.
 
 ### Gameplay
 
