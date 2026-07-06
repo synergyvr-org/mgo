@@ -60,6 +60,28 @@
   --mgo-btw2: #B14C78cc;
   --mgo-note1: #7E2F3433;
   --mgo-note2: #B14C7866;
+
+  --mo2-start: #f1cd84;
+  --mo2-step1: #e1be7a;
+  --mo2-unlock: #7c613d;
+  --mo2-autosave: #6b5232;
+  --mo2-loot: #5a4328;
+  --mo2-fps: #d1b070;
+  --mo2-perf: #c2a267;
+  --mo2-cs: #b2935d;
+  --mo2-grass: #a18554;
+  --mo2-runtime: #b2935d;
+  --mo2-ocu: #aa00ff;
+  --mo2-ocu-main: #8501c8;
+  --mo2-ocu-stabilizer: #610091;
+  --mo2-steamvr: #1b2838;
+  --mo2-steamvr-bindings: #151f2c;
+  --mo2-steamvr-stabilizer: #0f1620;
+  --mo2-optional: #a38554;
+  --mo2-ai: #93774a;
+  --mo2-convenience: #836941;
+  --mo2-difficulty: #745a37;
+  --mo2-immersion: #644c2e;
 }
 
 #R-topbar > .topbar-wrapper {
@@ -242,6 +264,19 @@ li {
   background-color: #b9d5f3;
   color: black;
   padding: 0 6px;
+
+  &.mo2-unlock {
+    background-color: var(--mo2-unlock);
+    color: white;
+  }
+  &.mo2-autosave {
+    background-color: var(--mo2-autosave);
+    color: white;
+  }
+  &.mo2-loot {
+    background-color: var(--mo2-loot);
+    color: white;
+  }
 }
 
 input.readonly {
@@ -259,9 +294,75 @@ input.readonly {
 }
 .separator {
   font-weight: bold;
+  color: black;
   i.fa-folder {
     color: #ffd86b;
   }
+  &.mo2-start {
+    background-color: var(--mo2-start);
+  }
+  &.mo2-step1 {
+    background-color: var(--mo2-step1);
+  }
+  &.mo2-fps {
+    background-color: var(--mo2-fps);
+  }
+  &.mo2-perf {
+    background-color: var(--mo2-perf);
+  }
+  &.mo2-cs {
+    background-color: var(--mo2-cs);
+  }
+  &.mo2-grass {
+    background-color: var(--mo2-grass);
+  }
+  &.mo2-runtime {
+    background-color: var(--mo2-runtime);
+  }
+  &.mo2-ocu {
+    background-color: var(--mo2-ocu);
+    color: white;
+  }
+  &.mo2-ocu-main {
+    background-color: var(--mo2-ocu-main);
+    color: white;
+  }
+  &.mo2-ocu-stabilizer {
+    background-color: var(--mo2-ocu-stabilizer);
+    color: white;
+  }
+  &.mo2-steamvr {
+    background-color: var(--mo2-steamvr);
+    color: white;
+  }
+  &.mo2-steamvr-bindings {
+    background-color: var(--mo2-steamvr-bindings);
+    color: white;
+  }
+  &.mo2-steamvr-stabilizer {
+    background-color: var(--mo2-steamvr-stabilizer);
+    color: white;
+  }
+  &.mo2-optional {
+    background-color: var(--mo2-optional);
+  }
+  &.mo2-ai {
+    background-color: var(--mo2-ai);
+    color: white;
+  }
+  &.mo2-convenience {
+    background-color: var(--mo2-convenience);
+    color: white;
+  }
+  &.mo2-difficulty {
+    background-color: var(--mo2-difficulty);
+    color: white;
+  }
+  &.mo2-immersion {
+    background-color: var(--mo2-immersion);
+    color: white;
+  }
+
   &.blue {
     background-color: #f1cd84;
     color: black;

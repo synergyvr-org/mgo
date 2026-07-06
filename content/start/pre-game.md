@@ -41,7 +41,7 @@ You don't need to know everything there is to know about MO2 before playing for 
 
 Scroll down the mod list until you see a folder labeled {{< btn-inline folder >}}START HERE - Expand for Setup{{< /btn-inline >}}. As the label suggests, there is where you should start.
 
-<div class="separator blue">
+<div class="separator mo2-start">
   <i class="fa fa-folder"></i> ▸ START HERE - Expand for Setup
 </div>
 
@@ -49,19 +49,19 @@ If you open the **START HERE** folder, you'll see subfolders labeled **STEP 1**,
 
 ---
 ## Startup Notes
-<div class="separator blue1">
+<div class="separator mo2-step1">
   <i class="fa fa-folder"></i> ▸▸ STEP 1 - Startup Notes - PLEASE READ BEFORE REPORTING ISSUES
 </div>
 
 **STEP 1** doesn't include any actual mods, but rather reminds you of some of MGO's [requirements](/start/requirements) along with some important notes for using MO2 and running the game.
 
-* <span class="highlight">DO NOT Click Unlock</span> - When you run the game, MO2's interface will lock to keep you from accidentally messing with it while the game is running. The dialog box that opens will include an {{< btn-inline >}}Unlock{{< /btn-inline >}} button. This entry in the list is to remind you _not_ to click that button.
-* <span class="highlight">DO NOT Use Auto Save or Quick Save</span> - Auto Save and Quick Save are handy features in Skyrim (flat and VR alike), but the save files they produce are not as complete as those created by full saves, and some players have reported issues loading them. A bad save can result in hours of progress lost. For safety, use full saves. As we'll discuss later, you can add a save shortcut to Spell Wheel VR to make this more convenient.
-* <span class="highlight">DO NOT Use Loot Sort on Plugins</span> - LOOT is a tool that automatically sorts plugins (the files listed on the right side of MO2) to be loaded in an order that's better optimized than if you just added them without much thought. **The plugins in Mad God's Overhaul have already been carefully sorted by hand.** You shouldn't mess with that order.
+* <span class="highlight mo2-unlock">DO NOT Click Unlock</span> - When you run the game, MO2's interface will lock to keep you from accidentally messing with it while the game is running. The dialog box that opens will include an {{< btn-inline >}}Unlock{{< /btn-inline >}} button. This entry in the list is to remind you _not_ to click that button.
+* <span class="highlight mo2-autosave">DO NOT Use Auto Save or Quick Save</span> - Auto Save and Quick Save are handy features in Skyrim (flat and VR alike), but the save files they produce are not as complete as those created by full saves, and some players have reported issues loading them. A bad save can result in hours of progress lost. For safety, use full saves. You can add a save shortcut to Spell Wheel VR to make this more convenient.
+* <span class="highlight mo2-loot">DO NOT Use Loot Sort on Plugins</span> - LOOT is a tool that automatically sorts plugins (the files listed on the right side of MO2) to be loaded in an order that's better optimized than if you just added them without much thought. **The plugins in Mad God's Overhaul have already been sorted.** You shouldn't mess with that order.
 
 ---
 ## Target Frame Rate (FPS)
-<div class="separator blue2">
+<div class="separator mo2-fps">
   <i class="fa fa-folder"></i> ▸▸ STEP 2 - Select Target FPS
 </div>
 <div class="mod sub">
@@ -71,7 +71,7 @@ If you open the **START HERE** folder, you'll see subfolders labeled **STEP 1**,
   <input type="checkbox" class="readonly"> 120
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly"> 90
+  <input type="checkbox" class="readonly" checked> 90
 </div>
 <div class="mod sub">
   <input type="checkbox" class="readonly"> 80
@@ -90,19 +90,19 @@ Skyrim uses the Havok Physics engine, and there are a few <abbr title="a plain-t
 
 ---
 ## Performance Options
-<div class="separator blue3">
+<div class="separator mo2-perf">
   <i class="fa fa-folder"></i> ▸▸ STEP 3 - Select Performance Options
 </div>
-<div class="separator sub blue4">
+<div class="separator sub mo2-cs">
   <i class="fa fa-folder"></i> ▸▸▸ Community Shaders
 </div>
-<div class="separator sub blue5">
+<div class="separator sub mo2-grass">
   <i class="fa fa-folder"></i> ▸▸▸ Grass Density & LODs (Optional)
 </div>
 
 **STEP 3** includes a few performance-related presets.
 
-There are _Performance_ (the default) and _Quality_ presets for **Community Shaders**. Switching to the _Quality_ presets will have a fairly significant impact to your outdoor frame rate. Whether that's worth it is up to you, but you'll need a pretty serious PC to maintain a comfortable framerate if you set both to _Quality_.
+There are _Performance_ (the default) and _Quality_ presets for **Community Shaders**. Select one or the other—not both.Switching to the _Quality_ presets will have a fairly significant impact to your outdoor frame rate. Whether that's worth it is up to you.
 
  **Grass Density** and **LOD Distance** have optional _Quality_ presets as well, and they also impact outdoor frame rate. (Leaving them unchecked will default to performance settings.)
 
@@ -112,32 +112,41 @@ There are _Performance_ (the default) and _Quality_ presets for **Community Shad
 
 ---
 ## Preferred Runtime
-<div class="separator blue3">
+<div class="separator mo2-runtime">
   <i class="fa fa-folder"></i> ▸▸ STEP 4 - Select Preferred Runtime
 </div>
 
 _VR runtime_ refers to the software layer that sits between a VR application (like Skyrim VR) and your VR headset. **STEP 4** asks you to choose between OpenComposite and SteamVR. **STEP 5** and **STEP 6** depend on what you choose here.
 
-You should probably choose OpenComposite unless you know that you have a _really good reason_ to choose SteamVR.
+MGO enables OpenComposite by default. In particular, MGO includes OpenComposite Unleashed, which works fine with SteamVR-native headsets and includes a number of features beyond just translating VR-related API calls. It's great!
 
-In particular, MGO includes OpenComposite Unleashed, which works fine with SteamVR-native headsets and includes a number of features beyond just translating VR-related API calls. It's good. Use it!
+You should probably stick with OpenComposite unless you know that you have a _really good reason_ to choose SteamVR—like a treadmill, trackers, or some other accessory that strictly requires using the SteamVR runtime. 
 
-<div class="separator purple1">
+<div class="separator mo2-ocu">
   <i class="fa fa-folder"></i> ▸▸▸ (A) Open Composite
 </div>
-<div class="separator sub purple2">
-  <i class="fa fa-folder"></i> ▸▸▸▸ Step 5 - Enable Mods Below
+<div class="separator sub mo2-ocu-main">
+  <i class="fa fa-folder"></i> ▸▸▸▸ Step 5 - Enable Main Mod
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly"> Right Click - Select Open In Explorer - Launch OCU Configurator
+  <input type="checkbox" class="readonly" checked> Right Click - Select Open In Explorer - Launch OCU Configurator
 </div>
 
-The single mod (with the really long label) in this folder enabled OpenComposite Unleashed. There are options for its built-in keyboard, changing your key bindings, upscaling and more, accessible in the included configurator app. As the mod label points out, you can find this app in the mod folder.
+The single mod (with the really long label) in this folder enables OpenComposite Unleashed. There are options for its built-in keyboard, changing your key bindings, upscaling and more, accessible in the included configurator app. As the mod label points out, you can find this app in the mod folder.
 
-<div class="separator purple1">
+<div class="separator sub mo2-ocu-stabilizer">
+  <i class="fa fa-folder"></i> ▸▸▸▸ Step 6 - Enable VR FPS Stabilizer (OC)
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly" checked> VR FPS Stabilizer - Open Composite
+</div>
+
+{{< nexus 31392 >}} VR FPS Stabilizer{{< /nexus >}} changes INI values to maintain your framerate. This entry is the configured for OpenComposite compatibility, and you should leave it enabled if you're using OCU.
+
+<div class="separator mo2-steamvr">
   <i class="fa fa-folder"></i> ▸▸▸ (B) Steam VR
 </div>
-<div class="separator sub purple2">
+<div class="separator sub mo2-steamvr-bindings">
   <i class="fa fa-folder"></i> ▸▸▸▸ Step 5 - Select Controller Bindings
 </div>
 <div class="mod sub">
@@ -150,146 +159,103 @@ The single mod (with the really long label) in this folder enabled OpenComposite
   <input type="checkbox" class="readonly"> VRIK Controller Bindings - Easy Shout
 </div>
 
-controller bindings
+**STEP 5** for SteamVR provides three alternate control schemes. Skyrim VR's default controls were designed for the Vive Wands, and they weren't designed with today's mods in mind. (In all fairness, they didn't exist yet.)
 
-<div class="separator purple1">
-  <i class="fa fa-folder sub"></i> ▸▸▸▸ Step 6 - Select Performance Options
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> VR Performance Kit - FSR - (Choose One)
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> VR Performance Kit - CAS - (Or The Other)
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> VR FPS Stabilizer - (Compatible With VR Perf Kit)
-</div>
+MGO comes with three optional control schemes for SteamVR users to choose from. Choose only _one_ of these. If they're all disabled (and you're not using OC Unleashed), Skyrim VR's default controls will apply.
 
-MGO includes presets for {{< github "fholger/vrperfkit" >}} VR Performance Toolkit{{< /github >}} and {{< nexus 31392 >}} VR FPS Stabilizer{{< /nexus >}}. These can help you reach a nice balance between performance and image quality.
-
-{{< aside type="alert" title="Open Composite compatibility" >}}
-VR Performance Toolkit is not compatible with OpenComposite, but OC Unleashed and Community Shaders both expose similar upscaling options.
+{{< aside type="alert" title="OC Unleashed compatibility" >}}
+If you're using OpenComposite Unleashed, OCU needs to manage your controller bindings. Do _not_ enable any of the bindings in this section. You can use the OCU Configurator app to select from a variety of presets—including all of these—or cook up a control scheme of your own.
 {{< /aside >}}
 
-<div class="separator subsub blue6">
-  <i class="fa fa-folder"></i> ▸▸▸ VR FPS Stabilizer
+<div class="separator mo2-steamvr-stabilizer">
+  <i class="fa fa-folder sub"></i> ▸▸▸▸ Step 6 - Enable VR FPS Stabilizer (Steam VR)
 </div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly" checked> VR FPS Stabilizer - Open Composite
-</div>
-<div class="mod subsub">
+<div class="mod sub">
   <input type="checkbox" class="readonly"> VR FPS Stabilizer - Steam VR
 </div>
 
-
----
-## Open Composite (Unleashed)
-<div class="separator sub blue2">
-  <i class="fa fa-folder"></i> ▸▸ STEP 2 - Open Composite (Replaces Steam VR) - (Not Compatible with VR Perf Kit)
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly" checked> OC Unleashed (Not Compatible with Bindings, Upscalers, or VR Perf Kit)
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> Open Composite - Original (Do Not Enable if Using OCU)
-</div>
-
-**STEP 2** includes two mods to choose from if you want to use **Open Composite**. Choose one or the other—not both—or disable both mods in this section to use the Steam VR runtime.
-
-If you have a headset designed specifically for Steam VR—_e.g._ Valve Index, Bigscreen Beyond, HTC Vive Pro, Varjo VR-3—you don't need Open Composite.
-
-If you have a headset that doesn't use Steam base stations (aka lighthouse tracking)—_e.g._ Meta Quest series, PICO series, Vive XR Elite—then you may benefit from Open Composite. [Read more about Open Composite and Open Composite Unleashed.](/appendices/open-composite)
-
----
-## Controller Bindings
-<div class="separator sub blue3">
-  <i class="fa fa-folder"></i> ▸▸ STEP 3 - Controller Bindings - Select One (Not Compatible with OC)
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> Controller Bindings - Kvite
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> VRIK Controller Bindings - Standard
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> Alternative VRIK Controller Bindings - Easy Shout
-</div>
-
-**STEP 3** provides three alternate control schemes. Skyrim VR's default controls are, frankly, kind of bad—especially with the mods included in Mad God's Overhaul. MGO comes with three optional control schemes to choose from. Choose only one of these. If they're all disabled (and you're not using OC Unleashed), Skyrim VR's default controls will apply.
-
-{{< aside type="alert" title="OC Unleashed compatibility" >}}
-These controller binding options will not work with OC Unleashed enabled because OCU includes controller bindings of its own. You can use the OCU desktop app to select any of these bindings from there, and that will work.
-{{< /aside >}}
+MGO includes a SteamVR preset for {{< nexus 31392 >}} VR FPS Stabilizer{{< /nexus >}}. If you're using SteamVR, enable this.
 
 ---
 ## Optional Mods
 
-<div class="separator sub blue5">
+<div class="separator mo2-optional">
   <i class="fa fa-folder"></i> ▸▸ OPTIONAL Mods - Expand to Select
 </div>
 
-MGO includes a number of optional mods in several categories. They're all tested and known to work with the list, but you'll need to enable them yourself.
+MGO includes a number of optional mods across several categories. They're all tested and known to work with the list, but most are disabled by default.
 
 ---
 ## AI and Speech
 
-<div class="separator subsub blue6">
+<div class="separator mo2-ai">
   <i class="fa fa-folder"></i> ▸▸▸ AI and Speech - Read Nexus Article
 </div>
-<div class="mod subsub">
+<div class="mod">
   <input type="checkbox" class="readonly"> SkyrimNet
 </div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly"> IntelEngine
-</div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly"> OStimNet
-</div>
-<div class="mod subsub">
+<div class="mod">
   <input type="checkbox" class="readonly"> SeverActions
 </div>
-<div class="mod subsub">
+<div class="mod">
+  <input type="checkbox" class="readonly"> IntelEngine
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly"> OStimNet
+</div>
+<div class="mod">
   <input type="checkbox" class="readonly"> Dragonborn Speaks Naturally
 </div>
-<div class="mod subsub">
+<div class="mod">
   <input type="checkbox" class="readonly"> No NPC Greetings (Special Edition)
 </div>
 
-This section includes mods for incorporating AI NPCs into the game via SkyrimNet and its add-ons, as well as the option to use your own voice in conversations (even without enabling the AI features).
+This section includes mods for incorporating AI NPCs into the game via SkyrimNet and its plugins, as well as the option to use your own voice in vanilla conversations (even without enabling the AI features).
 
-Be sure to check out the {{< ext "https://www.nexusmods.com/skyrimspecialedition/articles/7032" >}}Nexus article{{< /ext >}} for setup instructions.
+### SkyrimNet
 
-{{< nexus 16514 >}}Dragonborn Speaks Naturally{{< /nexus >}} adds speech recognition to the game. In dialogue/ceonversation menus, you can speak your dialogue from the available options, rather than selecting it with your controller. (This is unrelated to the AI features described below.)
+The {{< ext "https://goncalo22.github.io/SkyrimNet-GamePlugin/" >}} SkyrimNet Docs{{< /ext >}} are extensive, though not exhaustive.
+
+
+
+### Other Speech Mods
+
+{{< nexus 16514 >}}Dragonborn Speaks Naturally{{< /nexus >}} adds voice recognition to the game. In dialogue/conversation menus, you can speak your chosen dialogue from the available options, rather than selecting it with your controller. This is independent of SkyrimNet and other AI mods.
+
+Frankly, it's nobody's business how often you get to the Cloud District! {{< nexus 1044 >}}No NPC Greetings (Special Edition){{< /nexus >}} can eliminate unprompted NPC greetings altogether, or it can simply require that NPCs get closer before greeting you.
 
 ---
 ## Convenience
-<div class="separator subsub blue5">
+
+<div class="separator mo2-convenience">
   <i class="fa fa-folder"></i> ▸▸▸ Convenience
 </div>
-<div class="mod subsub">
+<div class="mod">
   <input type="checkbox" class="readonly"> VR Menu Mouse Fix
 </div>
-<div class="mod subsub">
+<div class="mod">
   <input type="checkbox" class="readonly"> Better Sleep Wait Menu
 </div>
-<div class="mod subsub">
+<div class="mod">
   <input type="checkbox" class="readonly"> Unread Books Glow Redone
 </div>
-<div class="mod subsub">
+<div class="mod">
   <input type="checkbox" class="readonly"> Stop Trigger Unsheathing For VR
 </div>
-<div class="mod subsub">
-  <input type="checkbox" class="readonly" checked> Discovered Map Marker All
-</div>
-<div class="mod subsub">
+<div class="mod">
   <input type="checkbox" class="readonly" checked> Infinite Stamina Out of Combat
 </div>
+<div class="mod">
+  <input type="checkbox" class="readonly" checked> PrismaUI AddItemMenu
+</div>
 
-The mods in the _Convenience_ section are mostly  self-explanatory, but I want to call attention to a couple of them.
+The mods in the _Convenience_ section are mostly  self-explanatory, but I want to call attention to a few of them.
 
 {{< nexus 33414 >}}VR Menu Mouse Fix{{< /nexus >}} lets you navigate game menus using a laser pointer, rather than exclusively using thumbsticks. Some features of SkyUI and other mods _do not work_ without this, including inventory filtering. For that reason, I recommend giving this a try. In MGO, it has been combined in a single entry with {{< nexus 118579 >}}Stable Hands{{< /nexus >}}, which makes it far easier to point accurately.
 
-{{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}} does just what it says. I play on a Meta Quest 3, and without this mod, I'd be unsheathing my weapon every time I take a screenshot. (I take a lot of screenshots.)
+{{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}} does just what it says. I play on a Meta Quest 3, and without this mod, I'd be unsheathing my weapon every time I take a screenshot. (I take a lot of screenshots.) This mod is also a requirement for Fake Edge VR, which we'll encounter soon.
+
+{{< nexus 179949 >}}Prisma UI AddItemMenu{{< /nexus >}} is a lightweight, fast, and feature-packed mod for adding any item from the game (or from mods!) to your inventory. It's categorized and searchable, and it lets you consume items directly from the menu. This mod, courtesy of Wondernutts, saved the day when an older AddItem mod was sent to Oblivion, keeping many modlists (including some previous versions of MGO) from being downloadable. This one also happens to be much, much better.
 
 ---
 
