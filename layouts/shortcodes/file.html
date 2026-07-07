@@ -1,4 +1,4 @@
-{{ if len .Params | le 1 }}
+{{ if .Params }}
   <span class="file"><i class="fa fa-{{ .Get 0 }}"></i> {{ .Inner | .Page.RenderString }}</span>
 {{ else }}
   <span class="file">{{ .Inner | .Page.RenderString }}</span>

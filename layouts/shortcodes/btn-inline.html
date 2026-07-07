@@ -1,4 +1,4 @@
-{{ if len .Params | le 1 }}
+{{ if .Params }}
   <span class="btn-inline"><i class="fa fa-{{ .Get 0 }}"></i> {{ .Inner | .Page.RenderString }}</span>
 {{ else }}
   <span class="btn-inline">{{ .Inner | .Page.RenderString }}</span>

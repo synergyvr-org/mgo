@@ -1,11 +1,14 @@
+{{- $name := .Get "name" -}}
+{{- $type := .Get "type" | default "png" -}}
+{{- $retina := not (.Get "no-retina") -}}
 <div class="img {{ .Get "border" | default "" }}">
-  <a href="/mgo/images/{{ .Get "name" }}@2x.{{.Get "type" | default "png" }}">
-    <img id="img-{{ .Get "name" }}" src="/mgo/images/{{ .Get "name" }}.{{.Get "type" | default "png" }}" srcset="/mgo/images/{{ .Get "name" }}@2x.{{.Get "type" | default "png" }} 2x">
+  <a href="/mgo/images/{{ $name }}{{ if $retina }}@2x{{ end }}.{{ $type }}">
+    <img id="img-{{ $name }}" src="/mgo/images/{{ $name }}.{{ $type }}"{{ if $retina }} srcset="/mgo/images/{{ $name }}@2x.{{ $type }} 2x"{{ end }}>
   </a>
   {{ if len .Params | le 4 }}
   <div class="caption flex">
     <div>
-      <img src="/mgo/images/{{ .Get "icon" }}.{{.Get "type" | default "png" }}" srcset="/mgo/images/{{ .Get "icon" }}@2x.{{.Get "type" | default "png" }} 2x">
+      <img src="/mgo/images/{{ .Get "icon" }}.{{ $type }}"{{ if $retina }} srcset="/mgo/images/{{ .Get "icon" }}@2x.{{ $type }} 2x"{{ end }}>
     </div>
     <div class="grow">
       {{ .Inner | .Page.RenderString }}

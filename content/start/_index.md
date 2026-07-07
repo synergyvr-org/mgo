@@ -1,5 +1,5 @@
 +++
-title = "Before You Play"
+title = "Getting Started"
 type = "chapter"
 weight = 1
 +++

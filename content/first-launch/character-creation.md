@@ -65,7 +65,7 @@ When your character looks perfect (or perfectly abhorrent, as the case may be), 
 Point to "Done" and press the <kbd>A</kbd> button.
 {{< /caption >}}
 
-Whichever method you choose, you'll be prompted to confirm that you're finished and ready to name your character. If you're running the game through Steam VR, you'll see Steam VR's onscreen keyboard. If you're using Open Composite Unleashed, you'll see the keyboard that's built into that mod. With Open Composite Unleashed, you'll still see the red laser pointers that you used to control RaceMenu, alongside the white laser pointers that you need to use with the onscreen keyboard.
+Whichever method you choose, you'll be prompted to confirm that you're finished and ready to name your character. If you're running the game through SteamVR, you'll see SteamVR's onscreen keyboard. If you're using Open Composite Unleashed, you'll see the keyboard that's built into that mod. With Open Composite Unleashed, you'll still see the red laser pointers that you used to control RaceMenu, alongside the white laser pointers that you need to use with the onscreen keyboard.
 
 {{< video name="racemenu-name" border="border" >}}
 Finish and name your character.
