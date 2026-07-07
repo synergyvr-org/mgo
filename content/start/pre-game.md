@@ -17,13 +17,11 @@ To play, click the <span class="btn-inline"><i class="fa fa-play"></i> Run</span
 
 When MO2 has finished loading, you can launch the game with the {{< btn-inline play >}}Run{{< /btn-inline >}} button near the upper-right, with {{< btn-inline >}}Launch MGO - Do Not Unlock{{< /btn-inline >}} selected in the nearby dropdown. You should always launch MGO this way. Don't just run Skyrim VR from Steam. That will launch the vanilla (unmodded) game. To play MGO, you need to run it from MO2.
 
-
-
 {{< aside type="btw" title="Skip to the game" >}}
 You can use the <span class="btn-inline"><i class="fa-solid fa-share"></i> Shortcut</span> dropdown to add a shortcut directly to the game, eliminating the need to run MO2 first.
 {{< /aside >}}
 
-Before jumping into Tamriel, you might want to take a quick look around MO2.
+Before jumping into Tamriel, you should take a quick look around MO2, especially the onboarding section labeled "START HERE - Expand for Setup".
 
 {{< aside type="btw" title="Mods & Plugins" >}}
 Mod Organizer 2's interface is basically split in two: **mods** on the left, **plugins** on the right.
@@ -56,7 +54,6 @@ If you open the **START HERE** folder, you'll see subfolders labeled **STEP 1**,
 **STEP 1** doesn't include any actual mods, but rather reminds you of some of MGO's [requirements](/start/requirements) along with some important notes for using MO2 and running the game.
 
 * <span class="highlight mo2-unlock">DO NOT Click Unlock</span> - When you run the game, MO2's interface will lock to keep you from accidentally messing with it while the game is running. The dialog box that opens will include an {{< btn-inline >}}Unlock{{< /btn-inline >}} button. This entry in the list is to remind you _not_ to click that button.
-* <span class="highlight mo2-autosave">DO NOT Use Auto Save or Quick Save</span> - Auto Save and Quick Save are handy features in Skyrim (flat and VR alike), but the save files they produce are not as complete as those created by full saves, and some players have reported issues loading them. A bad save can result in hours of progress lost. For safety, use full saves. You can add a save shortcut to Spell Wheel VR to make this more convenient.
 * <span class="highlight mo2-loot">DO NOT Use Loot Sort on Plugins</span> - LOOT is a tool that automatically sorts plugins (the files listed on the right side of MO2) to be loaded in an order that's better optimized than if you just added them without much thought. **The plugins in Mad God's Overhaul have already been sorted.** You shouldn't mess with that order.
 
 ---
@@ -299,6 +296,8 @@ In short, the game is too easy. {{< nexus 33487 >}}Arena{{< /nexus >}} balances 
 Immersion is a high priority for MGO. The list includes a number of mods to help you feel like you're really in Tamriel, many of which are enabled by default. This section includes a few more optional mods that can enhance your playthrough, depending on your taste. I'll tell you about a couple of my favorites.
 
 {{< nexus 154803 >}}DovaVR Locomotion{{< /nexus >}} allows you to walk by swinging your arms. Check out the [Movement](/how-to-play/movement) page or the mod's Nexus page to read more.
+
+I promised we'd get to Fake Edge VR, and here it is. {{< nexus 170889 >}}Fake Edge VR{{< /nexus >}} is one of the roughly 1 million VR-specific mods by Machina, and it gives your weapons real collisions. They bump against walls, tables, your shield, and your other weapons instead of clipping through them. That's because, strictly speaking, it's not always _equipped_; you're just holding it. When you hold {{< control name="trigger" >}}, the weapon is equipped for combat, with all its usual damage and enchantments. Release {{< control name="trigger" >}}, and the weapon becomes a physical object that bumps into the world. It relies on {{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}} from the Convenience section, so be sure to enable that one too. For the full rundown (dual-wielding, locking a weapon's equipped status, etc.), see the full [Fake Edge VR](/appendices/fake-edge) write-up.
 
 ---
 
