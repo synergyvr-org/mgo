@@ -11,14 +11,14 @@ Fake Edge VR is optional and disabled by default. Enable it in MO2's **OPTIONAL 
 
 **Fake Edge in a nutshell:** When you equip a one-handed weapon, it's immediately HIGGS-grabbed in your hand as a physical object, and the {{< control name="trigger" >}} decides what state it's in:
 
-* **Hold {{< control name="trigger" >}}:** the weapon is _equipped_. You're ready to fight (damage, enchantments, etc.).
-* **Release {{< control name="trigger" >}}:** the weapon is _grabbed_. It has full physics and collides with everything.
+* **Hold trigger:** the weapon is _equipped_. You're ready to fight (damage, enchantments, etc.).
+* **Release trigger:** the weapon is _grabbed_. It has full physics and collides with everything.
 
-Most of the time, your weapon is a physical object. When you're ready to give an enemy a good _whack_, just hold {{< control name="trigger" >}}. Transitions are instant and silent.
+Most of the time, your weapon is a physical object, like a cheese wheel. When you're ready to give an enemy a good _whack_, just hold {{< control name="trigger" >}}. Transitions are instant and silent.
 
 ## Equip-locking
 
-Holding the trigger through a long fight gets tiring, and some moves (notably power attacks) won't work unless the weapon is locked to its equipped state. To equip-lock a weapon, squeeze the {{< control name="trigger" >}} four times within two seconds. Squeeze four times again to unlock. The lock also clears on its own when you drop or unequip the weapon, load a save, or open a menu.
+Holding the trigger through a long fight gets annoying, and some moves (notably power attacks) won't work unless the weapon is locked to its equipped state. To equip-lock a weapon, squeeze the {{< control name="trigger" >}} four times within two seconds. Squeeze four times again to unlock. The lock also clears on its own when you drop or unequip the weapon, load a save, or open a menu.
 
 {{< aside type="alert" title="Unlimited Power*" >}}
 "If you're always holding the trigger, how do you power attack?" Great question! **Power attacks only fire while a weapon is equip-locked.** If power attacks aren't working, lock the weapon ({{< control name="trigger" >}} x4) and try again.
@@ -28,7 +28,7 @@ Holding the trigger through a long fight gets tiring, and some moves (notably po
 
 ## Dual wielding
 
-Your two hands work independently. Each hand's trigger controls only that hand's weapon.
+Each hand's trigger controls only that hand's weapon. Your two hands work independently, so dual wielding works the way you'd hope.
 
 * Hold both triggers for full dual-wield combat.
 * Release both triggers, and your two weapons physically collide with each other. Cross them in an X to block. (This works alongside {{< nexus 28456 >}}Dual Wield Block VR{{< /nexus >}}.)
