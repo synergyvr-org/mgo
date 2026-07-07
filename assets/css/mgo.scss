@@ -258,6 +258,13 @@ li {
   font-family: var(--INTERNAL-CODE-font);
 }
 
+// Relearn has no config option to remove the copy-to-clipboard button from
+// code blocks, so hide it here. (The unique class avoids colliding with our
+// own inline `.highlight` span below.)
+.block-copy-to-clipboard-button {
+  display: none;
+}
+
 .highlight {
   display: inline-block;
   font-weight: bold;
@@ -467,7 +474,7 @@ ul.horizontal-nav {
     display: inline-block;
     font-weight: bold;
     max-width: 640px;
-    font-size: 4cqw;
+    font-size: 3.6cqw;
     text-decoration: none;
     position: relative;
     color: #eee;

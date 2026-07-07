@@ -5,6 +5,7 @@ title = "Mad God's Overhaul for Skyrim VR"
 theme = 'relearn'
 [params]
   themeVariant = 'zen-dark'
+  disableInlineCopyToClipBoard = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
