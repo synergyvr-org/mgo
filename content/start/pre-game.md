@@ -1,5 +1,5 @@
 +++
-title = 'Pre-Game (MO2)'
+title = 'Onboarding (MO2)'
 weight = 30
 +++
 
@@ -21,7 +21,7 @@ When MO2 has finished loading, you can launch the game with the {{< btn-inline p
 You can use the <span class="btn-inline"><i class="fa-solid fa-share"></i> Shortcut</span> dropdown to add a shortcut directly to the game, eliminating the need to run MO2 first.
 {{< /aside >}}
 
-Before jumping into Tamriel, you should take a quick look around MO2, especially the onboarding section labeled "START HERE - Expand for Setup".
+Before jumping into Tamriel, you should take a quick look around MO2, especially the onboarding section labeled {{< btn-inline >}}START HERE - Expand for Setup{{< /btn-inline >}}.
 
 {{< aside type="btw" title="Mods & Plugins" >}}
 Mod Organizer 2's interface is basically split in two: **mods** on the left, **plugins** on the right.
@@ -45,16 +45,23 @@ Scroll down the mod list until you see a folder labeled {{< btn-inline folder >}
 
 If you open the **START HERE** folder, you'll see subfolders labeled **STEP 1**, **STEP 2**, etc.
 
+You can filter the list with the text box at the bottom of the left pane to find "START" quickly.
+
+{{< caption name="mo2-filter-start" type="png" no-retina="true" >}}
+Filter the list to find what you're looking for quickly.
+{{< /caption >}}
+
 ---
 ## Startup Notes
 <div class="separator mo2-step1">
-  <i class="fa fa-folder"></i> ▸▸ STEP 1 - Startup Notes - PLEASE READ BEFORE REPORTING ISSUES
+  <i class="fa fa-folder"></i> ▸▸ STEP 1 - Expand to Review Startup Notes
 </div>
 
 **STEP 1** doesn't include any actual mods, but rather reminds you of some of MGO's [requirements](/start/requirements) along with some important notes for using MO2 and running the game.
 
-* <span class="highlight mo2-unlock">DO NOT Click Unlock</span> - When you run the game, MO2's interface will lock to keep you from accidentally messing with it while the game is running. The dialog box that opens will include an {{< btn-inline >}}Unlock{{< /btn-inline >}} button. This entry in the list is to remind you _not_ to click that button.
-* <span class="highlight mo2-loot">DO NOT Use Loot Sort on Plugins</span> - LOOT is a tool that automatically sorts plugins (the files listed on the right side of MO2) to be loaded in an order that's better optimized than if you just added them without much thought. **The plugins in Mad God's Overhaul have already been sorted.** You shouldn't mess with that order.
+* <span class="highlight mo2-beta">DO NOT ADD YOUR OWN MODS TO THE BETA</span> - MGO 4.0 is still in beta—a testing period. At this stage, the team is looking for feedback on the mod list as they've developed it. To be part of that process, please resist the temptation to throw in additional mods.
+* <span class="highlight mo2-unlock">DO NOT Click Unlock After Launching Game</span> - When you run the game, MO2's interface will lock to keep you from accidentally messing with it while the game is running. The dialog box that opens will include an {{< btn-inline >}}Unlock{{< /btn-inline >}} button. This entry in the list is to remind you _not_ to click that button.
+* <span class="highlight mo2-loot">DO NOT Use LOOT to Sort Plugins</span> - LOOT is a tool that automatically sorts plugins (the files listed on the right side of MO2) to be loaded in an order that's better optimized than if you just added them without much thought. **The plugins in Mad God's Overhaul have already been sorted.** You shouldn't mess with that order.
 
 ---
 ## Target Frame Rate (FPS)

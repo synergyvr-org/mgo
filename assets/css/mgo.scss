@@ -63,9 +63,9 @@
 
   --mo2-start: #f1cd84;
   --mo2-step1: #e1be7a;
-  --mo2-unlock: #7c613d;
-  --mo2-autosave: #6b5232;
-  --mo2-loot: #5a4328;
+  --mo2-beta: #c1a167;
+  --mo2-unlock: #b0915c;
+  --mo2-loot: #9e8251;
   --mo2-fps: #d1b070;
   --mo2-perf: #c2a267;
   --mo2-cs: #b2935d;
@@ -272,17 +272,14 @@ li {
   color: black;
   padding: 0 6px;
 
+  &.mo2-beta {
+    background-color: var(--mo2-beta);
+  }
   &.mo2-unlock {
     background-color: var(--mo2-unlock);
-    color: white;
-  }
-  &.mo2-autosave {
-    background-color: var(--mo2-autosave);
-    color: white;
   }
   &.mo2-loot {
     background-color: var(--mo2-loot);
-    color: white;
   }
 }
 
