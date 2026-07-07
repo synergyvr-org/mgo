@@ -258,6 +258,49 @@ The mods in the _Convenience_ section are mostly  self-explanatory, but I want t
 {{< nexus 179949 >}}Prisma UI AddItemMenu{{< /nexus >}} is a lightweight, fast, and feature-packed mod for adding any item from the game (or from mods!) to your inventory. It's categorized and searchable, and it lets you consume items directly from the menu. This mod, courtesy of Wondernutts, saved the day when an older AddItem mod was sent to Oblivion, keeping many modlists (including some previous versions of MGO) from being downloadable. This one also happens to be much, much better.
 
 ---
+## Difficulty
+
+<div class="separator mo2-difficulty">
+  <i class="fa fa-folder"></i> ▸▸▸ Difficulty
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly" checked> Arena - An Encounter Zone Overhaul
+</div>
+
+As your Skyrim character progresses, you're likely to become an unstoppable killing machine. With all of the spells, perks, and content added by mods, this can happen even faster.
+
+In short, the game is too easy. {{< nexus 33487 >}}Arena{{< /nexus >}} balances things out a bit by adjusting the enemies that appear in each location.
+
+---
+## Immersion
+
+<div class="separator mo2-immersion">
+  <i class="fa fa-folder"></i> ▸▸▸ Immersion
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly"> Durability VR
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly"> DovaVR Locomotion
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly"> Spellsiphon - Immersive Combat
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly"> Fake Edge VR - Pseudo Equipped weapon Collisions
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly"> NavigateVR - Dynamic Compass and Equipable Map
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly" checked> Minimal Enemy Healthbar VR - Remove Enemy Health Bar
+</div>
+
+Immersion is a high priority for MGO. The list includes a number of mods to help you feel like you're really in Tamriel, many of which are enabled by default. This section includes a few more optional mods that can enhance your playthrough, depending on your taste. I'll tell you about a couple of my favorites.
+
+{{< nexus 154803 >}}DovaVR Locomotion{{< /nexus >}} allows you to walk by swinging your arms. Check out the [Movement](/how-to-play/movement) page or the mod's Nexus page to read more.
+
+---
 
 <div class="next">
   <a href="/mgo/first-launch">First Launch <i class="fa fa-circle-right"></i></a>
