@@ -122,7 +122,9 @@ There are _Performance_ (the default) and _Quality_ presets for **Community Shad
 
 _VR runtime_ refers to the software layer that sits between a VR application (like Skyrim VR) and your VR headset. **STEP 4** asks you to choose between OpenComposite and SteamVR. **STEP 5** and **STEP 6** depend on what you choose here.
 
-MGO enables OpenComposite by default. In particular, MGO includes OpenComposite Unleashed, which works fine with SteamVR-native headsets and includes a number of features beyond just translating VR-related API calls. It's great!
+### OpenComposite (Unleashed)
+
+MGO enables OpenComposite by default. In particular, MGO includes [OpenComposite Unleashed](appendices/open-composite/), which works fine with SteamVR-native headsets and includes a number of features beyond just translating VR-related API calls. It's great!
 
 You should probably stick with OpenComposite unless you know that you have a _really good reason_ to choose SteamVR—like a treadmill, trackers, or some other accessory that strictly requires using the SteamVR runtime. 
 
@@ -136,7 +138,7 @@ You should probably stick with OpenComposite unless you know that you have a _re
   <input type="checkbox" class="readonly" checked> Right Click - Select Open In Explorer - Launch OCU Configurator
 </div>
 
-The single mod (with the really long label) in this folder enables OpenComposite Unleashed. There are options for its built-in keyboard, changing your key bindings, upscaling and more, accessible in the included configurator app. As the mod label points out, you can find this app in the mod folder.
+The single mod (with the really long label) in this folder enables OpenComposite Unleashed. There are options for its built-in keyboard, changing your key bindings, upscaling and more, accessible in the included configurator app. As the mod label points out, you can find this app in the mod folder. Seriously, [read up on it](appendices/open-composite/) if you haven't yet.
 
 <div class="separator sub mo2-ocu-stabilizer">
   <i class="fa fa-folder"></i> ▸▸▸▸ Step 6 - Enable VR FPS Stabilizer (OC)
