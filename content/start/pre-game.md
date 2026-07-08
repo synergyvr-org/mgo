@@ -210,25 +210,18 @@ MGO includes a number of optional mods across several categories. They're all te
   <input type="checkbox" class="readonly"> OStimNet
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> Dragonborn Speaks Naturally
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> No NPC Greetings (Special Edition)
+  <input type="checkbox" class="readonly"> Say It - Dragonborn Voice Control
 </div>
 
-This section includes mods for incorporating AI NPCs into the game via SkyrimNet and its plugins, as well as the option to use your own voice in vanilla conversations (even without enabling the AI features).
+This section includes mods for incorporating AI NPCs into the game via SkyrimNet and its plugins, as well as general voice control.
 
 ### SkyrimNet
 
 The {{< ext "https://goncalo22.github.io/SkyrimNet-GamePlugin/" >}} SkyrimNet Docs{{< /ext >}} are extensive, though not exhaustive.
 
+### Say It
 
-
-### Other Speech Mods
-
-{{< nexus 16514 >}}Dragonborn Speaks Naturally{{< /nexus >}} adds voice recognition to the game. In dialogue/conversation menus, you can speak your chosen dialogue from the available options, rather than selecting it with your controller. This is independent of SkyrimNet and other AI mods.
-
-Frankly, it's nobody's business how often you get to the Cloud District! {{< nexus 1044 >}}No NPC Greetings (Special Edition){{< /nexus >}} can eliminate unprompted NPC greetings altogether, or it can simply require that NPCs get closer before greeting you.
+{{< nexus 172027 >}}Say It - Dragonborn Voice Control{{< /nexus >}} adds voice recognition to the game. (This is independent of SkyrimNet and other AI mods.) You can control vanilla conversations with your voice—start conversations, speak your dialogue from among the avilable choices, and end conversations. You can perform shouts and powers, equip spells, use potions. You can even trigger console commands. Just enable the mod, and it's all set up. Check out the Nexus page for all the details.
 
 ---
 ## Convenience
@@ -237,7 +230,10 @@ Frankly, it's nobody's business how often you get to the Cloud District! {{< nex
   <i class="fa fa-folder"></i> ▸▸▸ Convenience
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> VR Menu Mouse Fix
+  <input type="checkbox" class="readonly"> PrismaUI AddItem
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly"> Insects Begone REDUX
 </div>
 <div class="mod">
   <input type="checkbox" class="readonly"> Better Sleep Wait Menu
@@ -248,15 +244,12 @@ Frankly, it's nobody's business how often you get to the Cloud District! {{< nex
 <div class="mod">
   <input type="checkbox" class="readonly" checked> Infinite Stamina Out of Combat
 </div>
-<div class="mod">
-  <input type="checkbox" class="readonly" checked> PrismaUI AddItemMenu
-</div>
 
-The mods in the _Convenience_ section are mostly  self-explanatory, but I want to call attention to a few of them.
-
-{{< nexus 33414 >}}VR Menu Mouse Fix{{< /nexus >}} lets you navigate game menus using a laser pointer, rather than exclusively using thumbsticks. Some features of SkyUI and other mods _do not work_ without this, including inventory filtering. For that reason, I recommend giving this a try. In MGO, it has been combined in a single entry with {{< nexus 118579 >}}Stable Hands{{< /nexus >}}, which makes it far easier to point accurately.
+The mods in the _Convenience_ section are mostly  self-explanatory, but I want to call attention to a couple of them.
 
 {{< nexus 179949 >}}Prisma UI AddItemMenu{{< /nexus >}} is a lightweight, fast, and feature-packed mod for adding any item from the game (or from mods!) to your inventory. It's categorized and searchable, and it lets you consume items directly from the menu. This mod, courtesy of Wondernutts, saved the day when an older AddItem mod was sent to Oblivion, keeping many modlists (including some previous versions of MGO) from being downloadable. This one also happens to be much, much better.
+
+{{< nexus 105045 >}}Insects Begone REDUX{{< /nexus >}} is the mod you're looking for if you have arachnophobia, or just don't care to see arachnids and other creepy-crawly things in VR. Enable this mod, and they'll be replaced.
 
 ---
 ## Difficulty
