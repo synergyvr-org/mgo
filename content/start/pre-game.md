@@ -246,9 +246,6 @@ Frankly, it's nobody's business how often you get to the Cloud District! {{< nex
   <input type="checkbox" class="readonly"> Unread Books Glow Redone
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> Stop Trigger Unsheathing For VR
-</div>
-<div class="mod">
   <input type="checkbox" class="readonly" checked> Infinite Stamina Out of Combat
 </div>
 <div class="mod">
@@ -258,8 +255,6 @@ Frankly, it's nobody's business how often you get to the Cloud District! {{< nex
 The mods in the _Convenience_ section are mostly  self-explanatory, but I want to call attention to a few of them.
 
 {{< nexus 33414 >}}VR Menu Mouse Fix{{< /nexus >}} lets you navigate game menus using a laser pointer, rather than exclusively using thumbsticks. Some features of SkyUI and other mods _do not work_ without this, including inventory filtering. For that reason, I recommend giving this a try. In MGO, it has been combined in a single entry with {{< nexus 118579 >}}Stable Hands{{< /nexus >}}, which makes it far easier to point accurately.
-
-{{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}} does just what it says. I play on a Meta Quest 3, and without this mod, I'd be unsheathing my weapon every time I take a screenshot. (I take a lot of screenshots.) This mod is also a requirement for Fake Edge VR, which we'll encounter soon.
 
 {{< nexus 179949 >}}Prisma UI AddItemMenu{{< /nexus >}} is a lightweight, fast, and feature-packed mod for adding any item from the game (or from mods!) to your inventory. It's categorized and searchable, and it lets you consume items directly from the menu. This mod, courtesy of Wondernutts, saved the day when an older AddItem mod was sent to Oblivion, keeping many modlists (including some previous versions of MGO) from being downloadable. This one also happens to be much, much better.
 
@@ -306,7 +301,7 @@ Immersion is a high priority for MGO. The list includes a number of mods to help
 
 {{< nexus 154803 >}}DovaVR Locomotion{{< /nexus >}} allows you to walk by swinging your arms. Check out the [Movement](/how-to-play/movement) page or the mod's Nexus page to read more.
 
-I promised we'd get to Fake Edge VR, and here it is. {{< nexus 170889 >}}Fake Edge VR{{< /nexus >}} is one of the roughly 1 million VR-specific mods by Machina, and it gives your weapons real collisions. They bump against walls, tables, your shield, and your other weapons instead of clipping through them. That's because, strictly speaking, it's not always _equipped_; you're just holding it. When you hold {{< control name="trigger" >}}, the weapon is equipped for combat, with all its usual damage and enchantments. Release {{< control name="trigger" >}}, and the weapon becomes a physical object that bumps into the world. It relies on {{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}} from the Convenience section, so be sure to enable that one too. For the full rundown (dual-wielding, locking a weapon's equipped status, etc.), see the full [Fake Edge VR](/appendices/fake-edge) write-up.
+{{< nexus 170889 >}}Fake Edge VR{{< /nexus >}} is one of the roughly 1 million VR-specific mods by Machina, and it gives your weapons real collisions. They bump against walls, tables, your shield, and your other weapons instead of clipping through them. That's because, strictly speaking, it's not always _equipped_; you're just holding it. When you hold {{< control name="trigger" >}}, the weapon is equipped for combat, with all its usual damage and enchantments. Release {{< control name="trigger" >}}, and the weapon becomes a physical object that bumps into the world. It relies on {{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}} from the Convenience section, so be sure to enable that one too. For the full rundown (dual-wielding, locking a weapon's equipped status, etc.), see the full [Fake Edge VR](/appendices/fake-edge) write-up.
 
 ---
 
