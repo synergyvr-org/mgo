@@ -86,6 +86,10 @@ Filter the list to find what you're looking for quickly.
 
 **STEP 2** asks you to choose your headset's target frame rate (also called the refresh rate). Although this step is optional, for optimal performance you should check the entry that matches your headset's frame rate.
 
+{{< aside type="btw" title="What about SpaceWarp?" >}}
+If you're using frame generation via ASW or SSW, your _target frame rate_ is how many frames you end up with _after_ those tools work their magic. If the game is rendering 45 actual frames per second, but SpaceWarp is generating frames to bring it up to an apparent 90, then you should select 90.
+{{< /aside >}}
+
 For SteamVR-based headsets, you can check (or set) the target frame rate in the SteamVR desktop app. If you're using Virtual Desktop, you can set the frame rate in the **STREAMING** tab of the VD overlay.
 
 {{< aside type="btw" title="Why?" >}}
