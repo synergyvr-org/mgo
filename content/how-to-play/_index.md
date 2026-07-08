@@ -36,4 +36,10 @@ Archery in vanilla Skyrim VR wasn't terrible, but modders still had plenty of id
 Vanilla magic was arguably not as disappointing as melee combat, but it left something to be desired. Naturally, modders couldn't leave it alone. Let's see what they've done.
 {{< /chapter-heading >}}
 
+{{< chapter-heading href="skills-and-perks" >}}
+## Skills & Perks
+
+Skyrim's leveling and perks work differently in MGO. Learn how you level up, why some perks behave better in VR, and (gasp!) how to get more perk points.
+{{< /chapter-heading >}}
+
 [^1]: MGO does include several pre-defined [controller mappings](/controls), and you certainly should learn whichever one you choose.

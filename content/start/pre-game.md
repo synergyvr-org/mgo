@@ -210,7 +210,7 @@ MGO includes a number of optional mods across several categories. They're all te
   <input type="checkbox" class="readonly"> OStimNet
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> Say It - Dragonborn Voice Control
+  <input type="checkbox" class="readonly"> Say It - Dragonborn Voice Control - Vosk
 </div>
 
 This section includes mods for incorporating AI NPCs into the game via SkyrimNet and its plugins, as well as general voice control.
