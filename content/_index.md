@@ -20,6 +20,14 @@ type = "home"
 </li>
 </ul>
 
+{{< aside type="alert" title="This is a BETA" >}}
+MGO 4.0 is currently in _beta_, and so is this documentation. There is more content to come, and as things are moving rapidly at the moment, some things here might not match what's in the list perfectly. Please be patient.
+
+To provide documentation feedback, you can {{< github "synergyvr-org/mgo/issues" >}}submit an issue on the GitHub repo{{< /github >}} or post in the `#mod-documentation` channel in the <a href="https://discord.com/invite/WjSUaSPaQZ" target="_blank"><i class="fa-brands fa-discord"></i> MGO Discord</a>, which you can find by turning on the role THE MOD LAB.
+
+MGO 3.8.8.1 will remain the main download on Nexusmods until 4.0 is final. You can find the 4.0 Beta on the FILES tab under _Miscellaneous files_.
+{{< /aside >}}
+
 When {{< steam "611670" >}}Skyrim VR{{< /steam >}} hit Steam in April 2018, it was unlike anything else. The state of the art for VR experiences has evolved considerably since that time, but Skyrim VR hasn't received an official update since later the same month that it launched.
 
 As luck would have it, people develop mods for Skyrim. A _lot_ of mods.
