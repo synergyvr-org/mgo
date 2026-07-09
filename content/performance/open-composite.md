@@ -1,6 +1,6 @@
 +++
 title = 'OpenComposite (Unleashed)'
-weight = 93
+weight = 20
 +++
 
 {{< aside type="note" title="Tip of the Daedric Helmet" >}}

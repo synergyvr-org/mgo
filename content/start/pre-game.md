@@ -110,7 +110,7 @@ Skyrim uses the Havok Physics engine, and there are a few <abbr title="a plain-t
 
 **STEP 3** includes a few performance-related presets.
 
-There are _Performance_ (the default) and _Quality_ presets for **Community Shaders**. Select one or the other—not both.Switching to the _Quality_ presets will have a fairly significant impact to your outdoor frame rate. Whether that's worth it is up to you.
+There are _Performance_ (the default) and _Quality_ presets for [**Community Shaders**](/performance/community-shaders/). Select one or the other—not both.Switching to the _Quality_ presets will have a fairly significant impact to your outdoor frame rate. Whether that's worth it is up to you.
 
  **Grass Density** and **LOD Distance** have optional _Quality_ presets as well, and they also impact outdoor frame rate. (Leaving them unchecked will default to performance settings.)
 
@@ -128,7 +128,7 @@ _VR runtime_ refers to the software layer that sits between a VR application (li
 
 ### OpenComposite (Unleashed)
 
-MGO enables OpenComposite by default. In particular, MGO includes [OpenComposite Unleashed](appendices/open-composite/), which works fine with SteamVR-native headsets and includes a number of features beyond just translating VR-related API calls. It's great!
+MGO enables OpenComposite by default. In particular, MGO includes [OpenComposite Unleashed](/performance/open-composite/), which works fine with SteamVR-native headsets and includes a number of features beyond just translating VR-related API calls. It's great!
 
 You should probably stick with OpenComposite unless you know that you have a _really good reason_ to choose SteamVR—like a treadmill, trackers, or some other accessory that strictly requires using the SteamVR runtime. 
 
@@ -142,7 +142,7 @@ You should probably stick with OpenComposite unless you know that you have a _re
   <input type="checkbox" class="readonly" checked> Right Click - Select Open In Explorer - Launch OCU Configurator
 </div>
 
-The single mod (with the really long label) in this folder enables OpenComposite Unleashed. There are options for its built-in keyboard, changing your key bindings, upscaling and more, accessible in the included configurator app. As the mod label points out, you can find this app in the mod folder. Seriously, [read up on it](appendices/open-composite/) if you haven't yet.
+The single mod (with the really long label) in this folder enables OpenComposite Unleashed. There are options for its built-in keyboard, changing your key bindings, upscaling and more, accessible in the included configurator app. As the mod label points out, you can find this app in the mod folder. Seriously, [read up on it](/performance/open-composite/) if you haven't yet.
 
 <div class="separator sub mo2-ocu-stabilizer">
   <i class="fa fa-folder"></i> ▸▸▸▸ Step 6 - Enable VR FPS Stabilizer (OC)
@@ -303,5 +303,5 @@ Immersion is a high priority for MGO. The list includes a number of mods to help
 ---
 
 <div class="next">
-  <a href="/mgo/first-launch">First Launch <i class="fa fa-circle-right"></i></a>
+  <a href="/mgo/performance">Performance <i class="fa fa-circle-right"></i></a>
 </div>

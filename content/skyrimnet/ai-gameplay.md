@@ -20,7 +20,7 @@ This page provides a quick overview. SkyrimNet is pretty deep and it's been evol
 You can speak to NPCs out loud, or you can type to them.
 
 * **By voice.** If you set up a Whisper backend during [Setup](/skyrimnet/setup), just talk. Depending on your hotkeys, you'll either hold a push-to-talk key while you speak or use Open Mic mode, where SkyrimNet listens and sends what you say on its own.
-* **By text.** If speaking aloud isn't practical (or you just don't feel like it), you can use a chat-input hotkey to open a box you can type into instead. (Thank goodness for the [OpenComposite Unleashed](/appendices/open-composite/) keyboard.)
+* **By text.** If speaking aloud isn't practical (or you just don't feel like it), you can use a chat-input hotkey to open a box you can type into instead. (Thank goodness for the [OpenComposite Unleashed](/performance/open-composite/) keyboard.)
 
 Which key does what is up to you. You set them on the _Hotkeys_ step during setup, and you can change them anytime from the dashboard.
 

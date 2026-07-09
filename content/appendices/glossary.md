@@ -41,7 +41,7 @@ weight = 94
 
 | Term | Definition |
 | ---- | ---------- |
-| ASW | Asynchronous SpaceWarp, a motion-smoothing technique for generating artificial intermediate frames between actual frames, giving the effect of double the actual frame rate. For Skyrim VR, ASW runs on the PC's GPU and is an option provided by the [Open Composite Unleashed mod](/appendices/open-composite/) and by Meta's PCVR software. May have fewer visual side effects than SSW. Do not enable ASW and SSW at the same time. |
+| ASW | Asynchronous SpaceWarp, a motion-smoothing technique for generating artificial intermediate frames between actual frames, giving the effect of double the actual frame rate. For Skyrim VR, ASW runs on the PC's GPU and is an option provided by the [Open Composite Unleashed mod](/performance/open-composite/) and by Meta's PCVR software. May have fewer visual side effects than SSW. Do not enable ASW and SSW at the same time. |
 | SSW | Synchronous SpaceWarp, a motion-smoothing technique for generating artificial intermediate frames between actual frames, giving the effect of double the actual frame rate. SSW runs on the VR headset itself and is an option provided by the Virtual Desktop streaming software. Do not enable ASW and SSW at the same time. |
 | DLSS | Deep Learning Super Sampling, an NVIDIA upscaling technology (available only on NVIDIA GPUs) for improving performance while maintaining high image quality. |
 | FSR | FidelityFX Super Resolution, an upscaling technology developed by AMD for improving performance while maintaining high image quality. FSR3 is GPU-agnostic, while FSR4 is exclusive to certain AMD GPUs. |
