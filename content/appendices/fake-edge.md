@@ -6,7 +6,7 @@ weight = 93
 {{< nexus 170889 >}}Fake Edge VR{{< /nexus >}} is an SKSE plugin that builds on {{< nexus 43930 >}}HIGGS{{< /nexus >}} to add weapon collisions in VR. Instead of your blade phasing through clutter, scenery, shields, etc., it bumps into them. To achieve this without breaking melee combat, it uses the {{< control name="trigger" >}} to decide whether to treat your equipment as solid physical object or a combat-ready weapon at any given time.
 
 {{< aside type="alert" title="Turning it on" >}}
-Fake Edge VR is optional and disabled by default. Enable it in MO2's **OPTIONAL Mods → Immersion** section (see [Pre-Game](/start/pre-game)). It's built on {{< nexus 43930 >}}HIGGS{{< /nexus >}} (already enabled) and requires {{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}}, so make sure that one is enabled too.
+Fake Edge VR is optional and disabled by default. Enable it in MO2's **OPTIONAL Mods → Immersion** section (see [Onboarding](/start/onboarding)). It's built on {{< nexus 43930 >}}HIGGS{{< /nexus >}} (already enabled) and requires {{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}}, so make sure that one is enabled too.
 {{< /aside >}}
 
 **Fake Edge in a nutshell:** When you equip a one-handed weapon, it's immediately HIGGS-grabbed in your hand as a physical object, and the {{< control name="trigger" >}} decides what state it's in:

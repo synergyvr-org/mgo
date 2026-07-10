@@ -11,7 +11,7 @@ weight = 94
 | Flatrim | Any non-VR edition of Skyrim, including Special Edition/Anniversary Edition. |
 |Journal Menu | The collection of menus containing _Quests_, _General Stats_, and _System_ tabs. |
 | Tween Menu | The menu containing _Skills_/_Level Up_, _Items_, _Map_, and _Magic_. |
-| Havok | The physics engine that's built into Skyrim (and many other games). Its calculations are tied to your frame rate, which is why MGO has you set your headset's refresh rate (see [Onboarding](/start/pre-game)). |
+| Havok | The physics engine that's built into Skyrim (and many other games). Its calculations are tied to your frame rate, which is why MGO has you set your headset's refresh rate (see [Onboarding](/start/onboarding)). |
 
 ## Modding and VR
 

@@ -50,3 +50,9 @@ As promised, here are all of the choices that are available to every race:
 * Surprise me.
 
 [^1]: _Cydrodiil_ is actually misspelled as "Cyrodill" in the game, but who notices these things? (I think you know the answer to that.)
+
+---
+
+<div class="next">
+  <a href="/mgo/performance">Performance <i class="fa fa-circle-right"></i></a>
+</div>

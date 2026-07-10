@@ -18,8 +18,8 @@ Before downloading and installing the list, make sure your system can handle it,
 Now you're ready to download and install the actual list with Wabbajack.
 {{< /chapter-heading >}}
 
-{{< chapter-heading href="pre-game" >}}
-## Pre-Game (MO2)
+{{< chapter-heading href="onboarding" >}}
+## Onboarding
 
 With the list installed, complete some quick configuration steps and learn your way around Mod Organizer 2.
 {{< /chapter-heading >}}
