@@ -23,9 +23,13 @@ If you plan to play through the main quest, but you're tired of the early quests
 
 If you choose a different, non-vanilla start, but you'd still like to do the main quest _eventually_, you can travel to Helgen at any time to pick up the story right after the dragon attack. When you get to what's left of the village, look for a burnt body, and search it for a note.
 
+{{< aside type="alert" title="Give it a minute" >}}
+After you finish creating your character and Racemenu closes, wait a bit before choosing your start or fiddling with mod settings. Many mods include an MCM (Mod Configuration Menu), and once you name your character, MGO configures the MCMs for you.
+
+The menus themselves need to be registered, and MCM Recorder needs to apply MGO's pre-configured settings by automatically opening those menus and clicking through them in the background. If you dig through menus or sleep in the bed while it's working, you might derail the MCM Recorder playback and leave things in a less-than-ideal state. Wait until the torrent of notifications subsides, and _then_ choose your new life.
+{{< /aside >}}
+
 Once you've made your selection, you just need to sleep in the nearby bed to trigger the _actual_ start of the game (unless you chose "I want to escape this cell," in which case you just need to escape from the cell).
-
-
 
 As promised, here are all of the choices that are available to every race:
 
@@ -33,7 +37,7 @@ As promised, here are all of the choices that are available to every race:
 * I own property in one of the holds.
 * I'm a new member of a guild.
 * I'm a patron at a local inn.
-* I'm a solder in the army.
+* I'm a soldier in the army.
 * I got caught crossing the border illegally. [Vanilla Start]
 * I want to escape this cell.
 * I'm an outlaw in the wilds.
@@ -50,9 +54,3 @@ As promised, here are all of the choices that are available to every race:
 * Surprise me.
 
 [^1]: _Cydrodiil_ is actually misspelled as "Cyrodill" in the game, but who notices these things? (I think you know the answer to that.)
-
----
-
-<div class="next">
-  <a href="/mgo/performance">Performance <i class="fa fa-circle-right"></i></a>
-</div>

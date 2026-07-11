@@ -18,8 +18,8 @@ As the game starts up for the first time, Community Shaders will compile shaders
 Skyrim _is_ an RPG, after all. It's time to build the character of your dreams (and your enemies' nightmares). As with pretty much everything else in Mad God's Overhaul, it isn't quite the vanilla experience.
 {{< /chapter-heading >}}
 
-{{< chapter-heading href="start-a-new-life" >}}
-## Start a New Life
+{{< chapter-heading href="alternate-start" >}}
+## Alternate Start - Live Another Life
 
 Speaking of leaving behind the vanilla experience, MGO includes an alternate start mod that gives you a number of choices for where and how you begin the game.
 {{< /chapter-heading >}}
