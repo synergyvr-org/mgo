@@ -1,11 +1,11 @@
 +++
 title = 'MO2 Overwrite'
-weight = 10
+weight = 88
 +++
 
 At the bottom of the list on the left side of Mod Organizer, you'll see an entry labeled _Overwrite_. It may appear grayed-out when you first install MGO, but once you've played it should be either white-on-orange, or red-on-gray.
 
-_Overwrite_ is there to catch any new files that are written to disk during program execution. For example, the first time you run MGO, [Community Shaders](/appendices/shader-cache/) will write compiled shaders to {{< file folder-open>}}Overwrite{{< /file >}}. 
+_Overwrite_ is there to catch any new files that are written to disk during program execution. For example, the first time you run MGO, [Community Shaders](/reference/shader-cache/) will write compiled shaders to {{< file folder-open>}}Overwrite{{< /file >}}. 
 
 {{< caption name="mo2-overwrite" type="webp" >}}
 _Overwrite_ appears at the bottom of the list on the left side of Mod Organizer 2.

@@ -30,12 +30,12 @@ weight = 94
 | OpenVR | The older VR API that SteamVR is built on. OCU replaces this path with OpenXR for lower overhead. |
 | SKSE / SKSEVR | Skyrim Script Extender (SKSEVR is the VR build), a foundational tool that expands Skyrim's scripting so script-based mods can work. Many mods require it, and MGO runs on it. |
 | MCM | Mod Configuration Menu, the in-game settings menu (under the System menu) where many mods let you adjust their options. Provided by SkyUI. |
-| VRIK | A mod that gives you a full, animated body in VR and drives gestures, body holsters, and much of MGO's VR interaction. It's also the source of a default [control scheme](/controls). |
+| VRIK | A mod that gives you a full, animated body in VR and drives gestures, body holsters, and much of MGO's VR interaction. It's also the source of a default [control scheme](/controls). See the [VRIK Player Avatar](/mod-highlights/vrik) page. |
 | HIGGS | Hand Interaction and Gravity Gloves for Skyrim VR: physics-based hand interaction that lets you grab, throw, and pull objects to your hand. Several other mods build on it. See [Interaction](/how-to-play/interaction). |
 | PLANCK | A physics mod that makes melee strikes, enemy reactions, and object collisions feel physical in VR. See [Melee Combat](/how-to-play/combat). |
 | Plugin | A mod file (with an `.esp`, `.esl`, or `.esm` extension) that adds or changes game records. Plugins are the entries listed on the right-hand side of MO2. |
 | LOOT | The Load Order Optimisation Tool, which automatically sorts your plugins. MGO's load order is already sorted and tested, so you shouldn't run LOOT. |
-| INI | A plain-text configuration file (settings written as `key = value` under bracketed `[Sections]`). Many mods keep their options in one. See [INI Files](/mo2-reference/editing-inis). |
+| INI | A plain-text configuration file (settings written as `key = value` under bracketed `[Sections]`). Many mods keep their options in one. See [INI Files](/reference/editing-inis). |
 
 ## Graphics and Performance
 
@@ -54,4 +54,5 @@ weight = 94
 | PBR | Physically Based Rendering, a lighting and material model that makes surfaces react to light more realistically. |
 | SSGI | Screen Space Global Illumination, a Community Shaders feature that adds bounced, ambient light for extra depth, especially indoors. |
 | Upscaling | Rendering the game at a lower resolution and intelligently scaling it up to gain performance. DLSS (NVIDIA) and FSR (any GPU) are the common methods. |
+| Renderscale Upscaling | A particular upscaling technique recently added to the [Community Shaders Fork](/performance/community-shaders) that can be toggled while in-game. |
 | FFR | Fixed Foveated Rendering, which renders the edges of your view (where you're less likely to be looking) at lower detail to save GPU. Available on NVIDIA through OCU. |

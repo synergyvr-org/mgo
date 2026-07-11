@@ -1,9 +1,9 @@
 +++
 title = 'INI Files'
-weight = 20
+weight = 89
 +++
 
-Some mods include an MCM, but many others keep their settings in a plain-text {{< file file-lines >}}.ini{{< /file >}} file: [Fake Edge VR](/appendices/fake-edge), PLANCK, and more. An INI is just a list of `key=value` settings grouped under bracketed `[Sections]`. You can edit one right inside MO2, or in a text editor of your choice.
+Some mods include an MCM, but many others keep their settings in a plain-text {{< file file-lines >}}.ini{{< /file >}} file: [Fake Edge VR](/mod-highlights/fake-edge), PLANCK, and more. An INI is just a list of `key=value` settings grouped under bracketed `[Sections]`. You can edit one right inside MO2, or in a text editor of your choice.
 
 ## Edit in MO2...
 
@@ -17,7 +17,7 @@ This is the fastest way to flip a setting or two. For anything bigger, the built
 
 ## ...or in a text editor
 
-Because of MO2's [Virtual File System](/mo2-reference/overwrite), a managed mod's files aren't actually sitting in your Skyrim VR game folder, so don't go looking for them there. Open the mod's own folder instead:
+Because of MO2's [Virtual File System](/reference/overwrite), a managed mod's files aren't actually sitting in your Skyrim VR game folder, so don't go looking for them there. Open the mod's own folder instead:
 
 1. Find the mod in the left pane of MO2.
 2. Right-click it and choose {{< btn-inline >}}Open in Explorer{{< /btn-inline >}}.
@@ -44,7 +44,7 @@ Many settings are a simple toggle between `0` (off) or `1` (on), so flipping a f
 Before you change a value, it's a good idea to backup the file. If the change doesn't work out, you can put it back exactly as it was.
 {{< /aside >}}
 
-If a mod rewrites its own INI while the game is running, a new copy can land in the [Overwrite](/mo2-reference/overwrite) folder. If you made an edit and it seems to have reverted, check there.
+If a mod rewrites its own INI while the game is running, a new copy can land in the [Overwrite](/reference/overwrite) folder. If you made an edit and it seems to have reverted, check there.
 
 ## Skyrim's INIs
 

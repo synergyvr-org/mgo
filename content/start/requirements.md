@@ -35,8 +35,8 @@ You may be able to install MGO without fulfilling the next set of requirements, 
 
 **You must...**
 
-* Increase virtual memory to 40GB or more ([instructions](/appendices/virtual-memory/))
-* **NVIDIA only**: Set shader cache to 10GB or more in NVIDIA Control Panel ([instructions](/appendices/shader-cache/))
+* Increase virtual memory to 40GB or more ([instructions](/reference/virtual-memory/))
+* **NVIDIA only**: Set shader cache to 10GB or more in NVIDIA Control Panel ([instructions](/reference/shader-cache/))
 {{< /aside >}}
 
 You'll find that the MGO community is both friendly and helpful ([join the Discord!](https://discord.com/invite/WjSUaSPaQZ)), but please be certain that you've met all of the above requirements before asking for help.
