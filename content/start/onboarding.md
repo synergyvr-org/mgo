@@ -298,10 +298,4 @@ Immersion is a high priority for MGO. The list includes a number of mods to help
 
 {{< nexus 154803 >}}DovaVR Locomotion{{< /nexus >}} allows you to walk by swinging your arms. Check out the [Movement](/how-to-play/movement) page or the mod's Nexus page to read more.
 
-{{< nexus 170889 >}}Fake Edge VR{{< /nexus >}} is one of the roughly 1 million VR-specific mods by Machina, and it gives your weapons real collisions. They bump against walls, tables, your shield, and your other weapons instead of clipping through them. That's because, strictly speaking, it's not always _equipped_; you're just holding it. When you hold {{< control name="trigger" >}}, the weapon is equipped for combat, with all its usual damage and enchantments. Release {{< control name="trigger" >}}, and the weapon becomes a physical object that bumps into the world. It relies on {{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}} from the Convenience section, so be sure to enable that one too. For the full rundown (dual-wielding, locking a weapon's equipped status, etc.), see the full [Fake Edge VR](/appendices/fake-edge) write-up.
-
----
-
-<div class="next">
-  <a href="/mgo/performance">Performance <i class="fa fa-circle-right"></i></a>
-</div>
+{{< nexus 170889 >}}Fake Edge VR{{< /nexus >}} is one of the roughly 1 million VR-specific mods by Machina, and it gives your weapons real collisions. They bump against walls, tables, your shield, and your other weapons instead of clipping through them. That's because, strictly speaking, it's not always _equipped_; you're just holding it. When you hold {{< control name="trigger" >}}, the weapon is equipped for combat, with all its usual damage and enchantments. Release {{< control name="trigger" >}}, and the weapon becomes a physical object that bumps into the world. It relies on {{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}} from the Convenience section, so be sure to enable that one too. For the full rundown (dual-wielding, locking a weapon's equipped status, etc.), see the full [Fake Edge VR](/mod-highlights/fake-edge) write-up.

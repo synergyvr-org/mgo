@@ -8,6 +8,12 @@
 {{ partial "article-content.html" . }}
   {{ with $pages.Next . }}
     <div class="next"><a href="{{ .RelPermalink }}">{{ .LinkTitle }} <i class="fa fa-circle-right"></i></a></div>
+  {{ else }}
+    {{/* Last page in the chapter: link on to the next chapter. */}}
+    {{ $chapters := .Site.Home.Sections.ByWeight.Reverse }}
+    {{ with $chapters.Next .CurrentSection }}
+    <div class="next"><a href="{{ .RelPermalink }}">{{ .LinkTitle }} <i class="fa fa-circle-right"></i></a></div>
+    {{ end }}
   {{ end }}
   <footer class="footline">
     {{- partial "content-footer.html" . }}
