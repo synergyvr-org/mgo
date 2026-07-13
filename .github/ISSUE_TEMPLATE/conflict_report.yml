@@ -1,0 +1,64 @@
+name: "Conflict Report"
+description: "Report two or more mods in the list conflicting (visual glitch, broken record, double-loading, etc.)."
+title: "[Conflict]: "
+labels: ["conflict"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for conflicts *between mods already in the list* — visual doubling, missing/overwritten records, broken meshes, placed-vs-particle light doubling, and similar. For crashes, use the Bug / Crash Report instead.
+
+  - type: input
+    id: list-version
+    attributes:
+      label: Mod list version
+      placeholder: "4.0 BETA RC1"
+    validations:
+      required: true
+
+  - type: textarea
+    id: mods-involved
+    attributes:
+      label: Mods involved
+      description: Which mods appear to be conflicting? List all you suspect.
+      placeholder: |
+        - Immersive Reading
+        - Fake Edge VR
+    validations:
+      required: true
+
+  - type: textarea
+    id: symptom
+    attributes:
+      label: What's wrong?
+      description: Describe the visual or behavioral symptom. Where does it occur?
+      placeholder: "e.g. after picking up a note with Immersive Reading in the Nightgate Inn, a duplicate unreadable copy of the note appears in my hand next to the readable one."
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location / cell
+      description: Where can this be observed? A specific reproducible spot helps a lot.
+      placeholder: "e.g. Nightgate Inn"
+    validations:
+      required: false
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots
+      description: Images make conflicts far easier to confirm. Strongly encouraged.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Checklist
+      options:
+        - label: "I am running the list as shipped (no added/removed mods)."
+          required: true
+        - label: "I searched existing issues and this conflict hasn't already been reported."
+          required: true

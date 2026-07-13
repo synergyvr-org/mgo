@@ -1,0 +1,100 @@
+name: "Black Screen / VR Display Issue"
+description: "Game runs but doesn't render correctly to the headset — black screen, stuck screen, passthrough at the edges, or one eye wrong."
+title: "[Display]: "
+labels: ["black-screen", "needs-logs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for **rendering/display** problems where the game is running but the headset image is wrong — black screen, frozen image with working audio/UI, passthrough bleeding in at the edges, or the two eyes not matching. For a hard crash to desktop, use the Bug / Crash Report instead.
+
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: Which best describes it?
+      options:
+        - "Black screen in headset (game audio/UI still working)"
+        - "Screen frozen/stuck but game is still running"
+        - "Passthrough visible at edge(s) of the view"
+        - "One eye wrong / eyes out of sync (double vision, jitter)"
+        - "Other display issue"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: desktop-check
+    attributes:
+      label: Does it render correctly on the flat desktop mirror?
+      description: A common tell — if the desktop window looks fine but the headset is black, it's a runtime/compositor issue rather than a render crash.
+      options:
+        - "Yes - desktop looks fine, only the headset is wrong"
+        - "No - desktop is also black/broken"
+        - "Didn't check / not sure"
+    validations:
+      required: true
+
+  - type: input
+    id: list-version
+    attributes:
+      label: Mod list version
+      placeholder: "4.0 BETA RC1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: VR runtime
+      options:
+        - "OpenComposite (OCU)"
+        - "SteamVR"
+        - "Other / not sure"
+    validations:
+      required: true
+
+  - type: input
+    id: headset
+    attributes:
+      label: Headset & streaming method
+      placeholder: Your headset and how it connects (e.g. "Quest 3 via Virtual Desktop / VDXR", "Index native", "Quest 3 Link cable").
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      placeholder: "RTX 4080 Super"
+    validations:
+      required: true
+
+  - type: textarea
+    id: when
+    attributes:
+      label: When does it happen?
+      description: On launch? Entering a specific area? After a loading screen? Be as specific as you can.
+      placeholder: "After the loading screen when starting the Riverwood inn start. Black screen with tavern music playing."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Checklist
+      options:
+        - label: "I am running the list as shipped (no added/removed mods)."
+          required: true
+        - label: "My install is NOT inside Program Files."
+          required: true
+        - label: "I searched existing issues and this hasn't already been reported."
+          required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (if available)
+      description: |
+        Paste or link any crash/diagnostic log if you have one. If the logging tool isn't producing a log for you, say so here rather than leaving this blank. Black-screen issues often don't generate a normal crash log, and that's useful to know.
+      render: text
+    validations:
+      required: false

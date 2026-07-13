@@ -1,0 +1,157 @@
+name: "Bug / Crash Report"
+description: "Report a crash, freeze, or broken behavior in the mod list."
+title: "[Bug]: "
+labels: ["bug", "needs-logs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue. **Please fill in every field** — the most common reason a report can't be actioned is a missing crash log or headset/runtime info.
+
+        Before submitting, please confirm this isn't already a known issue by searching existing issues and checking the pinned posts in the support channel.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight checklist
+      description: These catch some "bugs" that aren't actually list bugs.
+      options:
+        - label: "I have NOT added, removed, or changed any mods in the list (running it as shipped)."
+          required: true
+        - label: "I did NOT click [ Unlock ] in Mod Organizer 2 after launching the game."
+          required: true
+        - label: "I have NOT used LOOT to sort my plugins."
+          required: true
+        - label: "I searched existing issues and this has not already been reported."
+          required: true
+
+  - type: input
+    id: list-version
+    attributes:
+      label: Mod list version
+      description: The exact version you installed via Wabbajack (e.g. 4.0 BETA RC1).
+      placeholder: "4.0 BETA RC1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: VR runtime
+      description: Which runtime path did you select during setup?
+      options:
+        - "OpenComposite (OCU)"
+        - "SteamVR"
+        - "Other / not sure"
+    validations:
+      required: true
+
+  - type: input
+    id: headset
+    attributes:
+      label: Headset & streaming method
+      description: Your headset and how it connects (e.g. "Quest 3 via Virtual Desktop / VDXR", "Index native", "Quest 3 Link cable").
+      placeholder: "Quest 3 via Virtual Desktop (VDXR)"
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      placeholder: "RTX 4080 Super"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: refresh
+    attributes:
+      label: Target refresh rate
+      description: The FPS target you selected in the list's setup step.
+      options:
+        - "72 Hz"
+        - "80 Hz"
+        - "90 Hz"
+        - "120 Hz"
+        - "144 Hz"
+        - "Other / not sure"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cs-preset
+    attributes:
+      label: Community Shaders preset
+      description: Which performance option did you enable during setup?
+      options:
+        - "CS NVIDIA- Quality"
+        - "CS NVIDIA- Performance"
+        - "CS AMD - Quality"
+        - "CS AMD - Performance"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem clearly. What action did you take, what did you expect to happen, and what actually happened?
+      placeholder: "Game CTDs on fast-travel into Whiterun. Expected to load normally."
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: How can someone else trigger this? Be specific about location, action, and timing.
+      placeholder: |
+        1. Load save near Riverwood
+        2. Fast-travel to Whiterun
+        3. Crash occurs during load screen
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - "Every time (100% reproducible)"
+        - "Often, but not always"
+        - "Rarely / happened once"
+    validations:
+      required: true
+
+  - type: textarea
+    id: crashlog
+    attributes:
+      label: Crash log
+      description: |
+        Paste your crash log (from Crash Logger SSE VR) or link to it (e.g. a Pastebin/gist).
+        Logs are usually in `Documents/My Games/Skyrim VR/SKSE/` or the Crash Logger output folder.
+        A log makes an issue far easier to diagnose. Please include one if you have it.
+      render: text
+    validations:
+      required: false
+
+  - type: dropdown
+    id: log-status
+    attributes:
+      label: Log status
+      description: If you couldn't attach a log above, let us know why so we don't just ask you to re-post it.
+      options:
+        - "Log attached above"
+        - "The logging tool didn't generate a log for this crash"
+        - "I'm not sure where to find the log"
+        - "Other reason (explain below)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots, video, or other context. Optional.
+    validations:
+      required: false

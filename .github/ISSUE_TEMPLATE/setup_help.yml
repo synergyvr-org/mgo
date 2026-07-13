@@ -1,0 +1,67 @@
+name: "Setup / How-To Help"
+description: "Installation, configuration, or setup questions ( not a bug in the list itself)."
+title: "[Setup]: "
+labels: ["setup-help"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For help with installing or configuring the list — Wabbajack install steps, choosing runtime/FPS options, switching between OpenComposite and SteamVR, and similar. If the list is installed and something is broken, use a bug/display/conflict report instead.
+
+        **Quick questions are often faster in Discord.** Consider asking there first.
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where are you stuck?
+      options:
+        - "Wabbajack install / download"
+        - "First-time setup steps (FPS, performance, runtime selection)"
+        - "Switching runtime (OpenComposite <-> SteamVR)"
+        - "Headset / streaming configuration"
+        - "Other"
+    validations:
+      required: true
+
+  - type: input
+    id: list-version
+    attributes:
+      label: Mod list version
+      placeholder: "4.0 BETA RC1"
+    validations:
+      required: true
+
+  - type: input
+    id: headset
+    attributes:
+      label: Headset & streaming method
+      description: Your headset and how it connects (e.g. "Quest 3 via Virtual Desktop / VDXR", "Index native", "Quest 3 Link cable").
+      placeholder: "Quest 3 via Virtual Desktop (VDXR)"
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      placeholder: "RTX 4080 Super"
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What are you trying to do, and what's happening?
+      description: Describe the step you're on and what's blocking you. Include any error text.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Checklist
+      options:
+        - label: "I checked the setup documentation first."
+          required: true
+        - label: "I searched existing issues for the same question."
+          required: true

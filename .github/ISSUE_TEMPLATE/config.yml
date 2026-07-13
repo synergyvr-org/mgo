@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "MGO Documentation"
+    url: "https://synergyvr.org/mgo/"
+    about: "For setup, configuration, and gameplay instructions, check out the official documentation."
+  - name: "Support & 'Is this a known issue?'"
+    url: "https://discord.com/channels/1200438688182714439/1524755043709091913"
+    about: "For setup help, quick questions, or to check whether something is already a known issue, ask in the Discord support channel before opening an issue here."

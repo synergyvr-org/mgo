@@ -1,0 +1,62 @@
+name: "Mod Suggestion"
+description: "Suggest a mod to add or a configuration change to make."
+title: "[Suggestion]: "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! Please check existing issues first — a mod may already have been suggested, or declined for a specific reason.
+
+  - type: input
+    id: mod-name
+    attributes:
+      label: Mod name
+      placeholder: "Shields and 2H Weapons Unlocked - VR"
+    validations:
+      required: true
+
+  - type: input
+    id: mod-url
+    attributes:
+      label: Nexus (or source) link
+      placeholder: "https://www.nexusmods.com/skyrimspecialedition/mods/184001"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: vr-compat
+    attributes:
+      label: VR compatibility
+      description: Is this mod known to work in Skyrim VR?
+      options:
+        - "Developed specifically for VR"
+        - "Confirmed working in VR (SKSEVR build or VR patch exists)"
+        - "Flatscreen SE mod, no VR-specific version (may or may not work)"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: What does it add, and why should it be in the list?
+      description: What's the value? Does it fill a gap, or replace/improve something already included? Is it just fun?
+    validations:
+      required: true
+
+  - type: textarea
+    id: concerns
+    attributes:
+      label: Known conflicts or performance concerns
+      description: Any known incompatibilities with mods already in the list, script load, or FPS cost? Optional but helpful.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Checklist
+      options:
+        - label: "I searched existing issues and this mod hasn't already been suggested or declined."
+          required: true

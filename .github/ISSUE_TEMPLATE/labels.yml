@@ -1,0 +1,74 @@
+# Label definitions for the mod list repo.
+# GitHub does NOT read this file automatically — see the "How to apply" notes
+# shared alongside it. This is the source of truth for names/colors/descriptions.
+
+# --- Issue type ---
+- name: "bug"
+  color: "d73a4a"        # red
+  description: "A crash, freeze, or broken behavior in the list"
+- name: "conflict"
+  color: "e99695"        # soft red
+  description: "Two or more mods in the list conflicting"
+- name: "suggestion"
+  color: "0e8a16"        # green
+  description: "A proposed mod addition or change"
+
+# --- Triage state ---
+- name: "needs-logs"
+  color: "fbca04"        # yellow
+  description: "Waiting on a crash log or more info from the reporter"
+- name: "confirmed"
+  color: "1d76db"        # blue
+  description: "Reproduced and verified by a maintainer"
+- name: "update-available"
+  color: "5319e7"        # purple
+  description: "A mod in the list has a newer version available"
+
+# --- Resolution ---
+- name: "by-design"
+  color: "c5def5"        # light blue
+  description: "Working as intended; not a bug"
+- name: "wontfix"
+  color: "ffffff"        # white
+  description: "Valid, but will not be actioned"
+- name: "duplicate"
+  color: "cfd3d7"        # grey
+  description: "Already reported in another issue"
+
+# --- Scheduling ---
+- name: "next-build"
+  color: "0052cc"        # deep blue
+  description: "Slated to be addressed in the next list version"
+
+# --- Symptom categories (from support-channel patterns) ---
+- name: "crash"
+  color: "b60205"        # dark red
+  description: "Hard crash to desktop (CTD)"
+- name: "black-screen"
+  color: "24292e"        # near-black
+  description: "Game runs but headset shows black/stuck screen or passthrough"
+- name: "stereo-rendering"
+  color: "8b4fce"        # violet
+  description: "Per-eye desync, jitter, or FOV/passthrough edge issues"
+- name: "quest-bug"
+  color: "d4c5f9"        # pale purple
+  description: "Broken quest progression or scripted-sequence issue"
+
+# --- Component / runtime tags ---
+- name: "skyrimnet"
+  color: "006b75"        # teal
+  description: "Issue with the optional SkyrimNet component"
+- name: "opencomposite"
+  color: "0e8a16"        # green
+  description: "Specific to the OpenComposite runtime path"
+- name: "steamvr"
+  color: "1d76db"        # blue
+  description: "Specific to the SteamVR runtime path"
+- name: "linux"
+  color: "fbca04"        # yellow
+  description: "Linux-specific launch/compatibility issue"
+
+# --- Help ---
+- name: "setup-help"
+  color: "c2e0c6"        # pale green
+  description: "Installation/configuration question, not a list bug"
