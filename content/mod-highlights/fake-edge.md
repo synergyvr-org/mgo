@@ -1,6 +1,6 @@
 +++
 title = 'Fake Edge VR'
-weight = 93
+weight = 50
 +++
 
 {{< nexus 170889 >}}Fake Edge VR{{< /nexus >}} is an SKSE plugin that builds on {{< nexus 43930 >}}HIGGS{{< /nexus >}} to add weapon collisions in VR. Instead of your blade phasing through clutter, scenery, shields, etc., it bumps into them. To achieve this without breaking melee combat, it uses the {{< control name="trigger" >}} to decide whether to treat your equipment as solid physical object or a combat-ready weapon at any given time.
@@ -44,7 +44,7 @@ Fake Edge covers one-handed weapons: daggers, swords, axes, and maces. Two-hande
 
 ## Options in the INI
 
-A couple of Fake Edge's features are opt-in through its {{< file file-lines >}}.ini{{< /file >}} file. (See [Editing INI Files](/mo2-reference/editing-inis).)
+A couple of Fake Edge's features are opt-in through its {{< file file-lines >}}.ini{{< /file >}} file. (See [Editing INI Files](/reference/editing-inis).)
 
 * **Staff collisions.** Out of the box, staves behave as usual. Turn this option on to give them collisions like your other weapons whenever you're not holding the {{< control name="trigger" >}} to cast.
 * **Shield-bash Berserker Rage.** Bash your shield three times to trigger a Berserker Rage. It's off by default, so flip it on in the INI if you want it.
