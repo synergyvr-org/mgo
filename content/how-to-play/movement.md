@@ -13,7 +13,7 @@ If you've been paying any attention at all, you've probably guessed that Mad God
 
 Hold both arms behind you for a moment to activate the mod, and then begin swinging your arms naturally. You don't need to use an exaggerated swinging movement. If you'd rather not hold your arms behind you to start, the MCM also has a _button activation_ option. It even works with controllers that send nonstandard signals.
 
-The mod also supports gestures for swimming and horse riding. For the full rundown, including the MCM options, see the [DovaVR Locomotion](/appendices/dovavr) appendix.
+The mod also supports gestures for swimming and horse riding. For the full rundown, including the MCM options, see the [DovaVR Locomotion](/mod-highlights/dovavr) page.
 
 {{< aside type="btw" title="NatLo" >}}
 If you're using the SteamVR runtime, there's a ~$10 app called {{< steam "798810" >}}Natural Locomotion{{< /steam >}} (a.k.a. NatLo) that's been around a long time and has some overlapping features. It has some other interesting options, including movement options for walking in place and even playing seated, but it is a paid app, and it requires that you play the game through SteamVR (_not_ OpenComposite Unleashed).

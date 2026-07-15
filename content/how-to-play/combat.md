@@ -27,7 +27,7 @@ Here are some of the changes from vanilla to MGO:
 * You can parry attacks.
 * Power attacks no longer apply twice.
 * Shield bashing costs stamina (as it does in Flatrim).
-* You can throw weapons (with optional auto-return).
+* You can [throw weapons](/mod-highlights/weapon-throw) (with optional auto-return).
 * You can store weapons in body holsters.
 
 ## Physics: It matters now![^2]
