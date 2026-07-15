@@ -31,6 +31,10 @@ VRIK is one of the most configurable mods in the list, and I've not even begun t
 
 For how VRIK fits into the bigger picture, see [Interaction](/how-to-play/interaction) and [Melee Combat](/how-to-play/combat). For the VRIK button layout included with MGO, see [VRIK Bindings](/controls/bindings-vrik).
 
+{{< aside type="btw" title="Gestures everywhere!" >}}
+The [OCU](/performance/open-composite) Configurator offers a full gesture system as well (because Wondernutts absolutely cannot stop himself). To use it, run the game first so your spells will show up in the config app, then you can draw gestures for each hand with your mouse right in the app.
+{{< /aside >}}
+
 [^1]: If you have Fake Edge VR enabled, you will need to equip-lock a weapon ({{< control name="trigger" >}} x4) before you can holster it.
 
 [^2]: Once you've assigned an item to a specific holster, you cannot place something else in that slot without first _removing_ (not just _drawing_) the original item.
