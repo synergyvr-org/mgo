@@ -672,6 +672,12 @@ div.img {
   background-color: #ffce00;
 }
 
+.footnotes {
+  img {
+    max-width: 400px !important;
+  }
+}
+
 .video-player {
   position: relative;
   max-width: 60rem;
