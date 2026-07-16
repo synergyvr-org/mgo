@@ -82,6 +82,7 @@
   --mo2-convenience: #836941;
   --mo2-difficulty: #745a37;
   --mo2-immersion: #644c2e;
+  --mo2-followers: #f1cd84;
 }
 
 #R-topbar > .topbar-wrapper {
@@ -319,6 +320,9 @@ input.readonly {
   }
   &.mo2-grass {
     background-color: var(--mo2-grass);
+  }
+  &.mo2-followers {
+    background-color: var(--mo2-followers);
   }
   &.mo2-runtime {
     background-color: var(--mo2-runtime);

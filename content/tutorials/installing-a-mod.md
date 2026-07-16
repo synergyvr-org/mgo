@@ -9,101 +9,112 @@ MGO arrives with hundreds of mods already installed and configured, so you never
 If it's not included in MGO, it's untested against the list (or possibly even confirmed _not_ to work). Some simple mods drop right in, but mods that touch certain types of records are likely to conflict with something. Add mods one at a time, and make a habit of making a manual, indoor save before each addition. When in doubt, ask the MGO Discord community.
 {{< /aside >}}
 
-## Our guinea pig
+## Everyone's favorite Bosmer[^1]
 
-Machina's {{< nexus 184001 >}}Shields and 2H Weapons Unlocked - VR{{< /nexus >}} removes Skyrim's equipment-hand restrictions. It lets you hold a shield in your main hand, wield a two-handed weapon in either hand (or both hands!), etc. That also means you can arm yourself with previously forbidden combinations: a shield and a greatsword, two shields at the same time[^1], a spell and a battleaxe, etc. It also might be nice for left-handed players who'd rather stay in right-handed mode.
+{{< nexus 11278 >}}Song of the Green (Auri Follower){{< /nexus >}}, created and voiced by Waribiki, is one of the most beloved follower mods for Skyrim, and a personal favorite of mine. It adds Auri, a fully voiced Bosmer archer with over a thousand lines of dialogue, an approval system, banter with other custom followers, a mini-quest, her own mount, and an optional romance. You'll find her waiting in Falkreath Hold, northwest of town. Look for _Auri's Pod_ on your map.
 
-Given its similarity to [Fake Edge VR](/mod-highlights/fake-edge) and some of the other optional Immersion mods, we'll put it there.
+A follower like this takes a bit more thought to place than an SKSE plugin or a simple asset replacement would. It adds an NPC and touches records that other mods depend on, so it belongs with the other custom followers (Inigo, Lucien, Sofia, etc.), at the end of that group. More on _why_ that spot in a bit.
 
 ## Download it
 
-1. Open the mod's {{< nexus 184001 >}}Nexus page{{< /nexus >}} and go to the {{< btn-inline >}}Files{{< /btn-inline >}} tab.
-2. On the main file, click {{< btn-inline download >}}Mod manager download{{< /btn-inline >}} (not _Manual_).
-3. After any wait timer, your browser hands the file off to MO2, and it shows up in MO2's {{< btn-inline >}}Downloads{{< /btn-inline >}} tab (over on the right, next to _Plugins_).
+1. Open the mod's {{< nexus 11278 >}}Nexus page{{< /nexus >}} and go to the {{< btn-inline >}}Files{{< /btn-inline >}} tab.
+2. On the main file, click {{< btn-inline download >}}Mod manager download{{< /btn-inline >}} (see below).
+3. After any wait timer, your browser hands the file off to MO2, and it shows up in MO2's {{< btn-inline >}}Downloads{{< /btn-inline >}} tab on the right, next to _Plugins_.
 
 {{< aside type="btw" title="If nothing happens" >}}
-{{< btn-inline download >}}Mod manager download{{< /btn-inline >}} only works if MO2 is registered to handle Nexus (`nxm://`) links. If clicking it does nothing, open MO2's settings, find the {{< btn-inline >}}Nexus{{< /btn-inline >}} section, and click the button to associate with "Download with Manager" links. (Alternatively, use {{< btn-inline >}}Manual{{< /btn-inline >}} download, then in MO2 click the {{< btn-inline "box-archive" >}}Install a new mod from an archive{{< /btn-inline >}} toolbar button and pick the file you downloaded.)
+{{< btn-inline download >}}Mod manager download{{< /btn-inline >}} only works if MGO's MO2 installation is registered to handle Nexus (`nxm://`) links. If clicking it does nothing, and you'd like it to, open MO2's settings, find the {{< btn-inline >}}Nexus{{< /btn-inline >}} section, and and click the button to associate with "Download with Manager" links.
+
+You can also use {{< btn-inline >}}Manual{{< /btn-inline >}} download on Nexus, then in MO2 click the {{< btn-inline "box-archive" >}}Install a new mod from an archive{{< /btn-inline >}} toolbar button, and pick the file you downloaded. Personally, I always install mods manually because I have a bunch of MO2 installations, and I can't keep track of which (if any) are associated with Nexus links.
 {{< /aside >}}
 
 ## Install it in MO2
 
 1. In the {{< btn-inline >}}Downloads{{< /btn-inline >}} tab, double-click the file you just downloaded. MO2 unpacks it and opens the install dialog.
-2. Give it a clear name (the default is usually fine) and click {{< btn-inline >}}OK{{< /btn-inline >}}.
-3. If a mod ships with installer options, you'll get a **FOMOD** wizard here instead: a step-by-step screen where you pick which parts to install. Read each step, make your choices, and finish. (This particular mod is a simple install, so you won't see one.)
+2. Give it a clear name and click {{< btn-inline >}}OK{{< /btn-inline >}}. The default name is usually fine, but you may want to add a little something in front (see below).
+3. If a mod ships with installer options, you'll get a **FOMOD** wizard here instead. These are step-by-step screens where you choose installation options. Read each step, make your choices, and finish.
 
-Your new mod now appears in the left pane, enabled, at the very bottom of the list.
+Your new mod now appears in the left pane, disabled, at the very bottom of the list.
+
+{{< aside type="btw" title="Protect it from Oblivion" >}}
+MGO is installed with Wabbajack, and reinstalling or updating a Wabbajack list removes anything that isn't part of it from the installation folder—including mods you've added yourself. To protect one, prepend `[NoDelete]` and a space to its name in the left pane, so `[NoDelete] Song of the Green (Auri Follower)` in this case. Wabbajack leaves any mod tagged that way alone when it reinstalls. You can add the tag when you name the mod during installation, or rename the mod later (right-click it in the left pane and choose {{< btn-inline >}}Rename{{< /btn-inline >}}).
+{{< /aside >}}
 
 ## Enable it and set its load order
 
-A freshly installed mod lands at the bottom of the left pane. We want it tucked into the optional **Immersion** section instead, at the end. Where a mod sits in the left pane sets its priority (mods lower down win conflicts with mods above them), so keeping it grouped with related mods keeps the list tidy and predictable.
+Newly installed mods appear at the bottom of the left pane. We want it grouped with the other custom followers instead. Where a mod sits in the left pane sets its priority (mods lower down win conflicts with mods above them), so keeping it grouped with related mods keeps the list manageable and less likely to make trouble.
 
-1. Make sure the mod's checkbox is **checked** (it should be, right after install).
-2. Find the {{< btn-inline "folder" >}}OPTIONAL Mods{{< /btn-inline >}} folder and expand its {{< btn-inline "folder" >}}Immersion{{< /btn-inline >}} subfolder (see [Optional Mods](/start/onboarding) for a tour of what's in there).
-3. Drag your new mod so it sits at the **end** of that Immersion group, just below _Minimal Enemy Healthbar VR_:
+1. Make sure the mod's checkbox is **checked**.
+2. Find the {{< btn-inline "folder" >}}Followers{{< /btn-inline >}} section. The filter box at the bottom of the left pane makes it easy to locate. (Try searching for "Sofia".)
+3. Drag your new mod so it sits at the **end** of the Followers group, just below Sofia's entries:
 
-<div class="separator mo2-immersion">
-  <i class="fa fa-folder"></i> ▸▸▸ Immersion
+<div class="separator mo2-followers">
+  <i class="fa fa-folder"></i> ▸▸ Followers
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> Durability VR
+  <input type="checkbox" class="readonly"> Inigo
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> DovaVR Locomotion
+  <input type="checkbox" class="readonly"> Snowpoint - Inigo Patch
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> Spellsiphon - Immersive Combat
+  <input type="checkbox" class="readonly"> Lucien - Immersive Fully Voiced Male Follower
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> Fake Edge VR - Pseudo Equipped weapon Collisions
+  <input type="checkbox" class="readonly"> Pandorable's Lucien Replacer
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> NavigateVR - Dynamic Compass and Equipable Map
+  <input type="checkbox" class="readonly"> Sofia - The Funny Fully Voiced Follower
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> Minimal Enemy Healthbar VR - Remove Enemy Health Bar
+  <input type="checkbox" class="readonly"> Pandorable's Sofia Replacer
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly" checked> Shields and 2H Weapons Unlocked - VR
+  <input type="checkbox" class="readonly"> Sofia - Use Custom Skin Texture
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly" checked> Song of the Green (Auri Follower)
 </div>
 
 ## Why not just add it to the end?
 
-You'll see this advice everywhere: to add a mod, just drop it at the bottom of the list. It's tempting, and for _some_ mods it's harmless. As a habit, though, it'll eventually bite you, because "the bottom" isn't the empty shelf it sounds like.
+It's commonly recommended to leave added mods at the bottom of the list. For _some_ mods it may prove to be harmless, but it's not ideal. Sooner or later, that habit is likely to get you into trouble.
 
-MO2 keeps two separate orders, and both treat the bottom as a position of _power_, not safety:
+MO2 keeps two separate orders, and both treat the bottom as a position of power.
 
-* The **left pane** decides which mod's _files_ (meshes, textures, scripts) win when two mods ship the same one. Lower down wins.
-* The **right pane** decides the order _plugins_ (`.esp`/`.esl`) load, which settles whose edits to the game's records (NPCs, cells, leveled lists) win. Later wins.
+* The **left pane** decides which mod's _loose files_ (meshes, textures, scripts) win when two mods include the same one. The lower mod wins.
+* The **right pane** decides the order in which _plugins_ (`.esp`/`.esl`) load, which settles whose edits to the game's records (NPCs, cells, etc.) win. Again, later in the list wins.
 
-A curated list like MGO deliberately keeps its bug fixes, patches, and compatibility files near the _bottom_ so they get the last word. Drop a new mod at the very end and it can quietly override the exact things that were put there to win. (It's also why the bottom of MGO's list isn't empty space; that's where output and patch entries live.)
+A carefully curated list like MGO keeps its bug fixes, patches, compatibility files, and outputs near the bottom so they win every conflict. Drop a new mod at the very end and it can override those.
 
-So the better instinct is the one the experts push: **put a mod next to the mods it's most like.** Those are the mods it'll actually conflict with, and that stretch of the list has already been sorted with intent. It also keeps the list something you can still make sense of six months from now. That's exactly why we tucked our example into the Immersion section instead of the absolute bottom. The end of a _section_ is fine; the end of the whole _list_ is the trap.
+So the better guidance is to **put a mod next to similar mods**. Those are the mods it's most likely to conflict with, and that portion of the list has already been sorted with intent. It also keeps the list something you can still make sense of six months from now.
 
-When a mod's home isn't as obvious as this one's, a few rules of thumb:
+Auri is a follower mod that adds an NPC and edits NPC-adjacent records, and MGO deliberately orders its NPC and AI mods (like AI Overhaul SSE and its patches) so the right ones win. Drop her at the very bottom and she'd override some of that. Put her next to Inigo, Lucien, and Sofia, and she lands where she ought to.
 
-* **Group by function.** A texture replacer goes among the other texture mods, a combat tweak among the combat mods, and so on.
-* **A replacer goes below what it replaces** (so it wins), but still _above_ any fix or patch that's meant to stay on top.
-* **Let MO2 show you the conflicts.** The {{< btn-inline >}}Conflicts{{< /btn-inline >}} column flags mods that overwrite (or are overwritten by) others, and right-clicking a mod and choosing {{< btn-inline >}}Information{{< /btn-inline >}} → {{< btn-inline >}}Conflicts{{< /btn-inline >}} lists exactly which files clash and who currently wins. Nudge the mod up or down until the winners are the ones you want.
-* **Self-contained mods don't care.** Plenty of VR mods are just an SKSE plugin with nothing to conflict over (or a plugin that only _adds_ new content). For those, position really doesn't matter, and the end is fine.
+When a mod's ideal home is less clear-cut, a few rules of thumb:
 
-The right pane follows the same spirit, with one MGO-specific rule&mdash;which is next.
+* **Group by function.** A texture replacer goes among other texture mods, a combat tweak among the combat mods, and so on.
+* **A replacer goes below what it replaces** (so it wins), but still _above_ any fix or patch that's meant to override it (so the patch wins).
+* **Let MO2 show you any conflicts.** The {{< btn-inline >}}Conflicts{{< /btn-inline >}} column flags mods that overwrite (or are overwritten by) others, and right-clicking a mod and choosing {{< btn-inline >}}Information{{< /btn-inline >}} → {{< btn-inline >}}Conflicts{{< /btn-inline >}} lists exactly which files clash and which one currently wins. Move the affected mods up or down until the winners are the ones you want.
+* **Self-contained mods don't care.** Plenty of VR mods are just an SKSE plugin (or a mod that only _adds_ content) with nothing to fight over. For those, position doesn't technically matter, but your list will be easier to maintain if you still order them logically.
+
+The right pane works much the same, but MGO and the other Synergy lists have a rule for that. Let's talk about it.
 
 ## Sync the plugins to match
 
-Once your mod is settled on the left, its plugin should sit in the matching spot on the right. If a mod adds a **plugin** (an `.esp` or `.esl`), first make sure it's checked in the right pane. Then, instead of dragging plugins around by hand, let {{< nexus 47325 >}}Sync Plugins{{< /nexus >}} do it: it's an MO2 tool that reads your left-pane mod order and reorders the plugins to match, all in one go. Run it from the menu bar at {{< btn-inline >}}Tools{{< /btn-inline >}} → {{< btn-inline >}}Tool Plugins{{< /btn-inline >}} → {{< btn-inline >}}Sync Plugins{{< /btn-inline >}}, and your plugins snap into the same order as the mods that provide them.
+Once your mod is settled on the left, its plugin, if any, should sit in the matching spot on the right. If a mod adds a **plugin** (an `.esp` or `.esl`), first make sure it's checked in the right pane. Then, instead of dragging plugins around by hand, let {{< nexus 47325 >}}Sync Plugins{{< /nexus >}} do it. It's an MO2 tool that reads your left-pane mod order and reorders the plugins to match. Run it from the menu bar at {{< btn-inline >}}Tools{{< /btn-inline >}} → {{< btn-inline >}}Tool Plugins{{< /btn-inline >}} → {{< btn-inline >}}Sync Plugins{{< /btn-inline >}}, and your plugins snap into the same order as the mods that provide them.
 
 {{< aside type="alert" title="Sync, don't LOOT" >}}
-This is the one automatic tool we'll point you at for load order, and that's rather the point. Sync Plugins only mirrors the order _you_ set on the left; it never invents an order of its own. LOOT, on the other hand, would impose its own sorting and toss out the deliberate order MGO is built around. Sort by hand on the left, sync to the right, and leave LOOT out of it.
+Sync Plugins is the one automatic tool we'll endorse for load order. Sync Plugins only mirrors the order _you_ set on the left; it never invents an order of its own. LOOT, on the other hand, would impose its own sorting and toss out the deliberate order MGO is built around. Sort by hand on the left, sync to the right, and give LOOT the boot.
 {{< /aside >}}
 
-## Set it up
+## Play it
 
-Most mods need a little configuration to shine, and this one is no exception. Its Nexus page is the source of truth, but for our example:
+A follower doesn't need much in the way of configuration. Just go and recruit her. Head to Falkreath Hold, find _Auri's Pod_ (it's on the map), and introduce yourself. A few things worth knowing:
 
-* It leans on {{< nexus 47630 >}}Spell Wheel VR{{< /nexus >}} (already in MGO) to know which hand you meant. In the Spell Wheel MCM, enable **Show all melee weapons in the Off-Hand Orb** and **Show all shields in the Main-Hand Orb**. (See the [Spell Wheel VR](/mod-highlights/spell-wheel) page.)
-* If you've also enabled {{< nexus 170889 >}}Fake Edge VR{{< /nexus >}}, this mod notices and hands two-handed weapons off to Fake Edge's own 2H module automatically, while still managing main-hand shields itself. No conflict, no fuss.
-* Most of its behavior is tunable through its {{< file file-lines >}}.ini{{< /file >}} file (see [INI Files](/reference/editing-inis)).
+* She's an archer, so keep her stocked with arrows, or she'll resort to punching dragons (her words). She can buy bone arrows (her favorites) at the Drunken Huntsman, or you can craft them, but she'll use any arrows you give her.
+* To give her other gear that she'll actually use, go through dialogue: "Let's talk about traveling together" → "Let me check your gear." (Moving items to her normal inventory just stores them.)
+* Her quest, approval, and the optional romance all unfold through conversation as you play. The {{< nexus 11278 >}}Nexus page{{< /nexus >}} has the full rundown.
 
-That's the whole loop: download, install, place, configure. Every mod you add follows the same rhythm, even if the specifics of that last step differ.
+That's the process: download, install, place, sync, and play. Every mod you add follows that same general process, even if some of the specifics differ.
 
-[^1]: ![Diedrich Bader as "Lawrence" in _Office Space_](/images/office-space.webp)
+[^1]: Sorry, Faendal.
