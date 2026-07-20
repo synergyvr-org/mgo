@@ -50,9 +50,31 @@
       </tr>
     </thead>
     <tbody>
-      {{- /* Running count of separators with no onboarding match; drives the
-             repeating #642f69 → black gradient (20-folder cycle). */ -}}
-      {{- $sepIndex := 0 -}}
+      {{- /* Pre-pass: count the top-level (single-#) folders that receive the
+             gradient — excluding special cases and onboarding-matched folders —
+             so the 3-stop spread can span exactly those. */ -}}
+      {{- $topTotal := 0 -}}
+      {{- range $ri, $row := $rows -}}
+        {{- if gt $ri 0 -}}
+          {{- $nm := index $row 1 -}}
+          {{- if hasSuffix $nm "_separator" -}}
+            {{- $lbl := strings.TrimSuffix "_separator" $nm -}}
+            {{- $d := sub (len $lbl) (len (strings.TrimLeft "#" $lbl)) -}}
+            {{- $cl := strings.TrimSpace (strings.TrimLeft "#" $lbl) -}}
+            {{- if and (eq $d 1) (not (hasPrefix $cl "Mad God Overhaul - ")) (ne $cl "End Of List") (not (index $sepClasses $cl)) -}}
+              {{- $topTotal = add $topTotal 1 -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- /* Stack of ancestor folders and a running count of eligible top-level
+             folders, used to assign each folder a gradient position:
+             position = parent.pos + 1 + (its index among eligible siblings);
+             top-level folders use topCount as that index. So a folder's children
+             continue the outer gradient from just past the parent — the first
+             child shares the color of the parent's next sibling. */ -}}
+      {{- $stack := slice -}}
+      {{- $topCount := 0 -}}
       {{- range $i, $row := $rows -}}
         {{- if eq $i 0 -}}{{- continue -}}{{- end -}}
         {{- $name := index $row 1 -}}
@@ -63,26 +85,61 @@
           {{- $arrows := "" -}}
           {{- if gt $depth 0 -}}{{- $arrows = printf "%s " (strings.Repeat $depth "▸") -}}{{- end -}}
           {{- $mo2 := index $sepClasses $clean -}}
-          {{- /* The top-level "Mad God Overhaul - <version>" container is a special
-                 case with its own color. The trailing text varies per release. */ -}}
-          {{- $isRoot := hasPrefix $clean "Mad God Overhaul - " -}}
+          {{- /* Special cases with their own color: the top-level
+                 "Mad God Overhaul - <version>" container (text varies per release)
+                 and the "End Of List" marker. */ -}}
+          {{- $isSpecial := or (hasPrefix $clean "Mad God Overhaul - ") (eq $clean "End Of List") -}}
           {{- /* A separator is a collapsible folder only if its name has at least
                  one leading "#" (single "#" = top level). Hash-less separators are
                  plain labels: not folders, not collapsible, no gradient. */ -}}
-          {{- $isFolder := and (ge $depth 1) (not $isRoot) -}}
+          {{- $isFolder := and (ge $depth 1) (not (hasPrefix $clean "Mad God Overhaul - ")) -}}
+          {{- $eligible := and $isFolder (not $isSpecial) (not $mo2) -}}
+          {{- /* Assign this folder a gradient position via the ancestor stack. */ -}}
+          {{- $position := 0 -}}
+          {{- if ge $depth 1 -}}
+            {{- $stack = where $stack "depth" "lt" $depth -}}
+            {{- $parentPos := -1 -}}
+            {{- $sib := $topCount -}}
+            {{- if gt (len $stack) 0 -}}
+              {{- $p := index $stack (sub (len $stack) 1) -}}
+              {{- $parentPos = $p.pos -}}
+              {{- $sib = $p.childCount -}}
+            {{- end -}}
+            {{- $position = add (add $parentPos 1) $sib -}}
+            {{- if $eligible -}}
+              {{- if gt (len $stack) 0 -}}
+                {{- $p := index $stack (sub (len $stack) 1) -}}
+                {{- $p = merge $p (dict "childCount" (add $p.childCount 1)) -}}
+                {{- $stack = append $p (first (sub (len $stack) 1) $stack) -}}
+              {{- else -}}
+                {{- $topCount = add $topCount 1 -}}
+              {{- end -}}
+            {{- end -}}
+            {{- $stack = append (dict "depth" $depth "pos" $position "childCount" 0) $stack -}}
+          {{- end -}}
       <tr class="modlist-separator{{ if $isFolder }} modlist-folder{{ end }}" data-depth="{{ $depth }}">
-        {{- if $isRoot -}}
-        <td colspan="3" class="modlist-separator-root">{{ $clean }}</td>
+        {{- if $isSpecial -}}
+        <td colspan="3" class="modlist-separator-special">{{ if $isFolder }}<i class="fa fa-folder-open"></i> {{ end }}{{ $arrows }}{{ $clean }}</td>
         {{- else if $mo2 -}}
         <td colspan="3" class="separator {{ $mo2 }}"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
         {{- else if $isFolder -}}
-          {{- $sepIndex = add $sepIndex 1 -}}
-          {{- /* interpolate #642f69 (100,47,105) → #000000 over a 20-folder cycle */ -}}
-          {{- $frac := div (mod (sub $sepIndex 1) 20) 19.0 -}}
-          {{- $scale := sub 1 $frac -}}
-          {{- $r := int (math.Round (mul 100 $scale)) -}}
-          {{- $g := int (math.Round (mul 47 $scale)) -}}
-          {{- $b := int (math.Round (mul 105 $scale)) -}}
+          {{- /* One 3-stop gradient #642f69 → #000000 → #581e2a spread across the
+                 top-level folders; nested folders take positions that continue it. */ -}}
+          {{- $denom := math.Max 1 (sub $topTotal 1) -}}
+          {{- $f := div $position $denom -}}
+          {{- if gt $f 1.0 -}}{{- $f = 1.0 -}}{{- end -}}
+          {{- $r := 0 -}}{{- $g := 0 -}}{{- $b := 0 -}}
+          {{- if le $f 0.5 -}}
+            {{- $t := div $f 0.5 -}}
+            {{- $r = int (math.Round (mul 100 (sub 1 $t))) -}}
+            {{- $g = int (math.Round (mul 47 (sub 1 $t))) -}}
+            {{- $b = int (math.Round (mul 105 (sub 1 $t))) -}}
+          {{- else -}}
+            {{- $t := div (sub $f 0.5) 0.5 -}}
+            {{- $r = int (math.Round (mul 88 $t)) -}}
+            {{- $g = int (math.Round (mul 30 $t)) -}}
+            {{- $b = int (math.Round (mul 42 $t)) -}}
+          {{- end -}}
         <td colspan="3" class="modlist-separator-gradient" style="background-color: {{ printf "#%02x%02x%02x" $r $g $b }}; color: #fff;"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
         {{- else -}}
         <td colspan="3" class="modlist-separator-plain">{{ $clean }}</td>
