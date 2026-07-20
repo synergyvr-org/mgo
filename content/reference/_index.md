@@ -18,6 +18,12 @@ What that _Overwrite_ entry at the bottom of MO2 is, why files pile up there, an
 How to find and safely edit the plain-text settings files some mods use instead of (or in addition to) an MCM.
 {{< /chapter-heading >}}
 
+{{< chapter-heading href="clean-install" >}}
+## Clean Install
+
+What a clean Skyrim VR installation looks like, how to get back to one, and how a dirty one misbehaves.
+{{< /chapter-heading >}}
+
 {{< chapter-heading href="shortcut" >}}
 ## MGO Shortcut
 
