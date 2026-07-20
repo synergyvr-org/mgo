@@ -33,7 +33,7 @@ Windows Notepad is fine (far better than it used to be), but something like Note
 
 Inside, you'll see lines like this:
 
-```
+```ini
 [Settings]
 EnableSomeFeature = 0
 ```
