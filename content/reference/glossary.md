@@ -11,7 +11,7 @@ weight = 94
 | Flatrim | Any non-VR edition of Skyrim, including Special Edition/Anniversary Edition. |
 |Journal Menu | The collection of menus containing _Quests_, _General Stats_, and _System_ tabs. |
 | Tween Menu | The menu containing _Skills_/_Level Up_, _Items_, _Map_, and _Magic_. |
-| Havok | The physics engine that's built into Skyrim (and many other games). Its calculations are tied to your frame rate, which is why MGO has you set your headset's refresh rate (see [Onboarding](/start/onboarding)). |
+| Havok | The physics engine that's built into Skyrim (and many other games). Its calculations are tied to your frame rate, which is why MGO has you select a target frame rate to match your headset (see [Onboarding](/start/onboarding)). |
 
 ## Modding and VR
 
@@ -34,6 +34,7 @@ weight = 94
 | HIGGS | Hand Interaction and Gravity Gloves for Skyrim VR: physics-based hand interaction that lets you grab, throw, and pull objects to your hand. Several other mods build on it. See [Interaction](/how-to-play/interaction). |
 | PLANCK | A physics mod that makes melee strikes, enemy reactions, and object collisions feel physical in VR. See [Melee Combat](/how-to-play/combat). |
 | Plugin | A mod file (with an `.esp`, `.esl`, or `.esm` extension) that adds or changes game records. Plugins are the entries listed on the right-hand side of MO2. |
+| ESL / ESPFE | A "light" plugin format (an `.esl` file, or an `.esp` carrying the ESL flag) that doesn't count against Skyrim's plugin limit. Vanilla Skyrim VR doesn't support ESLs or ESL-flagged ESPs, but MGO includes [Skyrim VR ESL Support](https://www.nexusmods.com/skyrimspecialedition/mods/106712). |
 | LOOT | The Load Order Optimisation Tool, which automatically sorts your plugins. MGO's load order is already sorted and tested, so you shouldn't run LOOT. |
 | INI | A plain-text configuration file (settings written as `key = value` under bracketed `[Sections]`). Many mods keep their options in one. See [INI Files](/reference/editing-inis). |
 
