@@ -1,0 +1,13 @@
+{{ .Get "title" | default "SkyrimVR.exe" | $.Scratch.Set "title" }}
+
+<div class="dialog windows">
+<div class="bar">
+  {{ $.Scratch.Get "title" }}
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="dialog-body">
+{{ .Inner | .Page.RenderString }}
+</div>
+</div>

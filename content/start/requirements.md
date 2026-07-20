@@ -21,6 +21,7 @@ If your hardware is up to the task, you will still not be able to download, inst
 
 **You must...**
 * Have a legal copy of Skyrim VR from Steam. **Pirated copies will not work.**
+* Have a **clean install** of Skyrim VR, with nothing modified and no extra files in the game's root folder ([instructions](/reference/clean-install/))
 * Move Skyrim VR out of the <span class="file"><i class="fa fa-folder-open"></i> C:\Program Files (x86)</span> folder to avoid issues with Windows Defender and other antivirus products ({{< ext "https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327#default" >}}instructions{{< /ext >}})
 * Set Skyrim VR's language to English
 * Download and install the latest {{< ext "https://aka.ms/vs/17/release/vc_redist.x64.exe" >}}Visual C++ Redistributable for X64{{< /ext >}}

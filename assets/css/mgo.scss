@@ -83,6 +83,9 @@
   --mo2-difficulty: #745a37;
   --mo2-immersion: #644c2e;
   --mo2-followers: #f1cd84;
+  --mo2-docs: #d2b374;
+  --mo2-nvidia: #9c8050;
+  --mo2-amd: #8d7345;
 }
 
 #R-topbar > .topbar-wrapper {
@@ -197,6 +200,13 @@ a:hover, a:active, a:focus {
   }
 }
 
+// FAQ only: underline the question-group headings to visually separate the groups.
+.body-inner.faq {
+  h2 {
+    border-bottom: 2px solid;
+  }
+}
+
 .home {
   h1 {
     margin: 2rem 0;
@@ -273,6 +283,9 @@ li {
   color: black;
   padding: 0 6px;
 
+  &.mo2-docs {
+    background-color: var(--mo2-docs);
+  }
   &.mo2-beta {
     background-color: var(--mo2-beta);
   }
@@ -323,6 +336,14 @@ input.readonly {
   }
   &.mo2-followers {
     background-color: var(--mo2-followers);
+  }
+  &.mo2-nvidia {
+    background-color: var(--mo2-nvidia);
+    color: white;
+  }
+  &.mo2-amd {
+    background-color: var(--mo2-amd);
+    color: white;
   }
   &.mo2-runtime {
     background-color: var(--mo2-runtime);
@@ -681,6 +702,94 @@ div.img {
     max-width: 400px !important;
   }
 }
+
+/* Windows Dialog Box */
+
+.dialog {
+  box-shadow: rgba(0,0,0,0.2) 0px 3px 20px;
+  margin: 0 auto;
+  max-width: 25em;
+  img {
+    margin: 0 !important;
+  }
+  .controls {
+    float: left;
+  }
+}
+.dialog.windows {
+  border: 1px solid #1883d7;
+  pre {
+    border-radius: 0;
+  }
+}
+.bar {
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  padding-left: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: black;
+  float: none;
+}
+.windows {
+  .bar {
+    background: #fff;
+    box-sizing: content-box;
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    text-align: left;
+  }
+  .windows.icon {
+    margin: 0 8px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 16px;
+    }
+  }
+}
+.windows-controls {
+  background-image: url("/mgo/images/windows-controls.png");
+  float: right;
+  width: 137px;
+  height: 30px;
+}
+.dialog-body {
+  padding: 0.5rem;
+  font-size: 14px;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  color: black;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  .windows-controls {
+    background-image: url("/mgo/images/windows-controls@2x.png");
+    background-size: 137px 30px;
+  }
+}
+@media only screen and (min-resolution: 1.5dppx) {
+  .windows-controls {
+    background-image: url("/mgo/images/windows-controls@2x.png");
+    background-size: 137px 30px;
+  }
+}
+@media only screen and (min--moz-device-pixel-ratio: 1.5) {
+  .windows-controls {
+    background-image: url("/mgo/images/windows-controls@2x.png");
+    background-size: 137px 30px;
+  }
+}
+@media only screen and (min-resolution: 144dpi) {
+  .windows-controls {
+    background-image: url("/mgo/images/windows-controls@2x.png");
+    background-size: 137px 30px;
+  }
+}
+
+
+/* END Windows Dialog Box */
+
 
 .video-player {
   position: relative;
