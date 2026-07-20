@@ -1,0 +1,25 @@
+// Inline UI pills: .controller glyphs, .btn-inline
+
+#R-body {
+  .controller {
+    display: inline-block;
+    background-color: var(--mgo-blue);
+    background: radial-gradient(circle,var(--mgo-blue2) 40%, var(--mgo-blue) 100%);
+    text-shadow: 1px 1px 1px #000000;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-family: var(--INTERNAL-CODE-font);
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+.btn-inline {
+  display: inline-block;
+  background-color: var(--mgo-btn-inline);
+  text-shadow: 1px 1px 1px #000000;
+  padding: 0 6px;
+  border-radius: 10px;
+  font-family: var(--INTERNAL-CODE-font);
+}

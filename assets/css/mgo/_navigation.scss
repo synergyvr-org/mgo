@@ -1,0 +1,44 @@
+// Footer, horizontal nav, and the next-page button
+
+#R-footer {
+  a {
+    text-decoration: underline;
+  }
+}
+
+ul.horizontal-nav {
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+
+  li {
+  padding: 0 1rem;
+}
+}
+
+.next {
+  margin-top: 2rem;
+  text-align: center;
+  container-type: inline-size;
+  a {
+    display: inline-block;
+    font-weight: bold;
+    max-width: 640px;
+    font-size: 3.6cqw;
+    text-decoration: none;
+    position: relative;
+    color: #eee;
+    line-height: 1;
+    border-radius: 4rem;
+    padding: 1.5rem;
+    transition: all .2s;
+    --bs1: -2px -2px 0 2px var(--mgo-gold);
+    --bs2: 0 0 0 4px var(--mgo-red);
+    --bs3: 0 0 2px 7px rgba(0, 0, 0, .05);
+    text-shadow: 2px 2px 2px #000000;
+    box-shadow: var(--bs1), var(--bs2), var(--bs3);
+    background: linear-gradient(24deg,var(--mgo-gradient1) 0%,
+              var(--mgo-gradient2) 100%,
+              var(--mgo-gradient3) 38%);
+  }
+}

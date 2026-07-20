@@ -1,0 +1,94 @@
+// Aside callouts (btw / alert / note) and related footnote tweaks
+
+.aside {
+  clear: both;
+  margin: 2rem auto;
+  max-width: 50em;
+  position: relative;
+  padding-bottom: 1rem;
+  text-shadow: rgba(0,0,0,0.8) 1px 0 1px;
+  color: #fff;
+  font-size: 1rem;
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .emoji {
+    float: left;
+    font-size: 400%;
+    margin: 0 1rem;
+  }
+
+  .body {
+    padding: 0 1rem;
+  }
+
+  a {
+    color: #ffce00;
+  }
+
+  code {
+    background: rgba(64,64,64,0.2);
+    color: #fff;
+    font-size: 100%;
+    padding: 2px;
+  }
+
+  &.aside-alert {
+    background: linear-gradient(24deg, var(--mgo-alert-bg1) 0%, var(--mgo-alert-bg2) 100%, var(--mgo-alert-bg3) 38%);
+
+    h4 {
+      background: rgba(54, 23, 14, 0.8);
+    }
+
+    .body {
+      background-image: url("/mgo/images/bg-clavicus-vile.webp");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &.aside-btw {
+    background-image: linear-gradient(24deg, var(--mgo-btw1) 0%, var(--mgo-btw2) 100%);
+
+    h4 {
+      background: rgba(50, 50, 50, 0.3);
+    }
+
+    .body {
+      background-image: url("/mgo/images/akatosh-alpha.png");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &.aside-note {
+    background-image: linear-gradient(24deg, var(--mgo-note1) 0%, var(--mgo-note2) 100%);
+    border: 1px solid #ccc;
+
+    h4 {
+      background: rgba(30, 30, 30, 0.3);
+      margin-top: 0;
+    }
+  }
+}
+
+#body .aside a.highlight:after {
+  background-color: #ffce00;
+}
+
+.footnotes {
+  img {
+    max-width: 400px !important;
+  }
+}

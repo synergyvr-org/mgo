@@ -1,0 +1,73 @@
+// Site chrome: body, sidebar, homelinks, header, logo
+
+body {
+  font-size: 1.2rem;
+  background: url(/mgo/images/background-tile.png);
+  background-attachment: fixed;
+}
+
+#R-sidebar {
+  li {
+    a {
+      font-family: var(--INTERNAL-MAIN-TITLES-H3-font);
+    }
+
+    & > a {
+      text-transform: uppercase;
+    }
+
+    li > a {
+      text-transform: none;
+    }
+
+    &.active > a {
+      background: url(/mgo/images/background-tile.png);
+      background-attachment: fixed;
+    }
+  }
+
+  ul.enlarge > li > :is(a, span) {
+    font-size: 1rem;
+  }
+}
+
+#R-homelinks {
+  ul.collapsible-menu {
+    &>li {
+      &>a {
+        display: flex;
+      }
+    }
+  }
+  svg {
+    height: 20px;
+    padding-right: 0.5em;
+  }
+}
+
+#R-header-wrapper {
+  padding-top: 1rem;
+
+  img {
+    max-width: calc(100% - 2rem);
+  }
+}
+
+#R-logo.R-default {
+  column-gap: 1em;
+  .logo-title {
+    font-size: 2em;
+    flex-shrink: 1;
+    min-width: 0;
+    text-align: start;
+    text-wrap: auto;
+    word-break: break-word;
+    .line1 {
+      display: block;
+    }
+    .line2 {
+      display: block;
+      font-size: 0.8em;
+    }
+  }
+}

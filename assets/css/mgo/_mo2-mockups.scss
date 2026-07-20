@@ -1,0 +1,163 @@
+// MO2 interface mockups: highlight pills, read-only checkboxes, folder/mod separators
+
+.highlight {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #b9d5f3;
+  color: black;
+  padding: 0 6px;
+
+  &.mo2-docs {
+    background-color: var(--mo2-docs);
+  }
+  &.mo2-beta {
+    background-color: var(--mo2-beta);
+  }
+  &.mo2-unlock {
+    background-color: var(--mo2-unlock);
+  }
+  &.mo2-loot {
+    background-color: var(--mo2-loot);
+  }
+}
+
+input.readonly {
+  pointer-events: none;
+}
+
+.separator, .mod {
+  padding: 0.25rem 1rem;
+  &.sub {
+    margin-left: 2rem;
+  }
+  &.subsub {
+    margin-left: 4rem;
+  }
+}
+.separator {
+  font-weight: bold;
+  color: black;
+  i.fa-folder {
+    color: #ffd86b;
+  }
+  &.mo2-start {
+    background-color: var(--mo2-start);
+  }
+  &.mo2-step1 {
+    background-color: var(--mo2-step1);
+  }
+  &.mo2-fps {
+    background-color: var(--mo2-fps);
+  }
+  &.mo2-perf {
+    background-color: var(--mo2-perf);
+  }
+  &.mo2-cs {
+    background-color: var(--mo2-cs);
+  }
+  &.mo2-grass {
+    background-color: var(--mo2-grass);
+  }
+  &.mo2-followers {
+    background-color: var(--mo2-followers);
+  }
+  &.mo2-nvidia {
+    background-color: var(--mo2-nvidia);
+    color: white;
+  }
+  &.mo2-amd {
+    background-color: var(--mo2-amd);
+    color: white;
+  }
+  &.mo2-runtime {
+    background-color: var(--mo2-runtime);
+  }
+  &.mo2-ocu {
+    background-color: var(--mo2-ocu);
+    color: white;
+  }
+  &.mo2-ocu-main {
+    background-color: var(--mo2-ocu-main);
+    color: white;
+  }
+  &.mo2-ocu-stabilizer {
+    background-color: var(--mo2-ocu-stabilizer);
+    color: white;
+  }
+  &.mo2-steamvr {
+    background-color: var(--mo2-steamvr);
+    color: white;
+  }
+  &.mo2-steamvr-bindings {
+    background-color: var(--mo2-steamvr-bindings);
+    color: white;
+  }
+  &.mo2-steamvr-stabilizer {
+    background-color: var(--mo2-steamvr-stabilizer);
+    color: white;
+  }
+  &.mo2-optional {
+    background-color: var(--mo2-optional);
+  }
+  &.mo2-ai {
+    background-color: var(--mo2-ai);
+    color: white;
+  }
+  &.mo2-convenience {
+    background-color: var(--mo2-convenience);
+    color: white;
+  }
+  &.mo2-difficulty {
+    background-color: var(--mo2-difficulty);
+    color: white;
+  }
+  &.mo2-immersion {
+    background-color: var(--mo2-immersion);
+    color: white;
+  }
+
+  &.blue {
+    background-color: #f1cd84;
+    color: black;
+  }
+  &.blue1 {
+    background-color: #e2bf7b;
+    color: black;
+  }
+  &.blue2 {
+    background-color: #d1af71;
+    color: black;
+  }
+  &.blue3 {
+    background-color: #c2a267;
+    color: black;
+  }
+  &.blue4 {
+    background-color: #b2935d;
+    color: black;
+  }
+  &.blue5 {
+    background-color: #a38554;
+    color: black;
+  }
+  &.blue6 {
+    background-color: #6b5232;
+    color: white;
+  }
+  &.blue7 {
+    background-color: #c0dbf5;
+    color: black;
+  }
+  &.purple1 {
+    background-color: #a903ff;
+    color: white;
+  }
+  &.purple2 {
+    background-color: #8501c8;
+    color: white;
+  }
+  &.purple3 {
+    background-color: #610091;
+    color: white;
+  }
+}

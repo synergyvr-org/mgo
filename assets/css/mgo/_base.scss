@@ -1,0 +1,69 @@
+// Base elements & page structure: links, breadcrumbs, cover, chapters, FAQ, home, headings, lists
+
+a:hover, a:active, a:focus {
+  color:  var(--VARIABLE-LINK-HOVER-color);
+  transition: all 0.35s ease;
+}
+
+.breadcrumbs {
+  li {
+    padding-bottom: 0;
+  }
+}
+.body-inner {
+  overflow-y: auto;
+}
+.cover {
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 0;
+  h1 {
+    text-shadow: rgba(0,0,0,0.8) 1px 0 8px;
+    line-height: 1em;
+    overflow-wrap: normal;
+    hyphens: manual;
+  }
+}
+
+.chapter {
+  h2 {
+    display: block;
+    border-bottom: 2px solid;
+
+    & + .anchor {
+      display: none;
+    }
+  }
+}
+
+// FAQ only: underline the question-group headings to visually separate the groups.
+.body-inner.faq {
+  h2 {
+    border-bottom: 2px solid;
+  }
+}
+
+.home {
+  h1 {
+    margin: 2rem 0;
+  }
+}
+
+.footnotes {
+  font-size: 85%;
+}
+
+h2 {
+  line-height: 1.3em;
+  .anchor {
+    margin-top: 0;
+  }
+}
+
+li {
+  padding-bottom: 1rem;
+}
+
+.topbar-breadcrumbs {
+  font-size: 1rem;
+}

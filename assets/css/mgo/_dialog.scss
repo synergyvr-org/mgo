@@ -1,0 +1,86 @@
+// Windows dialog-box mockup
+
+.dialog {
+  box-shadow: rgba(0,0,0,0.2) 0px 3px 20px;
+  margin: 0 auto;
+  max-width: 25em;
+  img {
+    margin: 0 !important;
+  }
+  .controls {
+    float: left;
+  }
+}
+.dialog.windows {
+  border: 1px solid #1883d7;
+  pre {
+    border-radius: 0;
+  }
+}
+.bar {
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  padding-left: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: black;
+  float: none;
+}
+.windows {
+  .bar {
+    background: #fff;
+    box-sizing: content-box;
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    text-align: left;
+  }
+  .windows.icon {
+    margin: 0 8px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 16px;
+    }
+  }
+}
+.windows-controls {
+  background-image: url("/mgo/images/windows-controls.png");
+  float: right;
+  width: 137px;
+  height: 30px;
+}
+.dialog-body {
+  padding: 0.5rem;
+  font-size: 14px;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  color: black;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  .windows-controls {
+    background-image: url("/mgo/images/windows-controls@2x.png");
+    background-size: 137px 30px;
+  }
+}
+@media only screen and (min-resolution: 1.5dppx) {
+  .windows-controls {
+    background-image: url("/mgo/images/windows-controls@2x.png");
+    background-size: 137px 30px;
+  }
+}
+@media only screen and (min--moz-device-pixel-ratio: 1.5) {
+  .windows-controls {
+    background-image: url("/mgo/images/windows-controls@2x.png");
+    background-size: 137px 30px;
+  }
+}
+@media only screen and (min-resolution: 144dpi) {
+  .windows-controls {
+    background-image: url("/mgo/images/windows-controls@2x.png");
+    background-size: 137px 30px;
+  }
+}
+
+
+/* END Windows Dialog Box */

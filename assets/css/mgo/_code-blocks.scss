@@ -1,0 +1,60 @@
+// Fenced code blocks: language/filename tab, borders
+
+// Hide the copy-to-clipboard button that the Relearn theme always adds.
+.block-copy-to-clipboard-button {
+  display: none;
+}
+
+// Add a label to fenced code blocks. Typically this will be based on the language
+// used for syntax highlighting, but if a data-file attribute is provided, the label
+// will show that value instead.
+@mixin code-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1; // Force the label to appear on top
+  padding: 2px 10px;
+  background-color: var(--mgo-gold-dark);
+  color: #1a1a1a;
+  font-family: var(--INTERNAL-CODE-font);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom-left-radius: 8px;
+}
+
+#R-body div.highlight {
+  display: block;
+  background-color: transparent;
+  color: inherit;
+  font-weight: normal;
+  margin: 2rem 0;
+  padding: 0;
+  border: 1px solid var(--mgo-btn-inline);
+  border-radius: 8px;
+  overflow: hidden;
+
+  pre:not(.mermaid) {
+    margin: 0;
+    border: 0;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  code[data-lang]::before {
+    content: attr(data-lang);
+    text-transform: uppercase;
+    @include code-label;
+  }
+
+  // Filename variant: a data-file attribute on the fence wins over the language.
+  &[data-file] {
+    code[data-lang]::before {
+      content: none;
+    }
+    &::before {
+      content: attr(data-file);
+      @include code-label;
+    }
+  }
+}

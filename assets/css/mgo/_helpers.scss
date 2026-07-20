@@ -1,0 +1,13 @@
+// Small utilities: .flex, .file
+
+.flex {
+  display: flex;
+}
+
+.file {
+  display: inline-block;
+  background-color: var(--mgo-gold-trans);
+  padding: 0 6px;
+  border-radius: 10px;
+  font-family: var(--INTERNAL-CODE-font);
+}
