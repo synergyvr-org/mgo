@@ -1,0 +1,184 @@
+// Filterable mod-list reference table
+
+.modlist-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  background: var(--mgo-bg);
+  padding: 0.5rem 0;
+  z-index: 2;
+
+  // Input and clear button occupy the same grid cell: the row sizes to the
+  // input, and the button centers within it and pins to the right — so it reads
+  // as sitting inside the input, reliably vertically centered.
+  .modlist-search {
+    flex: 1;
+    max-width: 30rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #modlist-filter {
+    grid-area: 1 / 1;
+    min-width: 0;
+    margin: 0; // the theme gives inputs a bottom margin; drop it so the wrapper matches
+    padding: 0.4rem 2rem 0.4rem 0.75rem; // room on the right for the clear button
+    font-size: 1rem;
+    color: #eee;
+    background: #00000044;
+    border: 1px solid var(--mgo-btn-inline);
+    border-radius: 8px;
+
+    // Suppress the browser's native search clear control; we supply our own.
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+  }
+
+  // A "╳" clear button that sits inside the input, shown only when it has text.
+  .modlist-clear {
+    grid-area: 1 / 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 0.5rem;
+    padding: 0 0.25rem;
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1;
+    cursor: pointer;
+
+    &:hover {
+      color: #eee;
+    }
+  }
+  #modlist-filter:placeholder-shown + .modlist-clear {
+    display: none;
+  }
+
+  .modlist-toggle-all {
+    margin-left: auto;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+    color: #eee;
+    background: #00000044;
+    border: 1px solid var(--mgo-btn-inline);
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:hover {
+      background: #66666633;
+      border-color: var(--mgo-blue2);
+    }
+  }
+
+  .modlist-count {
+    font-size: 0.85rem;
+    color: #aaa;
+    white-space: nowrap;
+  }
+}
+
+.modlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+
+  th, td {
+    text-align: left;
+    padding: 0.3rem 0.6rem;
+    vertical-align: top;
+  }
+
+  thead th {
+    position: sticky;
+    top: 3.25rem; // clears the sticky filter bar
+    background: var(--mgo-bg);
+    border-bottom: 2px solid var(--mgo-gold-dark);
+    z-index: 1;
+  }
+
+  .col-status {
+    width: 3.5rem;
+    text-align: center;
+  }
+
+  td.col-status {
+    text-align: center;
+  }
+
+  // Download filenames stay monospaced, but drop the theme's eye-catching
+  // inline-code pill (bright background/border/color) for something muted.
+  .col-file code {
+    font-size: 0.8rem;
+    word-break: break-all;
+    background: none;
+    border: 0;
+    padding: 0;
+    color: #9a9a9a;
+  }
+
+  .mod-status {
+    &.enabled { color: var(--mgo-gold); }
+    &.disabled { color: #666; }
+  }
+
+  tbody tr:not(.modlist-separator):hover {
+    background: #ffffff0a;
+  }
+
+  // Row separation for every separator.
+  .modlist-separator td {
+    border-top: 1px solid var(--mgo-btn-inline);
+  }
+
+  // Only folders (names with a leading "#") are clickable collapse toggles.
+  .modlist-folder td {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  // The folder icon signals state: fa-folder-open when expanded, fa-folder when
+  // collapsed (swapped in JS). Keep it gold in either state, on both the
+  // onboarding-matched and gradient folders.
+  .modlist-folder .fa-folder,
+  .modlist-folder .fa-folder-open {
+    color: #ffd86b;
+  }
+
+  .modlist-folder:focus-visible {
+    outline: 2px solid var(--mgo-gold);
+    outline-offset: -2px;
+  }
+
+  // Hash-less separators are plain, non-folder labels.
+  .modlist-separator-plain {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    background: #ffffff0d;
+    color: #ccc;
+  }
+
+  // The top-level "Mad God Overhaul - <version>" container gets its own color.
+  .modlist-separator-root {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    background: #e6c78a;
+    color: #000;
+  }
+
+  // Folders NOT documented in Onboarding get a repeating #642f69 → black
+  // gradient background (computed inline in the shortcode) with white text.
+  // The documented ones carry the shared `.separator mo2-*` classes instead,
+  // so they inherit the exact colors from the Onboarding mockups.
+  .modlist-separator-gradient {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+}

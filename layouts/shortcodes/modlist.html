@@ -1,0 +1,117 @@
+{{- /* Renders a filterable table of the MGO mod list from a CSV in static/.
+       Arg 0 (optional): CSV path relative to project root.
+       Columns shown: Mod Status, Mod Name (linked to Nexus when available),
+       Download File Name. Separator rows (name ending in "_separator") become
+       human-readable headers with leading "#" turned into "▸". */ -}}
+{{- $path := .Get 0 | default "static/mgo-4-rc3.csv" -}}
+{{- $csv := os.ReadFile $path -}}
+{{- $rows := transform.Unmarshal (dict "delimiter" ",") $csv -}}
+{{- /* Folders documented on an Onboarding page get the same colored styling
+       here. Keys are the cleaned separator names; values are the shared
+       .separator mo2-* classes those folders use in onboarding.md / onboarding-rc3.md.
+       This is the union of both versions' folder names — some differ between
+       RC2 and RC3 (e.g. "NVIDIA" vs "NVIDIA - DO NOT USE with OCU Upscalers",
+       and RC2's "Step 4 - Select Target FPS"). The differing names never collide
+       within a single build's CSV, so each version matches its own folders. */ -}}
+{{- $sepClasses := dict
+  "START HERE - Expand for Setup" "mo2-start"
+  "STEP 1 - Expand to Review Startup Notes" "mo2-step1"
+  "Step 2 - Select ONE Preferred Runtime" "mo2-runtime"
+  "Open Composite" "mo2-ocu"
+  "Steam VR" "mo2-steamvr"
+  "Controller Bindings" "mo2-steamvr-bindings"
+  "VR FPS Stabilizer" "mo2-steamvr-stabilizer"
+  "Step 3 - Select Performance Options" "mo2-perf"
+  "Community Shaders - Press END in Game to Customize" "mo2-cs"
+  "NVIDIA" "mo2-nvidia"
+  "AMD" "mo2-amd"
+  "NVIDIA - DO NOT USE with OCU Upscalers" "mo2-nvidia"
+  "AMD - DO NOT USE with OCU Upscalers" "mo2-amd"
+  "Grass Density & LODs (Optional)" "mo2-grass"
+  "Step 4 - Select Target FPS" "mo2-fps"
+  "OPTIONAL Mods - Expand to Select" "mo2-optional"
+  "AI and Speech" "mo2-ai"
+  "Convenience" "mo2-convenience"
+  "Difficulty" "mo2-difficulty"
+  "Immersion" "mo2-immersion"
+-}}
+<div class="modlist">
+  <div class="modlist-controls">
+    <div class="modlist-search"><input type="search" id="modlist-filter" placeholder="Filter mods…" aria-label="Filter mod list" autocomplete="off"><button type="button" id="modlist-clear" class="modlist-clear" aria-label="Clear search" tabindex="-1">╳</button></div>
+    <button type="button" id="modlist-toggle-all" class="modlist-toggle-all">Collapse all</button>
+    <span class="modlist-count"><span id="modlist-count"></span> mods</span>
+  </div>
+  <table id="modlist-table" class="modlist-table">
+    <thead>
+      <tr>
+        <th class="col-status">Status</th>
+        <th class="col-name">Mod Name</th>
+        <th class="col-file">Download File Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- /* Running count of separators with no onboarding match; drives the
+             repeating #642f69 → black gradient (20-folder cycle). */ -}}
+      {{- $sepIndex := 0 -}}
+      {{- range $i, $row := $rows -}}
+        {{- if eq $i 0 -}}{{- continue -}}{{- end -}}
+        {{- $name := index $row 1 -}}
+        {{- if hasSuffix $name "_separator" -}}
+          {{- $label := strings.TrimSuffix "_separator" $name -}}
+          {{- $depth := sub (len $label) (len (strings.TrimLeft "#" $label)) -}}
+          {{- $clean := strings.TrimSpace (strings.TrimLeft "#" $label) -}}
+          {{- $arrows := "" -}}
+          {{- if gt $depth 0 -}}{{- $arrows = printf "%s " (strings.Repeat $depth "▸") -}}{{- end -}}
+          {{- $mo2 := index $sepClasses $clean -}}
+          {{- /* The top-level "Mad God Overhaul - <version>" container is a special
+                 case with its own color. The trailing text varies per release. */ -}}
+          {{- $isRoot := hasPrefix $clean "Mad God Overhaul - " -}}
+          {{- /* A separator is a collapsible folder only if its name has at least
+                 one leading "#" (single "#" = top level). Hash-less separators are
+                 plain labels: not folders, not collapsible, no gradient. */ -}}
+          {{- $isFolder := and (ge $depth 1) (not $isRoot) -}}
+      <tr class="modlist-separator{{ if $isFolder }} modlist-folder{{ end }}" data-depth="{{ $depth }}">
+        {{- if $isRoot -}}
+        <td colspan="3" class="modlist-separator-root">{{ $clean }}</td>
+        {{- else if $mo2 -}}
+        <td colspan="3" class="separator {{ $mo2 }}"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
+        {{- else if $isFolder -}}
+          {{- $sepIndex = add $sepIndex 1 -}}
+          {{- /* interpolate #642f69 (100,47,105) → #000000 over a 20-folder cycle */ -}}
+          {{- $frac := div (mod (sub $sepIndex 1) 20) 19.0 -}}
+          {{- $scale := sub 1 $frac -}}
+          {{- $r := int (math.Round (mul 100 $scale)) -}}
+          {{- $g := int (math.Round (mul 47 $scale)) -}}
+          {{- $b := int (math.Round (mul 105 $scale)) -}}
+        <td colspan="3" class="modlist-separator-gradient" style="background-color: {{ printf "#%02x%02x%02x" $r $g $b }}; color: #fff;"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
+        {{- else -}}
+        <td colspan="3" class="modlist-separator-plain">{{ $clean }}</td>
+        {{- end -}}
+      </tr>
+        {{- else -}}
+          {{- $status := index $row 0 -}}
+          {{- $url := index $row 3 -}}
+          {{- $file := index $row 5 -}}
+          {{- $enabled := eq $status "+" -}}
+      <tr class="modlist-mod">
+        <td class="col-status">
+          {{- if $enabled -}}
+          <span class="mod-status enabled" title="Enabled"><i class="fa fa-check"></i></span>
+          {{- else -}}
+          <span class="mod-status disabled" title="Disabled"><i class="fa fa-minus"></i></span>
+          {{- end -}}
+        </td>
+        <td class="col-name">
+          {{- if $url -}}
+          <a href="{{ $url }}" target="_blank" rel="noopener">{{ $name }}</a>
+          {{- else -}}
+          {{ $name }}
+          {{- end -}}
+        </td>
+        <td class="col-file">{{ with $file }}<code>{{ . }}</code>{{ end }}</td>
+      </tr>
+        {{- end -}}
+      {{- end -}}
+    </tbody>
+  </table>
+</div>

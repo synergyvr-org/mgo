@@ -134,3 +134,121 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Filter + collapsible folders for the load order reference table (load-order/*)
+document.addEventListener('DOMContentLoaded', function () {
+  var input = document.getElementById('modlist-filter');
+  var table = document.getElementById('modlist-table');
+  if (!input || !table) return;
+
+  var tbody = table.tBodies[0];
+  var rows = Array.prototype.slice.call(tbody.rows);
+  var countEl = document.getElementById('modlist-count');
+  var toggleAllBtn = document.getElementById('modlist-toggle-all');
+
+  function isSep(r) { return r.classList.contains('modlist-separator'); }
+  function isFolder(r) { return r.classList.contains('modlist-folder'); }
+  function totalMods() { return rows.filter(function (r) { return !isSep(r); }).length; }
+
+  var folders = rows.filter(isFolder);
+  function allCollapsed() {
+    return folders.length > 0 && folders.every(function (s) {
+      return s.classList.contains('collapsed');
+    });
+  }
+  function updateToggleLabel() {
+    if (toggleAllBtn) toggleAllBtn.textContent = allCollapsed() ? 'Expand all' : 'Collapse all';
+  }
+
+  // A row is hidden by collapse when any enclosing folder (a preceding
+  // separator of shallower depth) is collapsed. We track the enclosing chain
+  // in a stack keyed by depth, so nested folders fold their children too.
+  function applyVisibility() {
+    var q = input.value.trim().toLowerCase();
+    var filtering = q !== '';
+    var stack = [];
+    var shown = 0;
+    rows.forEach(function (r) {
+      var visible;
+      if (filtering) {
+        visible = r.textContent.toLowerCase().indexOf(q) !== -1;
+      } else if (isFolder(r)) {
+        var depth = parseInt(r.getAttribute('data-depth'), 10) || 0;
+        while (stack.length && stack[stack.length - 1].depth >= depth) stack.pop();
+        visible = !stack.some(function (s) { return s.collapsed; });
+        stack.push({ depth: depth, collapsed: r.classList.contains('collapsed') });
+      } else {
+        // Leaves — mods and hash-less separators alike — are hidden when any
+        // enclosing folder is collapsed, but they don't open or close a folder
+        // context themselves. So a hash-less separator can be nested inside a
+        // folder (like a mod), it just can't have children of its own.
+        visible = !stack.some(function (s) { return s.collapsed; });
+      }
+      r.style.display = visible ? '' : 'none';
+      if (visible && !isSep(r)) shown++;
+    });
+    if (countEl) countEl.textContent = filtering ? shown : totalMods();
+  }
+
+  // Reflect a folder's state in its icon: open when expanded, closed when collapsed.
+  function setFolderState(sep, collapsed) {
+    sep.classList.toggle('collapsed', collapsed);
+    sep.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    var icon = sep.querySelector('.fa-folder, .fa-folder-open');
+    if (icon) {
+      icon.classList.toggle('fa-folder', collapsed);
+      icon.classList.toggle('fa-folder-open', !collapsed);
+    }
+  }
+
+  function toggle(sep) {
+    setFolderState(sep, !sep.classList.contains('collapsed'));
+    applyVisibility();
+    updateToggleLabel();
+  }
+
+  function setAll(collapsed) {
+    folders.forEach(function (s) { setFolderState(s, collapsed); });
+    applyVisibility();
+    updateToggleLabel();
+  }
+
+  // Make folders focusable, keyboard-operable collapse toggles.
+  folders.forEach(function (r) {
+    r.setAttribute('tabindex', '0');
+    r.setAttribute('role', 'button');
+    r.setAttribute('aria-expanded', 'true');
+  });
+
+  tbody.addEventListener('click', function (e) {
+    var sep = e.target.closest('tr.modlist-folder');
+    if (sep) toggle(sep);
+  });
+  tbody.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var sep = e.target.closest('tr.modlist-folder');
+    if (sep) { e.preventDefault(); toggle(sep); }
+  });
+
+  if (toggleAllBtn) {
+    toggleAllBtn.addEventListener('click', function () { setAll(!allCollapsed()); });
+  }
+
+  var clearBtn = document.getElementById('modlist-clear');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      input.value = '';
+      applyVisibility();
+      input.focus();
+    });
+  }
+
+  input.addEventListener('input', applyVisibility);
+  applyVisibility();
+  updateToggleLabel();
+
+  // Autofocus the filter. Deferred past this DOMContentLoaded tick so it runs
+  // after the theme's own documentFocus() (which focuses #R-body-inner on load).
+  // preventScroll keeps the page from jumping to the input.
+  setTimeout(function () { input.focus({ preventScroll: true }); }, 0);
+});
