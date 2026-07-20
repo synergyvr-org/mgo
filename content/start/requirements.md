@@ -22,12 +22,14 @@ If your hardware is up to the task, you will still not be able to download, inst
 **You must...**
 * Have a legal copy of Skyrim VR from Steam. **Pirated copies will not work.**
 * Have a **clean install** of Skyrim VR, with nothing modified and no extra files in the game's root folder ([instructions](/reference/clean-install/))
-* Move Skyrim VR out of the <span class="file"><i class="fa fa-folder-open"></i> C:\Program Files (x86)</span> folder to avoid issues with Windows Defender and other antivirus products ({{< ext "https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327#default" >}}instructions{{< /ext >}})
+* Move Skyrim VR out of the <span class="file"><i class="fa fa-folder-open"></i> C:\Program Files (x86)</span> folder to avoid issues with Windows Defender and other antivirus products ({{< ext "https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327#default" >}}instructions{{< /ext >}})[^1]
 * Set Skyrim VR's language to English
 * Download and install the latest {{< ext "https://aka.ms/vs/17/release/vc_redist.x64.exe" >}}Visual C++ Redistributable for X64{{< /ext >}}
 * Download and install the latest {{< ext "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-8.0.11-windows-x64-installer" >}}.NET X64 run-time{{< /ext >}}
 
 **You will need to reboot your PC after you've installed the two runtimes.**
+
+[^1]: Apparently you can skip Steam's official move tool entirely: exit Steam _completely_, manually move the whole {{< file folder-open >}}Steam{{< /file >}} folder to its new home, and then launch Steam from the new location. It auto-detects that it's been moved and picks up right where it left off.
 {{< /aside >}}
 
 You may be able to install MGO without fulfilling the next set of requirements, but it may be unplayable.
