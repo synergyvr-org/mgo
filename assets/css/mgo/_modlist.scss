@@ -106,9 +106,11 @@
     border: 0;
   }
 
-  // Zebra striping on the data (mod) cells. Excludes separator rows so their
-  // colored backgrounds aren't overridden.
-  tbody > tr:nth-child(even):not(.modlist-separator) > td {
+  // Zebra striping applied to the <tr> so it sits *behind* the cell fills: mod
+  // cells are transparent, so the stripe fills the whole row; separator cells
+  // clip their colored fill to the padding-box, so the stripe shows through
+  // their transparent indent gutter on the left.
+  tbody > tr:nth-child(even) {
     background-color: #262626;
   }
 
@@ -144,7 +146,7 @@
   }
 
   tbody tr:not(.modlist-separator):hover {
-    background: #ffffff0a;
+    background: linear-gradient(to right, #672c9f, #5a2a85);
   }
 
   // Row separation for every separator.
