@@ -5,6 +5,10 @@
        human-readable headers with leading "#" turned into "▸". */ -}}
 {{- $path := .Get 0 | default "static/mgo-4-rc3.csv" -}}
 {{- $csv := os.ReadFile $path -}}
+{{- /* Files in static/ are served from the site root, so strip "static/" and run
+       the rest through relURL to pick up the site's base path. */ -}}
+{{- $csvURL := $path | strings.TrimPrefix "static/" | relURL -}}
+{{- $csvName := path.Base $path -}}
 {{- $rows := transform.Unmarshal (dict "delimiter" ",") $csv -}}
 {{- /* Exceptions within the START HERE subtree that keep their own distinct
        styling (their own gradients, to be supplied later): Open Composite and
@@ -20,8 +24,9 @@
 <div class="modlist">
   <div class="modlist-controls">
     <div class="modlist-search"><input type="search" id="modlist-filter" placeholder="Filter mods…" aria-label="Filter mod list" autocomplete="off"><button type="button" id="modlist-clear" class="modlist-clear" aria-label="Clear search" tabindex="-1">╳</button></div>
-    <button type="button" id="modlist-toggle-all" class="modlist-toggle-all">Collapse all</button>
     <span class="modlist-count"><span id="modlist-count"></span> mods</span>
+    <button type="button" id="modlist-toggle-all" class="modlist-toggle-all">Collapse all</button>
+    <a href="{{ $csvURL }}" download="{{ $csvName }}" class="modlist-download"><i class="fa fa-download"></i> Download CSV</a>
   </div>
   <table id="modlist-table" class="modlist-table">
     <thead>

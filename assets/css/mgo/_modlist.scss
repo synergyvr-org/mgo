@@ -61,8 +61,8 @@
     display: none;
   }
 
-  .modlist-toggle-all {
-    margin-left: auto;
+  .modlist-toggle-all,
+  .modlist-download {
     padding: 0.4rem 0.75rem;
     font-size: 0.85rem;
     color: #eee;
@@ -71,11 +71,19 @@
     border-radius: 8px;
     cursor: pointer;
     white-space: nowrap;
+    text-decoration: none; // the download button is an <a>
 
     &:hover {
       background: #66666633;
       border-color: var(--mgo-blue2);
+      color: #eee; // keep the text light rather than the theme's link color
     }
+  }
+
+  // The toggle pushes itself and the download button to the right, leaving the
+  // count sitting immediately after the input.
+  .modlist-toggle-all {
+    margin-left: auto;
   }
 
   .modlist-count {
