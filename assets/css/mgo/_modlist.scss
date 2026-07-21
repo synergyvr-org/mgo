@@ -201,12 +201,6 @@
     letter-spacing: 0.5px;
     background: #e6c78a;
     color: #000;
-
-    // Keep the folder icon dark on the light background (End Of List is a folder).
-    .fa-folder,
-    .fa-folder-open {
-      color: #000;
-    }
   }
 
   // Folders NOT documented in Onboarding get a repeating #642f69 → black

@@ -6,34 +6,16 @@
 {{- $path := .Get 0 | default "static/mgo-4-rc3.csv" -}}
 {{- $csv := os.ReadFile $path -}}
 {{- $rows := transform.Unmarshal (dict "delimiter" ",") $csv -}}
-{{- /* Folders documented on an Onboarding page get the same colored styling
-       here. Keys are the cleaned separator names; values are the shared
-       .separator mo2-* classes those folders use in onboarding.md / onboarding-rc3.md.
-       This is the union of both versions' folder names — some differ between
-       RC2 and RC3 (e.g. "NVIDIA" vs "NVIDIA - DO NOT USE with OCU Upscalers",
-       and RC2's "Step 4 - Select Target FPS"). The differing names never collide
-       within a single build's CSV, so each version matches its own folders. */ -}}
+{{- /* Exceptions within the START HERE subtree that keep their own distinct
+       styling (their own gradients, to be supplied later): Open Composite and
+       Steam VR, plus Steam VR's children (Controller Bindings, VR FPS Stabilizer).
+       Everything else under START HERE gets the START HERE gradient computed
+       below; these keep the onboarding mo2-* colors for now. */ -}}
 {{- $sepClasses := dict
-  "START HERE - Expand for Setup" "mo2-start"
-  "STEP 1 - Expand to Review Startup Notes" "mo2-step1"
-  "Step 2 - Select ONE Preferred Runtime" "mo2-runtime"
   "Open Composite" "mo2-ocu"
   "Steam VR" "mo2-steamvr"
   "Controller Bindings" "mo2-steamvr-bindings"
   "VR FPS Stabilizer" "mo2-steamvr-stabilizer"
-  "Step 3 - Select Performance Options" "mo2-perf"
-  "Community Shaders - Press END in Game to Customize" "mo2-cs"
-  "NVIDIA" "mo2-nvidia"
-  "AMD" "mo2-amd"
-  "NVIDIA - DO NOT USE with OCU Upscalers" "mo2-nvidia"
-  "AMD - DO NOT USE with OCU Upscalers" "mo2-amd"
-  "Grass Density & LODs (Optional)" "mo2-grass"
-  "Step 4 - Select Target FPS" "mo2-fps"
-  "OPTIONAL Mods - Expand to Select" "mo2-optional"
-  "AI and Speech" "mo2-ai"
-  "Convenience" "mo2-convenience"
-  "Difficulty" "mo2-difficulty"
-  "Immersion" "mo2-immersion"
 -}}
 <div class="modlist">
   <div class="modlist-controls">
@@ -49,9 +31,69 @@
       </tr>
     </thead>
     <tbody>
+      {{- /* Pre-pass: the START HERE subtree gets its own gradient (#e1be7a →
+             #594328), keyed by each separator's position within the subtree (same
+             nesting rule as the main gradient: pos = parent.pos + 1 + sibling
+             index; hash-less notes count as leaves of their enclosing folder).
+             The darkest (#594328) lands on the deepest-positioned separator, which
+             is ###Immersion. Open Composite / Steam VR (+ children) are exceptions
+             handled via $sepClasses above and skip this gradient. */ -}}
+      {{- $shPos := dict -}}
+      {{- $shMax := 0 -}}
+      {{- $inSH := false -}}
+      {{- $shStack := slice -}}
+      {{- range $ri, $row := $rows -}}
+        {{- if gt $ri 0 -}}
+          {{- $nm := index $row 1 -}}
+          {{- if hasSuffix $nm "_separator" -}}
+            {{- $lbl := strings.TrimSuffix "_separator" $nm -}}
+            {{- $d := sub (len $lbl) (len (strings.TrimLeft "#" $lbl)) -}}
+            {{- $cl := strings.TrimSpace (strings.TrimLeft "#" $lbl) -}}
+            {{- if and (eq $d 1) (eq $cl "START HERE - Expand for Setup") -}}
+              {{- $inSH = true -}}
+              {{- $shStack = slice (dict "depth" 1 "pos" 0 "childCount" 0) -}}
+              {{- $shPos = merge $shPos (dict $cl 0) -}}
+            {{- else if and $inSH (eq $d 1) -}}
+              {{- $inSH = false -}}
+            {{- else if $inSH -}}
+              {{- /* folder (depth ≥ 2) or hash-less note (depth 0): both are
+                     positioned relative to the enclosing folder on the stack. */ -}}
+              {{- if ge $d 2 -}}{{- $shStack = where $shStack "depth" "lt" $d -}}{{- end -}}
+              {{- $pp := -1 -}}{{- $sb := 0 -}}
+              {{- if gt (len $shStack) 0 -}}
+                {{- $p := index $shStack (sub (len $shStack) 1) -}}
+                {{- $pp = $p.pos -}}{{- $sb = $p.childCount -}}
+              {{- end -}}
+              {{- $pos := add (add $pp 1) $sb -}}
+              {{- if gt (len $shStack) 0 -}}
+                {{- $p := index $shStack (sub (len $shStack) 1) -}}
+                {{- $p = merge $p (dict "childCount" (add $p.childCount 1)) -}}
+                {{- $shStack = append $p (first (sub (len $shStack) 1) $shStack) -}}
+              {{- end -}}
+              {{- if ge $d 2 -}}{{- $shStack = append (dict "depth" $d "pos" $pos "childCount" 0) $shStack -}}{{- end -}}
+              {{- $shPos = merge $shPos (dict $cl $pos) -}}
+              {{- if gt $pos $shMax -}}{{- $shMax = $pos -}}{{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- /* Turn each subtree position into a color plus a readable text color. */ -}}
+      {{- $shColors := dict -}}
+      {{- $shText := dict -}}
+      {{- $shDenom := math.Max 1 $shMax -}}
+      {{- range $name, $pos := $shPos -}}
+        {{- $f := div $pos $shDenom -}}
+        {{- $r := int (math.Round (sub 225 (mul 136 $f))) -}}
+        {{- $g := int (math.Round (sub 190 (mul 123 $f))) -}}
+        {{- $b := int (math.Round (sub 122 (mul 82 $f))) -}}
+        {{- $shColors = merge $shColors (dict $name (printf "#%02x%02x%02x" $r $g $b)) -}}
+        {{- /* White text on #866d43 (luminance ≈ 0.438) or darker; black on lighter. */ -}}
+        {{- $lum := div (add (add (mul 0.299 $r) (mul 0.587 $g)) (mul 0.114 $b)) 255 -}}
+        {{- $shText = merge $shText (dict $name (cond (gt $lum 0.438) "#1a1a1a" "#fff")) -}}
+      {{- end -}}
       {{- /* Pre-pass: count the top-level (single-#) folders that receive the
-             gradient — excluding special cases and onboarding-matched folders —
-             so the 3-stop spread can span exactly those. */ -}}
+             gradient — excluding special cases, exceptions, and START HERE subtree
+             folders — so the 3-stop spread can span exactly those. */ -}}
       {{- $topTotal := 0 -}}
       {{- range $ri, $row := $rows -}}
         {{- if gt $ri 0 -}}
@@ -60,7 +102,7 @@
             {{- $lbl := strings.TrimSuffix "_separator" $nm -}}
             {{- $d := sub (len $lbl) (len (strings.TrimLeft "#" $lbl)) -}}
             {{- $cl := strings.TrimSpace (strings.TrimLeft "#" $lbl) -}}
-            {{- if and (eq $d 1) (not (hasPrefix $cl "Mad God Overhaul - ")) (ne $cl "End Of List") (not (index $sepClasses $cl)) -}}
+            {{- if and (eq $d 1) (not (hasPrefix $cl "Mad God Overhaul - ")) (ne $cl "End Of List") (not (index $sepClasses $cl)) (not (index $shColors $cl)) -}}
               {{- $topTotal = add $topTotal 1 -}}
             {{- end -}}
           {{- end -}}
@@ -92,7 +134,11 @@
                  one leading "#" (single "#" = top level). Hash-less separators are
                  plain labels: not folders, not collapsible, no gradient. */ -}}
           {{- $isFolder := and (ge $depth 1) (not (hasPrefix $clean "Mad God Overhaul - ")) -}}
-          {{- $eligible := and $isFolder (not $isSpecial) (not $mo2) -}}
+          {{- /* START HERE subtree color for this separator (empty if not in it). */ -}}
+          {{- $shColor := index $shColors $clean -}}
+          {{- /* Only main-gradient folders are "eligible" for the main numbering:
+                 exclude special cases, exceptions ($mo2), and the START HERE subtree. */ -}}
+          {{- $eligible := and $isFolder (not $isSpecial) (not $mo2) (not $shColor) -}}
           {{- /* Assign this folder a gradient position via the ancestor stack. */ -}}
           {{- $position := 0 -}}
           {{- if ge $depth 1 -}}
@@ -122,30 +168,41 @@
         {{- else if $mo2 -}}
         <td colspan="2" class="separator {{ $mo2 }}"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
         {{- else if $isFolder -}}
-          {{- /* One 3-stop gradient #642f69 → #000000 → #581e2a spread across the
-                 top-level folders; nested folders take positions that continue it. */ -}}
-          {{- $denom := math.Max 1 (sub $topTotal 1) -}}
-          {{- $f := div $position $denom -}}
-          {{- if gt $f 1.0 -}}{{- $f = 1.0 -}}{{- end -}}
-          {{- $r := 0 -}}{{- $g := 0 -}}{{- $b := 0 -}}
-          {{- if le $f 0.5 -}}
-            {{- $t := div $f 0.5 -}}
-            {{- $r = int (math.Round (mul 100 (sub 1 $t))) -}}
-            {{- $g = int (math.Round (mul 47 (sub 1 $t))) -}}
-            {{- $b = int (math.Round (mul 105 (sub 1 $t))) -}}
+          {{- if $shColor -}}
+            {{- /* START HERE subtree folder: its own #e1be7a → #594328 gradient. */ -}}
+        <td colspan="2" class="modlist-separator-gradient" style="background-color: {{ $shColor }}; color: {{ index $shText $clean }};"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
           {{- else -}}
-            {{- $t := div (sub $f 0.5) 0.5 -}}
-            {{- $r = int (math.Round (mul 88 $t)) -}}
-            {{- $g = int (math.Round (mul 30 $t)) -}}
-            {{- $b = int (math.Round (mul 42 $t)) -}}
-          {{- end -}}
+            {{- /* Main gradient: one 3-stop #642f69 → #000000 → #581e2a spread across
+                   the top-level folders; nested folders continue it. */ -}}
+            {{- $denom := math.Max 1 (sub $topTotal 1) -}}
+            {{- $f := div $position $denom -}}
+            {{- if gt $f 1.0 -}}{{- $f = 1.0 -}}{{- end -}}
+            {{- $r := 0 -}}{{- $g := 0 -}}{{- $b := 0 -}}
+            {{- if le $f 0.5 -}}
+              {{- $t := div $f 0.5 -}}
+              {{- $r = int (math.Round (mul 100 (sub 1 $t))) -}}
+              {{- $g = int (math.Round (mul 47 (sub 1 $t))) -}}
+              {{- $b = int (math.Round (mul 105 (sub 1 $t))) -}}
+            {{- else -}}
+              {{- $t := div (sub $f 0.5) 0.5 -}}
+              {{- $r = int (math.Round (mul 88 $t)) -}}
+              {{- $g = int (math.Round (mul 30 $t)) -}}
+              {{- $b = int (math.Round (mul 42 $t)) -}}
+            {{- end -}}
         <td colspan="2" class="modlist-separator-gradient" style="background-color: {{ printf "#%02x%02x%02x" $r $g $b }}; color: #fff;"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
+          {{- end -}}
         {{- else -}}
           {{- /* Hash-less "oddball" separators are leaves; indent them to match
                  their enclosing folder, same as the mods inside it. */ -}}
           {{- $encDepth := 0 -}}
           {{- if gt (len $stack) 0 -}}{{- $encDepth = (index $stack (sub (len $stack) 1)).depth -}}{{- end -}}
+          {{- if $shColor -}}
+            {{- /* A START HERE note (e.g. STEP 1's "PLEASE FOLLOW…"): same gradient
+                   as the folders, but rendered as a plain (icon-less) leaf. */ -}}
+        <td colspan="2" class="modlist-separator-plain" style="background-color: {{ $shColor }}; color: {{ index $shText $clean }};{{ if gt $encDepth 0 }} border-left: {{ mul $encDepth 32 }}px solid transparent;{{ end }}">{{ $clean }}</td>
+          {{- else -}}
         <td colspan="2" class="modlist-separator-plain"{{ if gt $encDepth 0 }} style="border-left: {{ mul $encDepth 32 }}px solid transparent;"{{ end }}>{{ $clean }}</td>
+          {{- end -}}
         {{- end -}}
       </tr>
         {{- else -}}
