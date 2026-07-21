@@ -17,3 +17,9 @@ The complete, filterable mod list for the RC2 build: Nexus links, download filen
 
 The complete, filterable mod list for the _current development build_ of the upcoming RC3 build: Nexus links, download filenames, and collapsible folders that mirror MO2's left pane.
 {{< /chapter-heading >}}
+
+{{< chapter-heading href="mgo-2_5_5" >}}
+## MGO 2.5.5 (ENB)
+
+The complete, filterable mod list for MGO 2.5.5. This shows what's enabled in the ENB version, though all of the Community Shaders options are still in the list.
+{{< /chapter-heading >}}
