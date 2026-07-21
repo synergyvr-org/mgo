@@ -87,13 +87,29 @@
 
 .modlist-table {
   width: 100%;
-  border-collapse: collapse;
+  // NOT border-collapse: with collapsed borders, the leftmost cell's border-left
+  // (used for the folder indent gutter) is only half-applied to content, so
+  // separators would indent at half the rate of the padding-indented mods.
+  border-collapse: separate;
+  border-spacing: 0;
   font-size: 0.9rem;
+  // Override the theme's table background.
+  background-color: #1e1e1e;
 
+  // Drop the theme's default grey border on the cells (but keep it on the table
+  // itself); our own cell borders (separator top-line, folder gutter, thead
+  // underline) are re-applied by the more-specific rules below.
   th, td {
     text-align: left;
     padding: 0.3rem 0.6rem;
     vertical-align: top;
+    border: 0;
+  }
+
+  // Zebra striping on the data (mod) cells. Excludes separator rows so their
+  // colored backgrounds aren't overridden.
+  tbody > tr:nth-child(even):not(.modlist-separator) > td {
+    background-color: #262626;
   }
 
   thead th {
@@ -102,15 +118,6 @@
     background: var(--mgo-bg);
     border-bottom: 2px solid var(--mgo-gold-dark);
     z-index: 1;
-  }
-
-  .col-status {
-    width: 3.5rem;
-    text-align: center;
-  }
-
-  td.col-status {
-    text-align: center;
   }
 
   // Download filenames stay monospaced, but drop the theme's eye-catching
@@ -124,7 +131,14 @@
     color: #9a9a9a;
   }
 
+  // Enabled/disabled marker, now inline before the mod name. Fixed width so the
+  // names line up whether the marker is a check or a minus.
   .mod-status {
+    display: inline-block;
+    width: 1.2em;
+    margin-right: 0.35em;
+    text-align: center;
+
     &.enabled { color: var(--mgo-gold); }
     &.disabled { color: #666; }
   }
@@ -144,6 +158,16 @@
     user-select: none;
   }
 
+  // Nested folders (depth ≥ 2) are indented 32px per level, and their colored
+  // background is confined to the indented portion: a transparent left border
+  // forms the gutter, and background-clip keeps the fill from bleeding into it.
+  .modlist-folder > td {
+    background-clip: padding-box;
+  }
+  .modlist-folder[data-depth="2"] > td { border-left: 32px solid transparent; }
+  .modlist-folder[data-depth="3"] > td { border-left: 64px solid transparent; }
+  .modlist-folder[data-depth="4"] > td { border-left: 96px solid transparent; }
+
   // The folder icon signals state: fa-folder-open when expanded, fa-folder when
   // collapsed (swapped in JS). Keep it gold in either state, on both the
   // onboarding-matched and gradient folders.
@@ -157,12 +181,15 @@
     outline-offset: -2px;
   }
 
-  // Hash-less separators are plain, non-folder labels.
+  // Hash-less separators are plain, non-folder labels. They're leaves (like
+  // mods), so they get indented to match their enclosing folder via a
+  // transparent left border (set inline), with the fill kept out of the gutter.
   .modlist-separator-plain {
     font-weight: bold;
     letter-spacing: 0.5px;
     background: #ffffff0d;
     color: #ccc;
+    background-clip: padding-box;
   }
 
   // Special separators (the "Mad God Overhaul - <version>" container and the

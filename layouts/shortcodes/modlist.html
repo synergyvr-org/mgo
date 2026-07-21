@@ -1,7 +1,7 @@
 {{- /* Renders a filterable table of the MGO mod list from a CSV in static/.
        Arg 0 (optional): CSV path relative to project root.
-       Columns shown: Mod Status, Mod Name (linked to Nexus when available),
-       Download File Name. Separator rows (name ending in "_separator") become
+       Columns shown: Mod Name (with an enabled/disabled marker, linked to Nexus
+       when available) and Download File Name. Separator rows (name ending "_separator") become
        human-readable headers with leading "#" turned into "▸". */ -}}
 {{- $path := .Get 0 | default "static/mgo-4-rc3.csv" -}}
 {{- $csv := os.ReadFile $path -}}
@@ -44,7 +44,6 @@
   <table id="modlist-table" class="modlist-table">
     <thead>
       <tr>
-        <th class="col-status">Status</th>
         <th class="col-name">Mod Name</th>
         <th class="col-file">Download File Name</th>
       </tr>
@@ -119,9 +118,9 @@
           {{- end -}}
       <tr class="modlist-separator{{ if $isFolder }} modlist-folder{{ end }}" data-depth="{{ $depth }}">
         {{- if $isSpecial -}}
-        <td colspan="3" class="modlist-separator-special">{{ if $isFolder }}<i class="fa fa-folder-open"></i> {{ end }}{{ $arrows }}{{ $clean }}</td>
+        <td colspan="2" class="modlist-separator-special">{{ if $isFolder }}<i class="fa fa-folder-open"></i> {{ end }}{{ $arrows }}{{ $clean }}</td>
         {{- else if $mo2 -}}
-        <td colspan="3" class="separator {{ $mo2 }}"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
+        <td colspan="2" class="separator {{ $mo2 }}"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
         {{- else if $isFolder -}}
           {{- /* One 3-stop gradient #642f69 → #000000 → #581e2a spread across the
                  top-level folders; nested folders take positions that continue it. */ -}}
@@ -140,9 +139,13 @@
             {{- $g = int (math.Round (mul 30 $t)) -}}
             {{- $b = int (math.Round (mul 42 $t)) -}}
           {{- end -}}
-        <td colspan="3" class="modlist-separator-gradient" style="background-color: {{ printf "#%02x%02x%02x" $r $g $b }}; color: #fff;"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
+        <td colspan="2" class="modlist-separator-gradient" style="background-color: {{ printf "#%02x%02x%02x" $r $g $b }}; color: #fff;"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
         {{- else -}}
-        <td colspan="3" class="modlist-separator-plain">{{ $clean }}</td>
+          {{- /* Hash-less "oddball" separators are leaves; indent them to match
+                 their enclosing folder, same as the mods inside it. */ -}}
+          {{- $encDepth := 0 -}}
+          {{- if gt (len $stack) 0 -}}{{- $encDepth = (index $stack (sub (len $stack) 1)).depth -}}{{- end -}}
+        <td colspan="2" class="modlist-separator-plain"{{ if gt $encDepth 0 }} style="border-left: {{ mul $encDepth 32 }}px solid transparent;"{{ end }}>{{ $clean }}</td>
         {{- end -}}
       </tr>
         {{- else -}}
@@ -150,15 +153,18 @@
           {{- $url := index $row 3 -}}
           {{- $file := index $row 5 -}}
           {{- $enabled := eq $status "+" -}}
+          {{- /* Indent a mod to match its folder, one level deeper (like a nested
+                 separator): 32px × the enclosing folder's depth, landing on the
+                 same 32px grid the separator indents use. */ -}}
+          {{- $encDepth := 0 -}}
+          {{- if gt (len $stack) 0 -}}{{- $encDepth = (index $stack (sub (len $stack) 1)).depth -}}{{- end -}}
       <tr class="modlist-mod">
-        <td class="col-status">
+        <td class="col-name"{{ if gt $encDepth 0 }} style="padding-left: {{ mul $encDepth 32 }}px;"{{ end }}>
           {{- if $enabled -}}
           <span class="mod-status enabled" title="Enabled"><i class="fa fa-check"></i></span>
           {{- else -}}
           <span class="mod-status disabled" title="Disabled"><i class="fa fa-minus"></i></span>
           {{- end -}}
-        </td>
-        <td class="col-name">
           {{- if $url -}}
           <a href="{{ $url }}" target="_blank" rel="noopener">{{ $name }}</a>
           {{- else -}}
