@@ -91,6 +91,18 @@
     color: #aaa;
     white-space: nowrap;
   }
+
+  // On narrow screens (phone portrait) the input gets squeezed to nothing by the
+  // count and two buttons. Give the input its own line, and let the count and
+  // buttons wrap onto a second line (count left, buttons right via margin-auto).
+  @media (max-width: 40rem) {
+    flex-wrap: wrap;
+
+    .modlist-search {
+      flex-basis: 100%;
+      max-width: none;
+    }
+  }
 }
 
 .modlist-table {
