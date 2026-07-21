@@ -15,7 +15,7 @@ Skyrim VR's vanilla movement options are still present, but MGO includes mods to
 {{< chapter-heading img="interaction-pullchain" href="interaction" >}}
 ## Interaction
 
-Why point at something and press {{< control name="A" >}} when you can bop it, twist it, pull it?
+Why point at something and press {{< control name="a" >}} when you can bop it, twist it, pull it?
 {{< /chapter-heading >}}
 
 {{< chapter-heading img="combat-sword" href="combat" >}}
@@ -23,7 +23,6 @@ Why point at something and press {{< control name="A" >}} when you can bop it, t
 
 Vanilla combat is... functional. But this is VR! Combat should be _amazing_! With a few key mods, it's pretty great.
 {{< /chapter-heading >}}
-
 {{< chapter-heading img="marksmanship" href="marksmanship" >}}
 ## Marksmanship
 
