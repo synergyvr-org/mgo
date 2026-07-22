@@ -6,14 +6,19 @@ weight = 0
 
 Collected here are various reference materials that you may find helpful.
 
+{{< chapter-heading href="faq" >}}
+## FAQ
+
+Quick answers to the most common questions, with links to the full story where it's warranted.
+{{< /chapter-heading >}}
+
 {{< chapter-heading href="overwrite" >}}
 ## MO2 Overwrite
 
 What that _Overwrite_ entry at the bottom of MO2 is, why files pile up there, and how to handle them.
 {{< /chapter-heading >}}
 
-{{< chapter-heading href="editing-inis" >}}
-## INI Files
+{{< chapter-heading href="editing-inis" >}}## INI Files
 
 How to find and safely edit the plain-text settings files some mods use instead of (or in addition to) an MCM.
 {{< /chapter-heading >}}
