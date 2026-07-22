@@ -33,7 +33,8 @@ What a clean Skyrim VR installation looks like, how to get back to one, and how 
 {{< chapter-heading href="shortcut" >}}
 ## MGO Shortcut
 
-A better way to launch MGO, since the shortcut Wabbajack creates can't be pinned to the Start menu.{{< /chapter-heading >}}
+A better way to launch MGO, since the shortcut Wabbajack creates can't be pinned to the Start menu.
+{{< /chapter-heading >}}
 
 {{< chapter-heading href="virtual-memory" >}}
 ## Virtual Memory

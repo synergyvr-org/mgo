@@ -36,7 +36,7 @@ SkyrimNet's **GameMaster** is effectively an AI Dungeon Master, describing scene
 
 ## You've learned all you can from me.
 
-This barely scratches the surface of what SkyrimNet can do. For detailed guidance, troubleshooting, and the latest on what's possible, the {{< ext "https://discord.gg/gHHS7HpJS9" >}}SkyrimNet Discord{{< /ext >}} is the place to be. The {{< ext "https://goncalo22.github.io/SkyrimNet-GamePlugin/" >}}official docs{{< /ext >}} are worth a read, too.
+This barely scratches the surface of what SkyrimNet can do. For detailed guidance, troubleshooting, and the latest on what's possible, the {{< discord "gHHS7HpJS9" >}}SkyrimNet Discord{{< /discord >}} is the place to be. The {{< ext "https://goncalo22.github.io/SkyrimNet-GamePlugin/" >}}official docs{{< /ext >}} are worth a read, too.
 
 [^1]: In other words, this excludes character-specific dialogue. It's the stuff on {{< ext "https://en.uesp.net/wiki/Skyrim:Generic_Dialogue" >}}this UESP page{{< /ext >}}.
 

@@ -19,7 +19,13 @@ Skyrim _is_ an RPG, after all. It's time to build the character of your dreams (
 {{< /chapter-heading >}}
 
 {{< chapter-heading href="alternate-start" >}}
-## Alternate Start - Live Another Life
+## Alternate Perspective
 
-Speaking of leaving behind the vanilla experience, MGO includes an alternate start mod that gives you a number of choices for where and how you begin the game.
+Speaking of leaving behind the vanilla experience, MGO includes an alternate start mod that gives you a number of choices for where and how you begin the game. This is the alternate start mod included in MGO 4.0 RC3 and later.
+{{< /chapter-heading >}}
+
+{{< chapter-heading href="alternate-start-aslal" >}}
+## Alternate Start (ASLAL)
+
+This is the alternate start mod included in all versions of MGO up to and including 4.0 RC2.
 {{< /chapter-heading >}}

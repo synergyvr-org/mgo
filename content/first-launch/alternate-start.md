@@ -1,56 +1,110 @@
 +++
-title = 'Alternate Start'
+title = 'Alternate Perspective'
 weight = 30
 +++
 
 Skyrim's opening cart ride is iconic. It's neat! Once. Maybe twice. But if you haven't already started dozens of new playthroughs, with any luck, you _will_. And sooner or later you're going to pray that you never again hear the words, "Hey you, you're finally awake!"
 
-If you've never played Skyrim before and would like to experience the opening sequence as-is (more or less&mdash;this is modded, after all), it's still there in MGO. But now it's just one option among many.
+If you've never played Skyrim before and would like to experience the opening sequence as-is (more or less&mdash;this is modded, after all), it's still available. You're just no longer forced through it every single time.
 
-## Choose a new life
-
-With the mod {{< nexus 272 >}}Alternate Start - Live Another Life{{< /nexus >}} and its various extensions, new games start in a cell in the Abandoned Prison (which is a location in the actual game, not a separate worldspace). Once you've created your character, it's time to choose where&mdash;and in what condition&mdash;you'd like to start playing.
-
-Straight in front of you, to the right of the table, is a statue of Mara. Activate the statue as though you're speaking to it.
-
-{{< caption name="ss-prison-mara" type="webp" >}}
-Activate the statue of Mara to the right of the table to choose a new life.
-{{< /caption >}}
-
-You'll be presented with a bunch of options, some of which are specific to the race you've chosen. (The options that are available to all races are listed at the bottom of this page.) Some start you with a guild affiliation, or with one of the player homes. Some let you choose a side in the Civil War right from the start. You may or may not start with weapons, armor, powers, or extra spells. Some start you with a specific goal, while others drop you in a location with no particular objective. If you're brand new to Skyrim and you find the choices overwhelming, you can always give the vanilla start a shot.
-
-If you plan to play through the main quest, but you're tired of the early quests, "I am Akatosh's chosen, the Dragonborn!" will start you in High Hrothgar, having already been recognized as the Dragonborn by the Greybeards.
-
-If you choose a different, non-vanilla start, but you'd still like to do the main quest _eventually_, you can travel to Helgen at any time to pick up the story right after the dragon attack. When you get to what's left of the village, look for a burnt body, and search it for a note.
-
-{{< aside type="alert" title="Give it a minute" >}}
-After you finish creating your character and Racemenu closes, wait a bit before choosing your start or fiddling with mod settings. Many mods include an MCM (Mod Configuration Menu), and once you name your character, MGO configures the MCMs for you.
-
-The menus themselves need to be registered, and MCM Recorder needs to apply MGO's pre-configured settings by automatically opening those menus and clicking through them in the background. If you dig through menus or sleep in the bed while it's working, you might derail the MCM Recorder playback and leave things in a less-than-ideal state. Wait until the torrent of notifications subsides, and _then_ choose your new life.
+{{< aside type="btw" title="Only in 4.0 RC3+" >}}
+MGO 4.0 RC3 is the first version of the list to include Alternate Perspective. If you're on an older build (or if you just can't get enough of this wonderful web site), you can still read all about [Alternate Start - Live Another Life](/first-launch/alternate-start-aslal).
 {{< /aside >}}
 
-Once you've made your selection, you just need to sleep in the nearby bed to trigger the _actual_ start of the game (unless you chose "I want to escape this cell," in which case you just need to escape from the cell).
+## Choose a perspective
 
-As promised, here are all of the choices that are available to every race:
+MGO uses {{< nexus 50307 >}}Alternate Perspective - Alternate Start{{< /nexus >}}. A new game begins in a room modeled on a room at Helgen's inn[^1], and that's where you create your character. The room has several containers of gear to help you build out whatever sort of character you have in mind.
 
-* I arrived on board a ship.
-* I own property in one of the holds.
-* I'm a new member of a guild.
-* I'm a patron at a local inn.
-* I'm a soldier in the army.
-* I got caught crossing the border illegally. [Vanilla Start]
-* I want to escape this cell.
-* I'm an outlaw in the wilds.
-* I am a Vigilant of Stendarr.
-* I am camping in the woods.
-* I was shipwrecked off the coast!
-* I am a vampire in a secluded lair.
-* I am a necromancer in a secret location.
-* I am a warlock's thrall.
-* I was attacked and left for dead.
-* I am Akatosh's chosen, the Dragonborn!
-* I am the Guild Master for the Explorers Society.
-* I am in Cyrodiil[^1].
-* Surprise me.
+{{< aside type="alert" title="Give it a minute" >}}
+After you finish creating your character and RaceMenu closes, wait a bit before you talk to the dragon or fiddle with mod settings. Many mods include an MCM (Mod Configuration Menu), and once you name your character, MGO configures the MCMs for you.
 
-[^1]: _Cydrodiil_ is actually misspelled as "Cyrodill" in the game, but who notices these things? (I think you know the answer to that.)
+The menus themselves need to be registered, and MCM Recorder needs to apply MGO's pre-configured settings by automatically opening those menus and clicking through them in the background. If you dig through menus or start your scenario while it's working, you might derail the MCM Recorder playback and leave things in a less-than-ideal state. Wait until the torrent of notifications subsides, and _then_ choose your new life.
+{{< /aside >}}
+
+## Gear up
+
+Rather than starting you with the same spells and equipment every time, Alternate Perspective gives you some choices. Be sure to grab what you need before heading out.
+
+{{< caption name="ap-wardrobe" type="webp">}}
+In the nearby wardrobe, you'll find choices for light armor, heavy armor, and mage robes.
+{{< /caption >}}
+
+{{< caption name="ap-foot-locker" type="webp">}}
+At the foot of the bed lies a locker full of weapons of various types. Take your pick!
+{{< /caption >}}
+
+{{< caption name="ap-nightstand" type="webp">}}
+Alternate Perspective does _not_ automatically start you with the Flames and Healing spells, but rather stuffs a variety of spell tomes in a nightstand. Whatever school of magic your character prefers, you'll find appropriate starting options (including Flames and Healing).
+{{< /caption >}}
+
+{{< caption name="ap-strongbox" type="webp">}}
+Playing a thief (or just want a little help)? You'll find a strongbox at the end of the table loaded with gold, gems, and lockpicks.
+{{< /caption >}}
+
+## Choose your destiny
+
+When you're ready, talk to the little dragon perched on the lantern. He'll offer you a _smörgåsbord_ of ways to begin. Pick one, then open the door beside him and step into the void to kick off the scenario you chose.
+
+If you head through the door without speaking to the dragon, you'll end up with Alternate Perspective's default start. Rather than skipping Skyrim's intro, this option presents the same story from (as the mod name suggests) a different perspective. You're still present for Alduin's attack on Helgen, but your head isn't on the chopping block.
+
+{{< caption name="dragon-on-a-lantern" type="jpg" no-retina="true" >}}
+Talk to the dragon to choose how your story begins.
+{{< /caption >}}
+
+The dragon's menu covers most of the fantasies you might bring to a new character. Expand any option to see how that life begins.
+
+{{< disclosure title="None (Default)" >}}
+Start in Helgen's inn, The Resting Pilgrim. Talk to the innkeeper Matlara and sleep in your room to experience that alternate perspective you were promised.
+{{< /disclosure >}}
+
+{{< disclosure title="Random" >}}
+Does just what it says on the tin: Starts in any one of the available options.
+{{< /disclosure >}}
+
+{{< disclosure title="Regular (Inn)" >}}
+Begin as a guest in one of 12 inns across Skyrim.
+{{< /disclosure >}}
+
+{{< disclosure title="From Overseas" >}}
+Arrive by ship at Dawnstar, Solitude ("East Empire Trading"), Windhelm, or Raven Rock.
+{{< /disclosure >}}
+
+{{< disclosure title="Wanted Criminal" >}}
+Start out in the wilds with a price on your head in multiple holds.
+{{< /disclosure >}}
+
+{{< disclosure title="Left for Dead" >}}
+Wake in the wilderness, badly hurt and saddled with a nasty disease. Choose from The Reach, The Rift, Winterhold, or let fate[^1] decide.
+
+[^1]: or a random number generator, as it were
+{{< /disclosure >}}
+
+{{< disclosure title="Shipwrecked" >}}
+Wake up underwater as the lone survivor of a shipwreck. If you want the struggle for survival to begin immediately, look no further!
+{{< /disclosure >}}
+
+{{< disclosure title="My Own Home" >}}
+Start in one of the four vanilla, pre-Hearthfire player homes.
+{{< /disclosure >}}
+
+{{< disclosure title="Vampire" >}}
+Start as a member of a vampire clan in Bloodlet Throne, Haemar's Shame, Movarth's Lair, or Pinemoon Cave.
+{{< /disclosure >}}
+
+{{< disclosure title="Werewolf" >}}
+Make Hircine proud! Begin as a werewolf in the forests of Falkreath.
+{{< /disclosure >}}
+
+{{< disclosure title="Forsworn" >}}
+Are you sick of the Nords _and_ the Imperials? Join the Forsworn at Druadach Redoubt.
+{{< /disclosure >}}
+
+{{< disclosure title="Guilds" >}}
+Begin as a member of one of Skyrim's guilds: The College of Winterhold, The Companions, The Dark Brotherhood, or The Thieves Guild.
+{{< /disclosure >}}
+
+{{< disclosure title="The Dragonborn" >}}
+Jump straight into the main quest. You can skip ahead to High Hrothgar, having already been recognized as the Dragonborn, or you can choose from three different points in the game's opening sequence: as a prisoner on a cart ride (vanilla), in Helgen Keep after Alduin's attack (having chosen to follow Ralof), or at the end of the Helgen Keep sequence.
+{{< /disclosure >}}
+
+[^1]: "Modeled after" because, strictly speaking, this room is isolated and not technically the one at the inn.
