@@ -252,3 +252,43 @@ document.addEventListener('DOMContentLoaded', function () {
   // preventScroll keeps the page from jumping to the input.
   setTimeout(function () { input.focus({ preventScroll: true }); }, 0);
 });
+
+// Deep-linking for disclosures: when the URL hash targets a
+// <details class="disclosure"> (see the `disclosure` shortcode), open it and
+// scroll it into view. Runs on load and whenever the hash changes (e.g. an
+// on-page anchor click). The link itself works without this; this just makes a
+// followed link expand the accordion instead of landing on a collapsed header.
+function openDisclosureFromHash() {
+  if (!window.location.hash) return;
+  var id = decodeURIComponent(window.location.hash.slice(1));
+  var el = document.getElementById(id);
+  if (el && el.tagName === 'DETAILS' && el.classList.contains('disclosure')) {
+    el.open = true;
+    el.scrollIntoView();
+  }
+}
+document.addEventListener('DOMContentLoaded', openDisclosureFromHash);
+window.addEventListener('hashchange', openDisclosureFromHash);
+
+// Click-to-copy for the disclosure permalinks, mirroring the theme's heading
+// anchors: copy the entry's absolute URL and flash the theme's toast, instead of
+// navigating. (The theme's own anchor JS keys off parentElement.id, which is the
+// <p> here, so we handle these ourselves.) Falls back to normal link navigation
+// if the Clipboard API is unavailable.
+document.addEventListener('DOMContentLoaded', function () {
+  var toast = function (msg) {
+    if (window.relearn && window.relearn.showToast) window.relearn.showToast(msg);
+  };
+  document.querySelectorAll('.disclosure-anchor').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      if (!navigator.clipboard || !navigator.clipboard.writeText) return; // let the href do its thing
+      e.preventDefault();
+      this.blur();
+      // Build the permalink like the theme does: origin + path + #id, so any
+      // query string on the current URL isn't dragged into the copied link.
+      var url = window.location.origin + window.location.pathname + this.hash;
+      navigator.clipboard.writeText(url);
+      toast(window.T_Link_copied_to_clipboard || 'Link copied to clipboard');
+    });
+  });
+});

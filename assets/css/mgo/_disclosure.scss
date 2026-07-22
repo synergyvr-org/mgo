@@ -63,6 +63,20 @@
     > :last-child { margin-bottom: 0; }
   }
 
+  // Always-visible permalink at the end of the body (unlike the theme's heading
+  // anchors, which only appear on hover). The link icon trails the final
+  // sentence; clicking it jumps to (and, via custom.js, opens) this entry.
+  .disclosure-anchor {
+    margin-inline-start: 0.4em;
+    color: var(--mgo-gold-dark);
+    text-decoration: none;
+    white-space: nowrap; // keep the icon from wrapping to a line of its own
+
+    &:hover {
+      color: var(--mgo-gold);
+    }
+  }
+
   // Breathing room before a section heading that follows a disclosure group.
   & + h2 {
     margin-top: 2.5rem;
