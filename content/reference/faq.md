@@ -71,6 +71,10 @@ During the beta, the team asks that you don't, so that feedback reflects the lis
 As the final version of 4.0 gets closer, this site will be updated with several tutorials related to making your own changes to the list.
 {{< /disclosure >}}
 
+{{< disclosure title="Will you add alternative NPC appearances, like Pandorable's NPCs?" >}}
+Probably, but not yet. At the moment, the team is focused on fixing bugs and conflicts. Once those essentials are worked out, we'll start testing community suggestions, including NPC options, more OBody presets, etc.
+{{< /disclosure >}}
+
 {{< disclosure title="Should I run LOOT to sort my plugins?" >}}
 No, you should not. MGO's plugins are already sorted, and LOOT would undo that work. The list itself [warns you about this](/start/onboarding).
 {{< /disclosure >}}
