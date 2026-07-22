@@ -1,0 +1,10 @@
+{{- /* One collapsible disclosure. Usage:
+       {{< disclosure title="The header" >}}Body, in **markdown**.{{< /disclosure >}}
+       Renders a native <details>/<summary> so it's keyboard-accessible and works
+       without JavaScript. Collapsed by default. */ -}}
+<details class="disclosure">
+<summary>{{ .Get "title" }}</summary>
+<div class="disclosure-body">
+{{ .Page.RenderString (dict "display" "block") .Inner }}
+</div>
+</details>
