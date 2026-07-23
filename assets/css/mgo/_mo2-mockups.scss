@@ -1,6 +1,11 @@
 // MO2 interface mockups: highlight pills, read-only checkboxes, folder/mod separators
 
-.highlight {
+// Scoped to `span` on purpose: Relearn's site search adds a bare `highlight`
+// class to every main-body <a> while a search is active (and never removes it —
+// see theme.js mark()/unmark()), which would otherwise turn every link into an
+// MO2 pill and leave it that way after the search is cleared. Our pills are
+// always spans, so this keeps the two apart.
+span.highlight {
   display: inline-block;
   font-weight: bold;
   background-color: #b9d5f3;
