@@ -6,7 +6,7 @@ weight = 10
 MGO arrives with hundreds of mods already installed and configured, so you never _have_ to add anything yourself. But part of the fun of a mod list is making it your own, and sooner or later you'll spot something on Nexus that you feel you can't live without. Adding a mod through Mod Organizer 2 is straightforward once you've done it once, but there are risks to be aware of. We'll walk through it using a real example.
 
 {{< aside type="alert" title="Living on the edge" >}}
-If it's not included in MGO, it's untested against the list (or possibly even confirmed _not_ to work). Some simple mods drop right in, but mods that touch certain types of records are likely to conflict with something. Add mods one at a time, and make a habit of making a manual, indoor save before each addition. When in doubt, ask the MGO Discord community.
+If it's not included in MGO, it's untested against the list (or possibly even confirmed _not_ to work). Some simple mods drop right in, but mods that touch certain types of records are likely to conflict with something. Add mods one at a time, and make a habit of making a manual, indoor save before each addition. When in doubt, ask the {{< discord "WjSUaSPaQZ" >}}MGO Discord community{{< /discord >}}.
 {{< /aside >}}
 
 ## Everyone's favorite Bosmer[^1]
