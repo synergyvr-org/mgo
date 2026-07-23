@@ -51,7 +51,7 @@ If you head through the door without speaking to the dragon, you'll end up with 
 Talk to the dragon to choose how your story begins.
 {{< /caption >}}
 
-The dragon's menu covers most of the fantasies you might bring to a new character. Expand any option to see how that life begins.
+The dragon presents you with a number of scenarios, many of which offer additional choices once you select them.
 
 {{< disclosure title="None (Default)" >}}
 Start in Helgen's inn, The Resting Pilgrim. Talk to the innkeeper Matlara and sleep in your room to experience that alternate perspective you were promised.
