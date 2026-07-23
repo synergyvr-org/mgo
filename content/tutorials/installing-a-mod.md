@@ -81,6 +81,10 @@ The right pane works much the same, but MGO and the other Synergy lists have a r
 
 ## Sync the plugins to match
 
+{{< caption name="sync-plugins" type="webp" >}}
+Run **Sync Plugins** to keep the plugins on the right in sync with the mods on the left.
+{{< /caption >}}
+
 Once your mod is settled on the left, its plugin, if any, should sit in the matching spot on the right. If a mod adds a **plugin** (an `.esp` or `.esl`), first make sure it's checked in the right pane. Then, instead of dragging plugins around by hand, let {{< nexus 47325 >}}Sync Plugins{{< /nexus >}} do it. It's an MO2 tool that reads your left-pane mod order and reorders the plugins to match. Run it from the menu bar at {{< btn-inline >}}Tools{{< /btn-inline >}} → {{< btn-inline >}}Tool Plugins{{< /btn-inline >}} → {{< btn-inline >}}Sync Plugins{{< /btn-inline >}}, and your plugins snap into the same order as the mods that provide them.
 
 {{< aside type="alert" title="Sync, don't LOOT" >}}
@@ -94,6 +98,7 @@ A follower doesn't need much in the way of configuration. Just go and recruit he
 * She's an archer, so keep her stocked with arrows, or she'll resort to punching dragons (her words). She can buy bone arrows (her favorites) at the Drunken Huntsman, or you can craft them, but she'll use any arrows you give her.
 * To give her other gear that she'll actually use, go through dialogue: "Let's talk about traveling together" → "Let me check your gear." (Moving items to her normal inventory just stores them.)
 * Her quest, approval, and the optional romance all unfold through conversation as you play. The {{< nexus 11278 >}}Nexus page{{< /nexus >}} has the full rundown.
+* **Don't forget to go back and endorse the mod on Nexus!**
 
 That's the process: download, install, place, sync, and play. Every mod you add follows that same general process, even if some of the specifics differ.
 
