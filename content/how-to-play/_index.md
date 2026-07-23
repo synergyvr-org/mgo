@@ -23,6 +23,7 @@ Why point at something and press {{< control name="a" >}} when you can bop it, t
 
 Vanilla combat is... functional. But this is VR! Combat should be _amazing_! With a few key mods, it's pretty great.
 {{< /chapter-heading >}}
+
 {{< chapter-heading img="marksmanship" href="marksmanship" >}}
 ## Marksmanship
 
