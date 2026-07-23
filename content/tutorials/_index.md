@@ -4,12 +4,12 @@ type = "chapter"
 weight = 18
 +++
 
-Step-by-step guides for the hands-on tasks you might take on yourself once you're comfortable with MGO&mdash;the kind of thing you do in a tool or a menu rather than in the game.
+Here are step-by-step guides for some of the customization tasks you may want to take on yourself once you're comfortable with out-of-the-box MGO&mdash;.
 
 {{< chapter-heading href="installing-a-mod" >}}
 ## Installing a Mod
 
-Add a mod that isn't in the list: download it, install it in MO2, and slot it into your load order.
+Add a mod that isn't in the list: download it, install it in MO2, and find a good home for it in your load order.
 {{< /chapter-heading >}}
 
 More soon!
