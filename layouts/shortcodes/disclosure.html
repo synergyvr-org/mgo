@@ -1,10 +1,26 @@
 {{- /* One collapsible disclosure. Usage:
        {{< disclosure title="The header" >}}Body, in **markdown**.{{< /disclosure >}}
        Renders a native <details>/<summary> so it's keyboard-accessible and works
-       without JavaScript. Collapsed by default. */ -}}
-<details class="disclosure">
+       without JavaScript. Collapsed by default.
+       Gets an `id` (derived from the title, or set explicitly with id="…") so it
+       can be linked to directly; following such a link opens it (see custom.js). */ -}}
+{{- $id := .Get "id" | default (anchorize (.Get "title")) -}}
+{{- $body := .Inner | .Page.RenderString (dict "display" "block") | strings.TrimSpace -}}
+{{- /* An always-visible permalink to this entry, tucked at the end of the last
+       paragraph. If the body ends in a paragraph, slip it inside so it trails the
+       final sentence; otherwise append it after the last block. Clicking it copies
+       the link to the clipboard (handled in custom.js), mirroring the theme's
+       heading anchors; the `title` supplies the same hover tooltip they use. */ -}}
+{{- $hint := T "Copy-link-to-clipboard" -}}
+{{- $anchor := printf `<a class="disclosure-anchor" href="#%s" title="%s" aria-label="%s"><i class="fa-solid fa-link"></i></a>` $id $hint $hint -}}
+{{- if hasSuffix $body "</p>" -}}
+  {{- $body = printf "%s%s</p>" (strings.TrimSuffix "</p>" $body) $anchor -}}
+{{- else -}}
+  {{- $body = printf "%s%s" $body $anchor -}}
+{{- end -}}
+<details class="disclosure" id="{{ $id }}">
 <summary>{{ .Get "title" }}</summary>
 <div class="disclosure-body">
-{{ .Page.RenderString (dict "display" "block") .Inner }}
+{{ $body | safeHTML }}
 </div>
 </details>
