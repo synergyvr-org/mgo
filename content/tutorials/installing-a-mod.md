@@ -17,14 +17,18 @@ A follower like this takes a bit more thought to place than an SKSE plugin or a 
 
 ## Download it
 
-1. Open the mod's {{< nexus 11278 >}}Nexus page{{< /nexus >}} and go to the {{< btn-inline >}}Files{{< /btn-inline >}} tab.
-2. On the main file, click {{< btn-inline download >}}Mod manager download{{< /btn-inline >}} (see below).
+{{< caption name="auri-nexus" type="webp">}}
+Download the mod, and remember to come back and endorse it later!
+{{< /caption >}}
+
+1. Open the mod's {{< nexus 11278 >}}Nexus page{{< /nexus >}}.
+2. Click {{< btn-inline download >}}Mod manager download{{< /btn-inline >}} or {{< btn-inline download >}}Manual{{< /btn-inline >}} (see below).
 3. After any wait timer, your browser hands the file off to MO2, and it shows up in MO2's {{< btn-inline >}}Downloads{{< /btn-inline >}} tab on the right, next to _Plugins_.
 
-{{< aside type="btw" title="If nothing happens" >}}
+{{< aside type="btw" title="Managed or manual?" >}}
 {{< btn-inline download >}}Mod manager download{{< /btn-inline >}} only works if MGO's MO2 installation is registered to handle Nexus (`nxm://`) links. If clicking it does nothing, and you'd like it to, open MO2's settings, find the {{< btn-inline >}}Nexus{{< /btn-inline >}} section, and and click the button to associate with "Download with Manager" links.
 
-You can also use {{< btn-inline >}}Manual{{< /btn-inline >}} download on Nexus, then in MO2 click the {{< btn-inline "box-archive" >}}Install a new mod from an archive{{< /btn-inline >}} toolbar button, and pick the file you downloaded. Personally, I always install mods manually because I have a bunch of MO2 installations, and I can't keep track of which (if any) are associated with Nexus links.
+You can also use {{< btn-inline >}}Manual{{< /btn-inline >}} download on Nexus, then in MO2 click the {{< btn-inline "box-archive" >}}Install a new mod from an archive{{< /btn-inline >}} toolbar button, and pick the file you downloaded. Personally, I always install mods manually because I have a bunch of MO2 installations, and I can't keep track of which (if any) are associated with Nexus links at any given time.
 {{< /aside >}}
 
 ## Install it in MO2
@@ -45,35 +49,11 @@ Newly installed mods appear at the bottom of the left pane. We want it grouped w
 
 1. Make sure the mod's checkbox is **checked**.
 2. Find the {{< btn-inline "folder" >}}Followers{{< /btn-inline >}} section. The filter box at the bottom of the left pane makes it easy to locate. (Try searching for "Sofia".)
-3. Drag your new mod so it sits at the **end** of the Followers group, just below Sofia's entries:
+3. Drag your new mod so it sits beneath the other custom followers, just below Sofia's entries and above _AI Overhaul SSE_.
 
-<div class="separator mo2-followers">
-  <i class="fa fa-folder"></i> ▸▸ Followers
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> Inigo
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> Snowpoint - Inigo Patch
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> Lucien - Immersive Fully Voiced Male Follower
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> Pandorable's Lucien Replacer
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> Sofia - The Funny Fully Voiced Follower
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> Pandorable's Sofia Replacer
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> Sofia - Use Custom Skin Texture
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly" checked> Song of the Green (Auri Follower)
-</div>
+{{< caption name="auri-load-order" type="webp">}}
+Add the _Song of the Green_ mod just below the custom followers that are already in the list.
+{{< /caption >}}
 
 ## Why not just add it to the end?
 
