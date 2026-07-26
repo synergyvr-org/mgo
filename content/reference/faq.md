@@ -48,7 +48,7 @@ Torches start unlit. Hold a fire spell near the torch's head or hold the torch t
 {{< /disclosure >}}
 
 {{< disclosure title="Why can't I power attack?" >}}
-If you've enabled Fake Edge VR, power attacks only fire while the weapon is _equip-locked_. Squeeze the {{< control name="trigger" >}} four times within two seconds to lock it, and then hold {{< control name="trigger" >}} while swinging your weapon to power attack as usual. See [Fake Edge VR](/mod-highlights/fake-edge).
+If you've enabled Fake Edge VR, power attacks only fire while the weapon is _equip-locked_. Squeeze the {{< control name="trigger" >}} four times within two seconds to lock it, and then hold {{< control name="trigger" >}} while swinging your weapon to power attack as usual. See [Fake Edge VR](/mod-highlights/fake-edge). (This applies to MGO 4.0 RC2 and earlier; RC3 and later replace Fake Edge VR with Physical Collision VR.)
 {{< /disclosure >}}
 
 {{< disclosure title="Why doesn't brawling work?" >}}

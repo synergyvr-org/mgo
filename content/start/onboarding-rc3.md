@@ -13,6 +13,10 @@ If you've created a shortcut, use that to launch MO2. If not, find {{< file >}}M
 
 MO2 takes a little while to start. Even the splash screen may not appear right away. Resist the temptation to launch it again. Just wait.
 
+{{< aside type="btw" title="Full load order" >}}
+Check out the [full load order for RC3](/load-order/mgo-4-rc3/) on this very site if you want the whole scoop.
+{{< /aside >}}
+
 ## Quick Start
 
 {{< caption name="mo2-run" type="webp" >}}
@@ -123,6 +127,15 @@ If you're using OpenComposite Unleashed, OCU needs to manage your controller bin
 
 {{< nexus 31392 >}}VR FPS Stabilizer{{< /nexus >}} changes INI values to maintain your framerate. If you're using SteamVR, enable it.
 
+{{< aside type="alert" title="Switching from OpenComposite back to SteamVR" >}}
+Unchecking the OpenComposite mod isn't enough on its own. The files OCU generates while it runs can conflict with SteamVR, so you also need to clear them out:
+
+1. Delete the {{< file folder-open >}}shadercache{{< /file >}} folder from your Skyrim VR installation folder.
+2. Clear MO2's [Overwrite](/reference/overwrite): right-click {{< file folder-open >}}Overwrite{{< /file >}} and choose {{< btn-inline >}}Clear Overwrite...{{< /btn-inline >}}.
+
+Skip these and Skyrim VR may crash or render incorrectly on SteamVR until the old caches are gone.
+{{< /aside >}}
+
 ---
 ## Performance Options
 <div class="separator mo2-perf">
@@ -156,7 +169,7 @@ If you're using OpenComposite Unleashed, OCU needs to manage your controller bin
   <input type="checkbox" class="readonly"> Grass Density - Quality
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly" checked> LOD Distance - Quality
+  <input type="checkbox" class="readonly"> LOD Distance - Quality
 </div>
 
 **Step 3** includes a few performance-related presets.
@@ -165,7 +178,7 @@ The [**Community Shaders**](/performance/community-shaders/) presets are split b
 
 Heed the warning in those folder names, too: don't combine these presets with OCU's upscalers. Upscale in one place or the other, never both. (The [Community Shaders](/performance/community-shaders/) page covers this in more detail.)
 
- **Grass Density** has an optional _Quality_ preset as well (left unchecked, you get the performance grass), while **LOD Distance - Quality** ships _enabled_. Both impact outdoor frame rate, so if you're hunting for frames, unchecking the LOD preset is one of the easier trades to make.
+ **Grass Density** and **LOD Distance** each offer an optional _Quality_ preset here. Left unchecked (the default), you get the lighter performance versions. Check one to trade frames for denser grass or better-looking distant objects. Both impact FPS when outdoors, so be aware of the trade-off.
 
  {{< aside type="btw" title="LOD?" >}}
  LOD stands for _Level of Detail_ and which set of pre-generated LODs you use determines how detailed distant geometry (terrain, trees, structures, etc.) will appear. Even the _performance_ presets look quite good, so if you're looking to save some frames, this is a good place to do it.
@@ -179,10 +192,14 @@ If you've set up an earlier version of MGO, you may remember a step for selectin
 ## Optional Mods
 
 <div class="separator mo2-optional">
-  <i class="fa fa-folder"></i> ▸▸ OPTIONAL Mods - Expand to Select
+  <i class="fa fa-folder"></i> ▸▸ OPTIONAL Mods - Sync Plugins After Enabling
 </div>
 
 MGO includes a number of optional mods across several categories. They're all tested and known to work with the list, but most are disabled by default.
+
+{{< aside type="alert" title="Sync Plugins after enabling" >}}
+Whenever you enable (or disable) an optional mod that has a plugin, run {{< btn-inline >}}Tools{{< /btn-inline >}} → {{< btn-inline >}}Tool Plugins{{< /btn-inline >}} → {{< btn-inline >}}Sync Plugins{{< /btn-inline >}} in MO2 so the plugins pane on the right matches the load order on the left.
+{{< /aside >}}
 
 ---
 ## AI and Speech
@@ -232,6 +249,9 @@ The {{< ext "https://goncalo22.github.io/SkyrimNet-GamePlugin/" >}} SkyrimNet Do
   <i class="fa fa-folder"></i> ▸▸▸ Convenience
 </div>
 <div class="mod">
+  <input type="checkbox" class="readonly"> VRIK Closed Fist
+</div>
+<div class="mod">
   <input type="checkbox" class="readonly"> PrismaUI Additem
 </div>
 <div class="mod">
@@ -265,6 +285,9 @@ The mods in the _Convenience_ section are mostly  self-explanatory, but I want t
 <div class="mod">
   <input type="checkbox" class="readonly" checked> Arena - An Encounter Zone Overhaul
 </div>
+<div class="mod">
+  <input type="checkbox" class="readonly" checked> Blade and Blunt - Adjusted Difficulty Scaling
+</div>
 
 As your Skyrim character progresses, you're likely to become an unstoppable killing machine. With all of the spells, perks, and content added by mods, this can happen even faster.
 
@@ -283,32 +306,25 @@ In short, the game is too easy. {{< nexus 33487 >}}Arena{{< /nexus >}} balances 
   <input type="checkbox" class="readonly"> DovaVR Locomotion
 </div>
 <div class="mod">
+  <input type="checkbox" class="readonly" checked> Physical Collision VR
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly"> Immersive Weapon Penetration VR
+</div>
+<div class="mod">
   <input type="checkbox" class="readonly"> Spellsiphon - Immersive Combat
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> Fake Edge VR - Pseudo Equipped weapon Collisions
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> Fake Edge VR - Peak's Tweaks
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> Spell Wheel VR - Peak's Tweaks
-</div>
-<div class="mod">
-  <input type="checkbox" class="readonly"> NavigateVR - Dynamic Compass and Equipable Map
+  <input type="checkbox" class="readonly"> NavigateVR - Dynamic Compass and Equipable Maps
 </div>
 <div class="mod">
   <input type="checkbox" class="readonly" checked> Minimal Enemy Healthbar VR - Remove Enemy Health Bar
 </div>
 
-Immersion is a high priority for MGO. The list includes a number of mods to help you feel like you're really in Tamriel, many of which are enabled by default. This section includes a few more optional mods that can enhance your playthrough, depending on your taste. I'll tell you about a couple of my favorites.
+Immersion is a high priority for MGO. The list includes a number of mods to help you feel like you're really in Tamriel, many of which are enabled by default. This section includes a few more optional mods that can enhance your playthrough, depending on your taste. Here are a couple worth calling out.
 
 {{< nexus 154803 >}}DovaVR Locomotion{{< /nexus >}} allows you to walk by swinging your arms. Check out the [Movement](/how-to-play/movement) page or the mod's Nexus page to read more.
 
-{{< nexus 170889 >}}Fake Edge VR{{< /nexus >}} is one of the roughly 1 million VR-specific mods by Machina, and it gives your weapons real collisions. They bump against walls, tables, your shield, and your other weapons instead of clipping through them. That's because, strictly speaking, it's not always _equipped_; you're just holding it. When you hold {{< control name="trigger" >}}, the weapon is equipped for combat, with all its usual damage and enchantments. Release {{< control name="trigger" >}}, and the weapon becomes a physical object that bumps into the world. To try it, just enable it here. {{< nexus 55962 >}}Stop Trigger Unsheathing For VR{{< /nexus >}}, which it relies on, is now part of the core list, so there's nothing else to switch on. For the full rundown (dual-wielding, locking a weapon's equipped status, etc.), see the full [Fake Edge VR](/mod-highlights/fake-edge) write-up.
-
-The two **Peak's Tweaks** entries are optional configuration tweaks for Fake Edge and Spell Wheel from {{< ext "https://www.youtube.com/@justapeakVR" >}}justapeakVR{{< /ext >}}, whose Skyrim VR gameplay videos are a masterclass in dynamic combat and movement. If you'd like your fights to look a little more like his, this is where you start[^2].
+New in this release, {{< nexus 186335 >}}Physical Collision VR{{< /nexus >}} replaces Fake Edge VR as MGO's weapon-collision mod, and it's enabled by default. Your weapons collide with the world around them (walls, tables, your shield) instead of clipping through, and the weapons still attack as usual. Check its Nexus page for the details of how it works.
 
 [^1]: Even if you choose WhisperGPU, shouts are still recognized by Vosk under the hood. The Thu'um answers to only one engine.
-
-[^2]: Just like buying Air Jordans is where you start if you want to play basketball like Michael Jordan, right?
