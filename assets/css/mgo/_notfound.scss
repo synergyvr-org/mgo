@@ -1,0 +1,45 @@
+// 404 page, built around the "Sheogorath Lost in Solitude" image (see layouts/404.html).
+// The image already carries the "404", so the Relearn theme's numeric heading and shrug
+// SVG are dropped. This just frames the image and the copy.
+
+article.notfound {
+  max-width: 64rem;
+  margin: 1.5rem auto 3rem;
+  padding: 0 1rem;
+  text-align: center;
+
+  .notfound-hero {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--mgo-btn-inline);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+  }
+
+  .notfound-text {
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+
+  // Override the theme's giant numeric-h1 sizing. Force hyphenation off
+  // so the heading never breaks a word with a hyphen when it wraps.
+  // (Relearn sets hyphens: auto on h1.)
+  h1,
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    overflow: visible;
+    -webkit-hyphens: manual;
+    hyphens: manual;
+    border-bottom: 0; // the `chapter` class otherwise underlines h2s
+  }
+
+  .notfound-links {
+    margin-top: 1.75rem;
+    font-size: 1.15rem;
+  }
+}

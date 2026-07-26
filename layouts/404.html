@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{{- .Store.Set "relearnOutputFormat" "html" }}
+<html id="R-html" lang="{{ .Page.Language.LanguageCode }}" dir="{{ .Page.Language.LanguageDirection | default (T "Reading-direction") | default "ltr" }}" itemscope itemtype="http://schema.org/Article" data-r-output-format="{{ with .Store.Get "relearnOutputFormat" }}{{ . }}{{ else }}html{{ end }}">
+  <head>
+    {{- partial "meta.html" . }}
+    {{- $title := partial "title.gotmpl" (dict "page" . "fullyQualified" true "reverse" true) }}
+    <title>{{ $title }}</title>
+
+    {{- /* because this file can be called from literally any URL inside your project, we need to base all relative URLs to make them work */}}
+    <base href="{{ site.BaseURL }}">
+
+    {{- partialCached "favicon.html" site.Home }}
+    {{- partial "dependencies.html" (dict "page" . "location" "header") }}
+    {{- partial "custom-header.html" . }}
+  </head>
+  <body class="mobile-support {{ with .Store.Get "relearnOutputFormat" }}{{ . }}{{ else }}html{{ end }}" data-origin="{{ partial "permalink.gotmpl" (dict "to" .) }}">
+    <div id="R-body" class="default-animation">
+      <main id="R-body-inner" class="highlightable chapter" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="notfound">
+            <img class="notfound-hero"
+              src="{{ "images/404.webp" | absURL }}"
+              srcset="{{ "images/404.webp" | absURL }} 1x, {{ "images/404@2x.webp" | absURL }} 2x"
+              width="960" height="536"
+              alt="Sheogorath scratches his head as he studies a map in the city of Solitude, with a giant ornate golden 404 hovering nearby.">
+            <div class="notfound-text">
+              <h2>You cannot fast travel when enemies are nearby.</h2>
+              <p>No enemies are nearby? Well, the page may have been moved or renamed. I'm sure it's my fault.</p>
+              <p class="notfound-links">
+                <a href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">Home</a>
+                {{- with site.GetPage "/start" }} &nbsp;&middot;&nbsp; <a href="{{ partial "permalink.gotmpl" (dict "to" .) }}">Getting Started</a>{{ end }}
+                {{- with site.GetPage "/how-to-play" }} &nbsp;&middot;&nbsp; <a href="{{ partial "permalink.gotmpl" (dict "to" .) }}">How To Play</a>{{ end }}
+              </p>
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
+{{- partial "dependencies.html" (dict "page" . "location" "footer") }}
+{{- partial "custom-footer.html" . }}
+  </body>
+</html>
