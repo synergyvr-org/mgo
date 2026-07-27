@@ -289,9 +289,11 @@ The mods in the _Convenience_ section are mostly  self-explanatory, but I want t
   <input type="checkbox" class="readonly" checked> Blade and Blunt - Adjusted Difficulty Scaling
 </div>
 
-As your Skyrim character progresses, you're likely to become an unstoppable killing machine. With all of the spells, perks, and content added by mods, this can happen even faster.
+As your Skyrim character progresses, you're likely to become an unstoppable killing machine. With all of the spells, perks, and content added by mods, this can happen even faster. In short, the game is too easy.
 
-In short, the game is too easy. {{< nexus 33487 >}}Arena{{< /nexus >}} balances things out a bit by adjusting the enemies that appear in each location.
+ {{< nexus 33487 >}}Arena{{< /nexus >}} balances things out a bit by adjusting the enemies that appear in each location.
+
+Meanwhile, MGO's combat runs on {{< nexus 34549 >}}Blade and Blunt{{< /nexus >}}, a combat overhaul built to make Skyrim harder and to encourage active resource management. The optional {{< nexus 117827 >}}Adjusted Difficulty Scaling{{< /nexus >}} entry in this section is a companion to it. Enable it if you want to add even more to that challenge.
 
 ---
 ## Immersion
