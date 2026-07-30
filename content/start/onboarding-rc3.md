@@ -308,9 +308,6 @@ Meanwhile, MGO's combat runs on {{< nexus 34549 >}}Blade and Blunt{{< /nexus >}}
   <input type="checkbox" class="readonly"> DovaVR Locomotion
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly" checked> Physical Collision VR
-</div>
-<div class="mod">
   <input type="checkbox" class="readonly"> Immersive Weapon Penetration VR
 </div>
 <div class="mod">
@@ -327,6 +324,6 @@ Immersion is a high priority for MGO. The list includes a number of mods to help
 
 {{< nexus 154803 >}}DovaVR Locomotion{{< /nexus >}} allows you to walk by swinging your arms. Check out the [Movement](/how-to-play/movement) page or the mod's Nexus page to read more.
 
-New in this release, {{< nexus 186335 >}}Physical Collision VR{{< /nexus >}} replaces Fake Edge VR as MGO's weapon-collision mod, and it's enabled by default. Your weapons collide with the world around them (walls, tables, your shield) instead of clipping through, and the weapons still attack as usual. Check its Nexus page for the details of how it works.
+New in this release, {{< nexus 186335 >}}Physical Collision VR{{< /nexus >}} replaces Fake Edge VR as MGO's weapon-collision mod. It's part of the core list now (on for everyone, not one of the optional toggles above), so there's no checkbox to find. Your weapons collide with the world around them (walls, tables, your shield) instead of clipping through, and they still attack as usual. Check its Nexus page for the details of how it works.
 
 [^1]: Even if you choose WhisperGPU, shouts are still recognized by Vosk under the hood. The Thu'um answers to only one engine.
