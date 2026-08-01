@@ -1,14 +1,14 @@
 # MGO Documentation Changelog
 
 All notable changes to the MGO documentation site, based on its
-[deployments](https://github.com/synergyvr-org/mgo/deployments).
+[deployments](https://github.com/synergyvr-org/mgo/deployments). Entries before 2026-06-30 come from the site's previous home, [dstrus/mgo-tutorial](https://github.com/dstrus/mgo-tutorial/deployments).
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## 2026-07-30
 
 ### Changed
-- Updated 4.0 RC3 (dev) load order.
+- Updated 4.0 RC3 (still in dev) load order.
 - Moved Physical Collision VR out of the RC3 optional section (now part of the core list).
 - Documented Blade and Blunt's optional Adjusted Difficulty Scaling companion.
 
@@ -18,7 +18,7 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 - New "Sheogorath in Solitude" 404 page.
 
 ### Changed
-- Updated Onboarding and the load order for RC3.
+- Updated Onboarding and the load order for latest RC3 dev build.
 - Scoped the `.highlight` CSS so it no longer clashes with the Relearn theme.
 
 ## 2026-07-23
@@ -30,7 +30,7 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 
 ### Changed
 - Finished the per-question permalink anchors in the FAQ.
-- Updated Tutorials copy and the "Installing a Mod" walkthrough, including its Discord link.
+- Updated Tutorials copy and the "Installing a Mod" walkthrough.
 
 ### Fixed
 - Repaired the broken "How To Play" chapter page.
@@ -41,7 +41,6 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 - FAQ page, with per-question permalink anchors and a click-to-copy icon.
 - Alternate Perspective page and the RC3 Onboarding page.
 - MGO 2.5.5 in the chapter page and navigation.
-- "NPC appearance" question and answer.
 - FAQ link on the Reference chapter page.
 
 ### Fixed
@@ -55,12 +54,12 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 - Updated 4.0 RC3 (dev) load order.
 
 ### Changed
-- Reworked load-order colors: onboarding-step gradient, zebra striping, indentation, and correct separator gradient outside onboarding.
-- Made the load-order filter, count, and buttons responsive.
+- Reworked load order colors: correct separator gradients inside and outside onboarding, zebra striping, and indentation.
+- Made the load order filter, count, and buttons responsive.
 - Updated Load Order copy to reflect the removed Status column.
 
 ### Fixed
-- Repaired the broken controller diagram.
+- Repaired a broken controller diagram.
 
 ## 2026-07-20
 
@@ -96,7 +95,7 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 - Minor edits to DovaVR and a re-order of the Fake Edge content.
 
 ### Fixed
-- Fixed the VRAMr YouTube link, several broken links, and the low-DPI sidebar logo.
+- Fixed the VRAMr YouTube link, several broken links, and the missing low-DPI sidebar logo.
 
 ## 2026-07-13
 
@@ -147,10 +146,10 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 ### Added
 - Up-to-date OpenComposite Unleashed details.
 - Fake Edge VR details, plus INI-editing instructions.
-- Troned's Community Shaders recommendations.
+- Troned's recommended settings for Community Shaders.
 
 ### Changed
-- Renamed "Before You Play"/"Pre-Start" to "Onboarding" and finished the onboarding flow.
+- Renamed "Before You Play"/"Pre-Start" to "Onboarding" and finished the onboarding flow for 3.9.0.7.
 
 ### Fixed
 - Fixed shortcode issues.
@@ -159,13 +158,13 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 ## 2026-07-06
 
 ### Changed
-- Updated the MO2 details for build 3.9.0.7.
+- Updated the MO2 onboarding details for build 3.9.0.7 (in progress).
 
 ## 2026-07-05
 
 ### Added
-- Custom video controls, wired into the `video` shortcode.
-- Oculus Touch bindings, plus Kvite and Cangar binding details.
+- Custom video controls actually wired into the `video` shortcode.
+- Kvite and Cangar binding details.
 
 ### Changed
 - Extensive controller-binding documentation improvements, especially for Optimized Oculus.
@@ -175,25 +174,283 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 ## 2026-07-04
 
 ### Added
-- Custom video controls.
+- Custom video player controls.
 - VR Safe controller bindings.
 
 ### Changed
-- Expanded the intro copy (including Snippy's announcement) and updated the `aside` style.
+- Expanded the intro copy (including Snippy's beta announcement) and updated the `aside` style.
 - Clarified that using the SteamVR runtime means *not* using OpenComposite.
-- Refactored custom video-control CSS to SCSS.
+- Refactored custom video control CSS to SCSS.
 
 ### Removed
-- Static experiments for the synergyvr.org homepage.
+- Static experiments for the synergyvr.org homepage (now in a separate repo).
 
 ## 2026-07-02
 
 ### Changed
 - Adjusted the sidebar logo spacing.
-- Made footer links noticeable without hovering.
+- Made footer links identifiable without hovering.
 
 ## 2026-06-30
 
+### Changed
+- Migrated the site to its new home at https://synergy.org/mgo (repo `synergyvr-org/mgo`), from its previous home at https://daveystrus.com/mgo-tutorial (repo `dstrus/mgo-tutorial`). Updated the base path from `/mgo-tutorial` to `/mgo`.
+- Updated the README.
+
+## 2026-06-26
+
 ### Added
-- Initial deployment of the MGO documentation site to its home on synergy.org (built on roughly 140 commits of prior development history, previously deployed at https://daveystrus.com/mgo-tutorial).
-- README.
+- Discord invite.
+
+### Changed
+- Updated the MO2 walkthrough (in progress) and clarified installation instructions.
+- Adjusted the MO2 onboarding separator colors.
+
+## 2026-06-17
+
+### Added
+- Glossary.
+
+### Changed
+- Rearranged, simplified, and improved the glossary.
+- Tweaked the topbar link hover color.
+
+## 2026-06-16
+
+### Fixed
+- Fixed typos and H1/H2 line-height issues.
+
+## 2026-06-15
+
+### Changed
+- Replaced the Sovngarde font with Futura and restyled chapter headings (with color adjustments).
+- Added a static test page with a custom video player.
+
+### Fixed
+- Fixed the `control` shortcode's display when nested inside another shortcode.
+
+## 2026-06-03
+
+### Added
+- Parallax test page (in progress).
+
+## 2026-05-31
+
+### Added
+- Inline controller diagrams.
+- "Convenience" subheading for optional mods.
+
+### Changed
+- Updated the shader compilation details.
+- Clarified what is and isn't written to the Overwrite folder, what "Verify integrity of game files" does, and the Virtual File System.
+- Replaced the old icon links with the new MGO 4.0 icon (with preview).
+
+## 2026-05-26
+
+### Changed
+- Updated the VRIK bindings copy to mention Index controls.
+- Updated the "Pre-Game" page for MO2 as of 3.9.0.4.
+
+## 2026-05-25
+
+### Added
+- `steam` shortcode and the start of the Interaction details.
+
+### Changed
+- Updated the README.
+
+## 2026-05-24
+
+### Changed
+- Updated the main and sidebar with MGO 4.0 logos.
+
+## 2026-05-20
+
+### Changed
+- Updated branding for MGO 4.0, began updating the MO2 changes, and updated the VRIK bindings image.
+
+### Fixed
+- Fixed a typo.
+
+## 2026-05-19
+
+### Changed
+- Updated the favicon and background gradients.
+
+## 2026-05-17
+
+### Added
+- Marksmanship content.
+
+### Changed
+- Updated branding.
+
+## 2026-05-14
+
+### Changed
+- Updated the Interaction page.
+
+## 2026-05-12
+
+### Changed
+- Started building out the "How To Play" sub-pages and replaced the interaction GIF.
+
+## 2026-05-09
+
+### Added
+- `chapter-heading` shortcode and "How To Play" GIFs.
+
+### Fixed
+- Fixed a typo and removed a footnote that failed to parse.
+
+## 2026-05-08
+
+### Added
+- "How To Play" chapter page, with placeholders for its sub-pages.
+
+### Changed
+- Renamed the Alternate Start page.
+
+## 2026-05-07
+
+### Added
+- Built out the "Before You Play" and "First Launch" chapter pages.
+- Filled out "Start a New Life" with footnotes.
+- Videos on the home page.
+
+## 2026-05-06
+
+### Changed
+- Improved the alert gradient, the "next" button background, and added a bunch of new background images (Dragon Claw, Amulet of Mara, Kartaag's Skull); removed unused styles.
+- Updated the note about broken RaceMenu options.
+
+## 2026-05-05
+
+### Changed
+- Updated cover and main content to scroll independently of the topbar.
+- Updated the home page with the logo and removed the cover screenshot.
+
+### Fixed
+- Added a missing image.
+
+## 2026-05-04
+
+### Added
+- "Monstrosity" image and "undress" info on the character creation page.
+
+## 2026-05-03
+
+### Changed
+- Added video borders.
+- Stopped auto-hyphenating page titles (H1).
+
+## 2026-05-02
+
+### Added
+- Character creation page, with captioned videos and character-naming info.
+
+### Changed
+- Mentioned the Experience mod and increased the opacity of info-box background gradients.
+
+### Fixed
+- Fixed typos.
+
+## 2026-05-01
+
+### Fixed
+- Fixed the repeating background attachment and applied it to the active sidebar link.
+
+## 2026-04-30
+
+### Changed
+- Added a repeating background image.
+
+## 2026-04-28
+
+### Added
+- MO2 Overwrite folder page.
+
+## 2026-04-27
+
+### Changed
+- Rearranged the Community Shaders intro and updated background art.
+
+## 2026-04-24
+
+### Added
+- First Launch section and the Community Shaders page.
+
+### Fixed
+- Fixed banner-image JS that was overwriting `window.onload`.
+
+## 2026-04-23
+
+### Changed
+- Randomized the alert-box backgrounds and added helmet/mask art (Daedric, Dragon Priest, Dwarven) to the rotation.
+
+## 2026-04-22
+
+### Changed
+- Updated the VRIK bindings diagrams with a new photo angle and separate front and side views.
+
+## 2026-04-21
+
+### Added
+- VRIK controller bindings and OCU keyboard instructions, in their own section.
+- Music-replacement mod descriptions and the start of the AI section.
+
+### Changed
+- Formatted external links more consistently and linked the shader cache instructions from the installation page.
+
+## 2026-04-20
+
+### Added
+- MO2 page (in progress) and OpenComposite page.
+- OCU screenshots, MO2 shortcut menu and configuration details.
+- Detailed shader cache size instructions.
+- Nexus page links.
+
+### Changed
+- Linked full-size images from smaller, captioned versions; randomized the h1 banner screenshots; added background art for asides; removed chapter numbers; added a "reboot after installing runtimes" note; decorated the Nexus and GitHub links.
+
+### Fixed
+- Fixed the webfont path and prevented mid-word breaks.
+
+## 2026-04-19
+
+### Added
+- Virtual memory screenshots.
+
+### Changed
+- Replaced most PNGs with WebP.
+
+### Fixed
+- Fixed H2/anchor spacing.
+
+## 2026-04-18
+
+### Changed
+- Cleaned up the logo/title layout.
+
+## 2026-04-17
+
+### Added
+- Initial deployment of the site: Hugo with the Relearn theme, GitHub Actions deployment, favicon, and the Sovngarde webfont.
+- Core shortcodes (`file`, `btn-inline`, asides, and captions).
+- Start, Installation, Requirements, and home pages, with "next" links between chapters.
+- MGO desktop-shortcut instructions, with video.
+
+### Changed
+- Expanded Requirements (NVMe storage, virtual memory details, and a game-folder move link) and refined page titles.
+- Canonified URLs.
+
+### Fixed
+- Fixed image URLs and file extensions, the `btn` shortcode, and a stray `C:\Program Files` path.
+
+## 2026-04-05
+
+### Add
+- Everything! Initial commit.
+- Initial Hugo configuration.
+- Initial shortcodes (resurrecting ones from past projects and making them work with the current Hugo release; it's been a few years!)
+- Began writing initial content: Home, Requirements, Installation, Start.
