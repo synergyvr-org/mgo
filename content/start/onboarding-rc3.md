@@ -78,7 +78,7 @@ Filter the list to find what you're looking for quickly.
   <i class="fa fa-folder"></i> ▸▸ Step 2 - Select ONE Preferred Runtime
 </div>
 
-_VR runtime_ refers to the software layer that sits between a VR application (like Skyrim VR) and your VR headset. **Step 2** asks you to choose between OpenComposite and SteamVR. As the folder name insists, pick _ONE_: everything runtime-specific lives in the two subfolders here.
+_VR runtime_ refers to the software layer that sits between a VR application or game (Skyrim VR in this case) and your VR headset. **Step 2** asks you to choose between OpenComposite and SteamVR. As the folder name insists, pick _ONE_: everything runtime-specific lives in the two subfolders here.
 
 ### OpenComposite (Unleashed)
 
