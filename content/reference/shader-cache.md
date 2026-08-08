@@ -9,7 +9,7 @@ If you have an NVIDIA GPU, you should set the shader cache to 10GB or more befor
 
 1. Open the NVIDIA Control Panel
 2. Choose {{< btn-inline >}}Manage 3D settings{{</ btn-inline >}} on the left.
-3. Under _Global Settings_ on the right, set {{< btn-inline >}}Shader Cache Size{{</ btn-inline >}} to 10 GB or more.
+3. Under _Global Settings_ on the right, set {{< btn-inline >}}Shader Cache Size{{</ btn-inline >}} to 20 GB or more.
 
 ## With screenshots...
 
@@ -24,5 +24,5 @@ Choose <span class="btn-inline">NVIDIA Control Panel</span> from the next contex
 {{< caption name="nvidia-03-shader-cache" type="webp" border="border" >}}
 Choose <span class="btn-inline">Manage 3D settings</span> on the left.
 
-Under <em>Global Settings</em> on the right, set <span class="btn-inline">Shader Cache Size</span> to 10 GB or more.</li>
+Under <em>Global Settings</em> on the right, set <span class="btn-inline">Shader Cache Size</span> to 20 GB or more. (Yes, it's 10 GB in this screenshot, but make it 20 GB if you can.)</li>
 {{< /caption >}}
