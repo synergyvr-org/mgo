@@ -38,7 +38,7 @@ If you juggle multiple headsets, you can use {{< ext "(https://github.com/rpavli
 ---
 ### Virtual Desktop
 
-{{< caption name="virtual-desktop-vdxr-runtime" no-retina="true" >}}
+{{< caption name="vd-pc-runtime" type="webp" >}}
 Set the OpenXR runtime to VDXR in the Virtual Desktop Streamer app.
 {{< /caption >}}
 

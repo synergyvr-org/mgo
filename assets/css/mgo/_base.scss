@@ -60,3 +60,16 @@ li {
 .topbar-breadcrumbs {
   font-size: 1rem;
 }
+
+// Glossary term anchors (see the id spans in reference/glossary): give a
+// deep-linked term some breathing room from the top of the scroll area so its
+// row isn't jammed against (or clipped by) the content edge on arrival.
+// Top-align term against its definition so the term (which carries the anchor)
+// lines up with the row's top edge rather than floating in the vertical middle.
+.body-inner.glossary td {
+  vertical-align: top;
+}
+.body-inner.glossary td span[id] {
+  display: inline-block; // so the browser honors scroll-margin on fragment jumps
+  scroll-margin-top: 2rem;
+}

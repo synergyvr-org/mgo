@@ -41,7 +41,7 @@ VRAMr walks through every texture in your load order and makes an optimized copy
 VRAMr's output is a snapshot of the textures you had when it ran, so it goes stale the same way other generated output does. Here's when you'll want to re-run it:
 
 * **After a [list update](/tutorials/updating-the-list)**, so any new textures in the update get the same treatment.
-* **After adding a texture-heavy mod** of your own. A big retexture or armor pack you install yourself isn't covered until VRAMr sees it.
+* **After adding a texture-heavy mod** of your own. A big retexture or armor pack you [install yourself](/tutorials/installing-a-mod) isn't covered until VRAMr sees it.
 
 {{< aside type="btw" title="Not the end of the world" >}}
 If you don't re-run VRAMr in these circumstances, the game won't fail to work or anything. You just won't get the full benefit you would from compressing any newly added textures.

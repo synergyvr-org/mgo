@@ -1,0 +1,124 @@
+// Console command reference (see the `console-commands` shortcode). A sticky
+// filter box over a set of categorized tables; filtering is done in custom.js.
+
+.cc-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  position: sticky;
+  top: 0;
+  background: var(--mgo-bg);
+  padding: 0.5rem 0;
+  z-index: 2;
+
+  // Input and clear button share one grid cell so the ╳ sits inside the input.
+  .cc-search {
+    flex: 1;
+    max-width: 30rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #cc-filter {
+    grid-area: 1 / 1;
+    min-width: 0;
+    margin: 0;
+    padding: 0.4rem 2rem 0.4rem 0.75rem;
+    font-size: 1rem;
+    color: #eee;
+    background: #00000044;
+    border: 1px solid var(--mgo-btn-inline);
+    border-radius: 8px;
+
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+  }
+
+  .cc-clear {
+    grid-area: 1 / 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 0.5rem;
+    padding: 0 0.25rem;
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1;
+    cursor: pointer;
+
+    &:hover {
+      color: #eee;
+    }
+  }
+  #cc-filter:placeholder-shown + .cc-clear {
+    display: none;
+  }
+
+  .cc-count {
+    font-size: 0.85rem;
+    color: #aaa;
+    white-space: nowrap;
+  }
+
+  // On narrow screens, drop the count below the full-width input.
+  @media (max-width: 30rem) {
+    flex-wrap: wrap;
+
+    .cc-search {
+      flex-basis: 100%;
+      max-width: none;
+    }
+  }
+}
+
+.cc-category {
+  margin-bottom: 1.75rem;
+
+  .cc-category-title {
+    margin: 0 0 0.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--mgo-gold-dark);
+  }
+}
+
+.cc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+
+  td {
+    padding: 0.35rem 0.6rem;
+    vertical-align: top;
+    border: 0;
+  }
+
+  // Subtle zebra striping.
+  tbody > tr:nth-child(even) {
+    background-color: #ffffff08;
+  }
+
+  // Keep the command itself on one line; let the description wrap freely, but
+  // don't break inline code examples mid-token.
+  .cc-cmd {
+    white-space: nowrap;
+    padding-right: 1rem;
+  }
+  .cc-desc code {
+    white-space: nowrap;
+  }
+}
+
+// Filtered-out rows and now-empty categories (toggled in custom.js).
+.cc-row[hidden],
+.cc-category[hidden] {
+  display: none;
+}
+
+.cc-empty {
+  color: #aaa;
+  font-style: italic;
+}

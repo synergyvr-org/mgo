@@ -108,6 +108,10 @@ input.readonly {
     background-color: var(--mo2-ai);
     color: white;
   }
+  &.mo2-combat {
+    background-color: var(--mo2-combat);
+    color: white;
+  }
   &.mo2-convenience {
     background-color: var(--mo2-convenience);
     color: white;

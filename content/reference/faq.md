@@ -52,7 +52,11 @@ If you've enabled Fake Edge VR, power attacks only fire while the weapon is _equ
 {{< /disclosure >}}
 
 {{< disclosure title="Why doesn't brawling work?" >}}
-Skyrim's brawls have two requirements that are hard to see in VR. First, you can't have anything else equipped, even sheathed&mdash;and a weapon that you've holstered on your VRIK body may still be equipped as far as the game is concerned. Unequip your hands for real: the [Spell Wheel](/mod-highlights/spell-wheel)'s center orb does it swiftly, no menu required. Second, your fists have to be _drawn_, as silly as that sounds, so use the same button that readies a weapon. Since empty hands look identical regardless of whether they're properly prepped for pugilism, glance at your follower. If their weapon is out, you're in fighting stance.
+Skyrim's brawls have two requirements that are hard to see in VR. First, you can't have anything else equipped, even sheathed&mdash;and a weapon that you've holstered on your VRIK body may still be equipped as far as the game is concerned. Unequip your hands for real: the [Spell Wheel](/mod-highlights/spell-wheel)'s center orb does it swiftly, no menu required. Second, your fists have to be _drawn_, as silly as that sounds, so use the same button that readies a weapon.
+
+With VRIK, empty hands look identical regardless of whether they're properly prepped for pugilism, so glance at your follower. If their weapon is out, you're in fighting stance.
+
+Tired of checking? Enable {{< nexus 182410 >}}VRIK Closed Fist{{< /nexus >}} in **OPTIONAL Mods → Combat & Magic** (see [Onboarding](/start/onboarding#combat--magic)) and your hands ball up into fists when they're drawn.
 {{< /disclosure >}}
 
 {{< disclosure title="How do I swap spells without opening the menu?" >}}
@@ -87,6 +91,10 @@ New versions go out as whole Wabbajack releases, announced in the Discord's {{< 
 
 {{< disclosure title="Performance is rough. Where do I start?" >}}
 More to come in this department, but for the moment, follow the [Performance](/performance) chapter, in order: the presets you picked during [Onboarding](/start/onboarding), then [VRAMr](/performance/vramr) if your GPU has under 16 GB of VRAM, then [Community Shaders](/performance/community-shaders) tuning.
+{{< /disclosure >}}
+
+{{< disclosure title="My frame rate tanks after 20–30 minutes on my Quest. What gives?" >}}
+Almost certainly not you. As of April 2026, a bug in Meta's Quest video decoders makes Virtual Desktop's frame rate hiccup after 20–30 minutes of continuous streaming, worsening over time. There's no fix yet, but changing your codec, toggling between desktop and VR mode, or reconnecting buys you roughly another 20 minutes. See [Virtual Desktop](/performance/virtual-desktop) for the details.
 {{< /disclosure >}}
 
 {{< disclosure title="Where do I get help?" >}}

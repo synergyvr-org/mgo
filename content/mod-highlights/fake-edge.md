@@ -3,10 +3,14 @@ title = 'Fake Edge VR'
 weight = 50
 +++
 
+{{< aside type="alert" title="Replaced in 4.0 RC3" >}}
+Fake Edge VR ships with MGO 4.0 RC2 and earlier. Starting with **4.0 RC3**, it's been replaced by {{< nexus 186335 >}}Physical Collision VR{{< /nexus >}}, so this page applies only if you're on RC2 or an older build.
+{{< /aside >}}
+
 {{< nexus 170889 >}}Fake Edge VR{{< /nexus >}} is an SKSE plugin that builds on {{< nexus 43930 >}}HIGGS{{< /nexus >}} to add weapon collisions in VR. Instead of your blade phasing through clutter, scenery, shields, etc., it bumps into them. To achieve this without breaking melee combat, it uses the {{< control name="trigger" >}} to decide whether to treat your equipment as solid physical object or a combat-ready weapon at any given time.
 
 {{< aside type="alert" title="Enable and sync" >}}
-Fake Edge VR is optional and disabled by default. Enable it in MO2's **OPTIONAL Mods → Immersion** section (see [Onboarding](/start/onboarding)), and then run Sync Plugins to keep the list on the right in sync with the list on the left ({{< btn-inline >}}Tools{{< /btn-inline >}} → {{< btn-inline >}}Tool Plugins{{< /btn-inline >}} → {{< btn-inline >}}Sync Plugins{{< /btn-inline >}} in MO2).
+In RC2, Fake Edge VR is optional and disabled by default. Enable it in MO2's **OPTIONAL Mods → Immersion** section (see [Onboarding (4.0 RC2)](/start/onboarding-rc2/)), and then run Sync Plugins to keep the list on the right in sync with the list on the left ({{< btn-inline >}}Tools{{< /btn-inline >}} → {{< btn-inline >}}Tool Plugins{{< /btn-inline >}} → {{< btn-inline >}}Sync Plugins{{< /btn-inline >}} in MO2).
 {{< /aside >}}
 
 This is **Fake Edge**: When you equip a one-handed[^1] weapon, it's immediately HIGGS-grabbed in your hand as a physical object, and the {{< control name="trigger" >}} decides what state it's in.
