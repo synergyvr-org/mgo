@@ -1,6 +1,6 @@
 +++
 title = 'VR Safe Bindings'
-weight = 10
+weight = 20
 +++
 
 These are the controller bindings defined in the OpenComposite Unleashed preset {{< btn-inline >}}VR Safe{{< /btn-inline >}}.

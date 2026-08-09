@@ -1,9 +1,9 @@
 +++
 title = 'Kvite Bindings'
-weight = 30
+weight = 1
 +++
 
-These are the controller bindings defined in the OpenComposite Unleashed preset {{< btn-inline >}}Kvite{{< /btn-inline >}}. Kvitekvist is one of the creators of the {{< github "Kvitekvist/FUS" >}} FUS modlists{{< /github >}}, and these controls are among the control schemes included in those lists. (See the {{< ext "https://github.com/Kvitekvist/FUS/wiki/Controller-bindings-guide" >}}FUS wiki{{< /ext >}}.)
+These are the controller bindings defined in the OpenComposite Unleashed preset {{< btn-inline >}}Kvite{{< /btn-inline >}}, which is OCU's default. If you haven't gone looking for something else in the Configurator, these are the controls you're playing with. Kvitekvist is one of the creators of the {{< github "Kvitekvist/FUS" >}} FUS modlists{{< /github >}}, and these controls are among the control schemes included in those lists. (See the {{< ext "https://github.com/Kvitekvist/FUS/wiki/Controller-bindings-guide" >}}FUS wiki{{< /ext >}}.)
 
 Kvite uses vanilla bindings within menus.
 

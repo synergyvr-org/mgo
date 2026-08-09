@@ -1,6 +1,6 @@
 +++
 title = 'Optimized Oculus Bindings'
-weight = 20
+weight = 30
 +++
 
 These are the controller bindings defined in the OpenComposite Unleashed preset {{< btn-inline >}}Vanilla + Oculus Touch{{< /btn-inline >}}, which originates from the {{< nexus 26468 >}} Optimized Button Layout for Oculus and Meta controllers{{< /nexus >}} mod.

@@ -1,11 +1,9 @@
 +++
 title = 'VRIK Bindings'
-weight = 1
+weight = 10
 +++
 
-These are the controller bindings defined in the OpenComposite Unleashed preset {{< btn-inline >}}VRIK V2.1.0{{< /btn-inline >}}, which is the default preset. They original from an optional download for the legendary {{< nexus 23416 >}} VRIK Player Avatar{{< /nexus >}} mod and are also among the binding options included for SteamVR users.
-
-Compared to vanilla bindings, VRIK moves 
+These are the controller bindings defined in the OpenComposite Unleashed preset {{< btn-inline >}}VRIK V2.1.0{{< /btn-inline >}}. They originate from an optional download for the legendary {{< nexus 23416 >}} VRIK Player Avatar{{< /nexus >}} mod and are also among the binding options included for SteamVR users. This was OCU's default preset in earlier betas of MGO 4.0. [Kvite](/controls/bindings-kvite) holds that spot now, so you'll need to go out of your way to pick this one in the Configurator if you want it.
 
 VRIK's menu bindings are _almost_ vanilla. The only change is that zooming within the inventory is assigned to {{< control name="right-grip" >}} instead of vanilla's {{< control name="right-stick" >}}.
 

@@ -112,10 +112,10 @@ Binding conflicts are the number-one cause of crashes, dead buttons, and bizarre
 
 Happily, OCU ships with several presets, and a few of them have their own pages here with a full button-by-button breakdown:
 
-* {{< btn-inline >}}VRIK V2.1.0{{< /btn-inline >}}: the default and the best starting point for most players ([VRIK Bindings](/controls/bindings-vrik))
-* {{< btn-inline >}}VR Safe{{< /btn-inline >}}: which restores the original VRIK layout alongside the original keyboard layout ([VR Safe Bindings](/controls/bindings-vrsafe)), in case you goof up your keyboard bindings somewhere along the way
-* {{< btn-inline >}}Kvite{{< /btn-inline >}}, a community favorite ([Kvite Bindings](/controls/bindings-kvite)) from FUS
+* {{< btn-inline >}}Kvite{{< /btn-inline >}}: the default and the best starting point for most players, a community favorite from FUS ([Kvite Bindings](/controls/bindings-kvite))
 * {{< btn-inline >}}Cangar{{< /btn-inline >}}, another favorite from FUS ([Cangar Bindings](/controls/bindings-cangar))
+* {{< btn-inline >}}VRIK V2.1.0{{< /btn-inline >}}, which was the default in earlier versions of MGO ([VRIK Bindings](/controls/bindings-vrik))
+* {{< btn-inline >}}VR Safe{{< /btn-inline >}}: which restores the original VRIK layout alongside the original keyboard layout ([VR Safe Bindings](/controls/bindings-vrsafe)), in case you goof up your keyboard bindings somewhere along the way
 * {{< btn-inline >}}Vanilla + Oculus Touch{{< /btn-inline >}}, a hotkey-heavy layout that's closer to VRIK than to vanilla, despite the name ([Optimized Oculus Bindings](/controls/bindings-touch))
 
 There's also a plain {{< btn-inline >}}Vanilla{{< /btn-inline >}} preset if you want Skyrim VR's baseline layout. Whichever you choose, apply it, save your bindings, and restart the game to test it _before_ you start tweaking anything.

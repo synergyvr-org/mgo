@@ -1,6 +1,6 @@
 +++
 title = 'Cangar Bindings'
-weight = 40
+weight = 5
 +++
 
 These are the controller bindings defined in the OpenComposite Unleashed preset {{< btn-inline >}}Cangar{{< /btn-inline >}}. Cangar is one of the creators of the {{< github "Kvitekvist/FUS" >}} FUS modlists{{< /github >}}, and these controls are among the control schemes included in those lists. (See the {{< ext "https://github.com/Kvitekvist/FUS/wiki/Controller-bindings-guide" >}}FUS wiki{{< /ext >}}.)
