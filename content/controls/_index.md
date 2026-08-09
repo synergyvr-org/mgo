@@ -21,7 +21,7 @@ Another scheme from the FUS modlists, by Cangar, that leans on VRIK gestures. (T
 {{< chapter-heading href="bindings-vrik" >}}
 ## VRIK
 
-The controls are an optional download with VRIK, included in OCU and labeled "VRIK Controller Bindings - Standard" in the SteamVR section of MO2. Shout on {{< control name="a" >}}, activate on {{< control name="rgrip">}}, favorites on {{< control name="b" >}}. This was the default in earlier beta builds of MGO 4.0.
+The controls are an optional download with VRIK, included in OCU and labeled "VRIK Controller Bindings - Standard" in the SteamVR section of MO2. Shout on {{< control name="a" >}}, activate on {{< control name="right-grip" >}}, favorites on {{< control name="b" >}}. This was the default in earlier beta builds of MGO 4.0.
 {{< /chapter-heading >}}
 
 {{< chapter-heading href="bindings-vrsafe" >}}

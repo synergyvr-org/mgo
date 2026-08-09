@@ -109,20 +109,12 @@ To choose it, enable the single mod (with the really long label) in the **Open C
 <div class="mod sub">
   <input type="checkbox" class="readonly"> Controller Bindings - Kvite
 </div>
-<div class="separator sub mo2-steamvr-stabilizer">
-  <i class="fa fa-folder"></i> ▸▸▸▸ VR FPS Stabilizer
-</div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> VR FPS Stabilizer
-</div>
 
 The **Controller Bindings** folder provides three alternate control schemes. Skyrim VR's default controls were designed for the Vive Wands, and they weren't designed with today's mods in mind. (In all fairness, they didn't exist yet.) Choose only _one_ of these. If they're all disabled (and you're not using OC Unleashed), Skyrim VR's default controls will apply.
 
 {{< aside type="alert" title="OC Unleashed compatibility" >}}
 If you're using OpenComposite Unleashed, OCU needs to manage your controller bindings. Do _not_ enable any of the bindings in this section. You can use the OCU Configurator app to select from a variety of presets—including all of these—or cook up a control scheme of your own.
 {{< /aside >}}
-
-{{< nexus 31392 >}}VR FPS Stabilizer{{< /nexus >}} changes INI values to maintain your framerate. If you're using SteamVR, enable it.
 
 {{< aside type="alert" title="Switching from OpenComposite back to SteamVR" >}}
 Unchecking the OpenComposite mod isn't enough on its own. The files OCU generates while it runs can conflict with SteamVR, so you also need to clear them out:
@@ -288,9 +280,6 @@ If you want to give the runes a different look, {{< nexus 137611 >}}Alternative 
   <i class="fa fa-folder"></i> ▸▸▸ Convenience
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> PrismaUI Additem
-</div>
-<div class="mod">
   <input type="checkbox" class="readonly"> VR Menu Mouse Fix
 </div>
 <div class="mod">
@@ -298,6 +287,9 @@ If you want to give the runes a different look, {{< nexus 137611 >}}Alternative 
 </div>
 <div class="mod">
   <input type="checkbox" class="readonly"> Better Sleep Wait Menu
+</div>
+<div class="mod">
+  <input type="checkbox" class="readonly"> Prisma UI Additem Menu
 </div>
 <div class="mod">
   <input type="checkbox" class="readonly"> Unread Books Glow Redone

@@ -3,7 +3,7 @@ title = 'Community Shaders'
 weight = 30
 +++
 
-Mad God's Overhaul uses {{< nexus 166950 >}}Community Shaders{{< /nexus >}} (specifically Troned's unofficial VR fork) for the advanced graphical features behind its dramatic visuals. It compiles its shaders the first time you launch the game (covered in [Compiling Shaders](/first-launch/compiling-shaders)), but you can tune what it does at any time from its in-game settings overlay.
+Mad God's Overhaul uses {{< nexus 166950 >}}Community Shaders{{< /nexus >}} (specifically Troned's unofficial VR fork) for the advanced graphical features behind its dramatic visuals. It needs to compile shaders ahead of time (covered in [Compiling Shaders](/first-launch/compiling-shaders), but starting in MGO 4.0 RC3, precompiled shaders for all of the CS presets in the list are built in. You can tune your settings at any time from the in-game CS settings overlay, but keep in mind it may trigger a re-compile, which can take 10 minutes or more.
 
 Press <kbd>END</kbd> on the keyboard (physical or virtual) while Skyrim VR is running to open the Community Shaders settings panel.
 
@@ -73,13 +73,7 @@ Troned's fork keeps growing. Three new features are especially noteworthy.
 
 ### Renderscale Upscaling
 
-Renderscale Upscaling puts Skyrim's dynamic rendering engine to work, doing the GPU heavy work at a reduced resolution before submitting the final image to your HMD at full resolution. It's hot-switchable in game, so you can flip it on without restarting. It's built to pair with {{< nexus 31392 >}}VR FPS Stabilizer{{< /nexus >}}, so you can pull off tricks like running Renderscale outdoors, where you need every frame, and switching to sharper DLAA (NVIDIA only) indoors, where you can spare a few.
-
-{{< aside type="alert" title="Still experimental" >}}
-Renderscale is new and not fully baked. Switching it mid-game restarts the render engine, which causes a brief visual glitch and, under some conditions, a crash. Treat it as something to experiment with, not to set and forget.
-
-OCU's Asynchronous SpaceWarp (ASW) does not play nicely with renderscale either, so you'll need to choose one or the other.
-{{< /aside >}}
+Renderscale Upscaling puts Skyrim's dynamic rendering engine to work, doing the GPU's heavy work at a reduced resolution before submitting the final image to your HMD at full resolution. It's hot-switchable in game, so you can flip it on without restarting.
 
 ### Adaptive Brightness
 
