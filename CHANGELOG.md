@@ -5,14 +5,18 @@ All notable changes to the MGO documentation site, based on its
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
-## 2026-08-07
+## 2026-08-09
 
 ### Changed
-- MGO 4.0 RC3 load order finalized
-- Onboarding page updated to match RC3, which differs significantly
+- MGO 4.0 RC3 load order finalized (with the possible exception of the CSX version number)
+- Onboarding page updated to match RC3, which differs significantly from RC2
+- Update home page to reflect how to actually find the beta downloads
 - Updated FAQ "brawling" answer to point out "VRIK Closed Fist"
 - Updated Virtual Memory instructions to note that the 40 GB swap file just needs to be on a fast disk, not necessarily the one where MGO is installed.
+- Increase NVIDIA shader cache requirement to 20 GB
 - Clarified VR application (like Skyrim) vs. runtime (like Steam VR) in onboarding docs.
+- Update several pages to reflect that Kvite controller bindings are now the default
+- Update Magic page to reflect RC3 (and to generally be more thorough).
 
 ## 2026-07-30
 
