@@ -13,7 +13,7 @@ Windows 11 has made it outrageously convoluted to reach its virtual memory setti
 4. Scroll down to the row of links that appears after "Device specifications", and click {{< btn-inline >}}Advanced system settings{{</ btn-inline >}}.
 5. In the **Performance** section on the _Advanced_ tab in the System Properties window, click {{< btn-inline >}}Settings...{{</ btn-inline >}}.
 6. In the **Virtual memory** section of the _Advanced_ tab of the Performance Options window, click {{< btn-inline >}}Change...{{</ btn-inline >}}.
-7. With your fastest NVMe drive highlighted[^1], click {{< btn-inline >}}<i class="fa-regular fa-circle-dot"></i> Custom size{{</ btn-inline >}} and enter `40000` as both the _Initial size_ and the _Maximum size_. (You will need to keep 40 GB free on this drive to take advantage of this.)
+7. With your fastest NVMe drive highlighted[^1], click {{< btn-inline >}}<i class="fa-regular fa-circle-dot"></i> Custom size{{</ btn-inline >}} and enter `60000` (if you have 32 GB of system memory) or `40000` (if you have 64 GB of system memory) as both the _Initial size_ and the _Maximum size_. (You will need to keep that much space free on this drive to take advantage of this.)
 8. Be sure to click the {{< btn-inline >}}Set{{</ btn-inline >}} button before clicking OK and closing all of these windows.
 
 You will be prompted to restart your computer.
