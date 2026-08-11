@@ -3,7 +3,7 @@ title = 'INI Files'
 weight = 89
 +++
 
-Some mods include an MCM, but many others keep their settings in a plain-text {{< file file-lines >}}.ini{{< /file >}} file: [Fake Edge VR](/mod-highlights/fake-edge), PLANCK, and more. An INI is just a list of `key=value` settings grouped under bracketed `[Sections]`. You can edit one right inside MO2, or in a text editor of your choice.
+Some mods include an MCM, but many others keep their settings in a plain-text {{< file file-lines >}}.ini{{< /file >}} file: {{< nexus 164902 >}}SpellBender VR{{< /nexus >}}, {{< nexus 119689 >}}Spell Auto-Aim VR{{< /nexus >}}, PLANCK, and more. An INI is just a list of `key=value` settings grouped under bracketed `[Sections]`. You can edit one right inside MO2, or in a text editor of your choice.
 
 ## Edit in MO2...
 

@@ -1,6 +1,7 @@
 +++
 title = 'Melee Combat'
 weight = 20
+aliases = ['/mod-highlights/fake-edge/']
 +++
 
 If you want to fight, you're going to have to swing your arms around like a goofball, so it may as well feel like it has some impact.
@@ -12,7 +13,7 @@ It took some time, but modders have overhauled Skyrim VR's melee combat to the p
 * {{< nexus 23416 >}}VRIK{{< /nexus >}}
 * {{< nexus 66025 >}}PLANCK{{< /nexus >}}
 * {{< nexus 43930 >}}HIGGS{{< /nexus >}}
-* {{< nexus 170889 >}}Fake Edge VR{{< /nexus >}}
+* {{< nexus 186335 >}}Physical Collision VR{{< /nexus >}}
 * {{< nexus 31374 >}}Weapon Throw VR{{< /nexus >}}[^1]
 * {{< nexus 26447 >}}Locational Damage SKSE VR{{< /nexus >}}
 * {{< nexus 28456 >}}Dual Wield Block VR{{< /nexus >}}
