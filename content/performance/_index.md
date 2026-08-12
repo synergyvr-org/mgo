@@ -18,6 +18,12 @@ The quickest wins. MGO's built-in presets trade a little visual polish for frame
 Manage upscaling, fixed foveated rendering, frame generation, and controller bindings all from the OCU Configurator.
 {{< /chapter-heading >}}
 
+{{< chapter-heading href="virtual-desktop" >}}
+## Virtual Desktop
+
+Streaming from a standalone headset like Quest or Pico? Virtual Desktop is a great option for connecting to your PC. Learn about how to tune it for the best image.
+{{< /chapter-heading >}}
+
 {{< chapter-heading href="community-shaders" >}}
 ## Community Shaders
 

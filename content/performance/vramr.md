@@ -36,6 +36,10 @@ VRAMr walks through every texture in your load order and makes an optimized copy
 5. Make sure **Output VRAMr** is enabled.
 6. Play!
 
+{{< aside type="alert" title="Check the game folder it found" >}}
+If you have both Skyrim VR and Skyrim SE/AE installed, VRAMr may auto-detect your **Skyrim Special Edition** folder rather than the VR one. Before you kick it off, confirm that the game folder it's pointing at is your **Skyrim VR** installation, and choose that folder manually if it isn't. Otherwise you'll spend a bunch of time optimizing textures for [Flatrim](/reference/glossary#flatrim).
+{{< /aside >}}
+
 ## When to run it again
 
 VRAMr's output is a snapshot of the textures you had when it ran, so it goes stale the same way other generated output does. Here's when you'll want to re-run it:
