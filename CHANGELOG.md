@@ -5,10 +5,19 @@ All notable changes to the MGO documentation site, based on its
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-08-11
+
+### Added
+- New Virtual Desktop guide.
+
+### Changed
+- Updated VRAMr guide to note that it may detect your Flatrim installation instead of Skyrim VR.
+
 ## 2026-08-10
 
 ### Changed
 - Increased virtual memory recommendation to 60 GB for folks with 32 GB of system memory
+- Add an alert to the VRAMr guide reminding players to double-check that it's not pointed at Flatrim.
 
 ### Removed
 - Page dedicated to Fake Edge VR (URL redirects to Combat now), and removed all incoming links across 5 other pages
