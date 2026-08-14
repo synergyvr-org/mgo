@@ -15,7 +15,7 @@ Here you'll find the complete, filterable mod list for MGO 4.0 RC3: Nexus links,
 {{< chapter-heading href="mgo-4-rc2" >}}
 ## MGO 4.0 RC2
 
-And here is the complete, filterable mod list for the older RC2 build.
+And here is the complete, filterable mod list for the older RC2 build. (You should probably install RC3 though.)
 {{< /chapter-heading >}}
 
 {{< chapter-heading href="mgo-2_5_5" >}}

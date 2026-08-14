@@ -5,6 +5,11 @@ All notable changes to the MGO documentation site, based on its
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-08-13
+
+### Changed
+- Fixed RC3 load order to include the file names, and noted that it has been released.
+
 ## 2026-08-11
 
 ### Added
