@@ -7,10 +7,18 @@ weight = 98
 Every mod in Mad God's Overhaul, in the order it sits in Mod Organizer 2. If you want to see exactly what's in the list (and which mods ship enabled), this is where to look.
 
 {{< chapter-heading href="mgo-4-rc3" >}}
-## MGO 4.0 RC3
+## MGO 4.0 RC3 (current)
 
 Here you'll find the complete, filterable mod list for MGO 4.0 RC3: Nexus links, download filenames, and collapsible folders that mirror MO2's left pane.
 {{< /chapter-heading >}}
+
+{{< chapter-heading href="mgo-4-rc4" >}}
+## MGO 4.0 RC4 (next)
+
+Here's a preview of MGO 4.0 RC4, with lots of patches and updates, some swaps, and less crash-prone dragon combat.
+{{< /chapter-heading >}}
+
+## Older lists
 
 {{< chapter-heading href="mgo-4-rc2" >}}
 ## MGO 4.0 RC2

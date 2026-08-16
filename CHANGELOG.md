@@ -9,6 +9,10 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 
 ### Added
 - New FAQs for opening Dwemer doors (like the door to Markarth) and restoring enemy healthbars.
+- Load order for the first dev build of MGO 4.0 RC4
+
+### Removed
+- Notice saying that RC3 isn't out yet. It is!
 
 ## 2026-08-13
 
