@@ -47,12 +47,6 @@ It fails in several different places. Wabbajack verifies the game's files agains
 Torches start unlit. Hold a fire spell near the torch's head or hold the torch to a candle, brazier, campfire, etc. to light it. See [Interaction](/how-to-play/interaction).
 {{< /disclosure >}}
 
-{{< disclosure title="Why can't I power attack?" >}}
-This one is specific to **MGO 4.0 RC2 and earlier**, which included the optional {{< nexus 170889 >}}Fake Edge VR{{< /nexus >}}. With it enabled, power attacks only fire while the weapon is _equip-locked_. Squeeze the {{< control name="trigger" >}} four times within two seconds to lock it, and then hold {{< control name="trigger" >}} while swinging your weapon to power attack as usual.
-
-RC3 dropped Fake Edge VR in favor of {{< nexus 186335 >}}Physical Collision VR{{< /nexus >}}, which doesn't ask anything extra of you. Your weapons attack as usual.
-{{< /disclosure >}}
-
 {{< disclosure title="Why doesn't brawling work?" >}}
 Skyrim's brawls have two requirements that are hard to see in VR. First, you can't have anything else equipped, even sheathed&mdash;and a weapon that you've holstered on your VRIK body may still be equipped as far as the game is concerned. Unequip your hands for real: the [Spell Wheel](/mod-highlights/spell-wheel)'s center orb does it swiftly, no menu required. Second, your fists have to be _drawn_, as silly as that sounds, so use the same button that readies a weapon.
 
@@ -65,8 +59,30 @@ Tired of checking? Enable {{< nexus 182410 >}}VRIK Closed Fist{{< /nexus >}} in 
  Use [Spell Wheel VR](/mod-highlights/spell-wheel)! In most control schemes, hold {{< control name="grip" >}} and pull {{< control name="trigger" >}} on the same hand to open the Spell Wheel. You can also use it to grab or use weapons, shields, potions, and more.
 {{< /disclosure >}}
 
+{{< disclosure title="Why are my health and magicka bars on my wrist?" >}}
+Because MGO moved them there on purpose. {{< nexus 49657 >}}Clear HUD VR{{< /nexus >}} takes the vanilla bars out of your floating field of view, and [Spell Wheel VR](/mod-highlights/spell-wheel) puts the readouts on your forearm instead, where you can check them with a glance like a wristwatch. (If you're using SunHelm, hunger and thirst show up there too.)
+
+**To turn the wrist bars off**, open Spell Wheel VR's MCM and disable them there.
+
+**To bring back parts of the vanilla HUD**, you'll need to re-run Clear HUD VR's installer, because it makes those choices at install time rather than through an MCM. In MO2, right-click **Clear HUD VR** in the left pane and choose {{< btn-inline >}}Reinstall Mod{{< /btn-inline >}}, then work through the FOMOD wizard again and pick different options. (See [Installing a Mod](/tutorials/installing-a-mod) for what a FOMOD wizard looks like.) Doing both is fair game: keep the vanilla health bar and drop the wrist bars, or any other combination you like.
+{{< /disclosure >}}
+
 {{< disclosure title="How should I save?" >}}
 Make regular saves (ideally indoors), and always before changing your mod list. In the MGO 4.0 beta, quick saves and auto-saves are actually full saves, so they're safe to use. You can also add a _save game_ orb to the [Spell Wheel](/mod-highlights/spell-wheel), so you don't even have to dig through a menu to do it.
+{{< /disclosure >}}
+
+{{< disclosure title="Why can't I open the door to Markarth?" >}}
+Dwemer-style doors have levers, so instead of pointing at them and hitting _Interact/Activate_, simply pull the lever! That's {{< nexus 161676 >}}Interactive Activators VR{{< /nexus >}} at work.
+{{< /disclosure >}}
+
+{{< disclosure title="Can I turn on enemy healthbars?" >}}
+{{< nexus 17812 >}}Minimal Enemy Healthbar VR{{< /nexus >}} includes variations that make the healthbars smaller, and that hide them altogether. Both are included in MGO. To get healthbars to appear again, disable **Minimal Enemy Healthbar VR - Remove Enemy Health Bar**, which you'll find under {{< btn-inline >}}START HERE{{< /btn-inline >}} → {{< btn-inline >}}OPTIONAL Mods{{< /btn-inline >}} → {{< btn-inline >}}Immersion{{< /btn-inline >}}.
+{{< /disclosure >}}
+
+{{< disclosure title="Why can't I power attack?" >}}
+This one is specific to **MGO 4.0 RC2 and earlier**, which included the optional {{< nexus 170889 >}}Fake Edge VR{{< /nexus >}}. With it enabled, power attacks only fire while the weapon is _equip-locked_. Squeeze the {{< control name="trigger" >}} four times within two seconds to lock it, and then hold {{< control name="trigger" >}} while swinging your weapon to power attack as usual.
+
+RC3 dropped Fake Edge VR in favor of {{< nexus 186335 >}}Physical Collision VR{{< /nexus >}}, which doesn't ask anything extra of you. Your weapons attack as usual.
 {{< /disclosure >}}
 
 ## Making it yours
