@@ -1,0 +1,131 @@
+{{- /* Shows what one modlist adds on top of another, computed from the two CSVs
+       so it never drifts from the lists themselves. Usage:
+
+         {{< modlist-diff base="static/fus.csv" list="static/fus-ro.csv"
+              base-label="FUS" list-label="FUS RO" >}}
+
+       Renders a one-line summary plus a collapsible group per category (the
+       CSV's separator rows), listing the mods present in `list` but absent from
+       `base`, Nexus-linked where the CSV has a URL. If the newer list also drops
+       anything, that gets its own group at the end.
+
+       `base` accepts a comma-separated list of CSVs, in which case the base is
+       their union. That answers "is this list exactly its two parents combined?":
+
+         {{< modlist-diff base="static/fus-ro.csv,static/fus-dah.csv"
+              list="static/fus-ro-dah.csv" base-label="FUS RO + FUS DAH"
+              list-label="FUS RO DAH" >}}
+
+       Element ids are prefixed with `id-prefix` (defaulting to the base label),
+       so several comparisons can share one page without colliding.
+
+       `ignore` (regex) filters out per-list build artifacts that would otherwise
+       show up as a difference in every comparison: each FUS variant ships its
+       own Conflict Resolution patch and Synthesis output, named for that
+       variant, so they always look "added" and "removed" at the same time.
+
+       Uses <details class="disclosure"> so it inherits the disclosure styling;
+       the disclosure JS only acts on hash-targeted elements and on
+       .disclosure-anchor, so these blocks are inert to it. */ -}}
+
+{{- $basePath := .Get "base" -}}
+{{- $listPath := .Get "list" -}}
+{{- $baseLabel := .Get "base-label" | default "the base list" -}}
+{{- $listLabel := .Get "list-label" | default "this list" -}}
+{{- $ignore := .Get "ignore" | default "Conflict Resolution Patches|Synthesis for" -}}
+{{- $otherLabel := .Get "other-label" | default "Other" -}}
+
+{{- $listRows := transform.Unmarshal (dict "delimiter" ",") (os.ReadFile $listPath) -}}
+
+{{- /* Mod names in each file (separators excluded), for set comparison. The base
+       may be several CSVs, in which case we compare against their union. */ -}}
+{{- $baseNames := slice -}}
+{{- range $p := split $basePath "," -}}
+  {{- $rows := transform.Unmarshal (dict "delimiter" ",") (os.ReadFile (strings.TrimSpace $p)) -}}
+  {{- range $i, $row := $rows -}}
+    {{- if and (gt $i 0) (ge (len $row) 2) -}}
+      {{- $n := strings.TrimSpace (index $row 1) -}}
+      {{- if not (hasSuffix $n "_separator") -}}
+        {{- $baseNames = $baseNames | append $n -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $listNames := slice -}}
+{{- range $i, $row := $listRows -}}
+  {{- if and (gt $i 0) (ge (len $row) 2) -}}
+    {{- $n := strings.TrimSpace (index $row 1) -}}
+    {{- if not (hasSuffix $n "_separator") -}}
+      {{- $listNames = $listNames | append $n -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Walk the newer list, tagging each added mod with the category it sits
+       under. Separator labels may carry leading "#" depth markers. */ -}}
+{{- $added := slice -}}
+{{- $cat := $otherLabel -}}
+{{- range $i, $row := $listRows -}}
+  {{- if and (gt $i 0) (ge (len $row) 2) -}}
+    {{- $n := strings.TrimSpace (index $row 1) -}}
+    {{- if hasSuffix $n "_separator" -}}
+      {{- $cat = strings.TrimSpace (strings.TrimLeft "#" (strings.TrimSuffix "_separator" $n)) -}}
+    {{- else if not (in $baseNames $n) -}}
+      {{- if not (findRE $ignore $n) -}}
+        {{- $url := "" -}}
+        {{- if ge (len $row) 4 -}}{{- $url = strings.TrimSpace (index $row 3) -}}{{- end -}}
+        {{- $added = $added | append (dict "cat" $cat "name" $n "url" $url) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Anything in the base (or in either base, when comparing against a union)
+       that the newer list doesn't carry. Deduped, since a union base can name
+       the same mod twice. */ -}}
+{{- $removed := slice -}}
+{{- range $n := $baseNames -}}
+  {{- if and (not (in $listNames $n)) (not (findRE $ignore $n)) (not (in $removed $n)) -}}
+    {{- $removed = $removed | append $n -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Categories in the order they appear in the list. */ -}}
+{{- $cats := slice -}}
+{{- range $added -}}
+  {{- if not (in $cats .cat) -}}{{- $cats = $cats | append .cat -}}{{- end -}}
+{{- end -}}
+
+{{- $prefix := .Get "id-prefix" | default (anchorize $baseLabel) -}}
+
+<div class="modlist-diff">
+  <p class="modlist-diff-summary">
+    <strong>{{ $listLabel }}</strong> includes everything in <strong>{{ $baseLabel }}</strong>
+    {{- if $added }}, plus these <strong>{{ len $added }}</strong> mods{{ else }}, and adds nothing of its own{{ end }}.
+  </p>
+  {{- range $cats }}
+    {{- $items := where $added "cat" . }}
+  <details class="disclosure" id="{{ printf "%s-adds-%s" $prefix . | anchorize }}">
+    <summary>{{ . }} <span class="modlist-diff-count">{{ len $items }}</span></summary>
+    <div class="disclosure-body">
+      <ul class="modlist-diff-list">
+        {{- range $items }}
+        <li>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</li>
+        {{- end }}
+      </ul>
+    </div>
+  </details>
+  {{- end }}
+  {{- with $removed }}
+  <details class="disclosure" id="{{ printf "%s-leaves-out" $prefix | anchorize }}">
+    <summary>Left out of {{ $listLabel }} <span class="modlist-diff-count">{{ len . }}</span></summary>
+    <div class="disclosure-body">
+      <ul class="modlist-diff-list">
+        {{- range . }}
+        <li>{{ . }}</li>
+        {{- end }}
+      </ul>
+    </div>
+  </details>
+  {{- end }}
+</div>

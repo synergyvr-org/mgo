@@ -1,0 +1,52 @@
+// Styling for the `modlist-diff` shortcode: the "what this list adds" blocks on
+// the FUS load order pages. The collapsible groups reuse the .disclosure styles
+// (see _disclosure.scss); everything here is the bits that are specific to a
+// difference listing.
+
+.modlist-diff {
+  margin: 1.5rem 0 2rem;
+
+  // The category groups sit closer together than FAQ-style disclosures do,
+  // since they read as one list rather than separate questions.
+  .disclosure summary {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    font-size: 1rem;
+  }
+}
+
+.modlist-diff-summary {
+  margin-bottom: 0.75rem;
+}
+
+// Count of mods in a category, sitting after the category name.
+.modlist-diff-count {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05em 0.5em;
+  border-radius: 1em;
+  background-color: var(--mgo-gold-trans);
+  color: var(--mgo-gold);
+  font-size: 0.8rem;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+// These lists run long (one category tops 140 mods), so flow them into as many
+// columns as the page width allows rather than one endless scroll.
+.modlist-diff-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-width: 20rem;
+  column-gap: 2rem;
+
+  li {
+    margin: 0 0 0.25rem;
+    padding: 0;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    // Keep an entry from being split across two columns.
+    break-inside: avoid;
+  }
+}

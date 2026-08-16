@@ -5,6 +5,16 @@ All notable changes to the MGO documentation site, based on its
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-08-16
+
+### Added
+- FUS load orders and diffs, at least temporarily.
+- Shortcode for easy (and nice looking) mod list diffs.
+
+## Changed
+- Some minor markup and stylesheet changes for chapter headings
+- Updated load order shortcode to accommodate lists that don't use the nested folder plugin that MGO uses.
+
 ## 2026-08-15
 
 ### Added

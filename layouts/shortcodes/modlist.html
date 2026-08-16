@@ -99,6 +99,19 @@
       {{- /* Pre-pass: count the top-level (single-#) folders that receive the
              gradient — excluding special cases, exceptions, and START HERE subtree
              folders — so the 3-stop spread can span exactly those. */ -}}
+      {{- /* Some exports (the FUS lists) mark separators with no leading "#" at
+             all. Those lists are flat: every separator is a top-level folder and
+             there are no subfolders. Detect that here so such a file renders as
+             folders rather than as a run of hash-less plain labels. */ -}}
+      {{- $flat := true -}}
+      {{- range $ri, $row := $rows -}}
+        {{- if and (gt $ri 0) (ge (len $row) 2) -}}
+          {{- $nm := index $row 1 -}}
+          {{- if and (hasSuffix $nm "_separator") (hasPrefix $nm "#") -}}
+            {{- $flat = false -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
       {{- $topTotal := 0 -}}
       {{- range $ri, $row := $rows -}}
         {{- if gt $ri 0 -}}
@@ -106,6 +119,7 @@
           {{- if hasSuffix $nm "_separator" -}}
             {{- $lbl := strings.TrimSuffix "_separator" $nm -}}
             {{- $d := sub (len $lbl) (len (strings.TrimLeft "#" $lbl)) -}}
+            {{- if $flat -}}{{- $d = 1 -}}{{- end -}}
             {{- $cl := strings.TrimSpace (strings.TrimLeft "#" $lbl) -}}
             {{- if and (eq $d 1) (not (hasPrefix $cl "Mad God Overhaul - ")) (ne $cl "End Of List") (not (index $sepClasses $cl)) (not (index $shColors $cl)) -}}
               {{- $topTotal = add $topTotal 1 -}}
@@ -128,8 +142,12 @@
           {{- $label := strings.TrimSuffix "_separator" $name -}}
           {{- $depth := sub (len $label) (len (strings.TrimLeft "#" $label)) -}}
           {{- $clean := strings.TrimSpace (strings.TrimLeft "#" $label) -}}
+          {{- /* Flat list (see $flat above): treat every separator as a top-level
+                 folder. The ▸ markers encode nesting depth, so they're dropped
+                 here, where there is none. */ -}}
+          {{- if $flat -}}{{- $depth = 1 -}}{{- end -}}
           {{- $arrows := "" -}}
-          {{- if gt $depth 0 -}}{{- $arrows = printf "%s " (strings.Repeat $depth "▸") -}}{{- end -}}
+          {{- if and (gt $depth 0) (not $flat) -}}{{- $arrows = printf "%s " (strings.Repeat $depth "▸") -}}{{- end -}}
           {{- $mo2 := index $sepClasses $clean -}}
           {{- /* Special cases with their own color: the top-level
                  "Mad God Overhaul - <version>" container (text varies per release)
