@@ -37,15 +37,19 @@
 
 {{- $listRows := transform.Unmarshal (dict "delimiter" ",") (os.ReadFile $listPath) -}}
 
-{{- /* Mod names in each file (separators excluded), for set comparison. The base
-       may be several CSVs, in which case we compare against their union. */ -}}
+{{- /* We compare the *enabled* sets, not which mods are present. The FUS exports
+       all carry the same catalogue of mods and differ only in the status column,
+       because each variant is a profile over one list rather than a list of its
+       own. So "added" means switched on here and off there. The base may be
+       several CSVs, in which case we compare against the union of what they
+       enable. */ -}}
 {{- $baseNames := slice -}}
 {{- range $p := split $basePath "," -}}
   {{- $rows := transform.Unmarshal (dict "delimiter" ",") (os.ReadFile (strings.TrimSpace $p)) -}}
   {{- range $i, $row := $rows -}}
     {{- if and (gt $i 0) (ge (len $row) 2) -}}
       {{- $n := strings.TrimSpace (index $row 1) -}}
-      {{- if not (hasSuffix $n "_separator") -}}
+      {{- if and (not (hasSuffix $n "_separator")) (eq (strings.TrimSpace (index $row 0)) "+") -}}
         {{- $baseNames = $baseNames | append $n -}}
       {{- end -}}
     {{- end -}}
@@ -55,7 +59,7 @@
 {{- range $i, $row := $listRows -}}
   {{- if and (gt $i 0) (ge (len $row) 2) -}}
     {{- $n := strings.TrimSpace (index $row 1) -}}
-    {{- if not (hasSuffix $n "_separator") -}}
+    {{- if and (not (hasSuffix $n "_separator")) (eq (strings.TrimSpace (index $row 0)) "+") -}}
       {{- $listNames = $listNames | append $n -}}
     {{- end -}}
   {{- end -}}
@@ -69,8 +73,16 @@
   {{- if and (gt $i 0) (ge (len $row) 2) -}}
     {{- $n := strings.TrimSpace (index $row 1) -}}
     {{- if hasSuffix $n "_separator" -}}
-      {{- $cat = strings.TrimSpace (strings.TrimLeft "#" (strings.TrimSuffix "_separator" $n)) -}}
-    {{- else if not (in $baseNames $n) -}}
+      {{- /* Only real folders open a group. A hierarchical export marks those
+             with a leading "#"; a flat one (FUS) numbers them. Everything else
+             is an inline note and leaves the current category alone, so mods
+             don't get filed under "Join our Discord". */ -}}
+      {{- $raw := strings.TrimSuffix "_separator" $n -}}
+      {{- $lbl := strings.TrimSpace (strings.TrimLeft "#" $raw) -}}
+      {{- if or (hasPrefix $raw "#") (findRE `^[0-9]+(\.[0-9]+)*[ ]` $lbl) -}}
+        {{- $cat = $lbl -}}
+      {{- end -}}
+    {{- else if and (eq (strings.TrimSpace (index $row 0)) "+") (not (in $baseNames $n)) -}}
       {{- if not (findRE $ignore $n) -}}
         {{- $url := "" -}}
         {{- if ge (len $row) 4 -}}{{- $url = strings.TrimSpace (index $row 3) -}}{{- end -}}

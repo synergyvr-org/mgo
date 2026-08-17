@@ -17,4 +17,4 @@ The handful of entries filed under _Late Load Visuals_ aren't really about beaut
 
 ## The full load order
 
-{{< modlist "static/fus-dah.csv" >}}
+{{< modlist "static/fus-dah.csv" "numbered" >}}

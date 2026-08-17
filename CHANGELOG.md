@@ -8,7 +8,7 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 ## 2026-08-16
 
 ### Added
-- FUS load orders and diffs, at least temporarily.
+- FUS load orders and diffs, with custom branding.
 - Shortcode for easy (and nice looking) mod list diffs.
 
 ## Changed

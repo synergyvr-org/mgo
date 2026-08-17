@@ -1,0 +1,77 @@
+// FUS branding.
+//
+// Applied to any page carrying `brand = 'fus'` in its front matter (cascaded
+// from content/fus-load-order/_index.md), which puts `brand-fus` on <body>.
+// Because it lands on <body> rather than the content wrapper, the sidebar and
+// topbar are re-coloured along with the article.
+//
+// Colours are sampled from static/images/fus-splash.webp, clustered by hue
+// family: near-black navy base (#010813), cyan and blue aurora (#3fddff,
+// #42b9fc), magenta and violet ribbons (#ff48cf, #d488ff), and the gold of the
+// helmet-and-axes emblem (#fedca1).
+//
+// NOTE: the mod list's folder separator gradient is computed in
+// layouts/shortcodes/modlist.html and emitted as an inline style, so it is not
+// affected by anything here. It keeps MGO's purple gradient for now, pending
+// direction on what those colours should become.
+
+body.brand-fus {
+  // -- Aurora accents ------------------------------------------------------
+  --VARIABLE-LINK-color: #3fddff;
+  --VARIABLE-LINK-HOVER-color: #a6efff;
+
+  // The emblem's gold, which stays the "metal" accent as it is in MGO: it
+  // carries button pills, file names, and controller glyphs.
+  --mgo-gold: #fedca1;
+  --mgo-gold-dark: #c9a36b;
+  --mgo-gold-trans: #fedca133;
+  --mgo-btn-inline: #c9a36b99;
+
+  // Magenta and violet stand in for MGO's red and purple.
+  --mgo-red: #ff48cf;
+  --mgo-blue: #4a2d6b;
+  --mgo-blue2: #d488ff;
+
+  // -- Surfaces ------------------------------------------------------------
+  --mgo-bg: #010813;
+  --INTERNAL-MENU-SECTIONS-BG-color: #01060f;
+  --INTERNAL-MENU-HEADER-BG-color: #01060f;
+  --INTERNAL-MENU-HEADER-BORDER-color: #01060f;
+  --INTERNAL-TOPBAR-BG-color: #01060f;
+  --mgo-logo-bg1: #010813;
+  --mgo-logo-bg2: #01060f;
+
+  // -- Asides and gradients ------------------------------------------------
+  // The three-stop aurora: cyan → violet → magenta.
+  --mgo-gradient1: #0b3b5e;
+  --mgo-gradient2: #2a1240;
+  --mgo-gradient3: #3fddff;
+
+  --mgo-alert-bg1: #5c1147;   // magenta-leaning, for warnings
+  --mgo-alert-bg2: #3fddff44;
+  --mgo-alert-bg3: #2a1240;
+
+  --mgo-btw1: #1a3f5c66;      // cyan-leaning, for the everyday asides
+  --mgo-btw2: #3fddffcc;
+
+  --mgo-note1: #2a124066;     // violet-leaning
+  --mgo-note2: #d488ff66;
+
+  // -- Page background -----------------------------------------------------
+  // MGO's dragon-scale tile is its own identity, so FUS gets the night sky
+  // instead: a flat near-black navy lifted by a slow aurora wash. No tiling
+  // asset needed, which keeps this from waiting on artwork.
+  background: radial-gradient(ellipse 120% 80% at 50% 0%, #0b2740 0%, #030b17 45%, #010509 100%)
+    fixed;
+
+  #R-sidebar li.active > a {
+    background: linear-gradient(90deg, #12324e 0%, #2a1240 100%);
+  }
+
+  // The splash is a wide banner rather than a square mark, so let it run the
+  // full width of the sidebar instead of inheriting the MGO logo's inset.
+  #R-logo img.brand-logo-fus {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}

@@ -2,6 +2,12 @@
 title = "FUS Load Order"
 type = "chapter"
 weight = 110
+
+# Applies the FUS colour scheme to this page and everything under it. The
+# param puts a `brand-fus` class on <body> (see layouts/_default/baseof.html),
+# which assets/css/mgo/_brand-fus.scss hangs the palette off of.
+[cascade]
+  brand = 'fus'
 +++
 
 {{< github "Kvitekvist/FUS" >}}FUS{{< /github >}} is, in its authors' words, "a fundamental and modular modlist for Skyrim VR made by Kvitekvist and Cangar." Check out their README on GitHub for all the details, a link to their Discord, and a video guide for installation.

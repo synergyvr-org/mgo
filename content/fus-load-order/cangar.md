@@ -7,14 +7,10 @@ weight = 120
 
 ## What CANGAR changes
 
-Cangar leans harder on enemy variety and dragon fights (Skyrim Revamped, Adamant Onslaught, and several dragon-behavior tweaks), adds their own controller bindings and MCM Recorder settings, and turns on a specific set of Community Shaders features.
-
-It also uses Arena instead of Enhanced Enemies for encounter zones, and it removes FUS RO DAH's particular VRIK configuration[^1].
+Among other things, Cangar leans harder on enemy variety and increased difficulty (Skyrim Revamped, Adamant Onslaught, several dragon-behavior tweaks, etc.), adds their own controller bindings and MCM Recorder settings, and turns on a specific set of Community Shaders features.
 
 {{< modlist-diff base="static/fus-ro-dah.csv" list="static/cangar.csv" base-label="FUS RO DAH" list-label="CANGAR" >}}
 
-[^1]: Cangar must not be precisely 186cm tall.
-
 ## The full load order
 
-{{< modlist "static/cangar.csv" >}}
+{{< modlist "static/cangar.csv" "numbered" >}}

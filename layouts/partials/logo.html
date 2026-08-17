@@ -1,0 +1,6 @@
+{{- /* Overrides the theme's logo partial, which caches against site.Home and so
+       renders the same logo on every page. We pass the current page instead, and
+       vary the cache key by the `brand` param, so a branded section (see the
+       `brand` cascade in content/fus-load-order/_index.md) can show its own logo
+       while every unbranded page still shares one cached render. */ -}}
+{{- partialCached "auto-logo.html" . (.Params.brand | default "default") }}

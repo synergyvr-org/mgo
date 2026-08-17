@@ -31,4 +31,4 @@ Two of the additions are compatibility patches that only become necessary once b
 
 ## The full load order
 
-{{< modlist "static/fus-ro-dah.csv" >}}
+{{< modlist "static/fus-ro-dah.csv" "numbered" >}}

@@ -36,8 +36,14 @@
 {{- end }}
 
 {{- /* Render logo container with all variants */}}
+{{- /* Branded sections supply their own logo; everything else gets MGO's. The
+       `brand` param arrives via the cache key set in partials/logo.html. */ -}}
 {{- if or $logoGroups $title }}
         <a href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">
+          {{- if eq (.Params.brand | default "") "fus" }}
+          <img class="brand-logo brand-logo-fus" src="/mgo/images/fus-splash.webp" alt="FUS, a modlist for Skyrim VR by Kvitekvist and Cangar">
+          {{- else }}
           <img src="/images/tes5-mgo-300.webp" srcset="/mgo/images/tes5-mgo-300@2x.webp 2x" alt="Mad God's Overhaul for Skyrim VR">
+          {{- end }}
         </a>
 {{- end }}

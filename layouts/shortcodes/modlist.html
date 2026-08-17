@@ -4,6 +4,14 @@
        when available) and Download File Name. Separator rows (name ending "_separator") become
        human-readable headers with leading "#" turned into "▸". */ -}}
 {{- $path := .Get 0 | default "static/mgo-4-rc3.csv" -}}
+{{- /* Arg 1 (optional): in a flat list (no "#" depth markers), which separators
+       are folders? "all" (the default) makes every separator a folder, which is
+       right for lists whose separators are all category names. "numbered"
+       treats only entries like "1.0 - Essentials" or "2.99 DynDOLOD" as folders
+       and leaves the rest as notes, for lists (FUS) that also use separators for
+       instructions, dividers, and links. Ignored for hierarchical lists.
+       Positional because arg 0 is, and Hugo won't mix the two styles. */ -}}
+{{- $folderRule := .Get 1 | default "all" -}}
 {{- $csv := os.ReadFile $path -}}
 {{- /* Files in static/ are served from the site root, so strip "static/" and run
        the rest through relURL to pick up the site's base path. */ -}}
@@ -21,6 +29,33 @@
   "Controller Bindings" "mo2-steamvr-bindings"
   "VR FPS Stabilizer" "mo2-steamvr-stabilizer"
 -}}
+{{- /* Section colours for "numbered" lists, mirroring how the FUS authors colour
+       these separators in MO2 itself, keyed by the leading number:
+         1.x  green   the FUS basics
+         2.x  blue    the RO visual and audio overhauls (incl. 2.98, 2.99)
+         3.x  yellow  the DAH gameplay changes
+         4.x  red     late load patches
+         99   red     logs and tweaks
+       An "N.0" heading gets the darker `headBg` where one is given, as it does
+       in MO2. Non-numbered notes are magenta: the stronger tier for the list's
+       title, its DO NOT warnings, and its links; the softer tier for the rest of
+       the commentary. The CSV carries no colour data, so the tier split is a
+       heuristic on the text.
+
+       These are deliberately muted against MO2's fully saturated fills, which
+       glare on a dark page. Each keeps its hue (so the sections stay as
+       recognisable as they are in MO2) at roughly a third of the lightness, with
+       pale text on top. Notes sit darker still, so the section headings lead and
+       the commentary recedes. */ -}}
+{{- $numPalette := dict
+  "1"  (dict "bg" "#2b6640" "fg" "#e4f2e8")
+  "2"  (dict "bg" "#24548c" "fg" "#e3edfa" "headBg" "#183f6e")
+  "3"  (dict "bg" "#7c6318" "fg" "#f8efd6" "headBg" "#7a4d16")
+  "4"  (dict "bg" "#7a2d2d" "fg" "#fae4e4")
+  "99" (dict "bg" "#7a2d2d" "fg" "#fae4e4")
+-}}
+{{- $noteStrong := dict "bg" "#6b3266" "fg" "#f2e0ef" -}}
+{{- $noteSoft := dict "bg" "#3f1f3d" "fg" "#dfc9dc" -}}
 <div class="modlist">
   <div class="modlist-controls">
     <div class="modlist-search"><input type="search" id="modlist-filter" placeholder="Filter mods…" aria-label="Filter mod list" autocomplete="off"><button type="button" id="modlist-clear" class="modlist-clear" aria-label="Clear search" tabindex="-1">╳</button></div>
@@ -100,9 +135,12 @@
              gradient — excluding special cases, exceptions, and START HERE subtree
              folders — so the 3-stop spread can span exactly those. */ -}}
       {{- /* Some exports (the FUS lists) mark separators with no leading "#" at
-             all. Those lists are flat: every separator is a top-level folder and
-             there are no subfolders. Detect that here so such a file renders as
-             folders rather than as a run of hash-less plain labels. */ -}}
+             all. Those lists are flat: no subfolders, and only the numbered
+             entries ("1.0 - Essentials", "2.99 DynDOLOD") are folders. The rest
+             are notes the authors leave in the list itself: instructions,
+             dividers, links, and section commentary. Detect the flat case here
+             so such a file renders as folders-plus-notes rather than as a run of
+             hash-less plain labels. */ -}}
       {{- $flat := true -}}
       {{- range $ri, $row := $rows -}}
         {{- if and (gt $ri 0) (ge (len $row) 2) -}}
@@ -119,8 +157,10 @@
           {{- if hasSuffix $nm "_separator" -}}
             {{- $lbl := strings.TrimSuffix "_separator" $nm -}}
             {{- $d := sub (len $lbl) (len (strings.TrimLeft "#" $lbl)) -}}
-            {{- if $flat -}}{{- $d = 1 -}}{{- end -}}
             {{- $cl := strings.TrimSpace (strings.TrimLeft "#" $lbl) -}}
+            {{- if $flat -}}
+              {{- if or (ne $folderRule "numbered") (findRE `^[0-9]+(\.[0-9]+)*[ ]` $cl) -}}{{- $d = 1 -}}{{- else -}}{{- $d = 0 -}}{{- end -}}
+            {{- end -}}
             {{- if and (eq $d 1) (not (hasPrefix $cl "Mad God Overhaul - ")) (ne $cl "End Of List") (not (index $sepClasses $cl)) (not (index $shColors $cl)) -}}
               {{- $topTotal = add $topTotal 1 -}}
             {{- end -}}
@@ -142,12 +182,39 @@
           {{- $label := strings.TrimSuffix "_separator" $name -}}
           {{- $depth := sub (len $label) (len (strings.TrimLeft "#" $label)) -}}
           {{- $clean := strings.TrimSpace (strings.TrimLeft "#" $label) -}}
-          {{- /* Flat list (see $flat above): treat every separator as a top-level
-                 folder. The ▸ markers encode nesting depth, so they're dropped
-                 here, where there is none. */ -}}
-          {{- if $flat -}}{{- $depth = 1 -}}{{- end -}}
+          {{- /* Flat list (see $flat above): a numbered separator is a top-level
+                 folder, anything else is one of the authors' inline notes and
+                 stays a plain label. The ▸ markers encode nesting depth, so
+                 they're dropped here, where there is none. */ -}}
+          {{- if $flat -}}
+            {{- if or (ne $folderRule "numbered") (findRE `^[0-9]+(\.[0-9]+)*[ ]` $clean) -}}{{- $depth = 1 -}}{{- else -}}{{- $depth = 0 -}}{{- end -}}
+          {{- end -}}
           {{- $arrows := "" -}}
           {{- if and (gt $depth 0) (not $flat) -}}{{- $arrows = printf "%s " (strings.Repeat $depth "▸") -}}{{- end -}}
+          {{- /* Section colour for a "numbered" list (see $numPalette above);
+                 empty for every other list, which keeps the MGO gradients. */ -}}
+          {{- $secBg := "" -}}
+          {{- $secFg := "" -}}
+          {{- if and $flat (eq $folderRule "numbered") -}}
+            {{- $num := findRE `^[0-9]+` $clean -}}
+            {{- if $num -}}
+              {{- with index $numPalette (index $num 0) -}}
+                {{- $secBg = .bg -}}
+                {{- $secFg = .fg -}}
+                {{- /* An "N.0" heading takes the darker shade where there is one. */ -}}
+                {{- if and (isset . "headBg") (findRE `^[0-9]+\.0[ ]` $clean) -}}
+                  {{- $secBg = .headBg -}}
+                {{- end -}}
+              {{- end -}}
+            {{- else -}}
+              {{- /* A note: the list's own title, its shouted warnings, and its
+                     links get the brighter magenta, as they do in MO2. */ -}}
+              {{- $strong := or (hasPrefix $clean "DO NOT") (findRE `^FUS v` $clean) (findRE `(github\.com|discord\.gg)` $clean) -}}
+              {{- $tier := cond (not (not $strong)) $noteStrong $noteSoft -}}
+              {{- $secBg = $tier.bg -}}
+              {{- $secFg = $tier.fg -}}
+            {{- end -}}
+          {{- end -}}
           {{- $mo2 := index $sepClasses $clean -}}
           {{- /* Special cases with their own color: the top-level
                  "Mad God Overhaul - <version>" container (text varies per release)
@@ -191,7 +258,10 @@
         {{- else if $mo2 -}}
         <td colspan="2" class="separator {{ $mo2 }}"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
         {{- else if $isFolder -}}
-          {{- if $shColor -}}
+          {{- if $secBg -}}
+            {{- /* Numbered list: the section's own colour, per MO2. */ -}}
+        <td colspan="2" class="modlist-separator-gradient" style="background-color: {{ $secBg }}; color: {{ $secFg }};"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
+          {{- else if $shColor -}}
             {{- /* START HERE subtree folder: its own #e1be7a → #594328 gradient. */ -}}
         <td colspan="2" class="modlist-separator-gradient" style="background-color: {{ $shColor }}; color: {{ index $shText $clean }};"><i class="fa fa-folder-open"></i> {{ $arrows }}{{ $clean }}</td>
           {{- else -}}
@@ -219,7 +289,10 @@
                  their enclosing folder, same as the mods inside it. */ -}}
           {{- $encDepth := 0 -}}
           {{- if gt (len $stack) 0 -}}{{- $encDepth = (index $stack (sub (len $stack) 1)).depth -}}{{- end -}}
-          {{- if $shColor -}}
+          {{- if $secBg -}}
+            {{- /* Numbered list: one of the authors' inline notes, in magenta. */ -}}
+        <td colspan="2" class="modlist-separator-plain" style="background-color: {{ $secBg }}; color: {{ $secFg }};{{ if gt $encDepth 0 }} border-left: {{ mul $encDepth 32 }}px solid transparent;{{ end }}">{{ $clean }}</td>
+          {{- else if $shColor -}}
             {{- /* A START HERE note (e.g. STEP 1's "PLEASE FOLLOW…"): same gradient
                    as the folders, but rendered as a plain (icon-less) leaf. */ -}}
         <td colspan="2" class="modlist-separator-plain" style="background-color: {{ $shColor }}; color: {{ index $shText $clean }};{{ if gt $encDepth 0 }} border-left: {{ mul $encDepth 32 }}px solid transparent;{{ end }}">{{ $clean }}</td>
