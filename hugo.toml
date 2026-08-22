@@ -21,7 +21,7 @@ theme = 'relearn'
   # Keep sub-tables last: in TOML every key after a [params.x] header belongs to
   # that sub-table, so scalars above would be swallowed.
   #
-  # Cover-banner screenshots for this list, randomised per page load by the
+  # Cover-banner screenshots for this list, randomized per page load by the
   # shared custom.js. These are MGO's own screenshots. The Skyrim art behind
   # alert asides comes from the shared module (its data/synergy.yaml); override
   # it here with `asideArt = [...]` if this site ever wants its own.

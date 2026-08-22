@@ -3,7 +3,7 @@ title = "FUS Load Order"
 type = "chapter"
 weight = 110
 
-# Applies the FUS colour scheme to this page and everything under it. The
+# Applies the FUS color scheme to this page and everything under it. The
 # param puts a `brand-fus` class on <body> (see layouts/_default/baseof.html),
 # which assets/css/mgo/_brand-fus.scss hangs the palette off of.
 [cascade]

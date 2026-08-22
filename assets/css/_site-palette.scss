@@ -2,7 +2,7 @@
 //
 // Every Synergy site supplies this file. The shared module imports it by name
 // from its own stylesheet manifest but ships no palette of its own, so no
-// single list's colours are baked into the shared layer.
+// single list's colors are baked into the shared layer.
 //
 // The module's partials read these custom properties, so the slot names are
 // fixed even though the values are ours. Anything left undefined falls back to
