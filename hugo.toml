@@ -50,7 +50,18 @@ theme = 'relearn'
       'ss-archaeology.webp',
     ]
 
-    # The FUS load-order section shows FUS's own splash instead
+    # Load-order separator colors. One continuous gradient across the top-level
+    # folders, plus the START HERE subtree's gold gradient. These are the values
+    # the shortcode used to hardcode, so the rendering is unchanged.
+    [params.synergy.modlist]
+      subtree = ['#e1be7a', '#594328']
+      subtreeRoot = 'START HERE - Expand for Setup'
+      titlePrefix = 'Mad God Overhaul - '
+      plain = ['End Of List']
+      [[params.synergy.modlist.bands]]
+        stops = ['#642f69', '#000000', '#581e2a']
+
+    # The FUS load-order section shows FUS's colors instead
     [params.synergy.brandLogos.fus]
       src = 'fus-splash.webp'
       alt = 'FUS, a modlist for Skyrim VR by Kvitekvist and Cangar'
