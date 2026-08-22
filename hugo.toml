@@ -32,6 +32,10 @@ theme = 'relearn'
     logoAlt = "Mad God's Overhaul for Skyrim VR"
     footerCredit = 'MGO by [Synergy Team](https://synergyvr.org/)'
     footerCredit2 = 'Docs by Davey'
+    # Each cover ships an @2x sibling so the banner can use image-set(). The
+    # sources cap out at 2560-3431px, so @2x is 1.4x-1.9x the 1x rather than a
+    # true 2x — still the sharpest these captures allow.
+    coverRetina = '@2x'
     coverImages = [
       'ss-ridge-pine.webp',
       'ss-sunset-range.webp',

@@ -2,4 +2,4 @@ module github.com/synergyvr-org/mgo
 
 go 1.26
 
-require github.com/synergyvr-org/synergy-hugo-shared v0.4.1
+require github.com/synergyvr-org/synergy-hugo-shared v0.5.0
