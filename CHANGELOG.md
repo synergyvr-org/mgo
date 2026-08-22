@@ -7,8 +7,23 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 
 ## 2026-08-22
 
-## Changed
+### Added
+- New RC4 cover art for the page banners. The old banners were from 3.9.0.6 or older, so they're all gone.
+- Retina versions of those covers.
+
+### Changed
 - Moved a bunch of stuff to a new Hugo module, to be shared across the sites for Synergy Team's various lists.
+- The page banners are taller now, and they scale with the window. They used to show a tiny sliver of the screenshot, and now they show roughly two-thirds. The page title sits at the bottom over a soft shade so it stays readable against bright shots.
+- Load order tables show each mod's **version** instead of the name of the archive it came from.
+- The page background tile is translucent now, so the color behind it comes from the site's own palette. Looks the same here, but makes life easier for the other lists.
+- Load order separator colors and the rest of MGO's palette now live in this repo instead of the shared module, so the other lists can't accidentally inherit them.
+
+### Fixed
+- The little images and hover GIFs beside chapter headings were 404ing. No more!
+- Three glossary entries and a VRAMr bullet linked unpublished pages. The links are gone until the referenced pages appear.
+
+### Removed
+- The old cover art, and their (unused, as it turns out) high-DPI variants.
 
 ## 2026-08-18
 
