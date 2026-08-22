@@ -5,6 +5,11 @@ All notable changes to the MGO documentation site, based on its
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-08-22
+
+## Changed
+- Moved a bunch of stuff to a new Hugo module, to be shared across the sites for Synergy Team's various lists.
+
 ## 2026-08-18
 
 ## Changed

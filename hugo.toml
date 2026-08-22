@@ -26,6 +26,12 @@ theme = 'relearn'
   # alert asides comes from the shared module (its data/synergy.yaml); override
   # it here with `asideArt = [...]` if this site ever wants its own.
   [params.synergy]
+    # Sidebar logo (the shared module no longer hardcodes one)
+    logo = 'tes5-mgo-300.webp'
+    logo2x = 'tes5-mgo-300@2x.webp'
+    logoAlt = "Mad God's Overhaul for Skyrim VR"
+    footerCredit = 'MGO by [Synergy Team](https://synergyvr.org/)'
+    footerCredit2 = 'Docs by Davey'
     coverImages = [
       'ss-dragonsreach.webp',
       'ss-college-courtyard-ground.webp',
@@ -43,6 +49,11 @@ theme = 'relearn'
       'ss-rorikstead.webp',
       'ss-archaeology.webp',
     ]
+
+    # The FUS load-order section shows FUS's own splash instead
+    [params.synergy.brandLogos.fus]
+      src = 'fus-splash.webp'
+      alt = 'FUS, a modlist for Skyrim VR by Kvitekvist and Cangar'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'

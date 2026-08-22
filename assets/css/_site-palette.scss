@@ -1,0 +1,48 @@
+// Mad God's Overhaul's palette.
+//
+// Every Synergy site supplies this file. The shared module imports it by name
+// from its own stylesheet manifest but ships no palette of its own, so no
+// single list's colours are baked into the shared layer.
+//
+// The module's partials read these custom properties, so the slot names are
+// fixed even though the values are ours. Anything left undefined falls back to
+// whatever the module's own rules specify, which is usually not what you want,
+// so keep the full set.
+
+:root {
+  // Links
+  --VARIABLE-LINK-color: #BF7DAB;
+  --VARIABLE-LINK-HOVER-color: #D5AAC8;
+
+  // The gold used for button pills, file names, and controller glyphs
+  --mgo-btn-inline: #c9843699;
+  --mgo-gold-dark: #c98436;
+  --mgo-gold: #D8A65F;
+  --mgo-gold-trans: #F8D07B33;
+
+  // Accents
+  --mgo-red: #A23860;
+  --mgo-blue: #44375e;
+  --mgo-blue2: #664d87;
+
+  // Surfaces
+  --mgo-bg: #202020;
+  --mgo-logo-bg1: #2A2A22;
+  --mgo-logo-bg2: #282820;
+
+  // Asides: alert, "by the way", and note
+  --mgo-alert-bg1: #4E1A26;
+  --mgo-alert-bg2: #F1CD8466;
+  --mgo-alert-bg3: #642F69;
+  --mgo-gradient1: #642F69;
+  --mgo-gradient2: #4E1A26;
+  --mgo-gradient3: #F1CD84;
+  --mgo-btw1: #7E2F3466;
+  --mgo-btw2: #B14C78cc;
+  --mgo-note1: #7E2F3433;
+  --mgo-note2: #B14C7866;
+}
+
+#R-topbar > .topbar-wrapper {
+  --VARIABLE-LINK-HOVER-color: #D5AAC8;
+}
