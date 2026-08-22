@@ -44,7 +44,7 @@ If you have both Skyrim VR and Skyrim SE/AE installed, VRAMr may auto-detect you
 
 VRAMr's output is a snapshot of the textures you had when it ran, so it goes stale the same way other generated output does. Here's when you'll want to re-run it:
 
-* **After a [list update](/tutorials/updating-the-list)**, so any new textures in the update get the same treatment.
+* **After a list update**, so any new textures in the update get the same treatment.
 * **After adding a texture-heavy mod** of your own. A big retexture or armor pack you [install yourself](/tutorials/installing-a-mod) isn't covered until VRAMr sees it.
 
 {{< aside type="btw" title="Not the end of the world" >}}

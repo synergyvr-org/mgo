@@ -33,12 +33,12 @@ weight = 96
 | <span id="vrik">VRIK</span> | A mod that gives you a full, animated body in VR and drives gestures, body holsters, and much of MGO's VR interaction. It's also the source of one of MGO's [control schemes](/controls). See the [VRIK Player Avatar](/mod-highlights/vrik) page. |
 | <span id="higgs">HIGGS</span> | Hand Interaction and Gravity Gloves for Skyrim VR: physics-based hand interaction that lets you grab, throw, and pull objects to your hand. Several other mods build on it. See [Interaction](/how-to-play/interaction). |
 | <span id="planck">PLANCK</span> | A physics mod that makes melee strikes, enemy reactions, and object collisions feel physical in VR. See [Melee Combat](/how-to-play/combat). |
-| <span id="nff">NFF</span> | Nether's Follower Framework, a mod for recruiting and managing multiple followers: their positioning, combat behavior, gear, mounts, and more. See [Nether's Follower Framework](/mod-highlights/nff). Don't add a custom-logic follower to it unless that follower's page says it's NFF-compatible. |
+| <span id="nff">NFF</span> | Nether's Follower Framework, a mod for recruiting and managing multiple followers: their positioning, combat behavior, gear, mounts, and more. Don't add a custom-logic follower to it unless that follower's page says it's NFF-compatible. |
 | <span id="plugin">Plugin</span> | A mod file (with an `.esp`, `.esl`, or `.esm` extension) that adds or changes game records. Plugins are the entries listed on the right-hand side of MO2. |
-| <span id="esl-espfe">ESL / ESPFE</span> | A "light" plugin format (an `.esl` file, or an `.esp` carrying the ESL flag) that doesn't count against Skyrim's plugin limit. Vanilla Skyrim VR doesn't support ESLs or ESL-flagged ESPs, but MGO includes [Skyrim VR ESL Support](https://www.nexusmods.com/skyrimspecialedition/mods/106712). See [Will This SE Mod Work in VR?](/tutorials/se-mods-in-vr). |
+| <span id="esl-espfe">ESL / ESPFE</span> | A "light" plugin format (an `.esl` file, or an `.esp` carrying the ESL flag) that doesn't count against Skyrim's plugin limit. Vanilla Skyrim VR doesn't support ESLs or ESL-flagged ESPs, but MGO includes [Skyrim VR ESL Support](https://www.nexusmods.com/skyrimspecialedition/mods/106712). |
 | <span id="loot">LOOT</span> | The Load Order Optimisation Tool, which automatically sorts your plugins. MGO's load order is already sorted and tested, so you shouldn't run LOOT. |
 | <span id="ini">INI</span> | A plain-text configuration file (settings written as `key = value` under bracketed `[Sections]`). Many mods keep their options in one. See [INI Files](/reference/editing-inis). |
-| <span id="resaver">ReSaver</span> | A save-file cleaning tool (part of FallrimTools, included with MGO) that removes orphaned script data left behind when a scripted mod is uninstalled. See [Removing a Mod](/tutorials/removing-a-mod). |
+| <span id="resaver">ReSaver</span> | A save-file cleaning tool (part of FallrimTools, included with MGO) that removes orphaned script data left behind when a scripted mod is uninstalled. |
 
 ## Graphics and Performance
 
