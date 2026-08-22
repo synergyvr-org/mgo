@@ -13,8 +13,8 @@ The handful of entries filed under _Late Load Visuals_ aren't really about beaut
 
 [^1]: via the hilariously named "No More of that dumb falling dust thingy in caves"
 
-{{< modlist-diff base="static/fus.csv" list="static/fus-dah.csv" base-label="FUS" list-label="FUS DAH" >}}
+{{< modlist-diff base="fus.csv" list="fus-dah.csv" base-label="FUS" list-label="FUS DAH" >}}
 
 ## The full load order
 
-{{< modlist "static/fus-dah.csv" "numbered" >}}
+{{< modlist "fus-dah.csv" "numbered" >}}

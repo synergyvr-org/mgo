@@ -3,9 +3,46 @@ CanonifyURLs=true
 locale = 'en-us'
 title = "Mad God's Overhaul for Skyrim VR"
 theme = 'relearn'
+# The shared Synergy layer (shortcodes, styles, scripts, layout overrides) is a
+# Hugo Module. It must resolve ahead of Relearn so its overrides win, which is
+# what listing it here while Relearn stays in `theme` above achieves.
+#
+# To work against a local checkout of the module, set HUGO_MODULE_REPLACEMENTS in
+# the environment rather than adding a `replacements` line here, so a dev-only
+# path can never end up committed. The module's README has the full command.
+[module]
+  [[module.imports]]
+    path = 'github.com/synergyvr-org/synergy-hugo-shared'
+
 [params]
   themeVariant = 'zen-dark'
   disableInlineCopyToClipBoard = true
+
+  # Keep sub-tables last: in TOML every key after a [params.x] header belongs to
+  # that sub-table, so scalars above would be swallowed.
+  #
+  # Cover-banner screenshots for this list, randomised per page load by the
+  # shared custom.js. These are MGO's own screenshots. The Skyrim art behind
+  # alert asides comes from the shared module (its data/synergy.yaml); override
+  # it here with `asideArt = [...]` if this site ever wants its own.
+  [params.synergy]
+    coverImages = [
+      'ss-dragonsreach.webp',
+      'ss-college-courtyard-ground.webp',
+      'ss-college-hall.webp',
+      'ss-falkreath-sunset.webp',
+      'ss-college-courtyard-ground.webp',
+      'ss-windhelm-west-bridge.webp',
+      'ss-windhelm-west.webp',
+      'ss-archmage-alchemy-wide.webp',
+      'ss-archmage-enchanter.webp',
+      'ss-archmage-potions.webp',
+      'ss-archmage-staff.webp',
+      'ss-archmage.webp',
+      'ss-barrow-akaviri.webp',
+      'ss-rorikstead.webp',
+      'ss-archaeology.webp',
+    ]
 [caches]
   [caches.images]
     dir = ':cacheDir/images'

@@ -13,4 +13,4 @@ Use the filter box to jump to a mod by name or download file. Mod names link to 
 RC4 hasn't shipped yet, and some more changes are likely on the way before it's distributed. Consider this a preview!
 {{< /aside >}}
 
-{{< modlist "static/mgo-4-rc4-v1.csv" >}}
+{{< modlist "mgo-4-rc4-v1.csv" >}}

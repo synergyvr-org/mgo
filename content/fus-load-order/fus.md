@@ -7,4 +7,4 @@ weight = 50
 
 Every other variant in the series is FUS plus something. There's nothing to compare it against here, so this is simply the whole list. The other pages show what each variant adds on top of it.
 
-{{< modlist "static/fus.csv" "numbered" >}}
+{{< modlist "fus.csv" "numbered" >}}

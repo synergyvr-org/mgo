@@ -9,8 +9,8 @@ weight = 120
 
 Among other things, Cangar leans harder on enemy variety and increased difficulty (Skyrim Revamped, Adamant Onslaught, several dragon-behavior tweaks, etc.), adds their own controller bindings and MCM Recorder settings, and turns on a specific set of Community Shaders features.
 
-{{< modlist-diff base="static/fus-ro-dah.csv" list="static/cangar.csv" base-label="FUS RO DAH" list-label="CANGAR" >}}
+{{< modlist-diff base="fus-ro-dah.csv" list="cangar.csv" base-label="FUS RO DAH" list-label="CANGAR" >}}
 
 ## The full load order
 
-{{< modlist "static/cangar.csv" "numbered" >}}
+{{< modlist "cangar.csv" "numbered" >}}
