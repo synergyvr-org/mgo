@@ -15,6 +15,7 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 - The filter box searches versions as well as mod names.
 - Rewrote the intros on every load order page, the FUS ones included, to explain all of the above. They'd also been telling you to filter by "download file" ever since those tables switched to showing versions.
 - Page titles sit centered on their cover images now, rather than down at the bottom.
+- The load order tables run their sections flush against each other, with no rule between them, the way MO2's own pane does. It also stops the line interrupting the gradient down the list.
 - The hairlines down the right edge of the sidebar are gone, so the sidebar and the topbar read as one panel. They marked the edge in a gray borrowed from the theme, which read as a gap over on the Synergy docs. The sidebar and the content area are still different shades, so the boundary is still there, just fainter.
 - The screenshots on Overwrite, Virtual Memory, and Shader Cache moved into the shared module. None of them show anything MGO-specific (they're MO2's Overwrite folder, Windows' System settings, and the NVIDIA control panel), and the Synergy docs want the same ones.
 
