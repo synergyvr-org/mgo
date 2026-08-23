@@ -5,6 +5,24 @@ All notable changes to the MGO documentation site, based on its
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-08-23
+
+### Added
+- A **show in list** button on every row of the load order tables. Filter down to the mod you're after, then click its row (or the crosshair at its right edge) and the filter drops away, leaving that mod highlighted where it actually sits in the list, with its folders opened around it. That's usually the question a filter can't answer: not whether a mod is in the list, but what loads next to it.
+
+### Changed
+- Load order tables start with their folders closed, so a page opens as an outline of the list's sections instead of seventeen hundred mod names. Hit **Expand all** if you'd rather have the lot.
+- The filter box searches versions as well as mod names.
+- Rewrote the intros on every load order page, the FUS ones included, to explain all of the above. They'd also been telling you to filter by "download file" ever since those tables switched to showing versions.
+- Page titles sit centered on their cover images now, rather than down at the bottom.
+- The screenshots on Overwrite, Virtual Memory, and Shader Cache moved into the shared module. None of them show anything MGO-specific (they're MO2's Overwrite folder, Windows' System settings, and the NVIDIA control panel), and the Synergy docs want the same ones.
+
+### Fixed
+- Button and filename pills no longer leave a gap before the punctuation that follows them.
+
+### Removed
+- A "retina" screenshot on the Shader Cache page that was the same size as the standard one, and so wasn't doing anything.
+
 ## 2026-08-22
 
 ### Added
