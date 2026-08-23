@@ -17,7 +17,7 @@ If you have an NVIDIA GPU, you should set the shader cache to 10GB or more befor
 Right-click the desktop and choose  {{< btn-inline gear >}}Show more options{{< /btn-inline >}} from the context menu.
 {{< /caption >}}
 
-{{< caption name="nvidia-02-control-panel" type="webp" border="border" >}}
+{{< caption name="nvidia-02-control-panel" type="webp" border="border" no-retina="true" >}}
 Choose <span class="btn-inline">NVIDIA Control Panel</span> from the next context menu.
 {{< /caption >}}
 
