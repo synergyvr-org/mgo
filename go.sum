@@ -16,3 +16,5 @@ github.com/synergyvr-org/synergy-hugo-shared v0.6.1 h1:d7+TT4gsXQTTw8pC3BGhAU4f0
 github.com/synergyvr-org/synergy-hugo-shared v0.6.1/go.mod h1:YWNCc/yLBkA+Koh7oZaDQGjKwwAcpN5QreMHe09SkiQ=
 github.com/synergyvr-org/synergy-hugo-shared v0.7.0 h1:nVn5gaN6E7erRyt3rSq/8ci+ycHtDop/WHyM/ofBefI=
 github.com/synergyvr-org/synergy-hugo-shared v0.7.0/go.mod h1:YWNCc/yLBkA+Koh7oZaDQGjKwwAcpN5QreMHe09SkiQ=
+github.com/synergyvr-org/synergy-hugo-shared v0.8.0 h1:GuzSjcTfAX1Yg6s5tLWiKDH2XvLxkN4r2NIQqO9H4UQ=
+github.com/synergyvr-org/synergy-hugo-shared v0.8.0/go.mod h1:YWNCc/yLBkA+Koh7oZaDQGjKwwAcpN5QreMHe09SkiQ=

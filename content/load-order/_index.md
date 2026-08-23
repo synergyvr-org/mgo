@@ -9,7 +9,7 @@ Every mod in Mad God's Overhaul, in the order it sits in Mod Organizer 2. If you
 {{< chapter-heading href="mgo-4-rc3" >}}
 ## MGO 4.0 RC3 (current)
 
-Here you'll find the complete, filterable mod list for MGO 4.0 RC3: Nexus links, download filenames, and collapsible folders that mirror MO2's left pane.
+Here you'll find the complete, filterable mod list for MGO 4.0 RC3: Nexus links, installed versions, and collapsible folders that mirror MO2's left pane.
 {{< /chapter-heading >}}
 
 {{< chapter-heading href="mgo-4-rc4" >}}

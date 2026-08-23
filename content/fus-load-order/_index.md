@@ -14,6 +14,8 @@ weight = 110
 
 Here we present the Mod Organizer 2 load order for each of the five FUS variants, calling out the differences between each one. If you want to see exactly what's in each list (and which mods ship enabled in each one), this is where to look.
 
+On each of these pages, the numbered sections start closed, so you get FUS's own instructions and an outline of its sections before you get all of its mods. Open the sections you're curious about, or hit {{< btn-inline >}}Expand all{{< /btn-inline >}}. Type in the filter box to search a list by name or version, and once you've spotted what you were after, click its row (or the {{< btn-inline crosshairs >}}Show in list{{< /btn-inline >}} button at the right edge) to drop the filter and see where that mod actually sits in the load order.
+
 {{< chapter-heading href="fus" >}}
 ## FUS (Basics)
 
