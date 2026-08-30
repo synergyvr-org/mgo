@@ -1,9 +1,9 @@
 +++
-title = 'MGO 4.0 RC4'
+title = 'MGO 4.0 RC4 (next)'
 weight = 51
 +++
 
-## Updated 2026-08-15
+## Updated 2026-08-29
 
 **MGO 4.0 RC4** is coming soon. Here's a preview of the current developer build.
 
@@ -17,4 +17,4 @@ Mod names link to their Nexus pages where one exists, and the marker beside each
 RC4 hasn't shipped yet, and some more changes are likely on the way before it's distributed. Consider this a preview!
 {{< /aside >}}
 
-{{< modlist "mgo-4-rc4-v1.csv" >}}
+{{< modlist "mgo-4-rc4-v2.csv" >}}
