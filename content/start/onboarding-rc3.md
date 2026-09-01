@@ -1,7 +1,11 @@
 +++
-title = 'Onboarding (MO2)'
-weight = 30
+title = 'Onboarding (4.0 RC3)'
+weight = 35
 +++
+
+{{< aside type="alert" title="These instructions are for RC3" >}}
+**4.0 RC4 is the current release**, and its setup steps are on the regular [Onboarding](/start/onboarding) page. This page is kept around for anyone who hasn't been able to move to RC4 yet, because RC3's list differs in a handful of places. If you're on RC4, you want the other page. ([RC3's full load order](/load-order/mgo-4-rc3/) is still here too.)
+{{< /aside >}}
 
 Now that you have Mad God's Overhaul downloaded and installed, you can manage the installed list and launch the game via **Mod Organizer 2 (MO2)**.
 
@@ -10,7 +14,7 @@ If you've created a shortcut, use that to launch MO2. If not, find {{< file >}}M
 MO2 takes a little while to start. Even the splash screen may not appear right away. Resist the temptation to launch it again. Just wait.
 
 {{< aside type="btw" title="Full load order" >}}
-This documents the onboarding steps for MGO 4.0 **RC4**, the current release. Check out the [full load order for RC4](/load-order/mgo-4-rc4/) on this very site if you want the whole scoop. (Still on RC3? Check out [Onboarding (4.0 RC3)](/start/onboarding-rc3/) instead, as setup is different in a few places.)
+This documents the onboarding steps for MGO 4.0 **RC3**. Check out the [full load order for RC3](/load-order/mgo-4-rc3/) on this very site if you want the whole scoop.
 {{< /aside >}}
 
 ## Quick Start
@@ -82,7 +86,7 @@ _VR runtime_ refers to the software layer that sits between a VR application or 
   <i class="fa fa-folder"></i> ▸▸▸ Open Composite
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly"> OCU - Enable, Right Click, Open In Explorer, Run Configurator
+  <input type="checkbox" class="readonly"> Right Click - Select Open In Explorer - Launch OCU Configurator
 </div>
 
 OpenComposite is the right choice for most players. MGO includes [OpenComposite Unleashed](/performance/open-composite/), which works fine with SteamVR-native headsets and includes a number of features beyond just translating VR-related API calls. It's great!
@@ -132,14 +136,29 @@ Skip these and Skyrim VR may crash or render incorrectly on SteamVR until the ol
 <div class="separator sub mo2-cs">
   <i class="fa fa-folder"></i> ▸▸▸ Community Shaders - Press END in Game to Customize
 </div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> CSX3.19-VR-Unified-Quality
+<div class="separator sub mo2-nvidia">
+  <i class="fa fa-folder"></i> ▸▸▸▸ NVIDIA - DO NOT USE with OCU Upscalers
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly"> CSX3.19-VR-Unified-Balanced
+  <input type="checkbox" class="readonly"> CSX NVIDIA- Quality - Press END on PC to Customize
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly"> CSX3.19-VR-Unified-Performance
+  <input type="checkbox" class="readonly"> CSX NVIDIA- Balanced - Press END on PC to Customize
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly"> CSX NVIDIA- Performance - Press END on PC to Customize
+</div>
+<div class="separator sub mo2-amd">
+  <i class="fa fa-folder"></i> ▸▸▸▸ AMD - DO NOT USE with OCU Upscalers
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly"> CSX AMD- Quality - Press END on PC to Customize
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly"> CSX AMD- Balanced - Press END on PC to Customize
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly"> CSX AMD- Performance - Press END on PC to Customize
 </div>
 <div class="separator sub mo2-grass">
   <i class="fa fa-folder"></i> ▸▸▸ Grass Density & LODs (Optional)
@@ -153,9 +172,9 @@ Skip these and Skyrim VR may crash or render incorrectly on SteamVR until the ol
 
 **Step 3** includes a few performance-related presets.
 
-The [**Community Shaders**](/performance/community-shaders/) presets come as one unified set now, so there's no need to pick a folder for your GPU brand first. Just enable the (one) preset of your choice: _Quality_, _Balanced_, or _Performance_. The labels are self-explanatory, but when has that ever stopped me? _Quality_ includes all the fanciest visuals, but has a fairly significant impact on your frame rate. _Performance_ is more forgiving, and it still looks _good_. _Balanced_, as you might expect, sits between the two. (And as the folder label says, you can press <kbd>END</kbd> on your keyboard to customize Community Shaders further, though certain adjustments will prompt shaders to re-compile.)
+The [**Community Shaders**](/performance/community-shaders/) presets are split by GPU brand. Open the folder that matches your video card (NVIDIA or AMD), then select _Quality_, _Balanced_, or _Performance_. Enable one preset total, not one per folder. The labels are self-explanatory, but when has that ever stopped me? The _Quality_ presets include all the visual bells and whistles, but have a fairly significant impact on your frame rate. _Performance_ is more forgiving, and it still looks _good_. _Balanced_, as you might expect, sits between the two. (And as those long labels say, you can press <kbd>END</kbd> on your keyboard to customize Community Shaders further, though that will prompt shaders to re-compile.)
 
-Don't combine these presets with OCU's upscalers. Upscale in one place or the other, never both. (The [Community Shaders](/performance/community-shaders/) page covers this in more detail.)
+Heed the warning about OCU too: Don't combine these presets with OCU's upscalers. Upscale in one place or the other, never both. (The [Community Shaders](/performance/community-shaders/) page covers this in more detail.)
 
  **Grass Density** and **LOD Distance** each offer an optional _Quality_ preset here. Left unchecked (the default), you get the lighter performance versions. Check one to trade frames for denser grass or better-looking distant objects. Both impact FPS when outdoors, so be aware of the trade-off.
 
@@ -247,9 +266,9 @@ SkyrimNet hotkeys won't work properly if the game doesn't have keyboard focus, s
   <input type="checkbox" class="readonly"> Spellsiphon - Immersive Combat
 </div>
 
-This folder contains optional mods that change combat and spellcasting.
+New in RC3, this folder gathers up the optional mods that change how you fight and cast.
 
-VRIK leaves your hands open (or tracks your fingers on supported controllers), regardless of whether your fists are _drawn_ and you're ready to brawl. Enable {{< nexus 182410 >}}VRIK Closed Fist{{< /nexus >}}, and your hands become proper fists when they're "unsheathed" (so to speak). Without it, you pretty much have to check whether your followers have their weapons drawn to know whether you're ready to punch your foes, or just ready to slap them.
+VRIK leaves your hands open (or tracks your fingers on supported controllers), regardless of whether your fists are _drawn_ and you're ready to brawl. {{< nexus 182410 >}}VRIK Closed Fist{{< /nexus >}} addresses this, at long last. Enable this mod, and your hands become proper fists when they're "unsheathed" (so to speak). Without it, you pretty much have to check whether your followers have their weapons drawn to know whether you're ready to punch your foes, or just slap them.
 
 {{< nexus 19456 >}}Strange Runes{{< /nexus >}} gives spellcasting some pizazz, with glowing runic circles (55+ varieties, in fact) appearing when you or NPCs cast. Naturally, that's configurable in the MCM.
 
@@ -276,10 +295,10 @@ If you want to give the runes a different look, {{< nexus 137611 >}}Alternative 
   <input type="checkbox" class="readonly"> Prisma UI Additem Menu
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> My Minimalistic AutoSave Mod
+  <input type="checkbox" class="readonly"> Unread Books Glow Redone
 </div>
 <div class="mod">
-  <input type="checkbox" class="readonly"> Unread Books Glow SSE with MCM
+  <input type="checkbox" class="readonly"> My Minimalistic AutoSave Mod
 </div>
 
 The mods in the _Convenience_ section are mostly  self-explanatory, but I want to call attention to a couple of them.
@@ -307,7 +326,7 @@ As your Skyrim character progresses, you're likely to become an unstoppable kill
 
  {{< nexus 33487 >}}Arena{{< /nexus >}} balances things out a bit by adjusting the enemies that appear in each location.
 
-MGO's combat runs on {{< nexus 34549 >}}Blade and Blunt{{< /nexus >}}, a combat overhaul built to make Skyrim harder and to encourage active resource management. The optional {{< nexus 117827 >}}Adjusted Difficulty Scaling{{< /nexus >}} entry in this section is a companion to it. Enable it if you want to add even more to that challenge.
+Meanwhile, MGO's combat runs on {{< nexus 34549 >}}Blade and Blunt{{< /nexus >}}, a combat overhaul built to make Skyrim harder and to encourage active resource management. The optional {{< nexus 117827 >}}Adjusted Difficulty Scaling{{< /nexus >}} entry in this section is a companion to it. Enable it if you want to add even more to that challenge.
 
 ---
 ## Immersion
@@ -325,6 +344,9 @@ MGO's combat runs on {{< nexus 34549 >}}Blade and Blunt{{< /nexus >}}, a combat 
   <input type="checkbox" class="readonly"> Swap Drop and Hold Redux - VR
 </div>
 <div class="mod">
+  <input type="checkbox" class="readonly"> NavigateVR - Dynamic Compass and Equipable Maps
+</div>
+<div class="mod">
   <input type="checkbox" class="readonly" checked> Minimal Enemy Healthbar VR - Remove Enemy Health Bar
 </div>
 
@@ -332,8 +354,6 @@ Immersion is a high priority for MGO. The list includes a number of mods to help
 
 {{< nexus 154803 >}}DovaVR Locomotion{{< /nexus >}} allows you to walk by swinging your arms. Check out the [Movement](/how-to-play/movement) page or the mod's Nexus page to read more.
 
-If you're looking for {{< nexus 47174 >}}NavigateVR{{< /nexus >}} here, it's moved up in the world. As of RC4, its equipable maps are part of the core list (built on Liv's new {{< nexus 189442 >}}NavigateVR Map Framework{{< /nexus >}}, with a whole bunch of map packs), so there's no longer a checkbox to remember.
-
-{{< nexus 186335 >}}Physical Collision VR{{< /nexus >}}, MGO's weapon-collision mod since RC3 (when it first replaced Fake Edge VR), is also part of the core list rather than one of the optional toggles. Your weapons collide with the world around you (walls, tables, your shield) instead of clipping through, and they still attack as usual. Check its Nexus page for the details of how it works.
+New in this release, {{< nexus 186335 >}}Physical Collision VR{{< /nexus >}} replaces Fake Edge VR as MGO's weapon-collision mod. It's part of the core list now (on for everyone, not one of the optional toggles above), so there's no checkbox to find. Your weapons collide with the world around them (walls, tables, your shield) instead of clipping through, and they still attack as usual. Check its Nexus page for the details of how it works.
 
 [^1]: Even if you choose WhisperGPU, shouts are still recognized by Vosk under the hood. The Thu'um answers to only one engine.
