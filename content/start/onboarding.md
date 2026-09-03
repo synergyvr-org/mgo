@@ -1,6 +1,7 @@
 +++
 title = 'Onboarding (MO2)'
 weight = 30
+aliases = ['/start/onboarding-rc3/']
 +++
 
 Now that you have Mad God's Overhaul downloaded and installed, you can manage the installed list and launch the game via **Mod Organizer 2 (MO2)**.
@@ -10,7 +11,7 @@ If you've created a shortcut, use that to launch MO2. If not, find {{< file >}}M
 MO2 takes a little while to start. Even the splash screen may not appear right away. Resist the temptation to launch it again. Just wait.
 
 {{< aside type="btw" title="Full load order" >}}
-This documents the onboarding steps for MGO 4.0 **RC4**, the current release. Check out the [full load order for RC4](/load-order/mgo-4-rc4/) on this very site if you want the whole scoop. (Still on RC3? Check out [Onboarding (4.0 RC3)](/start/onboarding-rc3/) instead, as setup is different in a few places.)
+This documents the onboarding steps for MGO 4.0 **RC4**, the current release. Check out the [full load order for RC4](/load-order/mgo-4-rc4/) on this very site if you want the whole scoop.
 {{< /aside >}}
 
 ## Quick Start

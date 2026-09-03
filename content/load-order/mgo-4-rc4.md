@@ -1,11 +1,13 @@
 +++
-title = 'MGO 4.0 RC4 (next)'
-weight = 51
+title = 'MGO 4.0 RC4'
+weight = 45
 +++
 
-## Updated 2026-08-29
+## Updated 2026-09-03
 
-**MGO 4.0 RC4** is coming soon. Here's a preview of the current developer build.
+**MGO 4.0 RC4** is officially released! The load order is here, along with a [list of changes from RC3](#differences-from-rc3).
+
+## Load Order
 
 The folder headers (with {{< btn-inline >}}▸{{< /btn-inline >}} arrows) mirror the grouping you see in MO2's left pane, and they start closed, so you get an outline of the list before you get every mod in it. Open the ones you're curious about, or hit {{< btn-inline >}}Expand all{{< /btn-inline >}}.
 
@@ -13,8 +15,8 @@ Type in the filter box to search the whole list by name or version, whatever's o
 
 Mod names link to their Nexus pages where one exists, and the marker beside each mod shows whether it's enabled or disabled by default.
 
-{{< aside type="btw" title="A moving target" >}}
-RC4 hasn't shipped yet, and some more changes are likely on the way before it's distributed. Consider this a preview!
-{{< /aside >}}
+{{< modlist "mgo-4-rc4.csv" >}}
 
-{{< modlist "mgo-4-rc4-v2.csv" >}}
+## Differences from RC3
+
+{{< modlist-diff base="mgo-4-rc3.csv" list="mgo-4-rc4.csv" base-label="RC3" list-label="RC4" >}}

@@ -5,6 +5,16 @@ All notable changes to the MGO documentation site, based on its
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-09-03
+
+### Changed
+- MGO 4.0 RC4 is officially released! The RC4 load order page now is up-to-date.
+- The RC4 Load Order page now lists the changes from RC3.
+- RC4 takes the "current" spot on the Load Order page, and RC3 moves down to the older lists.
+
+### Removed
+- The "Onboarding (4.0 RC3)" page. No one should be installing RC3 anymore. (Its old URL now resolves to the regular Onboarding page, and the RC3 load order is still around.)
+
 ## 2026-09-01
 
 ### Changed
