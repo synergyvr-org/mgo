@@ -1,5 +1,5 @@
 +++
-title = 'MGO 4.0 RC2 (previous)'
+title = 'MGO 4.0 RC2 (old)'
 weight = 60
 +++
 
