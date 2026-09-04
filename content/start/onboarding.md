@@ -11,7 +11,7 @@ If you've created a shortcut, use that to launch MO2. If not, find {{< file >}}M
 MO2 takes a little while to start. Even the splash screen may not appear right away. Resist the temptation to launch it again. Just wait.
 
 {{< aside type="btw" title="Full load order" >}}
-This documents the onboarding steps for MGO 4.0 **RC4**, the current release. Check out the [full load order for RC4](/load-order/mgo-4-rc4/) on this very site if you want the whole scoop.
+This documents the onboarding steps for MGO 4.0 **RC4.1**, the current release. Check out the [full load order for RC4.1](/load-order/mgo-4-rc4/) on this very site if you want the whole scoop.
 {{< /aside >}}
 
 ## Quick Start
@@ -133,14 +133,29 @@ Skip these and Skyrim VR may crash or render incorrectly on SteamVR until the ol
 <div class="separator sub mo2-cs">
   <i class="fa fa-folder"></i> ▸▸▸ Community Shaders - Press END in Game to Customize
 </div>
-<div class="mod sub">
-  <input type="checkbox" class="readonly"> CSX3.19-VR-Unified-Quality
+<div class="separator sub mo2-amd">
+  <i class="fa fa-folder"></i> ▸▸▸▸ AMD
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly"> CSX3.19-VR-Unified-Balanced
+  <input type="checkbox" class="readonly"> CSX-VR - AMD Quality Preset
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly"> CSX3.19-VR-Unified-Performance
+  <input type="checkbox" class="readonly"> CSX -VR - AMD Balanced Preset
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly"> CSX-VR - AMD Performance Preset
+</div>
+<div class="separator sub mo2-nvidia">
+  <i class="fa fa-folder"></i> ▸▸▸▸ Nvidia
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly"> CSX-VR - NVIDIA Quality Preset
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly"> CSX -VR - NVIDIA Balanced Preset
+</div>
+<div class="mod sub">
+  <input type="checkbox" class="readonly"> CSX -VR - NVIDIA Performance Preset
 </div>
 <div class="separator sub mo2-grass">
   <i class="fa fa-folder"></i> ▸▸▸ Grass Density & LODs (Optional)
@@ -149,16 +164,16 @@ Skip these and Skyrim VR may crash or render incorrectly on SteamVR until the ol
   <input type="checkbox" class="readonly"> Grass Density - Quality
 </div>
 <div class="mod sub">
-  <input type="checkbox" class="readonly"> LOD Distance - Quality
+  <input type="checkbox" class="readonly"> LOD Distance - Quality (24GB VRAM Recommended)
 </div>
 
 **Step 3** includes a few performance-related presets.
 
-The [**Community Shaders**](/performance/community-shaders/) presets come as one unified set now, so there's no need to pick a folder for your GPU brand first. Just enable the (one) preset of your choice: _Quality_, _Balanced_, or _Performance_. The labels are self-explanatory, but when has that ever stopped me? _Quality_ includes all the fanciest visuals, but has a fairly significant impact on your frame rate. _Performance_ is more forgiving, and it still looks _good_. _Balanced_, as you might expect, sits between the two. (And as the folder label says, you can press <kbd>END</kbd> on your keyboard to customize Community Shaders further, though certain adjustments will prompt shaders to re-compile.)
+The [**Community Shaders**](/performance/community-shaders/) presets are split by GPU brand again in RC4.1. Open the folder that matches your video card (AMD or Nvidia), then enable _one_ preset total: _Quality_, _Balanced_, or _Performance_. The labels are self-explanatory, but when has that ever stopped me? _Quality_ includes all the fanciest visuals, but has a fairly significant impact on your frame rate. _Performance_ is more forgiving, and it still looks _good_. _Balanced_, as you might expect, sits between the two. (And as the folder label says, you can press <kbd>END</kbd> on your keyboard to customize Community Shaders further, though certain adjustments will prompt shaders to re-compile.)
 
 Don't combine these presets with OCU's upscalers. Upscale in one place or the other, never both. (The [Community Shaders](/performance/community-shaders/) page covers this in more detail.)
 
- **Grass Density** and **LOD Distance** each offer an optional _Quality_ preset here. Left unchecked (the default), you get the lighter performance versions. Check one to trade frames for denser grass or better-looking distant objects. Both impact FPS when outdoors, so be aware of the trade-off.
+ **Grass Density** and **LOD Distance** each offer an optional _Quality_ preset here. Left unchecked (the default), you get the lighter performance versions. Check one to trade frames for denser grass or better-looking distant objects. Both impact FPS when outdoors, so be aware of the trade-off, and take the LOD entry's label seriously: the quality LODs want a video card with 24 GB of VRAM.
 
  {{< aside type="btw" title="LOD?" >}}
  LOD stands for _Level of Detail_ and which set of pre-generated LODs you use determines how detailed distant geometry (terrain, trees, structures, etc.) will appear. Even the _performance_ presets look quite good, so if you're looking to save some frames, this is a good place to do it.
@@ -333,7 +348,7 @@ Immersion is a high priority for MGO. The list includes a number of mods to help
 
 {{< nexus 154803 >}}DovaVR Locomotion{{< /nexus >}} allows you to walk by swinging your arms. Check out the [Movement](/how-to-play/movement) page or the mod's Nexus page to read more.
 
-If you're looking for {{< nexus 47174 >}}NavigateVR{{< /nexus >}} here, it's moved up in the world. As of RC4, its equipable maps are part of the core list (built on Liv's new {{< nexus 189442 >}}NavigateVR Map Framework{{< /nexus >}}, with a whole bunch of map packs), so there's no longer a checkbox to remember.
+If you're looking for {{< nexus 47174 >}}NavigateVR{{< /nexus >}} here, it's moved up in the world. As of RC4.1, its equipable maps are part of the core list (built on Liv's new {{< nexus 189442 >}}NavigateVR Map Framework{{< /nexus >}}, with a whole bunch of map packs), so there's no longer a checkbox to remember.
 
 {{< nexus 186335 >}}Physical Collision VR{{< /nexus >}}, MGO's weapon-collision mod since RC3 (when it first replaced Fake Edge VR), is also part of the core list rather than one of the optional toggles. Your weapons collide with the world around you (walls, tables, your shield) instead of clipping through, and they still attack as usual. Check its Nexus page for the details of how it works.
 

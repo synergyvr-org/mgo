@@ -5,6 +5,12 @@ All notable changes to the MGO documentation site, based on its
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-09-04
+
+### Changed
+- replace MGO 4.0 RC4 with RC4.1. The load order page follows the new export, and RC4 references across the site now read RC4.1.
+- Onboarding's Step 3 incorporates RC4.1's reshuffled Community Shaders presets (no longer unified).
+
 ## 2026-09-03
 
 ### Changed

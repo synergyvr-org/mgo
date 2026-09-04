@@ -1,11 +1,11 @@
 +++
-title = 'MGO 4.0 RC4'
+title = 'MGO 4.0 RC4.1'
 weight = 45
 +++
 
-## Updated 2026-09-03
+## Updated 2026-09-04
 
-**MGO 4.0 RC4** is officially released! The load order is here, along with a [list of changes from RC3](#differences-from-rc3).
+**MGO 4.0 RC4.1** is officially released! If you installed the original version of RC4, you'll want to install this over it. The load order is here, along with a [list of changes from RC3](#differences-from-rc3).
 
 ## Load Order
 
@@ -15,8 +15,8 @@ Type in the filter box to search the whole list by name or version, whatever's o
 
 Mod names link to their Nexus pages where one exists, and the marker beside each mod shows whether it's enabled or disabled by default.
 
-{{< modlist "mgo-4-rc4.csv" >}}
+{{< modlist "mgo-4-rc4.1.csv" >}}
 
 ## Differences from RC3
 
-{{< modlist-diff base="mgo-4-rc3.csv" list="mgo-4-rc4.csv" base-label="RC3" list-label="RC4" >}}
+{{< modlist-diff base="mgo-4-rc3.csv" list="mgo-4-rc4.1.csv" base-label="RC3" list-label="RC4.1" >}}
