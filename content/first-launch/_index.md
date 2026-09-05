@@ -4,12 +4,12 @@ type = "chapter"
 weight = 10
 +++
 
-The first time you run Mad God's Overhaul, it will take quite a long time to get to the main menu. Once you start a new game, there's a bit more waiting to do before you're _really_ ready. You'll also likely want to do some configuration before you set off on your adventure.
+When you first launch Mad God's Overhaul, it will take a few minutes to get to the main menu. Once you start a new game, there's a bit more waiting to do before you're _really_ ready. You'll also likely want to do some configuration before you set off on your adventure.
 
 {{< chapter-heading href="compiling-shaders" >}}
 ## Compiling Shaders
 
-As the game starts up for the first time, Community Shaders will compile shaders so things load faster in-game and in future launches. It takes awhile, but that gives you some time to fine-tune the graphics configuration.
+Community Shaders Expanded (CSX) used to go through very lengthy shader compilation on first launch. As of MGO 4.0 RC3, CSX ships with pre-compiled shaders. If you change certain CSX settings, it may require recompilation on the next launch.
 {{< /chapter-heading >}}
 
 {{< chapter-heading href="character-creation" >}}

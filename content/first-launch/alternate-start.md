@@ -43,15 +43,15 @@ Playing a thief (or just want a little help)? You'll find a strongbox at the end
 
 ## Choose your destiny
 
-When you're ready, talk to the little dragon perched on the lantern. He'll offer you a _smörgåsbord_ of ways to begin. Pick one, then open the door beside him and step into the void to kick off the scenario you chose.
+When you're ready, ~~talk to the little dragon perched on the lantern~~ interact with the Shine of Akatosh (a statue of a dragon perched on a lantern) near the door. Doing so will offer you a _smörgåsbord_ of ways to begin. Pick one, then open the door beside him and step into the void to kick off the scenario you chose.
 
-If you head through the door without speaking to the dragon, you'll end up with Alternate Perspective's default start. Rather than skipping Skyrim's intro, this option presents the same story from (as the mod name suggests) a different perspective. You're still present for Alduin's attack on Helgen, but your head isn't on the chopping block.
+If you head through the door without picking any particular start, you'll end up with Alternate Perspective's default start. Rather than skipping Skyrim's intro, this option presents the same story from (as the mod name suggests) a different perspective. You're still present for Alduin's attack on Helgen, but your head isn't the one on the chopping block.
 
 {{< caption name="dragon-on-a-lantern" type="jpg" no-retina="true" >}}
-Talk to the dragon to choose how your story begins.
+The Messenger shall return, but he's buggy enough that he has been removed in MGO 4.0 RC4.
 {{< /caption >}}
 
-The dragon presents you with a number of scenarios, many of which offer additional choices once you select them.
+Interacting with the shrine presents you with a number of scenarios, many of which offer additional choices once you select them.
 
 {{< disclosure title="None (Default)" >}}
 Start in Helgen's inn, The Resting Pilgrim. Talk to the innkeeper Matlara and sleep in your room to experience that alternate perspective you were promised.
@@ -107,4 +107,38 @@ Begin as a member of one of Skyrim's guilds: The College of Winterhold, The Comp
 Jump straight into the main quest. You can skip ahead to High Hrothgar, having already been recognized as the Dragonborn, or you can choose from three different points in the game's opening sequence: as a prisoner on a cart ride (vanilla), in Helgen Keep after Alduin's attack (having chosen to follow Ralof), or at the end of the Helgen Keep sequence.
 {{< /disclosure >}}
 
+## More perspectives, new in RC4
+
+RC4 adds an assortment of Alternate Perspective add-ons, including some fan-favorites[^2].
+
+{{< disclosure title="Border Crossing" >}}
+{{< nexus 187466 >}}Alternate Perspective Border Starts{{< /nexus >}} puts you at one of Skyrim's four border passes with only the equipment that you picked up in the starting room.
+{{< /disclosure >}}
+
+{{< disclosure title="Thalmor" >}}
+{{< nexus 102945 >}}Alternate Perspective - Thalmor Start{{< /nexus >}} begins your story at Northwatch Keep as a member of the Thalmor.
+{{< /disclosure >}}
+
+{{< disclosure title="The Midden" >}}
+{{< nexus 119201 >}}Start in the Midden{{< /nexus >}} wakes you beneath the College of Winterhold with empty pockets and no explanation. (Any gear you picked up in the starting room will be removed.) There's gear scattered nearby, along with a hint about how you ended up down there.
+{{< /disclosure >}}
+
+{{< disclosure title="Adventurer's Starts" >}}
+{{< nexus 145599 >}}Adventurer's Start{{< /nexus >}} adds a handful of beginnings [_in media res_](https://en.wikipedia.org/wiki/In_medias_res).
+
+- Roadside Ambush, ambushed on the road by three level 1 bandits
+- Fell In a Spike Pit, lying at half health in the spike pit at Halted Stream Camp
+- Bounty Hunter, starting at a bandit camp with a bounty side quest in your journal
+- Bandit Prisoner, locked in a cell in a bandit-held fort
+- Orc Stronghold, start as a Blood-Kin if you're not an Orc yourself
+- Saved By Vigilants, locked in a cage in Hob's Fall Cage, about to be sacrified until the Vigilants show up
+- Out In the Wilderness, starts you away from cities and towns, intended for survival-focused playthroughs
+{{< /disclosure >}}
+
+{{< disclosure title="Relic Hunter (Guildmaster)" >}}
+For Legacy of the Dragonborn fans, {{< nexus 12253 >}}Relic Hunter - Guildmaster Start{{< /nexus >}} begins with you already serving as guild master of the Explorer's Society, on site at a small Akaviri excavation near Rorikstead, with the Society's relic tools ready to grab in a nearby tent. This was originally built for _That Other Alternate Start Mod_, and has been patched to work with Alternate Perspective.
+{{< /disclosure >}}
+
 [^1]: "Modeled after" because, strictly speaking, this room is isolated and not technically the one at the inn.
+
+[^2]: I'm the fan. They're my favorites.

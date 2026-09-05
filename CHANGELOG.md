@@ -8,7 +8,13 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 ## 2026-09-04
 
 ### Changed
-- replace MGO 4.0 RC4 with RC4.1. The load order page follows the new export, and RC4 references across the site now read RC4.1.
+- Updated Alternate Perspective page with details for all of the new add-ons in RC4.
+- Update First Launch page with explanation that CSX now includes pre-compiled shaders. That was already noted elsewhere, but not on this page.
+
+## 2026-09-04
+
+### Changed
+- Replace MGO 4.0 RC4 with RC4.1. The load order page follows the new export, and RC4 references across the site now read RC4.1.
 - Onboarding's Step 3 incorporates RC4.1's reshuffled Community Shaders presets (no longer unified).
 
 ## 2026-09-03
