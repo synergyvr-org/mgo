@@ -1,9 +1,13 @@
 # MGO Documentation Changelog
 
-All notable changes to the MGO documentation site, based on its
-[deployments](https://github.com/synergyvr-org/mgo/deployments). Entries before 2026-06-30 come from the site's previous home, [dstrus/mgo-tutorial](https://github.com/dstrus/mgo-tutorial/deployments).
+All notable changes to the MGO documentation site, based on its [deployments](https://github.com/synergyvr-org/mgo/deployments). Entries before 2026-06-30 come from the site's previous home, [dstrus/mgo-tutorial](https://github.com/dstrus/mgo-tutorial/deployments).
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
+
+## 2026-10-06
+
+### Removed
+- The FUS Load Order chapter is hidden from navigation. Its pages still work at their URLs (the Touch bindings page links there), but the sidebar and next-page links skip the whole chapter.
 
 ## 2026-09-10
 
