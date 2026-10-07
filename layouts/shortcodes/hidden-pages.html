@@ -1,0 +1,16 @@
+{{- /* Lists every page hidden from navigation: its own `hidden = true` or
+       inherited from a hidden ancestor (a hidden chapter hides its whole
+       branch). The page calling this shortcode leaves itself off the list. */ -}}
+{{- $self := .Page -}}
+{{- $hidden := slice -}}
+{{- range .Site.Pages -}}
+  {{- if or (eq .Kind "home") (eq .RelPermalink $self.RelPermalink) -}}{{- continue -}}{{- end -}}
+  {{- $h := eq .Params.hidden true -}}
+  {{- range .Ancestors -}}{{- if eq .Params.hidden true -}}{{- $h = true -}}{{- end -}}{{- end -}}
+  {{- if $h -}}{{- $hidden = $hidden | append . -}}{{- end -}}
+{{- end -}}
+<ul class="hidden-pages">
+{{- range sort $hidden "RelPermalink" }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <code>{{ .RelPermalink }}</code></li>
+{{- end }}
+</ul>
