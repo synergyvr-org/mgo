@@ -4,10 +4,22 @@ All notable changes to the MGO documentation site, based on its [deployments](ht
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-10-07
+
+### Added
+- Added MGO 4.0 RC4.3 load order (a devs-only preview of the not-yet-released RC5), with a diff against RC4.1 that now counts version updates alongside additions and removals ("Another 24 mods have been updated"), each listed with its old → new versions.
+- Stable aliases for the load orders: `/load-order/current/` always points at the current release, and `/load-order/next/` at the preview build.
+- The unpublished drafts from the old `content-wip` branch (11 tutorials, a Skyrim console reference, and more) now live on `main` as hidden pages: absent from the sidebar, reachable by URL.
+- `/hidden`, an unlisted index of every hidden page on the site.
+
+### Changed
+- MGO 4.0 RC4.1 is the current release again. (I published the RC4.2 load order almost a month ago thinking that it was about to release.) Onboarding (including the LOD entry's restored "24GB VRAM Recommended" label) now reflects that, as do version references throughout the site.
+- The RC2 load order page is hidden from navigation, joining the FUS chapter in the Island of Misfit Pages.
+
 ## 2026-10-06
 
 ### Removed
-- The FUS Load Order chapter is hidden from navigation. Its pages still work at their URLs (the Touch bindings page links there), but the sidebar and next-page links skip the whole chapter.
+- The FUS Load Order chapter is hidden from navigation. Its pages still work at their URLs, but the sidebar and next-page links skip the whole chapter.
 
 ## 2026-09-10
 

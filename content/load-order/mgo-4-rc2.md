@@ -1,6 +1,7 @@
 +++
 title = 'MGO 4.0 RC2 (old)'
 weight = 60
+hidden = true
 +++
 
 This is the complete mod list for **MGO 4.0 RC2**, straight from Mod Organizer 2. The folder headers (with {{< btn-inline >}}▸{{< /btn-inline >}} arrows) mirror the grouping you see in MO2's left pane, and they start closed, so you get an outline of the list before you get every mod in it. Open the ones you're curious about, or hit {{< btn-inline >}}Expand all{{< /btn-inline >}}.
