@@ -8,6 +8,8 @@ aliases = ['/load-order/next/']
 
 **MGO 4.0 RC4.3** is a devs-only build that serves as a preview of the not-yet-released **RC5**. The load order is here, along with a [list of changes from RC4.1](#differences-from-rc4.1).
 
+You can also see [all of the changes since MGO 3.8.8.1](#differences-from-mgo-3881).
+
 ## Load Order
 
 The folder headers (with {{< btn-inline >}}▸{{< /btn-inline >}} arrows) mirror the grouping you see in MO2's left pane, and they start closed, so you get an outline of the list before you get every mod in it. Open the ones you're curious about, or hit {{< btn-inline >}}Expand all{{< /btn-inline >}}.
@@ -21,3 +23,7 @@ Mod names link to their Nexus pages where one exists, and the marker beside each
 ## Differences from RC4.1
 
 {{< modlist-diff base="mgo-4-rc4.1.csv" list="mgo-4-rc4.3.csv" base-label="RC4.1" list-label="RC4.3" >}}
+
+## Differences from MGO 3.8.8.1
+
+{{< modlist-diff base="mgo-3.8.8.1.csv" list="mgo-4-rc4.3.csv" base-label="MGO 3.8.8.1" list-label="RC4.3" >}}
