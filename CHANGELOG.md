@@ -4,6 +4,11 @@ All notable changes to the MGO documentation site, based on its [deployments](ht
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-10-14
+
+### Added
+- Added MGO 4.0 RC4.4 load order (a devs-only preview of the not-yet-released RC5), with a diff against RC4.1 and a diff against MGO 3.8.8.1.
+
 ## 2026-10-07
 
 ### Added
