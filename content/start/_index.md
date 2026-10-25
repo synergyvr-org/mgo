@@ -23,9 +23,3 @@ Now you're ready to download and install the actual list with Wabbajack.
 
 With the list installed, complete some quick configuration steps and learn your way around Mod Organizer 2.
 {{< /chapter-heading >}}
-
-{{< chapter-heading href="onboarding-rc2" >}}
-## Onboarding (4.0 RC2)
-
-The setup steps for the older RC2 release, for anyone who hasn't moved to RC3 yet.
-{{< /chapter-heading >}}
