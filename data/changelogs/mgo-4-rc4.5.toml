@@ -1,0 +1,67 @@
+# Annotations for the modlist-changelog shortcode on the RC4.5 load order page.
+# Loaded automatically because the file is named after the list CSV.
+# A swap or rename only applies to a comparison where every `from` is gone and
+# every `to` is new, so this one file serves both changelogs on the page.
+
+exclude = ["Discovered Map Marker All"]
+
+[[swap]]
+from = ["RacemenuVR", "RaceMenu VR Layout Fix", "RaceMenu VR Position Tweaks"]
+to = "RaceMenu VR 2"
+
+[[swap]]
+from = "PrismaUI VR - Alpha 8"
+to = "Prisma UI - Next-Gen Web UI Framework"
+
+[[swap]]
+from = [
+  "CSX-VR - AMD Quality Preset",
+  "CSX -VR - AMD Balanced Preset",
+  "CSX-VR - AMD Performance Preset",
+  "CSX-VR - NVIDIA Quality Preset",
+  "CSX -VR - NVIDIA Balanced Preset",
+  "CSX -VR - NVIDIA Performance Preset",
+]
+to = [
+  "CSX Quality Preset - Press END On PC To Customize",
+  "CSX Balanced Preset - Press END On PC To Customize",
+  "CSX Performance Preset - Press END On PC To Customize",
+]
+
+[[swap]]
+from = "Arena - An Encounter Zone Overhaul"
+to = "Valorbound - Encounter Zone Overhaul"
+
+[[swap]]
+from = "Skyrim Landscape and Water Fixes"
+to = "Skyrim Landscape and Water Fixes -Load Order Friendly Edition-"
+
+[[swap]]
+from = ["TMD Epic Waterfalls", "TMD WATERFALLS OPTIMIZED", "TMD Epic Waterfalls - Flicker Fix", "TMD's Epic Waterfalls Clipping Fix"]
+to = ["Natural Waterfalls", "Natural Waterfalls - Audio Overhaul for Skyrim - Patch"]
+
+[[swap]]
+from = "Rapids Rocks - Canceled Edition"
+to = ["Rapid Rocks", "Natural Waterfalls patch for Rapid Rocks"]
+
+[[swap]]
+from = "Pandorable's Lucien Replacer"
+to = ["Lucien Replacer - Ella's Version", "Lucien - ESL Flagged"]
+
+[[swap]]
+from = [
+  "Leviathan Animations II - Greatsword Power Attacks",
+  "Leviathan Animations II - Greatsword Power Attack - Forward",
+  "Leviathan Animations II - Greatsword Sprint Attacks",
+]
+to = "Leviathan Animations II - Greatsword Power And Sprint Attacks"
+
+[[rename]]
+from = "LOD Distance - Quality (24GB VRAM Recommended)"
+to = "LOD Distance - Quality"
+
+[[rename]]
+from = "MCM Recorder Settings"
+to = "MCM Recorder - MGO Settings"
+
+[notes]

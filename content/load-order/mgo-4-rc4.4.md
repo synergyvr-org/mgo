@@ -1,12 +1,14 @@
 +++
-title = 'MGO 4.0 RC4.4 (next)'
-weight = 40
-aliases = ['/load-order/next/']
+title = 'MGO 4.0 RC4.4'
+weight = 41
+hidden = true
 +++
 
 ## Updated 2026-10-14
 
-**MGO 4.0 RC4.4** is a devs-only build that serves as a preview of the not-yet-released **RC5**. The load order is here, along with a [list of changes from RC4.1](#differences-from-rc4.1).
+This is an older preview build. The latest one is [MGO 4.0 RC4.5](/load-order/next/).
+
+**MGO 4.0 RC4.4** was a devs-only build that served as a preview of the not-yet-released **RC5**. The load order is here, along with a [list of changes from RC4.1](#differences-from-rc4.1).
 
 You can also see [all of the changes since MGO 3.8.8.1](#differences-from-mgo-3881).
 
@@ -22,8 +24,8 @@ Mod names link to their Nexus pages where one exists, and the marker beside each
 
 ## Differences from RC4.1
 
-{{< modlist-diff base="mgo-4-rc4.1.csv" list="mgo-4-rc4.4.csv" base-label="RC4.1" list-label="RC4.4" >}}
+{{< modlist-changelog base="mgo-4-rc4.1.csv" list="mgo-4-rc4.4.csv" base-label="RC4.1" list-label="RC4.4" >}}
 
 ## Differences from MGO 3.8.8.1
 
-{{< modlist-diff base="mgo-3.8.8.1.csv" list="mgo-4-rc4.4.csv" base-label="MGO 3.8.8.1" list-label="RC4.4" >}}
+{{< modlist-changelog base="mgo-3.8.8.1.csv" list="mgo-4-rc4.4.csv" base-label="MGO 3.8.8.1" list-label="RC4.4" >}}

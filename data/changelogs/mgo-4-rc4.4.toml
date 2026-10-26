@@ -1,0 +1,70 @@
+# Annotations for the modlist-changelog shortcode on the RC4.4 load order page.
+# Loaded automatically because the file is named after the list CSV.
+# A swap or rename only applies to a comparison where every `from` is gone and
+# every `to` is new, so this one file serves both changelogs on the page.
+
+exclude = ["Discovered Map Marker All"]
+
+[[swap]]
+from = ["RacemenuVR", "RaceMenu VR Layout Fix", "RaceMenu VR Position Tweaks"]
+to = "RaceMenu VR 2"
+
+[[swap]]
+from = "PrismaUI VR - Alpha 8"
+to = "Prisma UI - Next-Gen Web UI Framework"
+
+[[swap]]
+from = ["Community Shaders Expanded (CSX)", "Community Shaders VR Shader Cache - csx3.18"]
+to = "CSX_AIO-main-VR-2109ae858-Production-VR-ShaderCache-NoHorizonFix"
+
+[[swap]]
+from = [
+  "CSX-VR - AMD Quality Preset",
+  "CSX -VR - AMD Balanced Preset",
+  "CSX-VR - AMD Performance Preset",
+  "CSX-VR - NVIDIA Quality Preset",
+  "CSX -VR - NVIDIA Balanced Preset",
+  "CSX -VR - NVIDIA Performance Preset",
+]
+to = [
+  "CSX Unified- Quality - Press END on PC to Customize",
+  "CSX Unified- Balanced - Press END on PC to Customize",
+  "CSX Unified- Performance - Press END on PC to Customize",
+]
+
+[[swap]]
+from = ["TMD Epic Waterfalls", "TMD WATERFALLS OPTIMIZED", "TMD Epic Waterfalls - Flicker Fix", "TMD's Epic Waterfalls Clipping Fix"]
+to = ["Natural Waterfalls", "Natural Waterfalls - Audio Overhaul for Skyrim - Patch"]
+
+[[swap]]
+from = "Rapids Rocks - Canceled Edition"
+to = ["Rapid Rocks", "Natural Waterfalls patch for Rapid Rocks"]
+
+[[swap]]
+from = "Pandorable's Lucien Replacer"
+to = ["Lucien Replacer - Ella's Version", "Lucien - ESL Flagged"]
+
+[[swap]]
+from = "ReVamped - A Serana Visual Replacer"
+to = "Anima Nera - SerketHetyt's Serana Overhaul"
+
+[[swap]]
+from = [
+  "Sanguis Noxius - SerketHetyt's Harkon and Valerica Overhaul",
+  "Sanguis Noxius - SerketHetyt's Harkon and Valerica Overhaul - Harkon's Vampire Lord Fix",
+]
+to = "Volkiharbor - Harkon and Valerica NPC Replacers"
+
+[[swap]]
+from = [
+  "Leviathan Animations II - Greatsword Power Attacks",
+  "Leviathan Animations II - Greatsword Power Attack - Forward",
+  "Leviathan Animations II - Greatsword Sprint Attacks",
+]
+to = "Leviathan Animations II - Greatsword Power And Sprint Attacks"
+
+[[rename]]
+from = "LOD Distance - Quality (24GB VRAM Recommended)"
+to = "LOD Distance - Quality"
+
+[notes]

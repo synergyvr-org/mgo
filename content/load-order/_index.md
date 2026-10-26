@@ -7,9 +7,9 @@ weight = 98
 Every mod in Mad God's Overhaul, in the order it sits in Mod Organizer 2. If you want to see exactly what's in the list (and which mods ship enabled), this is where to look.
 
 {{< chapter-heading href="next" >}}
-## MGO 4.0 RC4.4 (next)
+## MGO 4.0 RC4.5 (next)
 
-Here you'll find the complete, filterable mod list for MGO 4.0 RC4.4, which is a devs-only build that serves as a preview of the not-yet-released RC5.
+Here you'll find the complete, filterable mod list for MGO 4.0 RC4.5, which is a devs-only build that serves as a preview of the not-yet-released RC5.
 {{< /chapter-heading >}}
 
 {{< chapter-heading href="current" >}}
