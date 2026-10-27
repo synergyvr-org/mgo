@@ -4,6 +4,24 @@ All notable changes to the MGO documentation site, based on its [deployments](ht
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-10-26
+
+### Added
+- Added MGO 4.0 RC4.5 load order, the newest devs-only preview of the not-yet-released RC5. It takes over `/load-order/next/` and the "next" spot on the Load Order page.
+- A new "What's New in 4.0" page at the top of Getting Started, highlighting what has changed since 3.8.8.1, category by category.
+
+### Changed
+- The preview load order pages now have proper changelogs instead of plain diffs. Along with what's been added and removed, they show what's been swapped for something else, renamed, or updated (with old and new versions), what's newly enabled or disabled by default, and what's moved to a different folder. Each one can be downloaded as Markdown.
+- The "What's New In 4.0" section on the home page has been rewritten, with a link to a longer summary. (The old version was written for the first beta and was quite out of date.)
+
+### Removed
+- A stale note on the home page about "Troned's Community Shaders fork". It's now called Community Shaders Expanded (CSX), and the What's New section covers it.
+
+## 2026-10-24
+
+### Removed
+- A dead link on the Getting Started page to the old RC2 onboarding, a page that was removed some time ago.
+
 ## 2026-10-14
 
 ### Added

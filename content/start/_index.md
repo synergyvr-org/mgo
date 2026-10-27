@@ -6,6 +6,12 @@ weight = 1
 
 Before jumping into the action, there are a few things that you _must_ do, and a few more that you probably _ought_ to do.
 
+{{< chapter-heading href="whats-new" >}}
+## What's New in 4.0
+
+Every mod that 4.0 adds, swaps, or removes compared to 3.8.8.1, sorted by category.
+{{< /chapter-heading >}}
+
 {{< chapter-heading href="requirements" >}}
 ## Requirements
 

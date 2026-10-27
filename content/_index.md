@@ -32,45 +32,33 @@ For MGO 4.0, Snippy Stockins and [The Synergy Team](https://synergyvr.org/) have
 
 [^1]: The modding community has been _busy_ lately!
 
-Here's what Snippy highlights:
-
 {{< aside type="note" title="What's New In 4.0" >}}
-### Visual Facelift
+MGO 4.0 builds on 3.8.8.1 with a lot of under-the-hood work and visible upgrades. Here are the highlights:
 
-**The New Horizon:** Stripped out NAT3 for [Azurite Weathers](https://www.nexusmods.com/skyrimspecialedition/mods/42731) by default, bringing rich, vibrant colors while retaining the 3.5 lighting and shadows you loved.
+**Smoother and more stable:** A new set of engine fixes and performance tools, plus new crash protection, aims to make the game run better and crash less. {{< nexus 166950 >}}Community Shaders Expanded (CSX){{< /nexus >}} replaces the old shader setup, with _Performance_, _Balanced_, and _Quality_ presets.
 
-**Landscapes & Shaders:** Swapped to [Tomato Rim PBR Landscape AIO 2K](https://www.nexusmods.com/skyrimspecialedition/mods/177621) and added Wetterness for incredible environmental depth when it rains.
+**Easier setup:** A new step-by-step setup guide walks you through choosing your VR runtime, controller bindings, and performance options.
 
-**Flawless Waters:** Switched to [Simplicity of Sea](https://www.nexusmods.com/skyrimspecialedition/mods/56520) + [Wavy Waterfalls](https://www.nexusmods.com/skyrimspecialedition/mods/126073) to blend away jagged water edges, provide a more natural aesthetic, and better compatibility.
+**Better VR menus and navigation:** A modernized menu system, a new map and compass setup, and a world map overhaul.
 
-### NPC Interactivity & Fidelity
+**More hands-on VR gameplay:** Climb surfaces, throw objects, interact with torches, water, and instruments, gather resources more naturally, and enjoy improved combat contact and weapon feel.
 
-**A Living World:** Removed Mantella entirely for the [SkyrimNet AI](https://goncalo22.github.io/SkyrimNet-GamePlugin/) and OstimNet framework for robust, lifelike, and dynamic AI-driven interactions.
+**Reworked combat and difficulty:** A new combat and damage setup ({{< nexus 154357 >}}Skybane{{< /nexus >}}, {{< nexus 187578 >}}Accuracy{{< /nexus >}}, and {{< nexus 155430 >}}Valorbound{{< /nexus >}}) changes how fights play out. Some older combat mods and spell packs are gone.
 
-**High-Fidelity Physics:** Integrated [Vanilla Hair Remake SMP](https://www.nexusmods.com/skyrimspecialedition/mods/63979), [HDT SMP Flex](https://www.nexusmods.com/skyrimspecialedition/mods/101564), and a premium suite of 2025 skin complexions for unbelievable physical realism.
+**Fresh look for gear, NPCs, and creatures:** A new armor and clothing set, a new NPC overhaul, new dragons and wildlife, and refreshed locations and landscapes.
 
-### High-Stakes Combat & Monsters
+**Richer audio:** New weapon, magic, and ambient sound overhauls, plus new NPC voice reactions.
 
-**Intelligent Combos:** Combat is modernized with [Fire and Blood Legendary Dragon Combat](https://www.nexusmods.com/skyrimspecialedition/mods/156018), [MCO](https://www.nexusmods.com/skyrimspecialedition/mods/175044), and [SCAR](https://www.nexusmods.com/skyrimspecialedition/mods/72014) VR for fluid, intelligent enemy AI combos.
+**Optional AI companions:** [SkyrimNet](/skyrimnet) and related tools are included, but they're turned off by default.
 
-**Parallax Dragons:** [Redesigned dragons](https://www.nexusmods.com/skyrimspecialedition/mods/168815) with high-fidelity PBR models and full parallax support. (Spiders look juicier and scarier, too).
+**What's gone:** Bruma, the Enigma quest mods, and a number of older spell packs and armor sets.
 
-### Pure VR Physical Immersion
-
-**VR Mechanics:** Included by default are [VR Climbing](https://www.nexusmods.com/skyrimspecialedition/mods/168553), [Interactive Activators](https://www.nexusmods.com/skyrimspecialedition/mods/161676) (levers/chains), [Spellbender VR](https://www.nexusmods.com/skyrimspecialedition/mods/164902), [Interactive Instruments](https://www.nexusmods.com/skyrimspecialedition/mods/144669), and [Immersive Arrow Pulling](https://www.nexusmods.com/skyrimspecialedition/mods/169833).
-
-**UI & Map:** [Overhauled world map](https://www.nexusmods.com/skyrimspecialedition/mods/5804) featuring 3D trees/structures, alongside a custom premium Mod Organizer theme to easily tweak settings.
-
-### Performance
-
-**Optimized & Smooth:** Enjoy major performance gains thanks to [OpenComposite Unleashed](https://www.nexusmods.com/skyrimspecialedition/mods/171182). It integrates a brand new, highly natural-looking <abbr title="Asynchronous SpaceWarp">ASW</abbr> frame generation technique. Please note this feature is currently experimental and actively being worked on. While exact frame rates will always depend on your hardware, this update makes the list feel significantly smoother across the board.
+For every mod that's been added, swapped, or removed, see [What's New in 4.0](/start/whats-new).
 {{< /aside >}}
-
-Although Snippy's announcement didn't specifically call it out, Troned has made significant improvements to {{< nexus 166950 >}}his unofficial fork of Community Shaders{{< /nexus >}}, adding new features, a better configuration experience, and a host of options for improved performance.
 
 This guide will walk you through setting up MGO, from download and installation to configuration, and how the mod list changes some of Skyrim VR's gameplay systems.
 
-MGO includes somewhere in the neighborhood of 1,600 mods. You don’t need to be familiar with all of them to enjoy yourself, and many of the old, less-immersive ways of doing things still work, so you don’t have to memorize all the new stuff at once (or ever). But if you don’t even know what’s possible, you won’t know how to make the gameplay more immersive and, dare I say, more fun.
+MGO includes over 1,700 mods. You don’t need to be familiar with all of them to enjoy yourself, and many of the old, less-immersive ways of doing things still work, so you don’t have to memorize all the new stuff at once (or ever). But if you don’t even know what’s possible, you won’t know how to make the gameplay more immersive and, dare I say, more fun.
 
 <div class="next">
   <a href="/start">Let's go.  <i class="fa fa-circle-right"></i></a>
