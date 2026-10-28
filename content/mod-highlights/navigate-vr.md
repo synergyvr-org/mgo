@@ -33,9 +33,11 @@ The mod's author is upfront that these hand-drawn maps were never meant as preci
 
 The piece that makes RC4.1's map collection possible is the {{< nexus 189442 >}}NavigateVR Map Framework{{< /nexus >}}, a new SKSEVR plugin by LivSterling. It lets add-on packs register maps for specific worldspaces through simple JSON definitions, without anyone having to rewrite NavigateVR's scripts for every new pack. Draw your Map of Provinces and Isles, and the framework checks where you're standing and puts the right map in your hand; if no pack covers that worldspace, it steps aside and NavigateVR behaves as it always did.
 
-MGO ships six add-ons alongside it. Three add maps for whole new worldspaces through the framework:
+MGO ships eight add-ons alongside it. Five add maps for places that never had them:
 
 * {{< nexus 189766 >}}NavigateVR - City Maps by Mirhayasu{{< /nexus >}} adds hand-drawn street maps for the five major walled cities (Markarth, Riften, Solitude, Whiterun, and Windhelm). Draw the map inside a city and you get streets, buildings, and landmarks instead of a province view.
+* {{< nexus 190749 >}}NavigateVR - Open Town Maps by Mirhayasu{{< /nexus >}} does the same for eight of the open settlements: Dawnstar, Dragon Bridge, Falkreath, Ivarstead, Morthal, Riverwood, Rorikstead, and Winterhold. These towns all share Skyrim's main worldspace, so the framework goes a step further here and works out which town you're standing in.
+* {{< nexus 190209 >}}NavigateVR - Vanilla Maps{{< /nexus >}} covers six worldspaces the base mod never reached, including Apocrypha, Blackreach, and the Forgotten Vale's Deepwood Vale approach.
 * {{< nexus 189455 >}}NavigateVR - Dawnguard Maps{{< /nexus >}} covers Dayspring Canyon, the Soul Cairn, and the Forgotten Vale, so the Dawnguard questline's stranger realms are mapped too. The pack leans into immersive acquisition: obtain a map from someone who could plausibly have one, then draw it in the matching realm.
 * {{< nexus 189458 >}}NavigateVR - Coldharbour by Limon{{< /nexus >}} maps Coldharbour from VIGILANT, which is also part of MGO. If you're headed to Molag Bal's plane of Oblivion, you may as well know where you're going.
 
