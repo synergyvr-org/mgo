@@ -5,19 +5,12 @@ type = "home"
 
 <h1><a href="/images/tes5-mgo-wide@2x.webp"><img src="/images/tes5-mgo-wide.webp" srcset="/mgo/images/tes5-mgo-wide@2x.webp 2x" alt="Mad God's Overhaul for Skyrim VR"></a></h1>
 
-<ul class="horizontal-nav"><li>
-{{< nexus 107333 >}}<abbr title="Not Safe For Work">NSFW</abbr>{{< /nexus >}}
-</li>
-<li>
-{{< nexus 107780 >}}<abbr title="Safe For Work">SFW</abbr>{{< /nexus >}}
-</li>
-<li>
-{{< discord "WjSUaSPaQZ" >}}Discord{{< /discord >}}
-</li>
-</ul>
+<div class="discord-cta">
+{{< discord "WjSUaSPaQZ" >}}Join the Discord{{< /discord >}}
+</div>
 
 {{< aside type="alert" title="This is a BETA" >}}
-MGO 4.0 is currently in _beta_, and MGO 3.8.8.1 will remain the main download on Nexusmods until 4.0 is final. You can find the 4.0 Beta releases on the FILES tab under [_Archived files_](https://www.nexusmods.com/skyrimspecialedition/mods/107333?tab=files&category=archived), or via the {{< discord "WjSUaSPaQZ" >}}MGO Discord{{< /discord >}}.
+MGO 4.0 is currently in _beta_, and MGO 3.8.8.1 ({{< nexus 107333 >}}<abbr title="Not Safe For Work">NSFW</abbr>{{< /nexus >}} and {{< nexus 107780 >}}<abbr title="Safe For Work">SFW</abbr>{{< /nexus >}}) will remain the main download on Nexusmods until 4.0 is final. You can find the 4.0 Beta releases on the FILES tab under [_Archived files_](https://www.nexusmods.com/skyrimspecialedition/mods/107333?tab=files&category=archived), or via the {{< discord "WjSUaSPaQZ" >}}MGO Discord{{< /discord >}}.
 
 This documentation is in beta too. There is more content to come, and as things are moving rapidly at the moment, some things here might not match what's in the list perfectly. Please be patient. To provide documentation feedback, you can post in the `#mod-documentation` channel in Discord. You can find that channel by selecting on THE MOD LAB under _Channels & Roles_.
 {{< /aside >}}

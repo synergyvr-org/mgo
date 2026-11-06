@@ -1,6 +1,8 @@
 +++
 title = 'MGO 4.0 RC3 (previous)'
-weight = 50
+linkTitle = 'Previous (RC3)'
+weight = 30
+aliases = ['/load-order/previous/', '/load-order/mgo-4-rc3/']
 +++
 
 ## Updated 2026-08-13

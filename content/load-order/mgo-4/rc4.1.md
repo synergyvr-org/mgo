@@ -1,7 +1,8 @@
 +++
 title = 'MGO 4.0 RC4.1 (current)'
-weight = 45
-aliases = ['/load-order/current/']
+linkTitle = 'Current (RC4.1)'
+weight = 20
+aliases = ['/load-order/current/', '/load-order/mgo-4-rc4/']
 +++
 
 ## Updated 2026-09-10

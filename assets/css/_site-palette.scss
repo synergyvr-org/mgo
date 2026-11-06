@@ -47,3 +47,45 @@
 #R-topbar > .topbar-wrapper {
   --VARIABLE-LINK-HOVER-color: #D5AAC8;
 }
+
+// The Discord button under the home page banner: Discord's own blurple, ringed
+// in MGO gold like the next-page button. It overrides the small gray badge the
+// `discord` shortcode normally draws.
+#R-body .discord-cta {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+
+  .svg.github {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.7rem 1.6rem;
+    border-radius: 2rem;
+    background-color: #5865f2;
+    box-shadow: 0 0 0 2px var(--mgo-gold), 0 4px 14px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
+
+    &:hover,
+    &:focus-visible {
+      background-color: #4752c4;
+      box-shadow: 0 0 0 2px var(--mgo-gold), 0 6px 18px rgba(0, 0, 0, 0.5);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    i {
+      margin-right: 0.4em;
+      font-size: 1.2em;
+      vertical-align: -0.1em;
+    }
+  }
+}

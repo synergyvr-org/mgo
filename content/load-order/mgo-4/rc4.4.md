@@ -1,14 +1,15 @@
 +++
-title = 'MGO 4.0 RC4.4'
-weight = 41
+title = 'MGO 4.0 RC4.4 (internal)'
+weight = 40
 hidden = true
+aliases = ['/load-order/mgo-4-rc4.4/']
 +++
 
 ## Updated 2026-10-14
 
-This is an older preview build. The latest one is [MGO 4.0 RC4.5](/load-order/next/).
+This is an older internal build. The latest one is [MGO 4.0 RC4.5](/load-order/internal/).
 
-**MGO 4.0 RC4.4** was a devs-only build that served as a preview of the not-yet-released **RC5**. The load order is here, along with a [list of changes from RC4.1](#differences-from-rc4.1).
+**MGO 4.0 RC4.4** was an internal build, shared with the dev team while they worked toward **RC5**. The load order is here, along with a [list of changes from RC4.1](#differences-from-rc4.1).
 
 You can also see [all of the changes since MGO 3.8.8.1](#differences-from-mgo-3881).
 

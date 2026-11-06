@@ -11,7 +11,7 @@ If you've created a shortcut, use that to launch MO2. If not, find {{< file >}}M
 MO2 takes a little while to start. Even the splash screen may not appear right away. Resist the temptation to launch it again. Just wait.
 
 {{< aside type="btw" title="Full load order" >}}
-This documents the onboarding steps for MGO 4.0 **RC4.1**, the current release. Check out the [full load order for RC4.1](/load-order/mgo-4-rc4/) on this very site if you want the whole scoop.
+This documents the onboarding steps for MGO 4.0 **RC4.1**, the current release. Check out the [full load order for RC4.1](/load-order/current/) on this very site if you want the whole scoop.
 {{< /aside >}}
 
 ## Quick Start

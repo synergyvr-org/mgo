@@ -6,8 +6,17 @@ The site deploys continuously from `main`, so entries are grouped by date rather
 
 ## 2026-11-06
 
+### Added
+- A load order page for MGO 3.8.8.1, which remains the main download on Nexus until 4.0 is final.
+
 ### Changed
 - Updated the virtual memory requirements on both the Requirements page and the Virtual Memory page.
+- Reorganized the Load Order chapter around three choices: MGO 4.0 BETA, MGO 3.8.8.1, and MGO 2.5.5. The 4.0 beta builds are together under MGO 4.0 BETA, as _Internal_, _Current_, and _Previous_.
+- What used to be the "next" build is now labeled _internal_. These builds are shared with the dev team on the way to the next release, and they won't be released in this form. `/load-order/next/` still works, alongside the new `/load-order/internal/`, and there's a new `/load-order/previous/` to go with `/load-order/current/`. The old load order URLs all redirect to the new pages.
+
+### Fixed
+- The changelog against 3.8.8.1 on the internal build's page filed most of 3.8.8.1's mods under "Other", which inflated its _Moved_ count and scrambled the folders in _Removed_. It now groups them under their real 3.8.8.1 folders.
+- The "next page" links at the bottom of each page no longer dead-end inside MGO 4.0 BETA. They now run from the section into its builds, and from the last build on to MGO 3.8.8.1.
 
 ## 2026-10-26
 

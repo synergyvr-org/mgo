@@ -1,12 +1,13 @@
 +++
-title = 'MGO 4.0 RC4.5 (next)'
-weight = 40
-aliases = ['/load-order/next/']
+title = 'MGO 4.0 RC4.5 (internal)'
+linkTitle = 'Internal (RC4.5)'
+weight = 10
+aliases = ['/load-order/next/', '/load-order/internal/', '/load-order/mgo-4-rc4.5/']
 +++
 
 ## Updated 2026-10-25
 
-**MGO 4.0 RC4.5** is a devs-only build that serves as a preview of the not-yet-released **RC5**. The load order is here, along with a [list of changes from RC4.1](#differences-from-rc4.1).
+**MGO 4.0 RC4.5** is an internal build, shared with the dev team while they work toward **RC5**. This won't be released more widely as-is, but it's the best look at where the list is headed. The load order is here, along with a [list of changes from RC4.1](#differences-from-rc4.1).
 
 You can also see [all of the changes since MGO 3.8.8.1](#differences-from-mgo-3881).
 

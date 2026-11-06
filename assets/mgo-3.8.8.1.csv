@@ -2,8 +2,8 @@
 +,DLC: HearthFires,0,,,
 +,DLC: Dragonborn,0,,,
 +,DLC: Dawnguard,0,,,
-,3.8.8.1,-1,,,
-,Essentials,-1,,,
+,3.8.8.1_separator,-1,,,
+,Essentials_separator,-1,,,
 +,Dummy Plugins - CC Content Placeholder,0,,,
 +,Dummy Plugins - Load Order Protection,0,,,
 +,Cleaned Master Files,31673,https://www.nexusmods.com/skyrimspecialedition/mods/31673,1.2.0.0,Skyrim VR Core USSEP 4.2.1 and SSE 1.5.97 Compatibility.zip
@@ -28,7 +28,7 @@
 +,SkyPatcher Keyword Framework,127024,https://www.nexusmods.com/skyrimspecialedition/mods/127024,1.2.1.0,SkyPatcher Keyword Framework-127024-1-2-1-1730196436.zip
 +,Skyrim VR Tools,27782,https://www.nexusmods.com/skyrimspecialedition/mods/27782,2.3.0.0-BETA,SkyrimVRTools-27782-2-3-BETA-1590789255.zip
 +,Spell Perk Item Distributor (SPID) VR,59121,https://www.nexusmods.com/skyrimspecialedition/mods/59121,7.1.3.0,Spell Perk Item Distributor VR-59121-7-1-3-1716087780.7z
-,User Interface,-1,,,
+,User Interface_separator,-1,,,
 +,SkyUI - VR,91535,https://www.nexusmods.com/skyrimspecialedition/mods/91535,1.2.2.0,SkyUI VR-91535-1-2-2-1684306071.7z
 +,Dragonborn Reskin - SkyUI Active Effects Icons,130536,https://www.nexusmods.com/skyrimspecialedition/mods/130536,1.0.0.0,Dragonborn Reskin - SkyUI Active Effects (Default)-130536-1-0-1728657108.zip
 +,Constructible Object Custom Keyword System,81409,https://www.nexusmods.com/skyrimspecialedition/mods/81409,1.1.1.0,Crafting Categories for SkyUI VR-81409-1-1-1-1713865558.7z
@@ -68,7 +68,7 @@
 +,VR Smooth Dialogue Mesh,107993,https://www.nexusmods.com/skyrimspecialedition/mods/107993,1.0.0.0,VR Smooth Dialogue Mesh-107993-1-0-0-1703910901.zip
 +,Whose Quest Is It Anyway,23581,https://www.nexusmods.com/skyrimspecialedition/mods/23581,1.5.0.0,Whose Quest Is It Anyway-23581-1-5-0-1682374361.zip
 +,Whose Quest Is It Anyway VR,60211,https://www.nexusmods.com/skyrimspecialedition/mods/60211,1.3.0.0,WhoseQuestIsItAnyway VR-60211-1-3-0-1639723153.7z
-,Fixes and Utilities,-1,,,
+,Fixes and Utilities_separator,-1,,,
 +,Alchemy XP Fix VR,118746,https://www.nexusmods.com/skyrimspecialedition/mods/118746,1.0.0.1,Alchemy XP Fix VR-118746-1-0-0-1-1715061881.7z
 +,Animals Report No Crime - SkyPatcher,108213,https://www.nexusmods.com/skyrimspecialedition/mods/108213,1.0.0.0,Animals Report No Crime - SkyPatcher-108213-1-0-0-1704119482.zip
 +,Animated Static Reload Fix - NG,69331,https://www.nexusmods.com/skyrimspecialedition/mods/69331,1.0.1.0,Animated Static Reload Fix - NG-69331-1-0-1-1669739630.zip
@@ -118,7 +118,7 @@
 +,Weather Changer,98375,https://www.nexusmods.com/skyrimspecialedition/mods/98375,0.9.1.0,ChangeWeather_0.9.1.zip-98375-0-9-1-1692085519.zip
 +,World Encounter Hostility Fix,91403,https://www.nexusmods.com/skyrimspecialedition/mods/91403,0.4.0.0,World Encounter Hostility Fix -Performance Version-91403-0-4-1686275909.7z
 +,Word Wall Transparency Fix for ENB,41463,https://www.nexusmods.com/skyrimspecialedition/mods/41463,0.3.0.0,Word Wall Transparency Fix for ENB-41463-0-3-1692153527.7z
-,VR Gameplay,-1,,,
+,VR Gameplay_separator,-1,,,
 +,VRIK Player Avatar,23416,https://www.nexusmods.com/skyrimspecialedition/mods/23416,0.8.5.0,VRIK Player Avatar-23416-0-8-5-1764195585.rar
 +,HIGGS - Hand Interaction and Gravity Gloves for Skyrim VR,43930,https://www.nexusmods.com/skyrimspecialedition/mods/43930,1.10.9.0,HIGGS 1.10.9-43930-1-10-9-1765881065.zip
 +,PLANCK - Physical Animation and Character Kinetics,66025,https://www.nexusmods.com/skyrimspecialedition/mods/66025,0.7.1.0,PLANCK 0.7.1-66025-0-7-1-1736546551.zip
@@ -142,7 +142,7 @@
 +,To Your Face SE - AE - VR,24720,https://www.nexusmods.com/skyrimspecialedition/mods/24720,1.0.0.0f,To Your Face VR-24720-1-0f-1554169090.zip
 +,Wash That Blood Off 2 VR,62372,https://www.nexusmods.com/skyrimspecialedition/mods/62372,2.0.0.0,Wash That Blood Off 2 VR-62372-2-0-0-1660203441.7z
 +,Weapon Throw VR,31374,https://www.nexusmods.com/skyrimspecialedition/mods/31374,1.3.20.0,Weapon Throw VR-31374-1-3-20-1744141402.rar
-,Audio,-1,,,
+,Audio_separator,-1,,,
 +,Binaural True 3D Audio,0,,,
 +,Music - HQ,18115,https://www.nexusmods.com/skyrimspecialedition/mods/18115,1.0.0.0,Music - HQ-18115-0-1.7z
 +,Voices EN - Part 1,18115,https://www.nexusmods.com/skyrimspecialedition/mods/18115,1.0.0.0,Voices EN - Part 1-18115-0-1.7z
@@ -171,7 +171,7 @@
 +,Naked Comments Overhaul,136846,https://www.nexusmods.com/skyrimspecialedition/mods/136846,f1.01,Naked Comments Overhaul-136846-1-01-1736892967.7z
 +,Shouts of Stallholders,139025,https://www.nexusmods.com/skyrimspecialedition/mods/139025,f1.02,Shouts of Stallholders-139025-1-02-1737235261.7z
 +,Vampire Lines Expansion,83484,https://www.nexusmods.com/skyrimspecialedition/mods/83484,f1.02,Vampire Lines Expansion-83484-1-02-1704808705.rar
-,Meshes and AIO Textures,-1,,,
+,Meshes and AIO Textures_separator,-1,,,
 +,DynDOLOD Resources SE,52897,https://www.nexusmods.com/skyrimspecialedition/mods/52897,Alpha-57,DynDOLOD Resources SE 3.00-52897-Alpha-57-1751903259.7z
 +,CS Particle Patch,147270,https://www.nexusmods.com/skyrimspecialedition/mods/147270,1.5.2.0,CS Particle Patch-147270-1-5-2-1750272045.zip
 +,Static Mesh Improvement Mod,659,https://www.nexusmods.com/skyrimspecialedition/mods/659,f2.08,SMIM SE 2-08-659-2-08.7z
@@ -206,7 +206,7 @@
 +,Faultier's PBR Skyrim AIO,125308,https://www.nexusmods.com/skyrimspecialedition/mods/125308,d2025.10.25.0,Faultier's PBR Skyrim AIO 2k-125308-2-0-4-1751801188.7z
 +,Faultier's PBR Signs,125308,https://www.nexusmods.com/skyrimspecialedition/mods/125308,1.0.0.0,Faultier's PBR Road Signs - English-125308-1-0-1747150148.7z
 +,Faultier's PBR Dwemer Pipework Reworked Patch,125308,https://www.nexusmods.com/skyrimspecialedition/mods/125308,d2025.10.25.0,Faultier's PBR Dwemer Pipework Reworked Patch-125308-2-0-1745323690.7z
-,Clutters,-1,,,
+,Clutters_separator,-1,,,
 +,3D Whiterun Trellis - PBR,153681,https://www.nexusmods.com/skyrimspecialedition/mods/153681,1.0.1.0,3D Whiterun Trellis - Complex Material and PBR-153681-1-0-1-1754543954.7z
 +,FYX - 3D Whiterun Castle Bridge - 3D Trellis,69124,https://www.nexusmods.com/skyrimspecialedition/mods/69124,1.0.2.0,FYX - 3D Whiterun Castle Bridge - 3D Trellis-69124-1-0-2-1663869941.7z
 +,FYX - 3D Whiterun Tree Circle x 3D Whiterun Trellis,65352,https://www.nexusmods.com/skyrimspecialedition/mods/65352,1.0.1.0,FYX - 3D Whiterun Tree Circle x 3D Whiterun Trellis-65352-1-0-1-1648054565.7z
@@ -228,7 +228,7 @@
 +,slightly Better Rock Cairns,81481,https://www.nexusmods.com/skyrimspecialedition/mods/81481,1.5.0.0,slightly Better Rock Cairns AIO 2K-81481-1-5-1750938996.rar
 +,Smoking Torches and Candles,8607,https://www.nexusmods.com/skyrimspecialedition/mods/8607,1.76.0.0,Smoking Torches and Candles-8607-1-76-1616249774.zip
 +,Spider Web,84053,https://www.nexusmods.com/skyrimspecialedition/mods/84053,d2025.10.23.0,Spiderweb-84053-0-13-1675618606.7z
-,Architecture,-1,,,
+,Architecture_separator,-1,,,
 +,Ancient AF Windhelm - PBR,132706,https://www.nexusmods.com/skyrimspecialedition/mods/132706,1.0.0.0,Ancient AF Windhelm PBR-132706-1-0-0-1765269897.7z
 +,Exist's Ebony High Hrothgar - PBR,130394,https://www.nexusmods.com/skyrimspecialedition/mods/130394,1.0.0.0,Main 2k-130394-1-1727546624.7z
 +,Temples of the Ancients - PBR,127371,https://www.nexusmods.com/skyrimspecialedition/mods/127371,1.1.0.0,Temples of the Ancients PBR-127371-1-1-0-1765269881.7z
@@ -240,7 +240,7 @@
 +,Glorious Doors of Skyrim,32376,https://www.nexusmods.com/skyrimspecialedition/mods/32376,1.1.0.0,Glorious Doors of Skyrim (GDOS) SE-32376-1-1-1664694894.7z
 +,Glorious Doors of Skyrim - PBR,150727,https://www.nexusmods.com/skyrimspecialedition/mods/150727,2.0.0.0,Glorious Doors of Skyrim (GDOS) SE PBR-150727-2-0-1755547573.rar
 +,PBR Stone Walls,162079,https://www.nexusmods.com/skyrimspecialedition/mods/162079,1.1.0.0,PBR Stone Walls-162079-1-1-1761590743.zip
-,Landscape,-1,,,
+,Landscape_separator,-1,,,
 +,Mountain LOD Helper,146350,https://www.nexusmods.com/skyrimspecialedition/mods/146350,1.4.0.0,Mountain LOD Helper-146350-1-4-0-1758931851.zip
 +,Skyrim Landscape and Water Fixes,26138,https://www.nexusmods.com/skyrimspecialedition/mods/26138,10.0.1.0,Skyrim Landscape and Water Fixes - FOMOD-26138-v10-0-1-1762811741.7z
 +,Landscape Fixes For Grass Mods,9005,https://www.nexusmods.com/skyrimspecialedition/mods/9005,5.8.0.0,Landscape Fixes For Grass Mods-9005-5-8-1748486785.zip
@@ -262,7 +262,7 @@
 +,Exist's Caves - PBR - Snow AO Fix,131152,https://www.nexusmods.com/skyrimspecialedition/mods/131152,1.1.0.0,Exist's Caves PBR - Snow AO Fix-131152-1-1-1748464251.7z
 +,Vanaheimr Landscapes AIO - PBR,145439,https://www.nexusmods.com/skyrimspecialedition/mods/145439,5.0.0.0,Vanaheimr Landscapes - AIO - PBR - 2k-145439-5-0-1764103147.7z
 +,Vanaheimr Northern Roads - PBR,152575,https://www.nexusmods.com/skyrimspecialedition/mods/152575,2.7.0.0,Vanaheimr - Northern Roads - PBR - 2k-152575-2-7-1763800297.7z
-,"Trees, Grass and Plants",-1,,,
+,"Trees, Grass and Plants_separator",-1,,,
 +,Happy Little Trees,50961,https://www.nexusmods.com/skyrimspecialedition/mods/50961,f2.03,Happy Little Trees-50961-2-03-1664548401.7z
 +,Happy PBR Trees,129150,https://www.nexusmods.com/skyrimspecialedition/mods/129150,1.0.0.0,Happy PBR Trees HalfRes-129150-1-1748191370.7z
 +,Nature of the Wild Lands,63604,https://www.nexusmods.com/skyrimspecialedition/mods/63604,3.14.0.0,Nature of the Wild Lands-63604-3-14-1756825179.7z
@@ -288,7 +288,7 @@
 +,Animated Water Lily,75407,https://www.nexusmods.com/skyrimspecialedition/mods/75407,1.2.0.0,Installer_AnimatedWaterLilySE-75407-v1-2-1680189907.7z
 +,Seasonal Water Lilies,84055,https://www.nexusmods.com/skyrimspecialedition/mods/84055,f1.01,Seasonal Water Lilies-84055-1-01-1675362641.7z
 +,Waterplants - PBR,129928,https://www.nexusmods.com/skyrimspecialedition/mods/129928,1.0.0.0,PBR Waterplants-129928-1-0-1729025177.zip
-,Base Object Swapper,-1,,,
+,Base Object Swapper_separator,-1,,,
 +,Lightened Skyrim,111475,https://www.nexusmods.com/skyrimspecialedition/mods/111475,1.10.0.0,Lightened Skyrim-111475-1-10-1765663682.7z
 +,Catch of the Day - Fish Hang in Inns too,103473,https://www.nexusmods.com/skyrimspecialedition/mods/103473,1.1.0.0,Catch of the Day - Fish Hang in Inns Too - BOS-103473-1-1-1698448820.rar
 +,Children of the North Wind - Nordic Ruin Diversity,147701,https://www.nexusmods.com/skyrimspecialedition/mods/147701,d2025.10.23.0,Children of the North Wind-147701-5-2-1752309240.zip
@@ -324,7 +324,7 @@
 +,Unique Northern Vanilla Farmhouses - Non Snowy Regions,92491,https://www.nexusmods.com/skyrimspecialedition/mods/92491,3.0.0.0,Unique Northern Vanilla Farmhouses - Non Snowy BOS-92491-3-0-1686684355.rar
 +,Unique Northern Vanilla Farmhouses - Snowy Regions,92491,https://www.nexusmods.com/skyrimspecialedition/mods/92491,3.1.0.0,Unique Northern Vanilla Farmhouses - Snowy BOS-92491-3-1-1690842898.rar
 +,Unique Northern Vanilla Farmhouses - Seasons,92491,https://www.nexusmods.com/skyrimspecialedition/mods/92491,3.0.0.0,Unique NVFH - Falkreath Walkway Addon - Seasons-92491-3-0-1686704241.rar
-,Wildness,-1,,,
+,Wildness_separator,-1,,,
 +,Animated Carriage,112397,https://www.nexusmods.com/skyrimspecialedition/mods/112397,1.1.0.0,Animated Carriage-112397-1-1-0-1718044068.7z
 +,Animated Ships,110260,https://www.nexusmods.com/skyrimspecialedition/mods/110260,1.2.0.0,Animated Ships-110260-1-2-0-1709576413.7z
 +,Animated Ships - Finer Sails,112517,https://www.nexusmods.com/skyrimspecialedition/mods/112517,1.2.0.0,Animated Ships - Finer Sails-112517-1-2-1709259137.zip
@@ -336,7 +336,7 @@
 +,Unique Border Gates Fixes - Daedric Shrines,34950,https://www.nexusmods.com/skyrimspecialedition/mods/34950,1.0.0.0,Daedric Shrines AIO Patch-34950-1-0-1692724769.rar
 +,Nature of the Wildlands - Unique Border Gates Fix,127939,https://www.nexusmods.com/skyrimspecialedition/mods/127939,1.0.0.0,Nature of the Wildlands - Unique Border Gates Fix-127939-1-0-1725125152.rar
 +,WiZkiD Hunter's Camp Overhaul,113558,https://www.nexusmods.com/skyrimspecialedition/mods/113558,1.3.0.0,WiZkiD Hunter's Camp Overhaul (2K)-113558-1-3-1751788635.7z
-,Dungeons and Strongholds,-1,,,
+,Dungeons and Strongholds_separator,-1,,,
 +,Imperial Castles of Skyrim,129327,https://www.nexusmods.com/skyrimspecialedition/mods/129327,1.0.0.0,NF - Imperial Castles of Skyrim FOMOD-129327-2-2-1730740845.zip
 +,Medieval Towers of Skyrim,132923,https://www.nexusmods.com/skyrimspecialedition/mods/132923,1.0.0.0,Medieval Towers of Skyrim FOMOD-132923-1-0-1730758209.zip
 +,Medieval Towers of Skyrim - Imperial Castles,132923,https://www.nexusmods.com/skyrimspecialedition/mods/132923,1.0.0.0,Medieval Castles Patch-132923-1-0-1730758285.zip
@@ -418,7 +418,7 @@
 +,Valtheim,94539,https://www.nexusmods.com/skyrimspecialedition/mods/94539,2.0.0.0,Valtheim 2.0-94539-2-0-1706225294.7z
 +,Snozz Mods Patch Collection,137446,https://www.nexusmods.com/skyrimspecialedition/mods/137446,2.0.0.0,Snozz Mods Patch Collection FOMOD-137446-2-4-0-1744670818.zip
 +,Tem's Dungeons - Liar's Retreat,134288,https://www.nexusmods.com/skyrimspecialedition/mods/134288,1.0.0.0,Tem's Dungeons - Liar's Retreat-134288-1-0-0-1731938306.rar
-,Ryn's Location Overhauls,-1,,,
+,Ryn's Location Overhauls_separator,-1,,,
 +,Ryn's Alchemist's Shack,71485,https://www.nexusmods.com/skyrimspecialedition/mods/71485,1.5.0.0,Ryn's Alchemist's Shack-71485-1-5-1682914282.rar
 +,Ryn's Anise's Cabin,75056,https://www.nexusmods.com/skyrimspecialedition/mods/75056,1.5.0.0,Ryn's Anise's Cabin-75056-1-5-1682919510.rar
 +,Nature of the Wildlands - Ryn's Anise Cabin,127939,https://www.nexusmods.com/skyrimspecialedition/mods/127939,1.0.0.0,Nature of the Wildlands - Ryn's Anise Cabin-127939-1-0-1725199180.rar
@@ -456,7 +456,7 @@
 +,Nature of the Wildlands - Ryn's Standing Stones,127939,https://www.nexusmods.com/skyrimspecialedition/mods/127939,1.0.0.0,Nature of the Wildlands - Ryn's Standing Stones-127939-1-0-1725203672.rar
 +,Ryn's Ustengrav,86149,https://www.nexusmods.com/skyrimspecialedition/mods/86149,1.0.0.0,Ryn's Ustengrav-86149-1-0-1677805315.rar
 +,Nature of the Wildlands - Ryn's Ustengrav,127939,https://www.nexusmods.com/skyrimspecialedition/mods/127939,1.0.0.0,Nature of the Wildlands - Ryn's Ustengrav-127939-1-0-1724970032.rar
-,Towns and Villages,-1,,,
+,Towns and Villages_separator,-1,,,
 +,Better Tel Mithryn,643,https://www.nexusmods.com/skyrimspecialedition/mods/643,f1.00,Better Tel Mithryn-643-1-00.7z
 +,Better Tel Mithryn - Spongeman131 Update,643,https://www.nexusmods.com/skyrimspecialedition/mods/643,f1.00,Better Tel Mithryn - Spongeman131 Update-643-1-00-1539976839.7z
 +,Skaal Village Overhaul,53733,https://www.nexusmods.com/skyrimspecialedition/mods/53733,1.1.0.0,Skaal Village Overhaul 1.1-53733-1-1-0-1629091734.7z
@@ -504,7 +504,7 @@
 +,Nightgate Inn Revived,121244,https://www.nexusmods.com/skyrimspecialedition/mods/121244,1.3.0.0,Nightgate Inn Revived - Main File-121244-1-3-1719719366.7z
 +,Nightgate Inn Revived - Patches and Addons,121244,https://www.nexusmods.com/skyrimspecialedition/mods/121244,1.5.0.0,Nightgate Inn Revived - Patches and Addons-121244-1-5-1721756558.7z
 +,PBR Textures for The Great Cities Collection,133493,https://www.nexusmods.com/skyrimspecialedition/mods/133493,4.2.1.0,PBR textures for The Great Cities-133493-4-2-1-1733955049.zip
-,Major Cities,-1,,,
+,Major Cities_separator,-1,,,
 +,Markarth - City of Stone,92028,https://www.nexusmods.com/skyrimspecialedition/mods/92028,1.3.3.0,Markarth - City of Stone-92028-1-3-3-1716321193.7z
 +,Markarth Extra Mountains Edit - M.E.M.E,101700,https://www.nexusmods.com/skyrimspecialedition/mods/101700,1.0.0.0,Markarth Extra Mountains Edit - City of Stone-101700-1-0-1696197276.7z
 +,Markarth Outskirts,70213,https://www.nexusmods.com/skyrimspecialedition/mods/70213,1.6.0.0,Markarth Outskirts-70213-1-6-1685459718.rar
@@ -568,13 +568,13 @@
 +,Windhelm Bridge Revived,84686,https://www.nexusmods.com/skyrimspecialedition/mods/84686,1.6.1.0,Windhelm Bridge Revived - Main File-84686-1-6-1-1719429025.7z
 +,Windhelm Bridge Revived - Patches and Addons,84686,https://www.nexusmods.com/skyrimspecialedition/mods/84686,1.5.1.0,Windhelm Bridge Revived - Patches and Addons-84686-1-6-1719419615.7z
 +,Meshes Optimization Project - Windhelm Bridge Revived,160495,https://www.nexusmods.com/skyrimspecialedition/mods/160495,1.0.0.0,Windhelm Bridge Revived - Optimized Meshes-160495-1-0-1760642288.7z
-,City and Town Add-Ons,-1,,,
+,City and Town Add-Ons_separator,-1,,,
 +,Farmhouse Chimneys SE,8766,https://www.nexusmods.com/skyrimspecialedition/mods/8766,4.2.1.0,Farmhouse Chimneys SE v4.2.1-8766-4-2-1-1693263868.7z
 +,Farmhouse Chimneys SE - USSEP Patch,8766,https://www.nexusmods.com/skyrimspecialedition/mods/8766,1.0.0.0USSEP,Farmhouse Chimneys SE - USSEP Patch-8766-4-1-1-1637503578.7z
 +,Diverse Farmhouse Chimneys,134397,https://www.nexusmods.com/skyrimspecialedition/mods/134397,1.2.0.0,Diverse Farmhouse Chimneys - Parallax-134397-1-2-1732248501.rar
 +,RogueUnicorn - City Trees,35546,https://www.nexusmods.com/skyrimspecialedition/mods/35546,11.6.13.0,City Trees-35546-11-6-13-1763832033.zip
 +,H.O.A. - Hyperspecific Occlusion Addon,149004,https://www.nexusmods.com/skyrimspecialedition/mods/149004,1.3.8.3,H.O.A. - Hyperspecific Occlusion Addon-149004-1-3-8-3-1761356953.7z
-,JK's Location Overhauls,-1,,,
+,JK's Location Overhauls_separator,-1,,,
 +,JK's Angeline's Aromatics,44482,https://www.nexusmods.com/skyrimspecialedition/mods/44482,1.0.0.0,Jk's Angeline's Aromatics-44482-1-0-0-1610939190.rar
 +,JK's Arcadia's Cauldron,33565,https://www.nexusmods.com/skyrimspecialedition/mods/33565,f1.01,JK's Arcadia's Cauldron-33565-1-01-1654058766.zip
 +,JK's Arnleif and Sons Trading Company,54166,https://www.nexusmods.com/skyrimspecialedition/mods/54166,1.0.1.0,JK's Arnleif and Sons Trading Company-54166-1-0-1-1656370137.7z
@@ -631,7 +631,7 @@
 +,Lightened JK's Blue Palace,152335,https://www.nexusmods.com/skyrimspecialedition/mods/152335,1.0.0.0,Lightened JK's Blue Palace - Ini file only-152335-1-0-1749558472.7z
 +,Lightened JK's Dragonsreach,152031,https://www.nexusmods.com/skyrimspecialedition/mods/152031,1.0.0.0,Lightened JK's Dragonsreach-152031-1-0-1749220912.zip
 +,Lightened JK's The Bannered Mare,152198,https://www.nexusmods.com/skyrimspecialedition/mods/152198,1.0.0.0,JK's The Bannered Mare-152198-1-0-1749404242.7z
-,Snazzy Location Overhauls,-1,,,
+,Snazzy Location Overhauls_separator,-1,,,
 +,Snazzy Bryling's Garden,100290,https://www.nexusmods.com/skyrimspecialedition/mods/100290,1.0.0.0,Snazzy Exteriors - Solitude Bryling's House Garden-100290-1-0-1694289962.7z
 +,Snazzy Drelas' Cottage,114551,https://www.nexusmods.com/skyrimspecialedition/mods/114551,1.1.0.0,Snazzy Drelas' Cottage-114551-1-1-1725334436.7z
 +,Snazzy Honningbrew Meadery,120534,https://www.nexusmods.com/skyrimspecialedition/mods/120534,1.1.0.0,Snazzy Honningbrew Meadery-120534-1-1-1720045642.7z
@@ -675,7 +675,7 @@
 +,Snazzy Interiors - Winterhold Kraldar's House,138309,https://www.nexusmods.com/skyrimspecialedition/mods/138309,1.0.0.0,Snazzy Interiors - Winterhold Kraldar's House-138309-1-0-1736218461.7z
 +,Snazzy Interiors - Patch Collection,91604,https://www.nexusmods.com/skyrimspecialedition/mods/91604,1.43.0.0,Snazzy Interiors Patch Collection-91604-1-43-1739924687.rar
 +,Snazzy Interiors - LOTD V5,91604,https://www.nexusmods.com/skyrimspecialedition/mods/91604,1.25.1.0,Snazzy Interiors Patch Collection-91604-1-25-1-1717657347.rar
-,Houses,-1,,,
+,Houses_separator,-1,,,
 +,Ryn's Alvor and Sigrid's House,89187,https://www.nexusmods.com/skyrimspecialedition/mods/89187,1.0.0.0,Ryn's Alvor and Sigrid's House-89187-1-0-1681433221.rar
 +,Ryn's Hod and Gerdur's House,89297,https://www.nexusmods.com/skyrimspecialedition/mods/89297,1.0.0.0,Ryn's Hod and Gerdur's House-89297-1-0-1681579822.rar
 +,Ryn's Sven's and Hilde's House,89236,https://www.nexusmods.com/skyrimspecialedition/mods/89236,1.0.0.0,Ryn's Sven and Hilde's House-89236-1-0-1681508525.rar
@@ -702,7 +702,7 @@
 +,TNF Skyrim House Remodel,39333,https://www.nexusmods.com/skyrimspecialedition/mods/39333,1.0.0.0,TNF House Remodel-39333-1-0-1597309511.zip
 +,TNF Skyrim House Remodel - USSEP,39333,https://www.nexusmods.com/skyrimspecialedition/mods/39333,1.0.0.0,USSEP Patch-39333-1-0-1625375874.zip
 +,TNF Skyrim House Remodel - Alternate Start,39333,https://www.nexusmods.com/skyrimspecialedition/mods/39333,1.0.0.0,Alternate Start-39333-1-0-1599001158.zip
-,Interior Add-Ons,-1,,,
+,Interior Add-Ons_separator,-1,,,
 +,GG's Thieves Guild Headquarters,64018,https://www.nexusmods.com/skyrimspecialedition/mods/64018,1.3.0.0,GG's Thieves Guild Headquarters-64018-1-3-1659601519.rar
 +,GG's Thieves Guild Headquarters - Update,64018,https://www.nexusmods.com/skyrimspecialedition/mods/64018,1.3.1.0,Updated main plugin-64018-1-3-1-1723639736.rar
 +,GG's Thieves Guild HQ Patch Collection,63967,https://www.nexusmods.com/skyrimspecialedition/mods/63967,1.7.0.0,GG's Thieves Guild HQ Patch Collection-63967-1-7-1736017534.rar
@@ -712,7 +712,7 @@
 +,TNF Honeyside - House Paintings Patch,130869,https://www.nexusmods.com/skyrimspecialedition/mods/130869,1.0.0.0,TNF Honeyside - Paintings Patch-130869-1-1728072543.zip
 +,TNF Proudspire - House Paintings Patch,139148,https://www.nexusmods.com/skyrimspecialedition/mods/139148,1.0.0.0,TNF Produspire - Paintings Patch-139148-1-1736941104.zip
 +,Paintings for JK's Blue Palace 2.0 Patch,139263,https://www.nexusmods.com/skyrimspecialedition/mods/139263,1.0.0.0,JK's Blue Palace 2.0 Paintings Patch-139263-1-1737064202.zip
-,Vanilla Quest Expansions,-1,,,
+,Vanilla Quest Expansions_separator,-1,,,
 +,Alternate Start - Live Another Life - SSE,272,https://www.nexusmods.com/skyrimspecialedition/mods/272,4.1.4.0,Alternate Start - Live Another Life-272-4-1-4-1608766947.7z
 +,ASLAL - Skyrim VR Patch,0,,,
 +,Alternate Start - A New Dragonborn,41735,https://www.nexusmods.com/skyrimspecialedition/mods/41735,1.4.0.0,Alternate Start - A New Dragonborn Extension-41735-1-4-1618704370.zip
@@ -765,7 +765,7 @@
 +,Environs - The Shrines of Talos - Patch Collection,85141,https://www.nexusmods.com/skyrimspecialedition/mods/85141,f3.02,Environs - The Shrines of Talos - Patch Collection-85141-3-02-1716012368.7z
 +,Whiterun Watchtower Doesn't Start Broken,49305,https://www.nexusmods.com/skyrimspecialedition/mods/49305,f1.02,Whiterun Watchtower Doesn't Start Broken (Duh)-49305-1-02-1655982549.zip
 +,Environs - Whiterun Watchtower Doesn't Stay Broken,76261,https://www.nexusmods.com/skyrimspecialedition/mods/76261,f3.00,Environs - The Western Watchtower-76261-3-00-1685320188.7z
-,New Areas,-1,,,
+,New Areas_separator,-1,,,
 +,Amber Guard,55564,https://www.nexusmods.com/skyrimspecialedition/mods/55564,1.9.2.0,Amber Guard-55564-1-09-2-1661838687.rar
 +,Amol Village,75264,https://www.nexusmods.com/skyrimspecialedition/mods/75264,1.1.5.0,Amol-75264-1-01-5-1704292938.rar
 +,Dunpar Wall,60728,https://www.nexusmods.com/skyrimspecialedition/mods/60728,1.0.1.0,Dunpar Wall-60728-1-00-1-1640604851.rar
@@ -827,7 +827,7 @@
 +,Missives - Wyrmstooth Patch,26788,https://www.nexusmods.com/skyrimspecialedition/mods/26788,f2.05,Missives - Wyrmstooth Patch-26788-2-05-1665413641.7z
 +,Wyrmstooth CBBE 3BA and HIMBO,105850,https://www.nexusmods.com/skyrimspecialedition/mods/105850,1.0.1.0,Wyrmstooth CBBE 3BA and HIMBO Patch-105850-1-0-1-1704214714.rar
 +,Enigma Series - Wyrmstooth,33084,https://www.nexusmods.com/skyrimspecialedition/mods/33084,1.20.0.0,Wyrmstooth 1.20 Patch-33084-1-20-1696318293.7z
-,Interesting NPC,-1,,,
+,Interesting NPC_separator,-1,,,
 +,Interesting NPCs SE,29194,https://www.nexusmods.com/skyrimspecialedition/mods/29194,4.5.0.0,Interesting NPCs 3DNPC-29194-4-5-1660791732.7z
 +,Interesting NPCs - 4.5 to 4.54 Update,29194,https://www.nexusmods.com/skyrimspecialedition/mods/29194,4.54.0.0,Interesting NPCs - 4.5 to 4.54 Update-29194-4-54-1681353795.zip
 +,Interesting NPCs Infinite Loading Screen Freeze Fix,131848,https://www.nexusmods.com/skyrimspecialedition/mods/131848,0.1.1.0,Interesting NPCs ILS Freeze Fix-131848-0-1-1-1729420149.7z
@@ -839,7 +839,7 @@
 +,3DNPC - Swindlers Den Patch,110737,https://www.nexusmods.com/skyrimspecialedition/mods/110737,1.0.0.0,3DNPC - Swindlers Den Patch (Esl)-110737-1-0-1706972278.7z
 +,3DNPC - Ryn's Alchemist's Shack,97548,https://www.nexusmods.com/skyrimspecialedition/mods/97548,1.1.0.0,Ryn's Alchemist Shack 3DNPCs patch-97548-1-1-1691187471.7z
 +,3DNPC - Ryn's Crabber's Shanty,97328,https://www.nexusmods.com/skyrimspecialedition/mods/97328,1.2.0.0,Ryn's Crabber's Shanty Patch 3DNPCs NO Changes-97328-1-2-1696726917.7z
-,Legacy of the Dragonborn,-1,,,
+,Legacy of the Dragonborn_separator,-1,,,
 +,Legacy of the Dragonborn SSE,11802,https://www.nexusmods.com/skyrimspecialedition/mods/11802,5.6.5.0,Legacy of the Dragonborn-11802-5-6-5-1673196977.7z
 +,Legacy of the Dragonborn SSE - The Curators Companion,38529,https://www.nexusmods.com/skyrimspecialedition/mods/38529,6.2.5.0,Legacy of the Dragonborn - The Curators Companion-38529-6-2-5-1705595914.7z
 +,Legacy of the Dragonborn - Dwemer Compass Replacer,55663,https://www.nexusmods.com/skyrimspecialedition/mods/55663,0.3.1.0,Legacy of The Dragonborn - Dwemer Compass Replacer-55663-0-3-1-1632064723.7z
@@ -860,7 +860,7 @@
 +,LOTD - Bleak Falls Barrow Overhaul Patch,131057,https://www.nexusmods.com/skyrimspecialedition/mods/131057,1.0.0.0,Legacy of the Dragonborn Patch-131057-1-0-1728471464.7z
 +,LOTD - Silent Moons Camp Patch,111465,https://www.nexusmods.com/skyrimspecialedition/mods/111465,1.0.0.0,LOTD - Silent Moons Camp Patch (ESL)-111465-1-0-1707741758.7z
 +,Paintings Remade - 3DNPC - LOTD - Wyrmstooth,76823,https://www.nexusmods.com/skyrimspecialedition/mods/76823,0.2.0.0,Paintings Remade - Legacy of The Dragonborn-76823-0-2-1668877081.7z
-,Non-Combat Animation,-1,,,
+,Non-Combat Animation_separator,-1,,,
 +,Pandora Behaviour Engine Plus,133232,https://www.nexusmods.com/skyrimspecialedition/mods/133232,4.0.4.0b-,Pandora Behaviour Engine Standalone Windows x64-133232-v4-0-4-beta-1755904959.zip
 +,Open Animation Replacer,92109,https://www.nexusmods.com/skyrimspecialedition/mods/92109,2.3.6.0,Open Animation Replacer-92109-2-3-6-1720373417.7z
 +,Animation Motion Revolution,50258,https://www.nexusmods.com/skyrimspecialedition/mods/50258,1.5.3.0,Animation Motion Revolution-50258-1-5-3-1664395662.rar
@@ -897,7 +897,7 @@
 +,Use Those Blankets,75481,https://www.nexusmods.com/skyrimspecialedition/mods/75481,2.11.0.0,Use Those Blankets-75481-2-11-1692034218.rar
 +,Use Those Blankets - Your Own Textures,75481,https://www.nexusmods.com/skyrimspecialedition/mods/75481,2.0.0.0,Noble Sheets Use Your Own Textures-75481-2-0-1670754201.zip
 +,Use Those Blankets - Campfire,75481,https://www.nexusmods.com/skyrimspecialedition/mods/75481,2.0.0.0,Use Those Blankets Campfire Patch-75481-2-0-1670754421.zip
-,Combat Animation,-1,,,
+,Combat Animation_separator,-1,,,
 +,Combat Pathing Revolution,86950,https://www.nexusmods.com/skyrimspecialedition/mods/86950,0.30.0.0,Combat Pathing Revolution-86950-v0-30-1678975298.7z
 +,Combat Pathing Revolution VR,87895,https://www.nexusmods.com/skyrimspecialedition/mods/87895,0.30.1.0,Combat Pathing Revolution VR-87895-0-30-1-1694056363.7z
 +,Conditional Armor Type Animations,51507,https://www.nexusmods.com/skyrimspecialedition/mods/51507,1.3.0.0c,Conditional Armor Type Animations-51507-1-3c-1687702364.7z
@@ -960,7 +960,7 @@
 +,New Creature Animation - Troll,84026,https://www.nexusmods.com/skyrimspecialedition/mods/84026,1.0.0.0,Troll Animation - with Drop Kick-84026-1-0-1676424441.7z
 +,New Creature Animation - Werewolf,83806,https://www.nexusmods.com/skyrimspecialedition/mods/83806,1.1.0.0,Werewolf Animation-83806-1-1-1675350503.7z
 +,No Spinning Death Animation SE,1432,https://www.nexusmods.com/skyrimspecialedition/mods/1432,1.31.0.0,No Spinning Death Animation MERGED-1432-1-31.zip
-,Magic,-1,,,
+,Magic_separator,-1,,,
 +,Mysticism - A Magic Overhaul,27839,https://www.nexusmods.com/skyrimspecialedition/mods/27839,2.4.2.0,Mysticism - A Magic Overhaul-27839-2-4-2-1712790317.7z
 +,Subzero Skytemple Ruins II - Mysticism,133882,https://www.nexusmods.com/skyrimspecialedition/mods/133882,1.1.0.0,Mysticism Patch-133882-1-1-1731576646.zip
 +,Abyss,83329,https://www.nexusmods.com/skyrimspecialedition/mods/83329,3.1.6.0,Abyss-83329-3-1-6-1708252797.7z
@@ -999,7 +999,7 @@
 +,NPC Spell Variance - Darenii' Spell Mods,133212,https://www.nexusmods.com/skyrimspecialedition/mods/133212,1.0.3.0,NPC Spell Variance - Darenii' s Spell Mods AIO-133212-1-0-5-1731479646.zip
 +,NPC Spell Variance - Mysticism,132929,https://www.nexusmods.com/skyrimspecialedition/mods/132929,1.0.9.0,NPC Spell Variance - Mysticism-132929-1-0-9-1756262070.zip
 +,NPC Spell Variance - Kittytail's Magic,133176,https://www.nexusmods.com/skyrimspecialedition/mods/133176,1.2.0.0,NPC Spell Variance - Kittytail's Magic-133176-1-2-1756848150.7z
-,Gameplay,-1,,,
+,Gameplay_separator,-1,,,
 +,Adamant - A Perk Overhaul,30191,https://www.nexusmods.com/skyrimspecialedition/mods/30191,5.9.2.0,Adamant - A Perk Overhaul-30191-5-9-2-1715101901.7z
 +,Adamant - Bard Perks Addon,30191,https://www.nexusmods.com/skyrimspecialedition/mods/30191,1.1.1.0,Adamant - Bard Perks Addon-30191-1-1-1-1702323805.7z
 +,Adamant - Smithing Addon,30191,https://www.nexusmods.com/skyrimspecialedition/mods/30191,5.4.6.0,Adamant - Smithing Addon-30191-5-4-6-1654728794.7z
@@ -1064,7 +1064,7 @@
 +,Scarcity SE - Less Loot Mod - SkyPatcher,108831,https://www.nexusmods.com/skyrimspecialedition/mods/108831,1.0.0.0,Scarcity SkyPatcher patch-108831-1-0-1704805010.zip
 +,OWL - Scarcity - SkyPatched,108831,https://www.nexusmods.com/skyrimspecialedition/mods/108831,1.0.0.0,OWL - Scarcity - SkyPatched-108831-1-0-1705675362.zip
 +,Mortal Enemies - SkyPatched,109105,https://www.nexusmods.com/skyrimspecialedition/mods/109105,1.0.4.0,Mortal Enemies - SkyPatched-109105-1-0-4-1705152761.zip
-,Animals,-1,,,
+,Animals_separator,-1,,,
 +,Fluffworks,56361,https://www.nexusmods.com/skyrimspecialedition/mods/56361,1.1.0.0f,Fluffworks Quality-56361-1-1f-1646241621.7z
 +,Dynamic Animal Variants,72978,https://www.nexusmods.com/skyrimspecialedition/mods/72978,1.2.2.0,Dynamic Animal Variants (1.2.2)-72978-1-2-2-1713493678.7z
 +,Dynamic Animal Variants - Fluffworks,72978,https://www.nexusmods.com/skyrimspecialedition/mods/72978,1.2.1.0,Compatibility Patch - Fluffworks (Fluffy Animals)-72978-1-2-1-1676688425.7z
@@ -1081,7 +1081,7 @@
 +,Toads and Frogs of Skyrim - PBR,129932,https://www.nexusmods.com/skyrimspecialedition/mods/129932,2.0.0.0,Toads and Frogs of Skyrim PBR-129932-2-0-1751401176.zip
 +,Edmond's SkyTEST - Realistic Animals and Predators - Lite,84539,https://www.nexusmods.com/skyrimspecialedition/mods/84539,4.2.0.0,SkyTEST Realistic Animals - Lite ESL-84539-v4-2-1728246244.rar
 +,SkyTEST - LL Injection - SkyPatcher,129350,https://www.nexusmods.com/skyrimspecialedition/mods/129350,1.2.0.0,SkyTEST - LL Injection - SkyPatcher-129350-1-2-1726974520.7z
-,Enemies,-1,,,
+,Enemies_separator,-1,,,
 +,Better Dragon Breath - AOE Ground Walls and FX,121210,https://www.nexusmods.com/skyrimspecialedition/mods/121210,f4.01,Better Dragon Breath ALL INCLUDED-121210-4-01-1765096832.zip
 +,Better Dragon Melee - No Player Knock Down,121460,https://www.nexusmods.com/skyrimspecialedition/mods/121460,f3.02,Better Dragon Melee No Player Knock Down-121460-3-02-1764800437.zip
 +,Dragons Fight More in the Ground,121460,https://www.nexusmods.com/skyrimspecialedition/mods/121460,f3.01,Dragons Fight More in the Ground ESL-121460-3-01-1764781253.zip
@@ -1094,19 +1094,19 @@
 +,Fluffy Spiders,107949,https://www.nexusmods.com/skyrimspecialedition/mods/107949,1.2.0.0,Fluffy Spiders - Fully fluffed version.-107949-1-2-1703910386.rar
 +,Natura - Stone Atronach Retexture,89909,https://www.nexusmods.com/skyrimspecialedition/mods/89909,1.0.0.0,Stone Atronach 2K-89909-1-0-1682291758.7z
 +,Skeletons SE,124394,https://www.nexusmods.com/skyrimspecialedition/mods/124394,d2025.10.25.0,1SkeletonsSE-124394-1-1721045807.7z
-,Dragons - Choose One,-1,,,
-,1 - 4thUnknown - Classic - Default - All or None,-1,,,
+,Dragons - Choose One_separator,-1,,,
+,1 - 4thUnknown - Classic - Default - All or None_separator,-1,,,
 +,Dragons SE,132218,https://www.nexusmods.com/skyrimspecialedition/mods/132218,2.0.0.0,1DragonsSE-132218-2-1729843419.7z
 +,Dragons SE - Wyrmstooth,132683,https://www.nexusmods.com/skyrimspecialedition/mods/132683,2.0.0.0,Wyrmstooth - Dragons SE-132683-2-0-1732304007.zip
 +,Diverse 4thUnknown Dragons,146462,https://www.nexusmods.com/skyrimspecialedition/mods/146462,1.17.0.0,D4D Main File-146462-1-17-1759104525.7z
 +,Diverse 4thUnknown Dragons - Textures,146462,https://www.nexusmods.com/skyrimspecialedition/mods/146462,1.0.0.0,D4D Textures - Low Res-146462-1-1-1744690165.7z
-,2 - Game of Thrones - Reimagined - All or None,-1,,,
+,2 - Game of Thrones - Reimagined - All or None_separator,-1,,,
 -,GoT Dragons - Enemy,79252,https://www.nexusmods.com/skyrimspecialedition/mods/79252,1.4.0.0,GoT Dragons-Enemy-79252-1-4-1671130752.rar
 -,GoT Dragons - Ally,79252,https://www.nexusmods.com/skyrimspecialedition/mods/79252,1.2.0.0,GoT Dragons-Ally-79252-1-2-1669818829.rar
 -,GoT Dragons - Textures,79252,https://www.nexusmods.com/skyrimspecialedition/mods/79252,1.4.0.0,GoT Dragons-Textures-79252-1-4-1669819981.rar
 -,HotD Dragons - Conquest Trio,81345,https://www.nexusmods.com/skyrimspecialedition/mods/81345,2.0.0.0,HOTD - Conquest Trio-81345-2-0-1683329209.rar
 -,GoT HotD - Wyrmstooth Replacer,83718,https://www.nexusmods.com/skyrimspecialedition/mods/83718,1.0.0.0,C.) GoT HotD Dragons - Wyrmstooth replacer-83718-1-0-1675185578.rar
-,Vanilla Weapons and Armor,-1,,,
+,Vanilla Weapons and Armor_separator,-1,,,
 +,Common Clothing Retexture SE,142188,https://www.nexusmods.com/skyrimspecialedition/mods/142188,1.0.0.0,Common Clothing Retexture SE - Half Res-142188-1-0-1739910412.7z
 +,Robes Retexture SE,110655,https://www.nexusmods.com/skyrimspecialedition/mods/110655,1.0.0.0,Robes Retexture SE - Half Res-110655-1-0-1706836428.rar
 +,Handmade PBR Clothes,125513,https://www.nexusmods.com/skyrimspecialedition/mods/125513,1.6.0.0,Handmade PBR Clothes-125513-1-6-1747516926.7z
@@ -1128,7 +1128,7 @@
 +,Weapons and Armors Remastered - PBR,148690,https://www.nexusmods.com/skyrimspecialedition/mods/148690,0.15.1.0,Weapons and Armors Remastered - PBR (2k)-148690-0-15-1-1765511696.7z
 +,Weapons and Armors Remastered - PBR - USSEP,148690,https://www.nexusmods.com/skyrimspecialedition/mods/148690,1.0.0.0,USSEP Patch PBR 2k-148690-1-0-0-1762237917.7z
 +,Frankly HD - PBR Remaster,155958,https://www.nexusmods.com/skyrimspecialedition/mods/155958,1.1.0.0,Frankly HD - PBR Remaster - Half size-155958-1-1-1754399033.7z
-,New Weapons and Armor,-1,,,
+,New Weapons and Armor_separator,-1,,,
 +,Common Clothing Expansion,134088,https://www.nexusmods.com/skyrimspecialedition/mods/134088,1.7.0.0,Common Clothing Expansion-134088-1-7-1734795059.zip
 +,Common Clothing Expansion - CBBE 3BA,134131,https://www.nexusmods.com/skyrimspecialedition/mods/134131,1.0.2.0,Common Clothing Expansion CBBE 3BA-134131-1-0-2-1731882622.7z
 +,Common Clothing Expansion - SkyPatched,134253,https://www.nexusmods.com/skyrimspecialedition/mods/134253,1.2.0.0,CCE - CCA Integration Main File-134253-1-2-1732144449.7z
@@ -1183,7 +1183,7 @@
 +,RMB SPIDified - New Legion,84974,https://www.nexusmods.com/skyrimspecialedition/mods/84974,4.0.2.0,RMB SPIDified - New Legion-84974-4-0-2-1743097241.zip
 +,Animated Armoury - DAR Version,35978,https://www.nexusmods.com/skyrimspecialedition/mods/35978,2.3.0.0,Animated Armoury-35978-2-3-1634920456.7z
 +,Animated Armoury - SkyPatched,142049,https://www.nexusmods.com/skyrimspecialedition/mods/142049,1.0.0.0,AnimatedArmourySkyPatched-142049-1-0-1739741450.zip
-,Followers Overhaul,-1,,,
+,Followers Overhaul_separator,-1,,,
 +,Follower Dialogue Expansion - Aela the Huntress,114801,https://www.nexusmods.com/skyrimspecialedition/mods/114801,8.0.0.0,FDE Aela-114801-8-0-1765722243.zip
 +,Follower Dialogue Expansion - Aranea Lenith,141907,https://www.nexusmods.com/skyrimspecialedition/mods/141907,2.0.0.0,FDE Aranea Ienith-141907-2-0-1748727237.zip
 +,Follower Dialogue Expansion - Borgakh the Steel Heart,133571,https://www.nexusmods.com/skyrimspecialedition/mods/133571,1.1.0.0,FDE Borgakh-133571-1-1-1737223943.zip
@@ -1213,7 +1213,7 @@
 +,Sofia - The Funny Fully Voiced Follower,2180,https://www.nexusmods.com/skyrimspecialedition/mods/2180,2.51.0.0,Sofia Follower v.2.51 (Loose)-2180-2-51.rar
 +,Pandorable's Sofia Replacer,60638,https://www.nexusmods.com/skyrimspecialedition/mods/60638,1.0.0.0,PAN_Sofia v1 SE-60638-1-0-1640300772.rar
 +,Sofia - Use Custom Skin Texture,60886,https://www.nexusmods.com/skyrimspecialedition/mods/60886,1.1.0.0,Sofia - Use Custom Skin (Fomod)-60886-1-1-0-1640908885.zip
-,NPC Overhaul,-1,,,
+,NPC Overhaul_separator,-1,,,
 +,AI Overhaul SSE,21654,https://www.nexusmods.com/skyrimspecialedition/mods/21654,1.8.6.0,AI Overhaul for SE Only 1.8.6-21654-1-8-6-1726885769.zip
 +,Capital Windhelm Expansion - AI Overhaul,42990,https://www.nexusmods.com/skyrimspecialedition/mods/42990,1.1.0.0,AI OVERHAUL PATCH-42990-1-1-1614387908.zip
 +,Interesting NPCs - AI Overhaul,89307,https://www.nexusmods.com/skyrimspecialedition/mods/89307,1.8.1.0,3DNPC Patches - FOMOD-89307-1-8-1-1717570404.7z
@@ -1267,8 +1267,8 @@
 +,Project ja-Kha'jay,57610,https://www.nexusmods.com/skyrimspecialedition/mods/57610,4.0.8.1,Project ja-Kha'jay-57610-4-08-1-1720830356.7z
 +,Miggyluv's Presets - All-in-One,89150,https://www.nexusmods.com/skyrimspecialedition/mods/89150,2.0.6.0,Miggyluv's Presets - All-in-One-89150-2-0-6-1705828066.zip
 +,Improved Eye,154829,https://www.nexusmods.com/skyrimspecialedition/mods/154829,1.0.0.0,Improved Eye-154829-1-0-0-1752501069.7z
-,NPC Style - Choose One - New Save Recommended on Change,-1,,,
-,1 - Bijin Pandorable Kalilies - Fantasy - All or None,-1,,,
+,NPC Style - Choose One - New Save Recommended on Change_separator,-1,,,
+,1 - Bijin Pandorable Kalilies - Fantasy - All or None_separator,-1,,,
 -,Pandorable's NPCs,19012,https://www.nexusmods.com/skyrimspecialedition/mods/19012,1.4.0.0,PAN_NPCs-19012-1-4-1632324450.rar
 -,Pandorable's NPCs - Males,42043,https://www.nexusmods.com/skyrimspecialedition/mods/42043,1.1.0.0,PAN_NPCs - Males SE-42043-1-1-1639414959.rar
 -,Pandorable's NPCs - Males 2,50617,https://www.nexusmods.com/skyrimspecialedition/mods/50617,1.1.0.0,PAN_NPCs - Males 2 SE-50617-1-1-1639409710.rar
@@ -1288,7 +1288,7 @@
 -,Bijin - Use CBBE Meshes and Textures,35832,https://www.nexusmods.com/skyrimspecialedition/mods/35832,4.1.0.0,Bijin - Use CBBE Meshes and Textures-35832-4-1-1654729499.7z
 -,Sassy Salt and Wind - Pandorable's Patches,161753,https://www.nexusmods.com/skyrimspecialedition/mods/161753,1.0.0.0,Sassy Salt and Wind - Pandorable's NPCs-161753-1-0-1760643495.zip
 -,Synthesis AI Overhaul - Fantasy,0,,,
-,2 - Nithi Northbourne Dlbella - Realism - Default - All or None,-1,,,
+,2 - Nithi Northbourne Dlbella - Realism - Default - All or None_separator,-1,,,
 +,Dlbella's Blessing,82606,https://www.nexusmods.com/skyrimspecialedition/mods/82606,1.0.0.0,DIbella's Blessing-82606-final-1678845131.rar
 +,Northbourne NPCs Resources,101466,https://www.nexusmods.com/skyrimspecialedition/mods/101466,1.3.0.0,Northbourne NPCs Resources-101466-1-3-1707118543.7z
 +,Northbourne NPCs of Falkreath Hold,37528,https://www.nexusmods.com/skyrimspecialedition/mods/37528,1.3.0.0,Northbourne NPCs of Falkreath Hold - Full Version-37528-1-3-1621659800.7z
@@ -1312,7 +1312,7 @@
 +,NITHI NPC Enhancement - Whiterun,79689,https://www.nexusmods.com/skyrimspecialedition/mods/79689,3.0.0.0a,FOMOD - NITHI NPC Enhancement - Whiterun-79689-3-0d-1713674478.rar
 +,NMZ's NITHI NPCS 2025 - Haafingar,139181,https://www.nexusmods.com/skyrimspecialedition/mods/139181,1.0.0.0,FOMOD - NMZ's Nithi Haafingar-139181-1-0c-1737259749.rar
 +,Synthesis AI Overhaul - Realism,0,,,
-,NPC Body,-1,,,
+,NPC Body_separator,-1,,,
 +,Sassy Salt and Wind Hair Retexture - KS,160675,https://www.nexusmods.com/skyrimspecialedition/mods/160675,f1.02,Sassy SnW Retexture - KS Hairdos-160675-1-02-1760152471.7z
 +,Sassy Salt and Wind Hair Retexture - KS Update,160675,https://www.nexusmods.com/skyrimspecialedition/mods/160675,f1.02,HOTFIX 1.02 - KS Hairdos Missing Textures-160675-1-02-1760152197.7z
 +,Sassy Salt and Wind Hair Retexture - Vanilla,160675,https://www.nexusmods.com/skyrimspecialedition/mods/160675,1.0.0.0,Sassy SnW Hair Retexture - Vanilla 1k-1k-160675-1-0-1760130357.7z
@@ -1344,7 +1344,7 @@
 +,BNP Female - Subsurface Scattering Fix,65274,https://www.nexusmods.com/skyrimspecialedition/mods/65274,2.0.0.0,BnP Sk fix-65274-2-0-1688984867.7z
 +,BNP Male Skin RBT,65402,https://www.nexusmods.com/skyrimspecialedition/mods/65402,2.0.0.0,BnP male skin 2k (RBT SOS full)-65402-2-0-1696875065.7z
 +,BNP Male - Subsurface Scattering Fix,65402,https://www.nexusmods.com/skyrimspecialedition/mods/65402,2.0.0.0,BnP male sk fix-65402-2-0-1696859876.7z
-,NPC Skeleton,-1,,,
+,NPC Skeleton_separator,-1,,,
 +,XP32 Maximum Skeleton Special Extended,1988,https://www.nexusmods.com/skyrimspecialedition/mods/1988,f5.06,XP32 Maximum Skeleton Special Extended-1988-5-06-1707663131.7z
 +,XP32 First Person Skeleton CTD Bugfix for VR,34301,https://www.nexusmods.com/skyrimspecialedition/mods/34301,4.72.0.0,XP32 First Person Skeleton CTD Bugfix for VR-34301-5-06-1715289768.7z
 +,XPMSE and PLANCK Pelvis Forcefield Fix,72482,https://www.nexusmods.com/skyrimspecialedition/mods/72482,0.1.0.0,no me molestar skeleton_female.nif-72482-0-1-1659316496.7z
@@ -1387,7 +1387,7 @@
 +,Tyrannical Trolls,23665,https://www.nexusmods.com/skyrimspecialedition/mods/23665,1.0.0.0,Tyrannical Trolls (Vanilla Size)-23665-1-0-1552864755.7z
 +,Werewolf Body for VR,56394,https://www.nexusmods.com/skyrimspecialedition/mods/56394,2.3.0.0,Werewolf Body for VR-56394-2-4-1734302487.7z
 +,Vampire Lord Body for VR,57318,https://www.nexusmods.com/skyrimspecialedition/mods/57318,1.0.0.0,Vampire Lord Body for VR-57318-1-0-1634847104.7z
-,NSFW - Read Nexus Article,-1,,,
+,NSFW - Read Nexus Article_separator,-1,,,
 +,Ostim Standalone,98163,https://www.nexusmods.com/skyrimspecialedition/mods/98163,7.3.5.0b-hotfix2,OStim Standalone-98163-7-3-5b-hotfix2-1749553604.zip
 +,OStim Tongues No SMP Patch,98163,https://www.nexusmods.com/skyrimspecialedition/mods/98163,1.0.0.0,OStim Tongues no SMP patch-98163-1-0-1714975880.rar
 +,OStim Standalone VR,119892,https://www.nexusmods.com/skyrimspecialedition/mods/119892,7.3.5.0b-hotfix2,OStim Standalone VR-119892-7-3-5b-1749485812.rar
@@ -1424,7 +1424,7 @@
 +,Underwear.dll,99021,https://www.nexusmods.com/skyrimspecialedition/mods/99021,1.2.2.0,Underwear.dll-99021-1-3-0-1729656727.7z
 +,Underwear.dll 3BA Conversion,99563,https://www.nexusmods.com/skyrimspecialedition/mods/99563,1.0.0.0-3BA,Underwear.dll 3BA Conversion-99563-1-0-3BA-1693368140.7z
 +,Underwear.dll HIMBO Conversion,99563,https://www.nexusmods.com/skyrimspecialedition/mods/99563,1.0.0.0-HIMBO,Underwear.dll HIMBO Conversion-99563-1-0-HIMBO-1693368178.7z
-,Seasons,-1,,,
+,Seasons_separator,-1,,,
 +,Seasons of Skyrim SKSE,62861,https://www.nexusmods.com/skyrimspecialedition/mods/62861,1.8.6.0,Seasons of Skyrim-62861-1-8-6-1749498178.7z
 +,Seasons of Skyrim VR,63593,https://www.nexusmods.com/skyrimspecialedition/mods/63593,1.8.6.0,Seasons of Skyrim VR-63593-1-8-6-1753693475.7z
 +,Four Seasons - Faster Seasons of Skyrim,64286,https://www.nexusmods.com/skyrimspecialedition/mods/64286,1.1.0.0,Four Seasons - Faster Seasons of Skyrim-64286-1-1-1646470666.7z
@@ -1432,7 +1432,7 @@
 +,Seasonal Alchemy,63969,https://www.nexusmods.com/skyrimspecialedition/mods/63969,d2025.4.18.0,Seasonal Alchemy-63969-1-0-0-1645363536.zip
 +,Seasonal Alchemy Add-on,83636,https://www.nexusmods.com/skyrimspecialedition/mods/83636,1.3.0.0,Seasonal Alchemy Add-on-83636-1-4-2-1696151930.7z
 +,Seasonal Wildlife Distribution,63700,https://www.nexusmods.com/skyrimspecialedition/mods/63700,1.5.1.0,Seasonal Wildlife Distribution-63700-1-5-1743048988.7z
-,Community Shader,-1,,,
+,Community Shader_separator,-1,,,
 +,Community Shaders - Unofficial Fork,166950,https://www.nexusmods.com/skyrimspecialedition/mods/166950,1.4.6.0-PL3.2,Community Shaders Particle Lights-166950-1-4-6-PL3-2-1765673890.7z
 +,Screen Space Shadows,93209,https://www.nexusmods.com/skyrimspecialedition/mods/93209,1.2.1.0,Screen Space Shadows-93209-1-2-1-1737068709.7z
 +,Screen Space Global Illumination,130375,https://www.nexusmods.com/skyrimspecialedition/mods/130375,4.0.0.0,Screen Space GI-130375-4-0-0-1758808908.7z
@@ -1458,8 +1458,8 @@
 +,Light Placer,127557,https://www.nexusmods.com/skyrimspecialedition/mods/127557,d2026.3.16.0,C:/Users/dave/Downloads/skyrim/Light Placer-127557-4-2-0-1768828852.7z
 +,Light Placer VR,135822,https://www.nexusmods.com/skyrimspecialedition/mods/135822,d2026.3.16.0,C:/Users/dave/Downloads/skyrim/Light Placer VR-135822-4-2-0-1769412807.zip
 +,CS Light,138443,https://www.nexusmods.com/skyrimspecialedition/mods/138443,1.9.0.0,CS Light-138443-1-9-0-1765408378.zip
-,Weather - Choose One,-1,,,
-,1 - Azurite III - Fantasy - Default,-1,,,
+,Weather - Choose One_separator,-1,,,
+,1 - Azurite III - Fantasy - Default_separator,-1,,,
 +,Azurite Weathers III,42731,https://www.nexusmods.com/skyrimspecialedition/mods/42731,3.34.0.0,Azurite Weathers III-42731-3-34-1742525295.zip
 +,Seasonal Weathers Framework - Vanilla - Azurite Weathers,63562,https://www.nexusmods.com/skyrimspecialedition/mods/63562,anilla,Seasonal Weathers Framework - Vanilla - Azurite Weathers-63562-Vanilla-1645044582.zip
 +,Azurite Weathers - Alluring Sunsets and Sunrises,119148,https://www.nexusmods.com/skyrimspecialedition/mods/119148,1.0.0.0,Azurite Weathers - Alluring Sunsets and Sunrises 3-119148-1-0-1736912579.7z
@@ -1468,13 +1468,13 @@
 +,Mists of Tamriel,78703,https://www.nexusmods.com/skyrimspecialedition/mods/78703,1.6.0.0,Mists of Tamriel-78703-1-6-1715985821.7z
 +,DALC Fix Preset - Azurite Weathers III,103052,https://www.nexusmods.com/skyrimspecialedition/mods/103052,1.0.32.0,DALC Fix Preset-103052-1-0-32-1761879429.7z
 +,MGO Azurite III - Patches,0,,,
-,2 - NAT III - Realism,-1,,,
+,2 - NAT III - Realism_separator,-1,,,
 -,NAT III,27141,https://www.nexusmods.com/skyrimspecialedition/mods/27141,3.1.1.0C-F,NAT.ENB - ESP WEATHER PLUGIN v3.1.1C - Fixed-27141-3-1-1C-F-1685872331.zip
 -,Seasonal Weathers Framework - NAT III,63562,https://www.nexusmods.com/skyrimspecialedition/mods/63562,NATENBIII-3.1.1C,Seasonal Weathers Framework - NAT-ENB III - 3.1.1C-63562-NATENBIII-3-1-1C-1691945733.zip
 -,NAT.CS III,139567,https://www.nexusmods.com/skyrimspecialedition/mods/139567,2.0.0.0,NAT.CS III-139567-2-0-0-1761688813.zip
 -,DALC Fix Preset - NAT III,103052,https://www.nexusmods.com/skyrimspecialedition/mods/103052,1.0.32.0,DALC Fix Preset-103052-1-0-32-1761879429.7z
 -,MGO NAT III - Patches,0,,,
-,Non-Combat Special Effects,-1,,,
+,Non-Combat Special Effects_separator,-1,,,
 +,Footprints,3808,https://www.nexusmods.com/skyrimspecialedition/mods/3808,1.6.1.0,Footprints 1.6.1-3808-1-6-1-1613434284.7z
 +,SPID for Footprints,54924,https://www.nexusmods.com/skyrimspecialedition/mods/54924,3.4.0.0,SPID for Footprints-54924-3-4-1673214662.zip
 +,SPID for Footprints - Player Footprints Fix,78957,https://www.nexusmods.com/skyrimspecialedition/mods/78957,1.0.0.0,Footprints - Player Footprints Fix-78957-1-0-0-1668712420.zip
@@ -1509,7 +1509,7 @@
 +,Fires Hurt - OIF,157720,https://www.nexusmods.com/skyrimspecialedition/mods/157720,1.2.0.0,Fires Hurt - OIF-157720-1-2-1765322918.7z
 +,Flammable Alcohol - OIF,150895,https://www.nexusmods.com/skyrimspecialedition/mods/150895,1.1.0.0,Flammable Alcohol - OIF-150895-1-1-1748172517.7z
 +,Melt The Ice - OIF,155775,https://www.nexusmods.com/skyrimspecialedition/mods/155775,1.0.0.0,Melt The Ice - OIF-155775-1-1753757915.7z
-,Combat Special Effects,-1,,,
+,Combat Special Effects_separator,-1,,,
 +,Core Impact Framework,146873,https://www.nexusmods.com/skyrimspecialedition/mods/146873,1.2.5.0,Core Impact Framework - Latest Version-146873-1-2-5-1758720471.zip
 +,Deadly Spell Impacts,12939,https://www.nexusmods.com/skyrimspecialedition/mods/12939,1.8.0.0,Deadly Spell Impacts v1.8-12939-1-8-0-1723838819.7z
 +,Deadly Spell Impacts for Mysticism,71724,https://www.nexusmods.com/skyrimspecialedition/mods/71724,1.0.0.0,Deadly Spell Impacts - Mysticism-71724-1-0-1658281894.7z
@@ -1553,7 +1553,7 @@
 +,Alternative Runes - Strange Runes Texture,137611,https://www.nexusmods.com/skyrimspecialedition/mods/137611,1.1.0.0,Alternative runes 2k-137611-1-1-1735663711.zip
 +,Vibrant Weapons EAE,111430,https://www.nexusmods.com/skyrimspecialedition/mods/111430,1.2.0.0,Vibrant Weapons EAE-111430-1-2-0-1709413366.7z
 +,Vibrant Weapons EAE - Update,105492,https://www.nexusmods.com/skyrimspecialedition/mods/105492,2.0.2.0,Vibrant Weapons - EAE (Updated Configuration)-105492-2-0-2-1734303412.7z
-,Lighting - Exterior,-1,,,
+,Lighting - Exterior_separator,-1,,,
 +,Lux - Via,63588,https://www.nexusmods.com/skyrimspecialedition/mods/63588,d2025.8.11.0,Lux Via (main)-63588-2-2-1713094342.rar
 +,Lux - Via Main Plugin Update,63588,https://www.nexusmods.com/skyrimspecialedition/mods/63588,2.2.0.0,Lux Via main plugin update-63588-2-2-1738417767.rar
 +,Lux - Via Meshes Update,63588,https://www.nexusmods.com/skyrimspecialedition/mods/63588,2.2.0.0,Lux Via meshes update-63588-2-2-1716445182.rar
@@ -1592,7 +1592,7 @@
 +,Lux Orbis - Environs - Whiterun Watchtower Doesn't Stay Broken,76261,https://www.nexusmods.com/skyrimspecialedition/mods/76261,f1.00,Environs - The Western Watchower - Lux Orbis-76261-1-00-1677574510.7z
 +,Lux Orbis - Stalking Lanterns Fix,85555,https://www.nexusmods.com/skyrimspecialedition/mods/85555,1.0.0.0,Stalking Lanterns Fix-85555-1-0-1677083256.zip
 +,Sole Purpose for OStim Standalone,109637,https://www.nexusmods.com/skyrimspecialedition/mods/109637,1.0.0.0,Sole Purpose for OStim Standalone-109637-1-0-1705699021.zip
-,Lighting - Interior,-1,,,
+,Lighting - Interior_separator,-1,,,
 +,Lux,43158,https://www.nexusmods.com/skyrimspecialedition/mods/43158,d2025.8.11.0,Lux (main)-43158-7-0-1753427726.rar
 +,Lux - Patch Hub,113002,https://www.nexusmods.com/skyrimspecialedition/mods/113002,7.0.0.0,Lux (patch hub)-113002-7-0-1753427843.rar
 +,Unofficial Lux Patch Hub,62550,https://www.nexusmods.com/skyrimspecialedition/mods/62550,f1.01,Unofficial Lux Patchhub-62550-2-1-1668984962.zip
@@ -1626,44 +1626,44 @@
 +,Rally's Candlelight and Magelight Fix,36594,https://www.nexusmods.com/skyrimspecialedition/mods/36594,1.3.0.0,Rally's Candlelight and Magelight Fix-36594-1-3-1650821634.7z
 +,Dynamic Interior Ambient Lighting (DIAL),149920,https://www.nexusmods.com/skyrimspecialedition/mods/149920,d2025.9.21.0,Dynamic Interior Ambient Lighting (DIAL)-149920-3-9-1758330287.zip
 +,Standard Lighting Templates - SLT,66943,https://www.nexusmods.com/skyrimspecialedition/mods/66943,2.5.0.0,Standard Lighting Templates USSEP-66943-2-5-1737266777.7z
-,Water,-1,,,
+,Water_separator,-1,,,
 +,Cubemap Reflections,103077,https://www.nexusmods.com/skyrimspecialedition/mods/103077,1.1.0.0,Cubemap Reflections 1.1.0-103077-1-1-0-1698216614.zip
 +,Water for ENB,37061,https://www.nexusmods.com/skyrimspecialedition/mods/37061,2.16.0.0,Water for ENB-37061-2-16-1761320426.zip
 +,Ryn's Sarethi Farm - Water for ENB,88445,https://www.nexusmods.com/skyrimspecialedition/mods/88445,1.1.0.0,Ryn's Sarethi Farm - Water for ENB Patch-88445-1-1-1710214330.rar
 +,Natural Waterfalls,87261,https://www.nexusmods.com/skyrimspecialedition/mods/87261,3.3.0.0,Natural Waterfalls-87261-3-3-1756339007.7z
 +,Ryn's Crabber's Shanty - Natural Waterfalls Patch,97328,https://www.nexusmods.com/skyrimspecialedition/mods/97328,1.4.0.0,Ryn's Crabber's Shanty - Natural Waterfalls Patch-97328-1-4-1709513537.7z
 +,Markarth Outskirts - Natural Waterfalls,70213,https://www.nexusmods.com/skyrimspecialedition/mods/70213,1.6.1.0,Natural Waterfall patch small update-70213-1-6-1-1708235147.rar
-,High Priority Meshes,-1,,,
+,High Priority Meshes_separator,-1,,,
 +,Interior Floating Fog Remover,4298,https://www.nexusmods.com/skyrimspecialedition/mods/4298,1.1.0.0,No Floating Fog-4298-1-1.7z
 +,Ugly Wind and Snow Effect Remover,21615,https://www.nexusmods.com/skyrimspecialedition/mods/21615,1.0.0.0,Ugly Wind-And-Snow Remover-21615-1-0-1543784172.rar
 +,Texture Fixes - Less is More,44448,https://www.nexusmods.com/skyrimspecialedition/mods/44448,1.0.0.0,Less is more-44448-1-1610872737.7z
 +,Animated Forge Water,52322,https://www.nexusmods.com/skyrimspecialedition/mods/52322,0.9.0.0,Animated Forge Water-52322-0-9-1728437710.7z
 +,Stairs of Safety,92592,https://www.nexusmods.com/skyrimspecialedition/mods/92592,1.0.0.0,Vanilla version-92592-1-0-1699848742.7z
-,Settings - Read Nexus Sticky Post or Read-Me-First Channel on Discord,-1,,,
-,BEFORE REPORTING ANY ISSUE,-1,,,
-,YOU MUST Create a 40 GB Page File - Have 32GB or more RAM - Internal SSD,-1,,,
-,YOU MUST Install the Latest Visual C++ x64 and .NET x64,-1,,,
-,YOU MUST Increase Shader Cache to 10GB in Nvidia Control Panel,-1,,,
-,YOU MUST Move Skyrim VR out of Program Files Folder,-1,,,
-,DO NOT Click Unlock,-1,,,
-,DO NOT Use Auto Save or Quick Save,-1,,,
-,DO NOT Use Loot Sort on Plugins,-1,,,
-,You Can Change Anything in Green Without New Save,-1,,,
-,DLAA - Press END on Skyrim VR Window to enable in Display Section,-1,,,
-,DLSS - Reduce Resolution and Enable DLAA is Better,-1,,,
-,Audio - New Music,-1,,,
+,Settings - Read Nexus Sticky Post or Read-Me-First Channel on Discord_separator,-1,,,
+,BEFORE REPORTING ANY ISSUE_separator,-1,,,
+,YOU MUST Create a 40 GB Page File - Have 32GB or more RAM - Internal SSD_separator,-1,,,
+,YOU MUST Install the Latest Visual C++ x64 and .NET x64_separator,-1,,,
+,YOU MUST Increase Shader Cache to 10GB in Nvidia Control Panel_separator,-1,,,
+,YOU MUST Move Skyrim VR out of Program Files Folder_separator,-1,,,
+,DO NOT Click Unlock_separator,-1,,,
+,DO NOT Use Auto Save or Quick Save_separator,-1,,,
+,DO NOT Use Loot Sort on Plugins_separator,-1,,,
+,You Can Change Anything in Green Without New Save_separator,-1,,,
+,DLAA - Press END on Skyrim VR Window to enable in Display Section_separator,-1,,,
+,DLSS - Reduce Resolution and Enable DLAA is Better_separator,-1,,,
+,Audio - New Music_separator,-1,,,
 -,LORKHAN - Soundtrack Replacer,115096,https://www.nexusmods.com/skyrimspecialedition/mods/115096,1.0.0.0,LORKHAN - Soundtrack Replacer-115096-1-0-1711479257.zip
 -,Chapter II - Jeremy Soule Inspired Music,37792,https://www.nexusmods.com/skyrimspecialedition/mods/37792,3.6.0.0,Chapter II v3.6 - ESL-37792-3-6-1728066688.zip
 -,Unique Battle Music,91231,https://www.nexusmods.com/skyrimspecialedition/mods/91231,1.0.0.0,Unique Battle Music-91231-1-1684013770.7z
-,AI and Speech - Read Nexus Article,-1,,,
+,AI and Speech - Read Nexus Article_separator,-1,,,
 -,Dragonborn Speaks Naturally,16514,https://www.nexusmods.com/skyrimspecialedition/mods/16514,0.31.1.0,DragonbornSpeaksNaturally - Alpha (New Engine)-16514-0-31-1-1709975609.zip
 -,No NPC Greetings (Special Edition),1044,https://www.nexusmods.com/skyrimspecialedition/mods/1044,2.0.0.0a,No NPC Greetings (Special Edition) - NMM FOMOD Installer (deprecated-1044-2-0a.rar
 -,Mantella - Bring NPCs to Life with AI,98631,https://www.nexusmods.com/skyrimspecialedition/mods/98631,0.13.1.0,Mantella-98631-0-13-1-1748466880.zip
 -,Mantella - Expanded Piper Models List,98631,https://www.nexusmods.com/skyrimspecialedition/mods/98631,1.0.0.0,Mantella - Expanded Piper Models List-98631-1-1738776611.zip
 -,SSE Creation Kit Fonixdata Lip Sync Fix,40971,https://www.nexusmods.com/skyrimspecialedition/mods/40971,1.0.0.0,FonixData File Mod Manager Install-40971-1-0-1601510699.7z
-,Auto Sneak and Jump VR - Disable for Seated Play,-1,,,
+,Auto Sneak and Jump VR - Disable for Seated Play_separator,-1,,,
 +,Auto Sneak and Jump VR,23649,https://www.nexusmods.com/skyrimspecialedition/mods/23649,0.5.0.0,Auto Sneak and Jump VR-23649-0-5-0-1634485937.rar
-,Controls and UI,-1,,,
+,Controls and UI_separator,-1,,,
 +,"Clear HUD VR - Remove Player Meters, Use Spell Wheel Wrist Indicator",49657,https://www.nexusmods.com/skyrimspecialedition/mods/49657,1.0.0.0,Clear HUD VR-49657-1-0-0-1620507127.7z
 -,Minimal Enemy Healthbar VR - Remove Enemy Health Bar,17812,https://www.nexusmods.com/skyrimspecialedition/mods/17812,0.7.0.0,No Enemybar and no Names-17812-0-7.zip
 +,Minimal Enemy Healthbar VR - Smaller Enemy Health Bar,17812,https://www.nexusmods.com/skyrimspecialedition/mods/17812,0.7.0.0,Enemy Healthbar  Red with Names-17812-0-7.zip
@@ -1675,7 +1675,7 @@
 -,Swap Drop and Hold Add Spells,55983,https://www.nexusmods.com/skyrimspecialedition/mods/55983,2.0.0.0,Swap Drop and Hold Add Spells-55983-2-1632862272.7z
 +,VR Menu Mouse Fix,33414,https://www.nexusmods.com/skyrimspecialedition/mods/33414,1.6.0.0,Menu Mouse Fix-33414-1-6-0-1729028626.rar
 -,VRIK Rift-Index-WMR Controller Bindings - Grip to Interact,23416,https://www.nexusmods.com/skyrimspecialedition/mods/23416,2.1.0.0,VRIK Rift-Index-WMR Controller Bindings V2.1.0-23416-V2-1-0-1577940412.7z
-,Graphics,-1,,,
+,Graphics_separator,-1,,,
 +,Brightness - Customize in Game via Brightness MCM,0,,,
 +,Colors - Customize in Game via Imaginator MCM,0,,,
 +,Community Shaders - Performance - Default - Press END on PC to Customize,0,,d2023.10.21.0,CommunityShaders.7z
@@ -1688,11 +1688,11 @@
 -,Grass Density INI - Medium - Up to 10% Exterior FPS Cost,0,,,
 -,Grass Density INI - High - Up to 20% Exterior FPS Cost,0,,,
 +,VR FPS Stabilizer Preset - TAA Tweaks,31392,https://www.nexusmods.com/skyrimspecialedition/mods/31392,1.4.6.0,VR FPS Stabilizer (FOMOD Installer)-31392-1-4-6-1702735955.rar
-,Performance - Choose One,-1,,,
+,Performance - Choose One_separator,-1,,,
 -,Open Composite XR - Incompatible with VR Performance Kit,0,,d2023.10.29.0,Open Composite XR - VDXR and Airlink.zip
 +,VR Performance Kit - CAS Sharpening - Default,0,,,
 -,VR Performance Kit - FSR - Use with DLAA,0,,,
-,Late Load,-1,,,
+,Late Load_separator,-1,,,
 +,Mesh Glow Removal Project,150004,https://www.nexusmods.com/skyrimspecialedition/mods/150004,1.1.0.0,Mesh Glow Removal Project-150004-1-1-1750186525.zip
 +,No More Glowy Effects,153174,https://www.nexusmods.com/skyrimspecialedition/mods/153174,1.2.0.0,No More Glowy Effects-153174-1-2-0-1750652891.7z
 +,No More Glowy Effects - Embers XD,153174,https://www.nexusmods.com/skyrimspecialedition/mods/153174,1.0.0.0,NMGE - Embers XD Patch-153174-1-0-0-1754114973.7z
@@ -1717,7 +1717,7 @@
 +,Synthesis,0,,,
 +,XLODGEN Output,107333,https://www.nexusmods.com/skyrimspecialedition/mods/107333,3.8.5.0,XLODGEN Output-107333-3-8-5-1764367872.7z
 +,TEXGEN Output,107333,https://www.nexusmods.com/skyrimspecialedition/mods/107333,3.8.5.0,TEXGEN Output-107333-3-8-5-1764367713.7z
-,Optional Mods - Add Your Mods Here,-1,,,
+,Optional Mods - Add Your Mods Here_separator,-1,,,
 -,Better Sleep Wait Menu,4212,https://www.nexusmods.com/skyrimspecialedition/mods/4212,1.0.0.0,Better Sleep Wait Menu - 744h-4212-1-0.7z
 -,Conduit - Short-term Weapon Infusions,58023,https://www.nexusmods.com/skyrimspecialedition/mods/58023,2.7.0.0,Conduit-58023-2-7-1663677468.7z
 -,Durability VR,76830,https://www.nexusmods.com/skyrimspecialedition/mods/76830,1.1.4.0,Durability VR-76830-1-1-4-1762689281.rar

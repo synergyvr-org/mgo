@@ -6,28 +6,20 @@ weight = 98
 
 Every mod in Mad God's Overhaul, in the order it sits in Mod Organizer 2. If you want to see exactly what's in the list (and which mods ship enabled), this is where to look.
 
-{{< chapter-heading href="next" >}}
-## MGO 4.0 RC4.5 (next)
+{{< chapter-heading href="mgo-4" >}}
+## MGO 4.0 BETA
 
-Here you'll find the complete, filterable mod list for MGO 4.0 RC4.5, which is a devs-only build that serves as a preview of the not-yet-released RC5.
+The 4.0 beta builds: the current release, the internal build the dev team is working with, and the previous release.
 {{< /chapter-heading >}}
 
-{{< chapter-heading href="current" >}}
-## MGO 4.0 RC4.1 (current)
+{{< chapter-heading href="mgo-3.8.8.1" >}}
+## MGO 3.8.8.1
 
-Here you'll find the complete, filterable mod list for MGO 4.0 RC4.1: Nexus links, installed versions, and collapsible folders that mirror MO2's left pane. Lots of patches and updates, some swaps, beautiful maps, and less crash-prone dragon combat.
-{{< /chapter-heading >}}
-
-## Older lists
-
-{{< chapter-heading href="mgo-4-rc3" >}}
-## MGO 4.0 RC3 (previous)
-
-Here is the complete, filterable mod list for the previous RC3 build, in case you haven't made the jump to RC4.1 quite yet.
+The legacy version, and the main download on Nexus until 4.0 is final.
 {{< /chapter-heading >}}
 
 {{< chapter-heading href="mgo-2_5_5" >}}
-## MGO 2.5.5 ENB (ancient)
+## MGO 2.5.5
 
-For the historians among you, here's the complete, filterable mod list for MGO 2.5.5. This shows what's enabled in the ENB version, though all of the Community Shaders options are still in the list.
+For the historians among you, here's the complete, filterable mod list for MGO 2.5.5. This shows what's enabled in the ENB profile, though all of the Community Shaders options are still in the list.
 {{< /chapter-heading >}}
