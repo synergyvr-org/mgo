@@ -15,7 +15,17 @@ Mad God's Overhaul has a few prerequisites, so before you start downloading hund
 **The GPUs listed here are the _desktop_ versions.** The list is not nearly as widely tested on laptops. If you have a super high-end mobile GPU, perhaps an RTX 5090, you _may_ be able to run MGO.
 {{< /aside >}}
 
-If your hardware is up to the task, you will still not be able to download, install, and run the game unless you can meet the following software requirements.
+If your hardware is up to the task, there's still some configuration you'll need to do.
+
+{{< aside type="alert" title="Required Settings" >}}
+
+**You must...**
+
+* Increase virtual memory enough that you have **128-132 GB** when combined with your system memory. So 96-100 GB of virtual memory if you have 32 GB of system memory, or 64-68 GB of virtual memory if you have 64 GB of system memory. ([instructions](/reference/virtual-memory/))
+* **NVIDIA only**: Set shader cache to 20 GB or more in NVIDIA Control Panel ([instructions](/reference/shader-cache/))
+{{< /aside >}}
+
+With all of that in place, you will still not be able to download, install, and run the game unless you can meet the following software requirements.
 
 {{< aside type="alert" title="Software Requirements" >}}
 
@@ -30,16 +40,6 @@ If your hardware is up to the task, you will still not be able to download, inst
 **You will need to reboot your PC after you've installed the two runtimes.**
 
 [^1]: Apparently you can skip Steam's official move tool entirely: exit Steam _completely_, manually move the whole {{< file folder-open >}}Steam{{< /file >}} folder to its new home, and then launch Steam from the new location. It auto-detects that it's been moved and picks up right where it left off.
-{{< /aside >}}
-
-You may be able to install MGO without fulfilling the next set of requirements, but it may be unplayable.
-
-{{< aside type="alert" title="Other Requirements" >}}
-
-**You must...**
-
-* Increase virtual memory enough that you have 90+ GB when combined with your system memory. So 90 GB of virtual memory if you have 32 GB of system memory, or 70 GB of virtual memory if you have 64 GB of system memory. ([instructions](/reference/virtual-memory/))
-* **NVIDIA only**: Set shader cache to 20 GB or more in NVIDIA Control Panel ([instructions](/reference/shader-cache/))
 {{< /aside >}}
 
 You'll find that the MGO community is both friendly and helpful ({{< discord "WjSUaSPaQZ" >}}join the Discord!{{< /discord >}}), but please be certain that you've met all of the above requirements before asking for help.
