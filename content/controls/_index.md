@@ -35,3 +35,9 @@ A close-to-vanilla scheme that shuffles a few actions (sprint, for one) onto inp
 
 Built for Oculus and Meta Touch controllers. It turns the face buttons into hotkeys and the grips into modifiers (a bit like <kbd>Shift</kbd> or <kbd>Ctrl</kbd>), opening up a lot of room for mod actions.
 {{< /chapter-heading >}}
+
+{{< chapter-heading href="mod-keybindings" >}}
+## Mod Keybindings
+
+Beyond your control scheme, many mods have default inputs of their own. Here's a searchable reference to them, by controller type.
+{{< /chapter-heading >}}

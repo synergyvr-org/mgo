@@ -89,3 +89,144 @@
     }
   }
 }
+
+// The mod keybinding reference (the `keybinds` shortcode). Its filter and
+// tables follow the load order tables' look; those styles are keyed to the mod
+// list's own element IDs, so they can't be reused directly.
+#R-body .keybinds {
+  .keybinds-search {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: grid;
+    max-width: 30rem;
+    margin: 1rem 0 0.5rem;
+    padding: 0.5rem 0;
+    background: var(--mgo-bg);
+
+    input {
+      grid-area: 1 / 1;
+      min-width: 0;
+      margin: 0;
+      padding: 0.4rem 2rem 0.4rem 0.75rem;
+      font-size: 1rem;
+      color: #eee;
+      background: #00000044;
+      border: 1px solid var(--mgo-btn-inline);
+      border-radius: 8px;
+
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        appearance: none;
+      }
+    }
+
+    input:placeholder-shown + .keybinds-clear {
+      display: none;
+    }
+  }
+
+  .keybinds-clear {
+    grid-area: 1 / 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 0.5rem;
+    padding: 0 0.25rem;
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1;
+    cursor: pointer;
+
+    &:hover {
+      color: #eee;
+    }
+  }
+
+  .keybinds-category h2 {
+    margin-top: 2rem;
+  }
+
+  .keybinds-note {
+    color: #bbb;
+    font-size: 0.9rem;
+  }
+
+  .keybinds-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    background-color: #1e1e1e;
+
+    th,
+    td {
+      padding: 0.35rem 0.6rem;
+      text-align: left;
+      vertical-align: top;
+      border: 0;
+    }
+
+    thead th {
+      border-bottom: 2px solid var(--mgo-gold-dark);
+    }
+
+    // Each input's group gets a rule above it; rows within a group don't.
+    tbody {
+      border-top: 1px solid #333;
+    }
+
+    // The input may wrap between parts, but a glyph never leaves its name and
+    // a keycap never splits.
+    .keybinds-input {
+      width: 28%;
+      font-weight: 600;
+
+      .controller,
+      kbd {
+        white-space: nowrap;
+      }
+    }
+
+    .keybinds-input-note {
+      font-weight: 400;
+    }
+
+    tr.keybinds-repeat .keybinds-input {
+      visibility: hidden;
+    }
+
+    kbd {
+      font-size: 0.85em;
+    }
+  }
+
+  .keybinds-context {
+    display: block;
+    margin-top: 0.1rem;
+    color: #999;
+    font-size: 0.8rem;
+  }
+
+  .keybinds-shared,
+  .keybinds-optional {
+    display: inline-block;
+    margin-left: 0.3rem;
+    padding: 0 0.45em;
+    border-radius: 1em;
+    font-size: 0.7rem;
+    font-weight: 400;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .keybinds-shared {
+    background-color: var(--mgo-gold-trans);
+    color: var(--mgo-gold);
+  }
+
+  .keybinds-optional {
+    background-color: #ffffff14;
+    color: #aaa;
+  }
+}

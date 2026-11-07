@@ -4,6 +4,11 @@ All notable changes to the MGO documentation site, based on its [deployments](ht
 
 The site deploys continuously from `main`, so entries are grouped by date rather than version. Each date collects everything that went live that day. Multiple deployments of the same commit (re-runs and retries) are merged. The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-11-07
+
+### Added
+- A Mod Keybindings page in the Controller Bindings section, built from a spreadsheet compiled by @DonQuibrote. It's a searchable reference of the default inputs for mod actions throughout MGO, sorted into VR controllers, keyboard/mouse, and gamepad controls. Desktop tools (just BodySlide and Outfit Studio at the moment) have their own section.
+
 ## 2026-11-06
 
 ### Added

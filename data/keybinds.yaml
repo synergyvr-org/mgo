@@ -1,0 +1,977 @@
+# Default keybindings for MGO's mods, from a spreadsheet compiled by Don Quibrote
+# (assets/mgo-default-keybinds.xlsx). Rendered by the `keybinds` shortcode.
+# Rows the spreadsheet marks "No recorded assignment" are left out on purpose: the sheet
+# itself warns that they don't mean a key is free. `nexus` IDs and `optional` (the mod ships
+# disabled) come from MGO's load order CSVs. `keys` lists the parts of an input to draw as
+# keycaps.
+# `label`, when present, is how a VR input is displayed: `{name}` draws that controller
+# glyph (the same images as the `control` shortcode). `input` stays plain for the filter.
+
+categories:
+- id: vr
+  title: VR controllers
+  note: Plenty of inputs show up more than once here, usually because each mod only claims the input in its own situation (holding a book, gripping a climbable surface, browsing a menu). Shared doesn't mean conflicting.
+  inputs:
+  - input: Either Trigger
+    label: Either {trigger}
+    uses:
+    - mod: Gift By Hand VR
+      action: Open summon menu
+      nexus: 99809
+      context: Both hands near the head on press and release. Hold over 2 and under 20 seconds, then release.
+    - mod: Gift By Hand VR
+      action: Summon last grabbed NPC
+      nexus: 99809
+      context: Both hands near the head on press and release. Hold over 1 and up to 2 seconds, then release.
+  - input: Existing Activate input
+    uses:
+    - mod: Inigo
+      action: Enter follower command mode
+      nexus: 1461
+      context: Hold Activate while targeting a follower. Reuses the game interaction mapping.
+  - input: Existing HIGGS dual-grip input
+    uses:
+    - mod: Conduit - Short-term Weapon Infusions
+      action: Use grip conduction
+      nexus: 58023
+      context: Grip-conduction starts disabled. Enable the feature, then grasp a weapon with the spell hand; no new hotkey assignment is required.
+  - input: Existing HIGGS grab input — Triple grasp
+    uses:
+    - mod: Gift By Hand VR
+      action: Loot a body
+      nexus: 99809
+      context: Grasp a dead body three times to loot it. Uses the existing HIGGS grab input.
+    - mod: Gift By Hand VR
+      action: Open follower inventory
+      nexus: 99809
+      context: Grasp a follower's shoulder three times to open inventory. Uses the existing HIGGS grab input.
+  - input: Existing Jump input
+    uses:
+    - mod: Steeds of Ultima - VR Mounted Combat
+      action: Kick while mounted
+      nexus: 81220
+      context: Mounted kicking is enabled. The physical Quest button follows the active Jump mapping.
+  - input: Existing Sheathe input
+    uses:
+    - mod: Forget Spell
+      action: Open forget-spell prompt
+      nexus: 51125
+      context: In the Magic menu. Standard gamepad uses X; that is not a Quest X-button assignment.
+  - input: Existing Shout input
+    uses:
+    - mod: Steeds of Ultima - VR Mounted Combat
+      action: Shout while mounted
+      nexus: 81220
+      context: Uses the original Shout mapping. A separate custom shout button is inactive by default.
+  - input: Grip
+    label: '{grip}'
+    uses:
+    - mod: HIGGS - Hand Interaction and Gravity Gloves for Skyrim VR
+      action: Grab / select an object
+      nexus: 43930
+      context: Exact behavior depends on hand state and controller settings. Quest uses grip press; Index grip-touch behavior should not be applied to Quest.
+    - mod: HIGGS - Hand Interaction and Gravity Gloves for Skyrim VR
+      action: Pull an object with gravity gloves
+      nexus: 43930
+      context: Select or grab at a distance, hold, then pull. Behavior depends on hand state and controller settings. Trigger or Grip depends on hand state.
+    - mod: Immersive Reading
+      action: Drop the book
+      nexus: 173931
+      context: Press while holding a book in reading mode.
+    - mod: Immersive Reading
+      action: Put the book in inventory
+      nexus: 173931
+      context: Press over the shoulder while holding the book.
+    - mod: Immersive Reading
+      action: Return to normal HIGGS grabbing
+      nexus: 173931
+      context: Hold while holding a book in reading mode.
+    - mod: VR Climbing
+      action: Latch onto a surface / climb
+      nexus: 168553
+      context: Grip near a solid surface, then pull with that hand.
+    - mod: VRIK
+      action: Reposition a weapon holster
+      nexus: 23416
+      context: Hold Grip near the holster to reposition it.
+    - mod: VRIK
+      action: Store / draw a holstered weapon
+      nexus: 23416
+      context: Grip near a holster; pull to draw. Gesture functions require their own assignments.
+  - input: Grip (either hand)
+    label: '{grip} (either hand)'
+    uses:
+    - mod: Immersive Harvesting VR
+      action: Harvest a touched target
+      nexus: 186754
+      context: Touch a supported target. Full immersive harvesting also requires the physical pull.
+  - input: Grip + A/X (either hand)
+    label: '{grip} + {a}/{x} (either hand)'
+    uses:
+    - mod: SeverActions
+      action: Open wheel menu
+      optional: true
+      context: SeverActions 4.x documented default. Opens the quick wheel. Keyboard wheel shortcut starts unassigned.
+  - input: Grip + B/Y (either hand)
+    label: '{grip} + {b}/{y} (either hand)'
+    uses:
+    - mod: SeverActions
+      action: Open configuration menu
+      optional: true
+      context: SeverActions 4.x documented default. Opens the menu.
+  - input: Grip + Trigger (either hand)
+    label: '{grip} + {trigger} (either hand)'
+    uses:
+    - mod: Spell Wheel VR
+      action: Open the wheel
+      nexus: 47630
+      context: Press Grip first, then Trigger on the same hand. Default is assigned on both hands.
+  - input: Left Trigger
+    label: '{left-trigger}'
+    uses:
+    - mod: Be Seated Skyrim VR Edition
+      action: Call a tavern worker
+      nexus: 16613
+      context: While seated at a tavern.
+    - mod: Immersive Reading
+      action: Close the book
+      nexus: 173931
+      context: Press or hold about one second in reading mode.
+    - mod: Immersive Reading
+      action: Turn to the previous page
+      nexus: 173931
+      context: With the book open in reading mode.
+    - mod: Local Map Upgrade VR
+      action: Place a local-map marker
+      nexus: 134212
+      context: While using the local map.
+    - mod: NavigateVR - Dynamic Compass and Equipable Maps
+      action: Cycle equipped hold maps
+      nexus: 47174
+      context: Hold a map in hand and use combat stance. Optional remapping can change these inputs.
+  - input: Move left beyond the first category
+    uses:
+    - mod: SkyUI VR
+      action: Toggle trade direction
+      nexus: 91535
+      context: Directional menu input; physical stick / button follows the active control mapping.
+  - input: Move up at the top of the item list
+    uses:
+    - mod: SkyUI VR
+      action: Change sort order
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: Quick double-up at the top of the item list
+    uses:
+    - mod: SkyUI VR
+      action: Reverse sort direction
+      nexus: 91535
+      context: VR directional menu input; physical control follows the active mapping.
+  - input: Release wheel activation controls
+    uses:
+    - mod: Spell Wheel VR
+      action: Select a wheel orb
+      nexus: 47630
+      context: Point at the desired orb while the wheel is open, then release.
+  - input: Right Trigger
+    label: '{right-trigger}'
+    uses:
+    - mod: Be Seated Skyrim VR Edition
+      action: Open tavern service menu
+      nexus: 16613
+      context: Hold about 3 seconds while seated at a tavern.
+    - mod: Immersive Reading
+      action: Open the book
+      nexus: 173931
+      context: With a closed book in reading mode.
+    - mod: Immersive Reading
+      action: Turn to the next page
+      nexus: 173931
+      context: With the book open in reading mode.
+    - mod: Local Map Upgrade VR
+      action: Drag / move the local map
+      nexus: 134212
+      context: While using the local map, including indoors.
+    - mod: NavigateVR - Dynamic Compass and Equipable Maps
+      action: Cycle equipped hold maps
+      nexus: 47174
+      context: Hold a map in hand and use combat stance. Optional remapping can change these inputs.
+    - mod: Simple Realistic Archery VR
+      action: Equip the last arrow
+      nexus: 28524
+      context: Press over the shoulder. Custom arrow slots start empty.
+  - input: Trigger
+    label: '{trigger}'
+    uses:
+    - mod: HIGGS - Hand Interaction and Gravity Gloves for Skyrim VR
+      action: Grab / select an object
+      nexus: 43930
+      context: Exact behavior depends on hand state and controller settings. Quest uses grip press; Index grip-touch behavior should not be applied to Quest.
+    - mod: HIGGS - Hand Interaction and Gravity Gloves for Skyrim VR
+      action: Pull an object with gravity gloves
+      nexus: 43930
+      context: Select or grab at a distance, hold, then pull. Behavior depends on hand state and controller settings. Trigger or Grip depends on hand state.
+    - mod: Immersive Reading
+      action: Enter / change reading mode
+      nexus: 173931
+      context: Use with a book. Keyboard pose shortcuts are disabled by default.
+    - mod: OStim Standalone VR
+      action: Select an OStim wheel orb
+      nexus: 119892
+      context: Open the OStim wheel through Spell Wheel first; its opening input follows Spell Wheel settings.
+    - mod: Seamless Arrow Nocking VR
+      action: Draw / fire with seamless arrow nocking
+      nexus: 117254
+      context: Auto-nocking is enabled; hold the existing quiver input while nocking, then release to shoot.
+  - input: Trigger (either hand)
+    label: '{trigger} (either hand)'
+    uses:
+    - mod: Weapon Throw VR
+      action: Throw an equipped weapon
+      nexus: 31374
+      context: Hold, swing the equipped weapon, then release; assigned on both hands.
+  - input: Trigger on the offhand
+    label: '{trigger} on the offhand'
+    uses:
+    - mod: Immersive Crossbow Reload VR
+      action: Grab a crossbow bolt
+      nexus: 139152
+      context: Reach to the lower back; release over the loading area.
+    - mod: Immersive Crossbow Reload VR
+      action: Grab the crossbow cocking lever
+      nexus: 139152
+      context: Pull the lever with the offhand.
+- id: keyboard
+  title: Keyboard & mouse
+  note: Keys on a physical keyboard, plus three actions that follow whatever your Quickload, Quicksave, and Shout controls are mapped to.
+  inputs:
+  - input: E
+    keys:
+    - E
+    uses:
+    - mod: Inigo
+      action: Enter follower command mode
+      nexus: 1461
+      context: Hold Activate while targeting a follower. Reuses the game interaction mapping.
+    - mod: RaceMenu
+      action: Accept character edit
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ.
+  - input: F
+    keys:
+    - F
+    uses:
+    - mod: SkyUI VR
+      action: Add to / remove from favorites group
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: K
+    keys:
+    - K
+    uses:
+    - mod: OStim Standalone
+      action: Open scene search
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: L
+    keys:
+    - L
+    uses:
+    - mod: OStim Standalone
+      action: Open alignment menu
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: N
+    keys:
+    - N
+    uses:
+    - mod: SLO Aroused NG
+      action: Show status notification
+      nexus: 151502
+      context: Status notification behavior depends on the mod's context and hold settings.
+  - input: O
+    keys:
+    - O
+    uses:
+    - mod: OBody NG
+      action: Open preset selector
+      nexus: 77016
+      context: Targets the selected NPC, or the player when no NPC is selected.
+  - input: R
+    keys:
+    - R
+    uses:
+    - mod: Forget Spell
+      action: Open forget-spell prompt
+      nexus: 51125
+      context: In the Magic menu. Standard gamepad uses X; that is not a Quest X-button assignment. Keyboard input follows the default Sheathe mapping.
+    - mod: RaceMenu
+      action: Finish character creation
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ.
+    - mod: SkyUI VR
+      action: Use favorites group
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: T
+    keys:
+    - T
+    uses:
+    - mod: RaceMenu
+      action: Choose a texture
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ.
+    - mod: SkyUI VR
+      action: Save favorites equip state
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: V
+    keys:
+    - V
+    uses:
+    - mod: SkyrimNet
+      action: Voice thought
+      optional: true
+      context: Voice-thought input; documented V-key control.
+  - input: Z
+    keys:
+    - Z
+    uses:
+    - mod: RaceMenu
+      action: Export the head
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ.
+  - input: Shift + 7
+    keys:
+    - Shift
+    - '7'
+    uses:
+    - mod: IntelEngine
+      action: Open dashboard
+      optional: true
+      context: Requires PrismaUI.
+  - input: Shift + 8
+    keys:
+    - Shift
+    - '8'
+    uses:
+    - mod: SeverActions
+      action: Close configuration menu
+      optional: true
+      context: SeverActions 4.x. Only while its menu is open.
+    - mod: SeverActions
+      action: Open configuration menu
+      optional: true
+      context: SeverActions 4.x documented default. Opens the menu.
+  - input: '9'
+    keys:
+    - '9'
+    uses:
+    - mod: Fertility Mode Reloaded
+      action: Toggle widget
+      nexus: 165569
+      context: Key is preassigned, but the feature initially starts disabled. Enable the mod before using it.
+  - input: F1
+    keys:
+    - F1
+    uses:
+    - mod: Prisma UI AddItem Menu
+      action: Open / close item menu
+      nexus: 179949
+      optional: true
+      context: Open / close the item browser.
+    - mod: SkyUI VR
+      action: Use favorites group 1
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: F2
+    keys:
+    - F2
+    uses:
+    - mod: PPA - Procedural Penis Animations
+      action: Toggle the mod
+      nexus: 172002
+      context: Published PPA default; behavior depends on the PPA version.
+    - mod: SkyUI VR
+      action: Use favorites group 2
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: F3
+    keys:
+    - F3
+    uses:
+    - mod: SkyrimNet
+      action: Toggle GameMaster
+      optional: true
+      context: Toggle the GameMaster system.
+    - mod: SkyUI VR
+      action: Use favorites group 3
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: F4
+    keys:
+    - F4
+    uses:
+    - mod: SkyUI VR
+      action: Use favorites group 4
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: F5
+    keys:
+    - F5
+    uses:
+    - mod: PPA - Procedural Penis Animations
+      action: Reload configuration
+      nexus: 172002
+      context: Published PPA default; behavior depends on the PPA version.
+  - input: F6
+    keys:
+    - F6
+    uses:
+    - mod: SkyrimNet
+      action: Open dashboard
+      optional: true
+      context: Open / close the in-game dashboard. Beta 21 and later documentation.
+  - input: Ctrl + F6
+    keys:
+    - Ctrl
+    - F6
+    uses:
+    - mod: SkyrimNet
+      action: Toggle dashboard inspector
+      optional: true
+      context: Beta 21 PrismaUI dashboard. While the dashboard is open; follows a remapped dashboard key.
+  - input: F12
+    keys:
+    - F12
+    uses:
+    - mod: SkyrimNet
+      action: Open wheel menu
+      optional: true
+      context: Open the SkyrimNet wheel, including filter / faction-management options.
+  - input: Esc
+    keys:
+    - Esc
+    uses:
+    - mod: Inigo
+      action: Exit follower command mode
+      nexus: 1461
+      context: While in follower command mode; reuses the game Back input.
+    - mod: SeverActions
+      action: Close configuration menu
+      optional: true
+      context: SeverActions 4.x. Only while its menu is open.
+    - mod: SkyrimNet
+      action: Close the dashboard / chat
+      optional: true
+      context: Beta 28 with Magelight UI. Page Up is the Magelight toggle key; Escape also closes the view.
+  - input: Tab
+    keys:
+    - Tab
+    uses:
+    - mod: Inigo
+      action: Exit follower command mode
+      nexus: 1461
+      context: While in follower command mode; reuses the game Back input.
+  - input: Shift
+    keys:
+    - Shift
+    uses:
+    - mod: More Informative Console
+      action: Inspect console information
+      nexus: 19250
+      context: Mouse over console information before pressing the key.
+    - mod: RaceMenu
+      action: Zoom character view
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ.
+  - input: Left Shift
+    keys:
+    - Left Shift
+    uses:
+    - mod: SkyUI VR
+      action: Change equip mode
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: Ctrl
+    keys:
+    - Ctrl
+    uses:
+    - mod: More Informative Console
+      action: Inspect console information
+      nexus: 19250
+      context: Mouse over console information before pressing the key.
+    - mod: RaceMenu
+      action: Toggle character lighting
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ.
+  - input: Right Ctrl
+    keys:
+    - Right Ctrl
+    uses:
+    - mod: OCum Ascended
+      action: Show storage-status bar
+      nexus: 77506
+      context: Displays the male player character's storage-status bar.
+  - input: Left Alt
+    keys:
+    - Left Alt
+    uses:
+    - mod: SkyUI VR
+      action: Set favorites group icon
+      nexus: 91535
+      context: SkyUI menus / favorites.
+    - mod: SkyUI VR
+      action: Switch tab
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: Space
+    keys:
+    - Space
+    uses:
+    - mod: RaceMenu
+      action: Search
+      nexus: 19080
+      context: Uses the Jump input inside RaceMenu; no gamepad search binding documented.
+    - mod: SkyUI VR
+      action: Search
+      nexus: 91535
+      context: SkyUI menus / favorites.
+    - mod: SkyUI VR
+      action: Toggle favorites focus
+      nexus: 91535
+      context: SkyUI menus / favorites.
+  - input: Backspace
+    keys:
+    - Backspace
+    uses:
+    - mod: PPA - Procedural Penis Animations
+      action: Open participant target-selection menu
+      nexus: 172002
+      context: Published PPA default; behavior depends on the PPA version.
+  - input: Page Up
+    keys:
+    - Page Up
+    uses:
+    - mod: SkyrimNet
+      action: Close the dashboard / chat
+      optional: true
+      context: Beta 28 with Magelight UI. Page Up is the Magelight toggle key; Escape also closes the view.
+  - input: Up Arrow
+    keys:
+    - Up Arrow
+    uses:
+    - mod: OStim Standalone
+      action: Start a scene
+      nexus: 98163
+      context: Press Up Arrow while targeting an NPC; requires compatible animation packs.
+    - mod: OStim Standalone
+      action: Start a solo scene
+      nexus: 98163
+      context: Hold with a compatible solo animation pack installed.
+  - input: Left Arrow
+    keys:
+    - Left Arrow
+    uses:
+    - mod: SeverActions
+      action: Previous menu page
+      optional: true
+      context: SeverActions 4.x. Only while its menu is open.
+  - input: Right Arrow
+    keys:
+    - Right Arrow
+    uses:
+    - mod: SeverActions
+      action: Next menu page
+      optional: true
+      context: SeverActions 4.x. Only while its menu is open.
+  - input: Pause / Break
+    keys:
+    - Pause / Break
+    uses:
+    - mod: VIGILANT
+      action: Skip a supported scene
+      nexus: 11849
+      context: Only during scenes that support skipping.
+  - input: Numpad 0
+    keys:
+    - Numpad 0
+    uses:
+    - mod: OStim Standalone
+      action: Switch control mode
+      nexus: 98163
+      context: During an OStim scene or its interface.
+    - mod: SkyrimNet
+      action: Capture crosshair target / player
+      optional: true
+      context: Beta 28. Opens a capture dialog on desktop; VR keeps direct capture.
+  - input: Ctrl + Numpad 0
+    keys:
+    - Ctrl
+    - Numpad 0
+    uses:
+    - mod: SkyrimNet
+      action: Capture directly without the capture dialog
+      optional: true
+      context: Beta 28 desktop capture behavior. Ctrl plus the default capture key skips the dialog; VR already uses direct capture.
+  - input: Numpad 1
+    keys:
+    - Numpad 1
+    uses:
+    - mod: OStim Standalone
+      action: Pull out
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad 4
+    keys:
+    - Numpad 4
+    uses:
+    - mod: OStim Standalone
+      action: Navigate left
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad 5
+    keys:
+    - Numpad 5
+    uses:
+    - mod: OStim Standalone
+      action: Navigate down
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad 6
+    keys:
+    - Numpad 6
+    uses:
+    - mod: OStim Standalone
+      action: Navigate right
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad 7
+    keys:
+    - Numpad 7
+    uses:
+    - mod: OStim Standalone
+      action: Select / confirm
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad 8
+    keys:
+    - Numpad 8
+    uses:
+    - mod: OStim Standalone
+      action: Navigate up
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad 9
+    keys:
+    - Numpad 9
+    uses:
+    - mod: CBBE 3BA
+      action: Toggle NPC body physics
+      nexus: 30174
+      context: Outside menus. Physics options affect behavior. Applies to the targeted NPC or configured group.
+    - mod: OStim Standalone
+      action: Switch scene actor
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad +
+    keys:
+    - Numpad +
+    uses:
+    - mod: CBBE 3BA
+      action: Toggle player body physics
+      nexus: 30174
+      context: Outside menus. Physics options affect behavior.
+    - mod: OStim Standalone
+      action: Increase scene speed
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad -
+    keys:
+    - Numpad -
+    uses:
+    - mod: OStim Standalone
+      action: Decrease scene speed
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad *
+    keys:
+    - Numpad *
+    uses:
+    - mod: OStim Standalone
+      action: Hide scene interface
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad /
+    keys:
+    - Numpad /
+    uses:
+    - mod: OStim Standalone
+      action: Toggle free camera
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Numpad Decimal
+    keys:
+    - Numpad Decimal
+    uses:
+    - mod: OStim Standalone
+      action: End a scene
+      nexus: 98163
+      context: During an OStim scene or its interface.
+  - input: Existing Quickload input
+    uses:
+    - mod: RaceMenu
+      action: Load a preset
+      nexus: 19080
+      context: Inside RaceMenu. Keyboard follows the Quickload action.
+  - input: Existing Quicksave input
+    uses:
+    - mod: RaceMenu
+      action: Save a preset
+      nexus: 19080
+      context: Inside RaceMenu. Keyboard follows the Quicksave action.
+  - input: Existing Shout input
+    uses:
+    - mod: Steeds of Ultima - VR Mounted Combat
+      action: Shout while mounted
+      nexus: 81220
+      context: Uses the original Shout mapping. A separate custom shout button is inactive by default.
+  - input: Right-mouse drag
+    uses:
+    - mod: RaceMenu
+      action: Rotate the sculpt view
+      nexus: 19080
+      context: RaceMenu Sculpt mode; no standard gamepad support for Sculpt.
+- id: gamepad
+  title: Gamepad
+  note: Mod authors document these for a standard gamepad. They aren't VR controller buttons (gamepad X isn't the X button on a Quest controller), and the VR versions of these menus may work differently.
+  inputs:
+  - input: A
+    uses:
+    - mod: RaceMenu
+      action: Accept character edit
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ. Standard gamepad input; not a verified Quest mapping.
+  - input: Back
+    uses:
+    - mod: RaceMenu
+      action: Toggle character lighting
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ. Standard gamepad input; not a verified Quest mapping.
+    - mod: SkyUI VR
+      action: Switch tab
+      nexus: 91535
+      context: SkyUI menus / favorites. Standard gamepad input; not a verified Quest mapping.
+  - input: LB
+    uses:
+    - mod: RaceMenu
+      action: Export the head
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ. Standard gamepad input; not a verified Quest mapping.
+    - mod: SkyUI VR
+      action: Previous column
+      nexus: 91535
+      context: SkyUI menus / favorites. Standard gamepad input; not a verified Quest mapping.
+  - input: Left Stick press
+    uses:
+    - mod: RaceMenu
+      action: Load a preset
+      nexus: 19080
+      context: Inside RaceMenu. Keyboard follows the Quickload action. Standard gamepad input; not a verified Quest mapping.
+    - mod: SkyUI VR
+      action: Change sort order
+      nexus: 91535
+      context: SkyUI menus / favorites. Standard gamepad input; not a verified Quest mapping.
+  - input: Left Trigger
+    uses:
+    - mod: RaceMenu
+      action: Change subcategory
+      nexus: 19080
+      context: Inside RaceMenu. These are standard gamepad triggers, not a verified Quest mapping. Standard gamepad input; not a verified Quest mapping.
+  - input: RB
+    uses:
+    - mod: RaceMenu
+      action: Zoom character view
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ. Standard gamepad input; not a verified Quest mapping.
+    - mod: SkyUI VR
+      action: Next column
+      nexus: 91535
+      context: SkyUI menus / favorites. Standard gamepad input; not a verified Quest mapping.
+  - input: Right Stick press
+    uses:
+    - mod: RaceMenu
+      action: Save a preset
+      nexus: 19080
+      context: Inside RaceMenu. Keyboard follows the Quicksave action. Standard gamepad input; not a verified Quest mapping.
+  - input: Right Trigger
+    uses:
+    - mod: RaceMenu
+      action: Change subcategory
+      nexus: 19080
+      context: Inside RaceMenu. These are standard gamepad triggers, not a verified Quest mapping. Standard gamepad input; not a verified Quest mapping.
+  - input: X
+    uses:
+    - mod: Forget Spell
+      action: Open forget-spell prompt
+      nexus: 51125
+      context: In the Magic menu. Standard gamepad uses X; that is not a Quest X-button assignment. Standard gamepad input; not a verified Quest mapping.
+    - mod: RaceMenu
+      action: Finish character creation
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ. Standard gamepad input; not a verified Quest mapping.
+  - input: Y
+    uses:
+    - mod: RaceMenu
+      action: Choose a texture
+      nexus: 19080
+      context: Inside RaceMenu. Standard gamepad equivalents; the VR adaptation may differ. Standard gamepad input; not a verified Quest mapping.
+- id: desktop
+  title: Desktop tools
+  note: Shortcuts in BodySlide and Outfit Studio, which you run from MO2 rather than in the game.
+  inputs:
+  - input: Shift + B
+    keys:
+    - Shift
+    - B
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Show bones
+      nexus: 201
+  - input: E
+    keys:
+    - E
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Toggle shape visibility
+      nexus: 201
+  - input: Ctrl + Alt + E
+    keys:
+    - Ctrl
+    - Alt
+    - E
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Export NIF with reference
+      nexus: 201
+  - input: Ctrl + E
+    keys:
+    - Ctrl
+    - E
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Export NIF
+      nexus: 201
+  - input: G
+    keys:
+    - G
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Toggle the floor grid
+      nexus: 201
+  - input: Shift + N
+    keys:
+    - Shift
+    - N
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Show nodes
+      nexus: 201
+  - input: Shift + R
+    keys:
+    - Shift
+    - R
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Change camera rotation center
+      nexus: 201
+  - input: Shift + S
+    keys:
+    - Shift
+    - S
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Separate selected vertices
+      nexus: 201
+  - input: V
+    keys:
+    - V
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Pick a vertex color
+      nexus: 201
+      context: Outfit Studio desktop editor; Bones tab.
+  - input: Esc
+    keys:
+    - Esc
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Close brush settings
+      nexus: 201
+      context: Outfit Studio desktop editor; popup open.
+  - input: Space
+    keys:
+    - Space
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Close brush settings
+      nexus: 201
+      context: Outfit Studio desktop editor; popup open.
+    - mod: BodySlide and Outfit Studio
+      action: Open brush settings
+      nexus: 201
+  - input: Ctrl + Space
+    keys:
+    - Ctrl
+    - Space
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Enter slider edit mode
+      nexus: 201
+  - input: Del
+    keys:
+    - Del
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Delete a shape from import preview
+      nexus: 201
+      context: Outfit Studio desktop editor; OBJ/FBX import preview.
+  - input: Shift + Del
+    keys:
+    - Shift
+    - Del
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Delete selected vertices
+      nexus: 201
+  - input: Alt + right-mouse drag
+    keys:
+    - Alt
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Use a vertex as the camera rotation center
+      nexus: 201
+      context: Outfit Studio desktop editor; drag a vertex.
+  - input: Ctrl + click Build
+    keys:
+    - Ctrl
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Build to the BodySlide folder
+      nexus: 201
+      context: BodySlide desktop application; hold Ctrl while clicking Build.
+  - input: Ctrl + Mouse Wheel
+    keys:
+    - Ctrl
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Move between sliders
+      nexus: 201
+  - input: Shift + click
+    keys:
+    - Shift
+    uses:
+    - mod: BodySlide and Outfit Studio
+      action: Select multiple slider checkboxes
+      nexus: 201
+      context: Outfit Studio desktop editor; slider checkboxes.

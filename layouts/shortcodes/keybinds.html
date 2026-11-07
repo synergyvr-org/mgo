@@ -1,0 +1,84 @@
+{{- /* The mod keybinding reference, from data/keybinds.yaml. Each category is a
+       table with one <tbody> per input, so the rows sharing an input stay
+       together. The input is shown on a group's first visible row only; the
+       filter recomputes which row that is as it hides others. Inputs listed
+       under `keys` are drawn as keycaps, and a VR input's `label` draws its
+       `{name}` placeholders as controller glyphs. Mods that ship disabled are
+       tagged. */ -}}
+{{- $data := site.Data.keybinds -}}
+<div class="keybinds">
+  <div class="keybinds-search">
+    <input type="search" id="keybinds-filter" placeholder="Filter by input, mod, or action…" aria-label="Filter keybindings" autocomplete="off">
+    <button type="button" class="keybinds-clear" aria-label="Clear filter" tabindex="-1">╳</button>
+  </div>
+  <p class="keybinds-none" hidden>No keybindings match that filter.</p>
+  {{- range $cat := $data.categories }}
+  {{- $count := 0 }}{{ range $cat.inputs }}{{ $count = add $count (len .uses) }}{{ end }}
+  <section class="keybinds-category" id="keybinds-{{ $cat.id }}">
+    <h2>{{ $cat.title }} <span class="modlist-diff-count">{{ $count }}</span></h2>
+    {{- with $cat.note }}
+    <p class="keybinds-note">{{ . | markdownify }}</p>
+    {{- end }}
+    <table class="keybinds-table">
+      <thead><tr><th>Input</th><th>Mod</th><th>Action</th></tr></thead>
+      {{- range $group := $cat.inputs }}
+      {{- $mods := slice }}{{ range $group.uses }}{{ if not (in $mods .mod) }}{{ $mods = $mods | append .mod }}{{ end }}{{ end }}
+      <tbody class="keybinds-group">
+        {{- range $i, $use := $group.uses }}
+        <tr class="{{ if $i }}keybinds-repeat{{ end }}" data-search="{{ lower (printf "%s %s %s %s %s" $cat.title $group.input $use.mod $use.action ($use.context | default "")) }}">
+          <td class="keybinds-input">
+            {{- with $group.label }}
+              {{- /* "{grip} + {a}/{x}": text before the first "{", then each
+                     "name}rest" piece is a glyph followed by plain text. A
+                     trailing note like "(either hand)" moves to its own line. */ -}}
+              {{- $note := "" }}
+              {{- $label := . }}
+              {{- with findRESubmatch `^(.*?) (\([^()]*\))$` . 1 }}{{ $label = index (index . 0) 1 }}{{ $note = index (index . 0) 2 }}{{ end }}
+              {{- $segs := split $label "{" }}{{ index $segs 0 }}
+              {{- range after 1 $segs }}{{ $p := split . "}" }}{{ partial "control-glyph.html" (index $p 0) }}{{ index $p 1 }}{{ end }}
+              {{- with $note }}<br><span class="keybinds-input-note">{{ . }}</span>{{ end }}
+            {{- else }}
+              {{- range $j, $part := split $group.input " + " }}{{ if $j }} + {{ end }}{{ if in ($group.keys | default slice) $part }}<kbd>{{ $part }}</kbd>{{ else }}{{ $part }}{{ end }}{{ end }}
+            {{- end }}
+            {{- if gt (len $mods) 1 }} <span class="keybinds-shared" title="Used by {{ len $mods }} mods by default">shared</span>{{ end -}}
+          </td>
+          <td>{{ with $use.nexus }}<a href="https://www.nexusmods.com/skyrimspecialedition/mods/{{ . }}" target="_blank" rel="noopener">{{ $use.mod }}</a>{{ else }}{{ $use.mod }}{{ end }}{{ if $use.optional }} <span class="keybinds-optional">off by default</span>{{ end }}</td>
+          <td>{{ $use.action }}{{ with $use.context }}<span class="keybinds-context">{{ . }}</span>{{ end }}</td>
+        </tr>
+        {{- end }}
+      </tbody>
+      {{- end }}
+    </table>
+  </section>
+  {{- end }}
+</div>
+<script>
+(function () {
+  var root = document.currentScript.previousElementSibling;
+  var input = root.querySelector('#keybinds-filter');
+  var none = root.querySelector('.keybinds-none');
+  function apply() {
+    var q = input.value.trim().toLowerCase();
+    var total = 0;
+    root.querySelectorAll('.keybinds-category').forEach(function (cat) {
+      var shown = 0;
+      cat.querySelectorAll('.keybinds-group').forEach(function (group) {
+        var first = true;
+        group.querySelectorAll('tr').forEach(function (row) {
+          var hit = !q || row.dataset.search.indexOf(q) !== -1;
+          row.hidden = !hit;
+          if (hit) { row.classList.toggle('keybinds-repeat', !first); first = false; shown++; }
+        });
+        group.hidden = first;
+      });
+      cat.hidden = shown === 0;
+      cat.querySelector('.modlist-diff-count').textContent = shown;
+      total += shown;
+    });
+    none.hidden = total !== 0;
+  }
+  input.addEventListener('input', apply);
+  input.addEventListener('keydown', function (e) { if (e.key === 'Escape') { input.value = ''; apply(); } });
+  root.querySelector('.keybinds-clear').addEventListener('click', function () { input.value = ''; apply(); input.focus(); });
+})();
+</script>

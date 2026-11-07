@@ -1,0 +1,5 @@
+{{- /* A controller glyph, as the shared `control` shortcode draws it, for
+       templates that can't call a shortcode. Takes the glyph name ("grip").
+       Keep the markup in step with layouts/shortcodes/control.html in
+       synergy-hugo-shared. */ -}}
+<span class="controller"><img class="controller-{{ . }}" src="{{ printf "images/controller-%s.png" . | relURL }}" srcset="{{ printf "images/controller-%s@2x.png" . | relURL }} 2x" alt=""> {{ . | humanize }}</span>
